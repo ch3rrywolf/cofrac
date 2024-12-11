@@ -9,6 +9,7 @@ import Unable from './dashboard/pages/Unable'
 import AddInspecteur from './dashboard/pages/AddInspecteur'
 import Inspecteurs from './dashboard/pages/Inspecteurs'
 import Inspections from './dashboard/pages/Inspections'
+import Profile from './dashboard/pages/Profile'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
           <Route path='' element={<Navigate to='/dashboard/admin' />} />
           <Route path='upable-access' element={<Unable/>} />
           <Route path='inspections' element={<Inspections/>} />
+          <Route path='profile' element={<Profile/>} />
           <Route path='' element={<ProtectRole role='admin' />} >
             <Route path='admin' element={<AdminIndex />} />
             <Route path='inspecteurs/add' element={<AddInspecteur />} />
