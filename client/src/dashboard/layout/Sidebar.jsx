@@ -37,7 +37,13 @@ const Sidebar = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link to='/dashboard/inspecteurs/add' className={`px-3 ${pathname === '/dashboard/inspecteurs/add' ? 'bg-indigo-500 text-white' : 'bg-white text-[#404040f6]'} py-2 hover:shadow-lg hover:shadow-indigo-500/20 w-full rounded-sm flex gap-x-2 justify-start items-center hover:bg-indigo-500 hover:text-white`}>
+                            <Link to='/dashboard/inspections/create' className={`px-3 ${pathname === '/dashboard/inspections/create' ? 'bg-indigo-500 text-white' : 'bg-white text-[#404040f6]'} py-2 hover:shadow-lg hover:shadow-indigo-500/20 w-full rounded-sm flex gap-x-2 justify-start items-center hover:bg-indigo-500 hover:text-white`}>
+                                <span className='text-xl'><FaPlus /></span>
+                                <span>Ajouté Inspection</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='/dashboard/inspecteur/add' className={`px-3 ${pathname === '/dashboard/inspecteur/add' ? 'bg-indigo-500 text-white' : 'bg-white text-[#404040f6]'} py-2 hover:shadow-lg hover:shadow-indigo-500/20 w-full rounded-sm flex gap-x-2 justify-start items-center hover:bg-indigo-500 hover:text-white`}>
                                 <span className='text-xl'><AiOutlinePlus/></span>
                                 <span>Ajoute inspecteur</span>
                             </Link>

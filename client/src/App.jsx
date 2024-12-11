@@ -33,6 +33,7 @@ function App() {
             <Route path='admin' element={<AdminIndex />} />
             <Route path='inspecteur/add' element={<AddInspecteur />} />
             <Route path='inspecteurs' element={<Inspecteurs />} />
+            <Route path='inspections/create' element={<CreateInspection />} />
           </Route>
 
           <Route path='' element={<ProtectRole role='inspecteur' />} >
