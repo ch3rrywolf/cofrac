@@ -28,15 +28,21 @@ const Sidebar = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link to='/dashboard/inspecteurs/add' className={`px-3 ${pathname === '/dashboard/inspecteurs/add' ? 'bg-indigo-500 text-white' : 'bg-white text-[#404040f6]'} py-2 hover:shadow-lg hover:shadow-indigo-500/20 w-full rounded-sm flex gap-x-2 justify-start items-center hover:bg-indigo-500 hover:text-white`}>
+                            <Link to='/dashboard/inspections' className={`px-3 ${pathname === '/dashboard/inspections' ? 'bg-indigo-500 text-white' : 'bg-white text-[#404040f6]'} py-2 hover:shadow-lg hover:shadow-indigo-500/20 w-full rounded-sm flex gap-x-2 justify-start items-center hover:bg-indigo-500 hover:text-white`}>
+                                <span className='text-xl'><BiNews /></span>
+                                <span>Inspections</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='/dashboard/inspecteurs' className={`px-3 ${pathname === '/dashboard/inspecteurs' ? 'bg-indigo-500 text-white' : 'bg-white text-[#404040f6]'} py-2 hover:shadow-lg hover:shadow-indigo-500/20 w-full rounded-sm flex gap-x-2 justify-start items-center hover:bg-indigo-500 hover:text-white`}>
                                 <span className='text-xl'><FiUsers /></span>
                                 <span>Inspecteurs</span>
                             </Link>
                         </li>
                         <li>
-                            <Link to='/dashboard/operations' className={`px-3 ${pathname === '/dashboard/operations' ? 'bg-indigo-500 text-white' : 'bg-white text-[#404040f6]'} py-2 hover:shadow-lg hover:shadow-indigo-500/20 w-full rounded-sm flex gap-x-2 justify-start items-center hover:bg-indigo-500 hover:text-white`}>
+                            <Link to='/dashboard/inspecteurs/add' className={`px-3 ${pathname === '/dashboard/inspecteurs/add' ? 'bg-indigo-500 text-white' : 'bg-white text-[#404040f6]'} py-2 hover:shadow-lg hover:shadow-indigo-500/20 w-full rounded-sm flex gap-x-2 justify-start items-center hover:bg-indigo-500 hover:text-white`}>
                                 <span className='text-xl'><AiOutlinePlus/></span>
-                                <span>Opérations</span>
+                                <span>Ajoute inspecteur</span>
                             </Link>
                         </li>
                      
@@ -67,12 +73,7 @@ const Sidebar = () => {
                         <span>Factures</span>
                     </Link>
                 </li>
-                <li>
-                    <Link to='/dashboard/inspections' className={`px-3 ${pathname === '/dashboard/inspections' ? 'bg-indigo-500 text-white' : 'bg-white text-[#404040f6]'} py-2 hover:shadow-lg hover:shadow-indigo-500/20 w-full rounded-sm flex gap-x-2 justify-start items-center hover:bg-indigo-500 hover:text-white`}>
-                        <span className='text-xl'><BiNews /></span>
-                        <span>Inspections</span>
-                    </Link>
-                </li>
+                
 
                 <li>
                     <Link to='/dashboard/profile' className={`px-3 ${pathname === '/dashboard/profile' ? 'bg-indigo-500 text-white' : 'bg-white text-[#404040f6]'} py-2 hover:shadow-lg hover:shadow-indigo-500/20 w-full rounded-sm flex gap-x-2 justify-start items-center hover:bg-indigo-500 hover:text-white`}>

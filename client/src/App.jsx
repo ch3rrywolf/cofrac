@@ -6,6 +6,9 @@ import Login from './dashboard/pages/Login'
 import ProtectDashboard from './middleware/ProtectDashboard'
 import ProtectRole from './middleware/ProtectRole'
 import Unable from './dashboard/pages/Unable'
+import AddInspecteur from './dashboard/pages/AddInspecteur'
+import Inspecteurs from './dashboard/pages/Inspecteurs'
+import Inspections from './dashboard/pages/Inspections'
 
 function App() {
 
@@ -17,8 +20,11 @@ function App() {
         <Route path='' element={<MainLayout />} >
           <Route path='' element={<Navigate to='/dashboard/admin' />} />
           <Route path='upable-access' element={<Unable/>} />
+          <Route path='inspections' element={<Inspections/>} />
           <Route path='' element={<ProtectRole role='admin' />} >
             <Route path='admin' element={<AdminIndex />} />
+            <Route path='inspecteurs/add' element={<AddInspecteur />} />
+            <Route path='inspecteurs' element={<Inspecteurs />} />
           </Route>
         </Route>
         </Route>
