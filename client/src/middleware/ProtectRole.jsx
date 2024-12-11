@@ -1,19 +1,16 @@
-import React from 'react'
-import { Navigate, Outlet } from 'react-router-dom'
+import React,{useContext} from 'react'
+import { Outlet, Navigate } from 'react-router-dom'
+import storeContext from '../context/storeContext'
 
 const ProtectRole = ({ role }) => {
 
-    const userInfo = {
-        name: "mootez",
-        role: "inspecteur"
-    }
+    const { store } = useContext(storeContext)
 
-    if(userInfo.role === role){
+    if (store.userInfo?.role === role) {
         return <Outlet />
     } else {
         return <Navigate to='/dashboard/unable-access' />
     }
-
 }
 
 export default ProtectRole

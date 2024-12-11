@@ -1,13 +1,13 @@
 import React, { useContext } from 'react'
-import { Navigate, Outlet } from 'react-router-dom'
+import { Outlet, Navigate } from 'react-router-dom'
 import storeContext from '../context/storeContext'
 
-const ProtectDashboard = () => {
+const ProtectDashboatd = () => {
 
-    const {store} = useContext(storeContext)
+    const { store } = useContext(storeContext)
    
 
-    if(store.userInfo){
+    if (store.userInfo) {
         return <Outlet />
     } else {
         return <Navigate to='/login' />
@@ -15,4 +15,4 @@ const ProtectDashboard = () => {
 
 }
 
-export default ProtectDashboard
+export default ProtectDashboatd
