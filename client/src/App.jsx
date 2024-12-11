@@ -10,8 +10,13 @@ import AddInspecteur from './dashboard/pages/AddInspecteur'
 import Inspecteurs from './dashboard/pages/Inspecteurs'
 import Inspections from './dashboard/pages/Inspections'
 import Profile from './dashboard/pages/Profile'
+import InspecteurIndex from './dashboard/pages/InspecteurIndex'
+import CreateInspection from './dashboard/pages/CreateInspection'
 
 function App() {
+  const userInfo = {
+    role : "inspecteur"
+  }
 
   return (
     <BrowserRouter>
@@ -19,15 +24,22 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/dashboard' element={<ProtectDashboard />} >
         <Route path='' element={<MainLayout />} >
-          <Route path='' element={<Navigate to='/dashboard/admin' />} />
+          <Route path='' ele element={userInfo.role === 'admin' ? <Navigate to='/dashboard/admin' /> : <Navigate to='/dashboard/inspecteur' />} />
           <Route path='upable-access' element={<Unable/>} />
           <Route path='inspections' element={<Inspections/>} />
           <Route path='profile' element={<Profile/>} />
+
           <Route path='' element={<ProtectRole role='admin' />} >
             <Route path='admin' element={<AdminIndex />} />
-            <Route path='inspecteurs/add' element={<AddInspecteur />} />
+            <Route path='inspecteur/add' element={<AddInspecteur />} />
             <Route path='inspecteurs' element={<Inspecteurs />} />
           </Route>
+
+          <Route path='' element={<ProtectRole role='inspecteur' />} >
+            <Route path='inspecteur' element={<InspecteurIndex />} />
+            <Route path='inspections/create' element={<CreateInspection />} />
+          </Route>
+
         </Route>
         </Route>
       </Routes>

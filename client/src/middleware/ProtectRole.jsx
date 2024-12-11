@@ -5,7 +5,7 @@ const ProtectRole = ({ role }) => {
 
     const userInfo = {
         name: "mootez",
-        role: "admin"
+        role: "inspecteur"
     }
 
     if(userInfo.role === role){
