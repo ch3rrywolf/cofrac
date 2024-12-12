@@ -49,7 +49,7 @@ const Login = () => {
       <div className='w-[340px] text-slate-600 shadow-md'>
         <div className='bg-white h-full px-7 py-8 rounded-md'>
           <div className='w-full justify-center items-center flex'>
-            <img className='w-[200px]' src='' alt='logo' />
+            <img className='w-[200px]' src='src/assets/laLogo.png' alt='logo' />
           </div>
           <form onSubmit={submit} className='mt-8'>
           <div className='flex flex-col gap-y-2'>

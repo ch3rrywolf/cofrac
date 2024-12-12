@@ -56,20 +56,50 @@ const CreateInspection = () => {
 
     const get_images = async () => {
       try {
-        const { data } = await axios.get(`${base_url}/api/images`, {
-          headers : {
-          "Authorization": `Bearer ${store.token}`
-        }
-      })
-      setImage(data.images)
+          const { data } = await axios.get(`${base_url}/api/images`, {
+              headers: {
+                  "Authorization": `Bearer ${store.token}`
+              }
+          })
+          console.log(data.images)
+          setImages(data.images)
       } catch (error) {
-        console.log(error)
+          console.log(error)
       }
-    }
+  }
 
     useEffect(() => {
       get_images()
-    }, [])
+  }, [])
+
+    const [imagesLoader, setImagesLoader] = useState(false)
+
+    const imageHandler = async (e) => {
+        const files = e.target.files
+        try {
+            const formData = new FormData()
+            for (let i = 0; i < files.length; i++) {
+                formData.append('images', files[i])
+
+            }
+
+            setImagesLoader(true)
+
+            const { data } = await axios.post(`${base_url}/api/images/add`, formData, {
+                headers: {
+                    "Authorization": `Bearer ${store.token}`
+                }
+            })
+            setImagesLoader(false)
+            setImages([...images, data.images])
+            toast.success(data.message)
+
+        } catch (error) {
+            console.log(error)
+            setImagesLoader(false)
+            toast.error(error.response.data.message)
+        }
+    }
 
   return (
     <div className='bg-white rounded-md'>
@@ -85,7 +115,7 @@ const CreateInspection = () => {
             </div>
             <div className='mb-6'>
             <div>
-          <label htmlFor="img" className={`w-full h-[180px] flex rounded text-[#404040] gap-2 justify-center items-center cursor-pointer border-2 border-dashed`}>
+          <label htmlFor="images" className={`w-full h-[180px] flex rounded text-[#404040] gap-2 justify-center items-center cursor-pointer border-2 border-dashed`}>
             {
               img ? <img src={img} className='w-full h-[240px]' alt='image' /> : <div className='flex justify-center items-center flex-col gap-y-2'>
               <span className='text-2xl'><MdCloudUpload/></span>
@@ -119,8 +149,9 @@ const CreateInspection = () => {
             </div>
         </form>
       </div>
+      <input onChange={imageHandler} type="file" multiple id='images' className='hidden'/>
       {
-        show && <Galler setShow={setShow} images={[]} />
+        show && <Galler setShow={setShow} images={images} />
       }
     </div>
   )
