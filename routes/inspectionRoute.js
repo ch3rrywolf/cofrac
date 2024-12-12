@@ -8,6 +8,7 @@ router.post('/api/images/add', middleware.auth, inspectionsController.add_images
 
 
 router.get('/api/inspections', middleware.auth, inspectionsController.get_dashboard_inspections)
+router.get('/api/inspections/:inspections_id', middleware.auth, inspectionsController.get_dashboard_single_inspections)
 
 
 

@@ -94,6 +94,17 @@ class inspectionsController{
             return res.status(500).json({ message: 'Internal server error' })
         }
     }
+
+    get_dashboard_single_inspections = async(req, res) => {
+        const { inspections_id } = req.params
+        try {
+            const inspections = await inspectionsModel.findById(inspections_id)
+            return res.status(200).json({ inspections })
+        } catch (error) {
+            console.log(error.message)
+            return res.status(500).json({ message: 'Internal server error' })
+        }
+    }
 }
 
 module.exports = new inspectionsController()

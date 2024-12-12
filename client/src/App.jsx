@@ -12,6 +12,7 @@ import Inspections from './dashboard/pages/Inspections'
 import Profile from './dashboard/pages/Profile'
 import InspecteurIndex from './dashboard/pages/InspecteurIndex'
 import CreateInspection from './dashboard/pages/CreateInspection'
+import Edit_inspections from './dashboard/pages/Edit_inspections'
 
 function App() {
   const userInfo = {
@@ -40,6 +41,7 @@ function App() {
           <Route path='' element={<ProtectRole role='inspecteur' />} >
             <Route path='inspecteur' element={<InspecteurIndex />} />
             <Route path='inspections/create' element={<CreateInspection />} />
+            <Route path='inspections/edit/:inspections_id' element={<Edit_inspections />} />
           </Route>
 
         </Route>
