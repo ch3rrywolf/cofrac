@@ -115,7 +115,7 @@ const CreateInspection = () => {
             </div>
             <div className='mb-6'>
             <div>
-          <label htmlFor="images" className={`w-full h-[180px] flex rounded text-[#404040] gap-2 justify-center items-center cursor-pointer border-2 border-dashed`}>
+          <label htmlFor="img" className={`w-full h-[180px] flex rounded text-[#404040] gap-2 justify-center items-center cursor-pointer border-2 border-dashed`}>
             {
               img ? <img src={img} className='w-full h-[240px]' alt='image' /> : <div className='flex justify-center items-center flex-col gap-y-2'>
               <span className='text-2xl'><MdCloudUpload/></span>
@@ -123,7 +123,7 @@ const CreateInspection = () => {
             </div>
             }
           </label>
-          <input required onChange={imageHandle} className='hidden' type="file" id='img' />
+          <input  onChange={imageHandle} className='hidden' type="file" id='img' />
         </div>
         </div>
         <div className='flex flex-col gap-y-2 mb-6'>
