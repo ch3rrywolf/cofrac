@@ -76,6 +76,19 @@ class inspectionsController{
         }
     }
 
+    update_inspections_update = async (req, res) => {
+        const { role } = req.userInfo
+        const { inspections_id } = req.params
+        const { status } = req.body
+
+        if (role === 'admin') {
+            const inspections = await inspectionsModel.findByIdAndUpdate(inspections_id, { status }, { new: true })
+            return res.status(200).json({ message: 'inspections status update success', inspections })
+        } else {
+            return res.status(401).json({ message: 'You cannot access this api' })
+        }
+    }
+
     get_images = async (req, res) => {
         const { id } = req.userInfo
 
