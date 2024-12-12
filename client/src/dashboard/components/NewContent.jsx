@@ -201,7 +201,7 @@ const NewContent = () => {
                                                     <FaEye />
                                                 </Link>
                                                 {
-                                                   store?.userInfo?.role === 'inspecteur' && <>
+                                                   store?.userInfo?.role === 'admin' && <>
                                                    <Link to={`/dashboard/inspections/edit/${n._id}`} className="p-[6px] bg-yellow-500 rounded hover:shadow-lg hover:shadow-yellow-500/50">
                                                     <FaEdit />
                                                 </Link>
