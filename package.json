@@ -23,6 +23,7 @@
     "formidable": "^3.5.2",
     "jsonwebtoken": "^9.0.2",
     "moment": "^2.30.1",
+    "monent": "^0.0.2-security",
     "mongoose": "^8.8.4"
   },
   "devDependencies": {
