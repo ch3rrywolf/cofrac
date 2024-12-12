@@ -27,13 +27,14 @@ function App() {
           <Route path='' ele element={userInfo.role === 'admin' ? <Navigate to='/dashboard/admin' /> : <Navigate to='/dashboard/inspecteur' />} />
           <Route path='upable-access' element={<Unable/>} />
           <Route path='inspections' element={<Inspections/>} />
+          <Route path='inspections/create' element={<CreateInspection />} />
           <Route path='profile' element={<Profile/>} />
 
           <Route path='' element={<ProtectRole role='admin' />} >
             <Route path='admin' element={<AdminIndex />} />
             <Route path='inspecteur/add' element={<AddInspecteur />} />
             <Route path='inspecteurs' element={<Inspecteurs />} />
-            <Route path='inspections/create' element={<CreateInspection />} />
+            
           </Route>
 
           <Route path='' element={<ProtectRole role='inspecteur' />} >
