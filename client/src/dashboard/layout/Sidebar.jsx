@@ -1,5 +1,5 @@
 import React, {useContext} from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { AiFillDashboard, AiOutlinePlus } from 'react-icons/ai'
 import { ImProfile } from 'react-icons/im'
 import { BiNews } from 'react-icons/bi'
@@ -10,9 +10,15 @@ import storeContext from '../../context/storeContext'
 
 const Sidebar = () => {
 
+    const navigate = useNavigate()
     const { pathname } = useLocation()
 
-    const {store} = useContext(storeContext)
+    const {store, dispatch} = useContext(storeContext)
+    const logout = ()=>{
+        localStorage.removeItem('newsToken')
+        dispatch({type:'logout', payload : ''})
+        navigate('/login')
+    }
 
     return (
         <div className='w-[250px] h-screen fixed left-0 top-0 bg-white'>
@@ -112,8 +118,10 @@ const Sidebar = () => {
                     </Link>
                 </li>
 
+                
+
                 <li>
-                    <div  className={`px-3  py-2 hover:shadow-lg hover:shadow-red-500/20 w-full rounded-sm flex gap-x-2 justify-start items-center hover:bg-red-500 hover:text-white cursor-pointer`}>
+                    <div onClick={logout} className={`px-3  py-2 hover:shadow-lg hover:shadow-red-500/20 w-full rounded-sm flex gap-x-2 justify-start items-center hover:bg-red-500 hover:text-white cursor-pointer`}>
                         <span className='text-xl'><IoLogOutOutline /></span>
                         <span>Logout</span>
                     </div>
