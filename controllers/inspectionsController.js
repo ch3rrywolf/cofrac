@@ -34,6 +34,10 @@ class inspectionsController{
             return res.status(500).json({message : 'Internal server error'})
         }
     }
+
+    get_images = async(req, res)=>{
+        console.log('res')
+    }
 }
 
 module.exports = new inspectionsController()

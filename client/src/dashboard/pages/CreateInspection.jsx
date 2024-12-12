@@ -1,4 +1,4 @@
-import React, {useState, useRef, useContext} from 'react'
+import React, {useState, useRef, useContext, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import { MdCloudUpload } from "react-icons/md"
 import JoditEditor from 'jodit-react'
@@ -52,6 +52,24 @@ const CreateInspection = () => {
         toast.success(error.response.data.message)
       }
     }
+    const [images, setImages] = useState([])
+
+    const get_images = async () => {
+      try {
+        const { data } = await axios.get(`${base_url}/api/images`, {
+          headers : {
+          "Authorization": `Bearer ${store.token}`
+        }
+      })
+      setImage(data.images)
+      } catch (error) {
+        console.log(error)
+      }
+    }
+
+    useEffect(() => {
+      get_images()
+    }, [])
 
   return (
     <div className='bg-white rounded-md'>
