@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useRef} from 'react'
 import { Link } from 'react-router-dom'
 import { MdCloudUpload } from "react-icons/md"
 import JoditEditor from 'jodit-react'
@@ -6,6 +6,23 @@ import Galler from '../components/Galler'
 
 const CreateInspection = () => {
     const [show, setShow] = useState(false)
+    const editor = useRef(null)
+
+    const [title, setTitle] = useState('')
+    const [image, setImage] = useState('')
+    const [img, setImg] = useState('')
+    const [description, setDescription] = useState('')
+
+    const imageHandle = (e) => {
+      
+      const { files } = e.target
+
+      if (files.length > 0) {
+        setImg(URL.createObjectURL(files[0]))
+        setImage(files[0])
+      }
+    }
+
   return (
     <div className='bg-white rounded-md'>
       <div className='flex justify-between p-4'>
@@ -16,17 +33,19 @@ const CreateInspection = () => {
         <form>
         <div className='flex flex-col gap-y-2 mb-6'>
               <label className='text-md font-medium text-gray-600' htmlFor='title'>Titre</label>
-              <input type='text' placeholder='Titre' name='title' id='title' className='px-3 py-2 rounded-md outline-0 border border-gray-300 focus:border-green-500 h-10' />
+              <input value={title} onChange={(e) => setTitle(e.target.value)} type='text' placeholder='Titre' name='title' id='title' className='px-3 py-2 rounded-md outline-0 border border-gray-300 focus:border-green-500 h-10' />
             </div>
             <div className='mb-6'>
             <div>
           <label htmlFor="img" className={`w-full h-[180px] flex rounded text-[#404040] gap-2 justify-center items-center cursor-pointer border-2 border-dashed`}>
-            <div className='flex justify-center items-center flex-col gap-y-2'>
+            {
+              img ? <img src={img} className='w-full h-[240px]' alt='image' /> : <div className='flex justify-center items-center flex-col gap-y-2'>
               <span className='text-2xl'><MdCloudUpload/></span>
               <span>Select Image</span>
             </div>
+            }
           </label>
-          <input className='hidden' type="file" id='img' />
+          <input onChange={imageHandle} className='hidden' type="file" id='img' />
         </div>
         </div>
         <div className='flex flex-col gap-y-2 mb-6'>
