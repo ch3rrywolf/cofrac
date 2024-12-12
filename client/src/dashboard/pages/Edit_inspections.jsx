@@ -15,6 +15,7 @@ const Edit_inspections = () => {
     const [show, setShow] = useState(false)
     const editor = useRef(null)
 
+    const [old_image, set_old_image] = useState('')
     const [title, setTitle] = useState('')
     const [image, setImage] = useState('')
     const [img, setImg] = useState('')
@@ -37,11 +38,12 @@ const Edit_inspections = () => {
       const formData = new FormData()
       formData.append('title',title)
       formData.append('description',description)
-      formData.append('image',image)
+      formData.append('new_image',image)
+      formData.append('old_image',old_image)
 
       try {
         setLoader(true)
-        const {data} = await axios.post(`${base_url}/api/inspections/add`,formData,{
+        const {data} = await axios.put(`${base_url}/api/inspections/update/${inspections_id}`,formData,{
           headers : {
             "Authorization": `Bearer ${store.token}`
           }
@@ -110,7 +112,10 @@ const Edit_inspections = () => {
                     "Authorization": `Bearer ${store.token}`
                 }
             })
-            console.log(data)
+            setTitle(data?.inspections?.title)
+            setDescription(data?.inspections?.description)
+            setImg(data?.inspections?.image)
+            set_old_image(data?.inspections?.image)
         } catch (error) {
             console.log(error)            
         }
@@ -164,7 +169,7 @@ const Edit_inspections = () => {
             </div>
 
             <div className='mt-4'>
-            <button disabled={loader} className='px-3 py-[6px] bg-purple-500 rounded-sm text-white hover:bg-purple-600'>{loader ? 'loading...':'Create Inspection'}</button>
+            <button disabled={loader} className='px-3 py-[6px] bg-purple-500 rounded-sm text-white hover:bg-purple-600'>{loader ? 'loading...':'Update Inspection'}</button>
             </div>
         </form>
       </div>
