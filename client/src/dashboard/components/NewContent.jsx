@@ -9,7 +9,7 @@ import storeContext from '../../context/storeContext'
 const NewContent = () => {
     const { store } = useContext(storeContext);
     const [inspections, setInspections] = useState([]); // Default to an empty array
-    const [allData, setAllData] = useState([]);
+    const [all_inspections, set_all_inspections] = useState([]);
 
     const [parPage, setParPage] = useState(5);
     const [pages, setPages] = useState(0);
@@ -24,7 +24,7 @@ const NewContent = () => {
             });
     
             // Extract the correct array
-            setAllData(data.news); 
+            set_all_inspections(data.news); 
             setInspections(data.news); 
     
         } catch (error) {
@@ -43,17 +43,40 @@ const NewContent = () => {
         }
     }, [inspections, parPage]);
 
+    const type_filter = (e) => {
+        if (e.target.value === '') {
+            setInspections(all_inspections)
+            setPage(1)
+            setParPage(5)
+        } else {
+            const tempInspections = all_inspections.filter(n => n.status === e.target.value)
+            setInspections(tempInspections)
+            setPage(1)
+            setParPage(5)
+        }
+
+    }
+
+    const search_inspections = (e) => {
+
+        const tempInspections = all_inspections.filter(n => n.title.toLowerCase().indexOf(e.target.value.toLowerCase()) > -1)
+        setInspections(tempInspections)
+        setPage(1)
+        setParPage(5)
+    }
+
     return (
         <div>
             <div className="px-4 py-3 flex gap-x-3">
-                <select className="px-3 py-2 rounded-md outline-0 border border-gray-300 focus:border-green-500 h-10">
-                    <option value="">===select type===</option>
-                    <option value="">Généré</option>
-                    <option value="">En cours</option>
-                    <option value="">Cloturé</option>
-                    <option value="">Annulé</option>
+                <select onChange={type_filter} className="px-3 py-2 rounded-md outline-0 border border-gray-300 focus:border-green-500 h-10">
+                    <option value="">===select status===</option>
+                    <option value="Généré">Généré</option>
+                    <option value="En cours">En cours</option>
+                    <option value="Cloturé">Cloturé</option>
+                    <option value="Annulé">Annulé</option>
                 </select>
                 <input
+                    onChange={search_inspections}
                     type="text"
                     placeholder="search"
                     className="px-3 py-2 rounded-md outline-0 border border-gray-300 focus:border-green-500 h-10"
@@ -123,7 +146,11 @@ const NewContent = () => {
                     <p className="px-4 py-3 font-semibold text-sm">
                         Inspections par Page
                     </p>
-                    <select
+                    <select 
+                        value={parPage}
+                        onChange={(e) => {setParPage(parseInt(e.target.value))
+                            setPage(1)
+                        }}
                         name=""
                         id=""
                         className="px-3 py-2 rounded-md outline-0 border border-gray-300 focus:border-green-500 h-10"
@@ -134,10 +161,16 @@ const NewContent = () => {
                         <option value="20">20</option>
                     </select>
                 </div>
-                <p className="px-6 py-3 font-semibold text-sm">6/22 - of 5</p>
-                <div className="flex items-center gap-x-3">
-                    <IoIosArrowBack className="w-5 h-5 cursor-pointer" />
-                    <IoIosArrowForward className="w-5 h-5 cursor-pointer" />
+                <p className='px-6 py-3 font-semibold text-sm'>
+                    {(page - 1) * parPage + 1}/{inspections.length} - of {pages}
+                </p>
+                <div className='flex items-center gap-x-3'>
+                    <IoIosArrowBack onClick={() => {
+                        if (page > 1) setPage(page - 1)
+                    }} className='w-5 h-5 cursor-pointer' />
+                    <IoIosArrowForward onClick={() => {
+                        if (page < pages) setPage(page + 1)
+                    }} className='w-5 h-5 cursor-pointer' />
                 </div>
             </div>
         </div>
