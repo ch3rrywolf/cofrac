@@ -7,7 +7,7 @@ const Inspecteurs = () => {
     <div className='bg-white rounded-md'>
       <div className='flex justify-between p-4'>
         <h2 className='text-xl font-medium'>Inspecteurs</h2>
-        <Link className='px-3 py-[6px] bg-purple-500 rounded-sm text-white hover:bg-purple-600' to='/dashboard/inspecteurs/add'>Ajoute Inspecteur</Link>
+        <Link className='px-3 py-[6px] bg-purple-500 rounded-sm text-white hover:bg-purple-600' to='/dashboard/inspecteur/add'>Ajoute Inspecteur</Link>
       </div>
       <div className='relative overflow-y-auto p-4'>
             <table className='w-full text-sm text-left text-slate-600'>

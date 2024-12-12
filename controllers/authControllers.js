@@ -20,7 +20,7 @@ class authController {
                     const obj = {
                         id: user.id,
                         name: user.name,
-                        category: user.category,
+                        operation: user.operation,
                         role: user.role
                     }
                     const token = await jwt.sign(obj, process.env.secret, {
@@ -40,8 +40,42 @@ class authController {
 
     }
 
-    add_inspecteur = async(req,res)=> {
-        console.log(req.body)
+    add_inspecteur = async (req, res) => {
+
+        const { email, name, password, operation } = req.body
+
+        if (!name) {
+            return res.status(404).json({ message: 'please provide name' })
+        }
+        if (!password) {
+            return res.status(404).json({ message: 'please provide password' })
+        }
+        if (!operation) {
+            return res.status(404).json({ message: 'please provide operation' })
+        }
+        if (!email) {
+            return res.status(404).json({ message: 'please provide email' })
+        }
+        if (email && !email.match(/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/)) {
+            return res.status(404).json({ message: 'please provide valide email' })
+        }
+        try {
+            const inspecteur = await authModel.findOne({ email: email.trim() })
+            if (inspecteur) {
+                return res.status(404).json({ message: 'User alreasy exit' })
+            } else {
+                const new_inspecteur = await authModel.create({
+                    name: name.trim(),
+                    email: email.trim(),
+                    password: await bcrypt.hash(password.trim(), 10),
+                    operation: operation.trim(),
+                    role: 'inspecteur'
+                })
+                return res.status(201).json({ message: 'inspecteur add success', inspecteur: new_inspecteur })
+            }
+        } catch (error) {
+            return res.status(500).json({ message: 'internal server error' })
+        }
     }
 }
 
