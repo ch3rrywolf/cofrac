@@ -1,0 +1,41 @@
+version: "3"
+
+services:
+  frontend:
+    build: ./frontend
+    image: myloc_f_i06
+    container_name: myloc_f_c06
+    ports:
+      - 3000:3000
+    depends_on:
+      - backend
+
+  backend:
+    build: ./backend
+    image: myloc_b_k06
+    container_name: myloc_b_k06
+    ports:
+      - 3001:3001
+    expose:
+      - 3001
+    depends_on:
+      - db
+    environment:
+      - DB_HOST=db
+      - DB_USER=root
+      - DB_PASSWORD=pass
+      - DB_DATABASE=location_v_db
+    restart: always
+
+  db:
+    image: mysql:8.0.33
+    container_name: db
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      - MYSQL_ROOT_PASSWORD=pass
+      - MYSQL_DATABASE=location_v_db
+    volumes:
+      - mysql_data:/var/lib/mysql  
+
+volumes:
+  mysql_data:

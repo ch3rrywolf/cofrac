@@ -24,7 +24,7 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/dashboard' element={<ProtectDashboard />} >
         <Route path='' element={<MainLayout />} >
-          <Route path='' ele element={userInfo.role === 'admin' ? <Navigate to='/dashboard/admin' /> : <Navigate to='/dashboard/inspecteur' />} />
+          <Route path='' element={userInfo.role === 'admin' ? <Navigate to='/dashboard/admin' /> : <Navigate to='/dashboard/inspecteur' />} />
           <Route path='upable-access' element={<Unable/>} />
           <Route path='inspections' element={<Inspections/>} />
           <Route path='inspections/create' element={<CreateInspection />} />
