@@ -77,6 +77,15 @@ class authController {
             return res.status(500).json({ message: 'internal server error' })
         }
     }
+
+    get_inspecteurs = async (req, res) => {
+        try {
+            const inspecteurs = await authModel.find({ role: "inspecteur" }).sort({ createdAt: -1 })
+            return res.status(200).json({ inspecteurs })
+        } catch (error) {
+            return res.status(500).json({ message: 'internal server error' })
+        }
+    }
 }
 
 module.exports = new authController()

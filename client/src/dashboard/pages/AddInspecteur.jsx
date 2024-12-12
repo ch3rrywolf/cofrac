@@ -1,11 +1,12 @@
 import React, {useContext, useState} from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import toast from 'react-hot-toast'
 import axios from 'axios'
 import { base_url} from '../config/config'
 import storeContext from '../../context/storeContext'
 
 const AddInspecteur = () => {
+  const navigate = useNavigate()
   const {store} = useContext(storeContext)
   const [state, setState] = useState({
     name:"",
@@ -36,6 +37,8 @@ const AddInspecteur = () => {
         }
       })
       setLoader(false)
+      toast.success(data.message)
+      navigate('/dashboard/inspecteurs')
     } catch (error) {
       setLoader(false)
       toast.error(error.response.data.message)
