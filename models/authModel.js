@@ -1,26 +1,31 @@
 const { model, Schema } = require('mongoose')
 
-const clientSchema = new Schema({
-    clientName: {
+const authSchema = new Schema({
+    name: {
         type: String,
         required: true
     },
-    clientEmail: {
+    email: {
         type: String,
         required: true
     },
-    clientPhone: {
+    password: {
+        type: String,
+        select: false,
+        required: true
+    },
+    role: {
         type: String,
         required: true
     },
-    clientEmailContact: {
+    image: {
         type: String,
-        required: true
+        default: ""
     },
-    clientAdresse: {
+    operation: {
         type: String,
         required: true
     }
 }, { timestamps: true })
 
-module.exports = model('clients', clientSchema)
+module.exports = model('authors', authSchema)
