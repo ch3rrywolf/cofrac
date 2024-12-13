@@ -101,7 +101,7 @@ const AddChantier = () => {
             </div>
             <div className='flex flex-col gap-y-2'>
               <label className='text-md font-medium text-gray-600' htmlFor='chantierVille'>Ville*</label>
-              <input onChange={inputHandler} value={state.chantierVille} required type='number' placeholder='Ville' name='chantierVille' id='chantierVille' className='px-3 py-2 rounded-md outline-0 border border-gray-300 focus:border-green-500 h-10' />
+              <input onChange={inputHandler} value={state.chantierVille} required type='text' placeholder='Ville' name='chantierVille' id='chantierVille' className='px-3 py-2 rounded-md outline-0 border border-gray-300 focus:border-green-500 h-10' />
             </div>
           </div>
 

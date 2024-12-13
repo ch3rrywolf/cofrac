@@ -20,6 +20,7 @@ if (process.env.mode === 'production') {
 const port = process.env.port
 
 app.use('/', require('./routes/authRoutes'))
+app.use('/', require('./routes/chantierRoutes'))
 app.use('/', require('./routes/contratRoutes'))
 app.use('/', require('./routes/clientRoutes'))
 app.use('/', require('./routes/operationRoutes'))
