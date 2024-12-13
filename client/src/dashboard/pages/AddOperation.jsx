@@ -60,7 +60,7 @@ const AddOperation = () => {
             </div>
             <div className='flex flex-col gap-y-2'>
               <label className='text-md font-medium text-gray-600' htmlFor='limitPres'>Limites prestastion*</label>
-              <input onChange={inputHandler} value={state.limitPres} required type='text' placeholder='Limites prestastion' name='limitPres' id='limitPres' className='px-3 py-2 rounded-md outline-0 border border-gray-300 focus:border-green-500 h-10' />
+              <input onChange={inputHandler} value={state.limitPres} required type='number' min='0' placeholder='Limites prestastion' name='limitPres' id='limitPres' className='px-3 py-2 rounded-md outline-0 border border-gray-300 focus:border-green-500 h-10' />
             </div>
           </div>
           
