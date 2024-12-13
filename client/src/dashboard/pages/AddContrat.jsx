@@ -67,16 +67,16 @@ const AddContrat = () => {
           
           <div className='grid grid-cols-2 gap-x-8 mb-3'>
             <div className='flex flex-col gap-y-2'>
-            <label className='text-md font-medium text-gray-600' htmlFor='operation'>Opération*</label>
-              <select onChange={inputHandler} value={state.operationName}  name="operation" id='operation' className='px-3 py-2 rounded-md outline-0 border border-gray-300 focus:border-green-500 h-10'>
+            <label className='text-md font-medium text-gray-600' htmlFor='operationName'>Opération*</label>
+              <select onChange={inputHandler} value={state.operationName}  name="operationName" id='operationName' className='px-3 py-2 rounded-md outline-0 border border-gray-300 focus:border-green-500 h-10'>
                 <option value="">--select opération--</option>
                 <option value="AIR/EAU OU EAU/EAU">AIR/EAU OU EAU/EAU</option>
                 <option value="BALON THERMODYNAMIQUE">BALON THERMODYNAMIQUE</option>
               </select>    
             </div>
             <div className='flex flex-col gap-y-2'>
-            <label className='text-md font-medium text-gray-600' htmlFor='operationName'>Client*</label>
-              <select onChange={inputHandler} value={state.clientName}  name="operationName" id='operationName' className='px-3 py-2 rounded-md outline-0 border border-gray-300 focus:border-green-500 h-10'>
+            <label className='text-md font-medium text-gray-600' htmlFor='clientName'>Client*</label>
+              <select onChange={inputHandler} value={state.clientName}  name="clientName" id='clientName' className='px-3 py-2 rounded-md outline-0 border border-gray-300 focus:border-green-500 h-10'>
                 <option value="">--select client--</option>
                 <option value="Client 2">Client 1</option>
                 <option value="Client 1">Client 2</option>
