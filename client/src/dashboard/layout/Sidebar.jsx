@@ -37,6 +37,12 @@ const Sidebar = () => {
                             </Link>
                         </li>
                         <li>
+                            <Link to='/dashboard/operations' className={`px-3 ${pathname === '/dashboard/operations' ? 'bg-indigo-500 text-white' : 'bg-white text-[#404040f6]'} py-2 hover:shadow-lg hover:shadow-indigo-500/20 w-full rounded-sm flex gap-x-2 justify-start items-center hover:bg-indigo-500 hover:text-white`}>
+                                <span className='text-xl'><BiNews /></span>
+                                <span>Opérations</span>
+                            </Link>
+                        </li>
+                        <li>
                             <Link to='/dashboard/inspections' className={`px-3 ${pathname === '/dashboard/inspections' ? 'bg-indigo-500 text-white' : 'bg-white text-[#404040f6]'} py-2 hover:shadow-lg hover:shadow-indigo-500/20 w-full rounded-sm flex gap-x-2 justify-start items-center hover:bg-indigo-500 hover:text-white`}>
                                 <span className='text-xl'><BiNews /></span>
                                 <span>Inspections</span>

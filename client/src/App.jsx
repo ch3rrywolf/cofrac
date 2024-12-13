@@ -14,6 +14,8 @@ import storeContext from './context/storeContext'
 import InspecteurIndex from './dashboard/pages/InspecteurIndex'
 import CreateInspection from './dashboard/pages/CreateInspection'
 import Edit_inspections from './dashboard/pages/Edit_inspections'
+import Operations from './dashboard/pages/Operations'
+import AddOperation from './dashboard/pages/AddOperation'
 
 function App() {
   const { store } = useContext(storeContext)
@@ -35,6 +37,8 @@ function App() {
             <Route path='inspecteur/add' element={<AddInspecteur />} />
             <Route path='inspecteurs' element={<Inspecteurs />} />
             <Route path='inspections/edit/:inspections_id' element={<Edit_inspections />} />
+            <Route path='operations' element={<Operations />} />
+            <Route path='operations/add' element={<AddOperation />} />
             
           </Route>
 
