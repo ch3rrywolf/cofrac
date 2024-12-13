@@ -20,6 +20,8 @@ import Clients from './dashboard/pages/Clients'
 import AddClient from './dashboard/pages/AddClient'
 import Contrats from './dashboard/pages/Contrats'
 import AddContrat from './dashboard/pages/AddContrat'
+import AddChantier from './dashboard/pages/AddChantier'
+import Chantiers from './dashboard/pages/Chantiers'
 
 function App() {
   const { store } = useContext(storeContext)
@@ -55,6 +57,9 @@ function App() {
 
             <Route path='contrats' element={<Contrats />} />
             <Route path='contrats/add' element={<AddContrat />} />
+
+            <Route path='chantiers' element={<Chantiers />} />
+            <Route path='chantiers/add' element={<AddChantier />} />
             
           </Route>
 
