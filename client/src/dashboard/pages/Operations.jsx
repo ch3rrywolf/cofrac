@@ -65,7 +65,7 @@ const Operations = () => {
   };
 
   return (
-    <div>
+    <div className='bg-white rounded-md'>
       <div className="flex justify-between p-4">
         <h2 className="text-xl font-medium">Opérations</h2>
         <Link

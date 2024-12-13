@@ -49,7 +49,7 @@ const Contrats = () => {
             setPage(1)
             setParPage(5)
         } else {
-            const tempContrats = all_contrats.filter(n => n.status === e.target.value)
+            const tempContrats = all_contrats.filter(n => n.contratStatus === e.target.value)
             setContrats(tempContrats)
             setPage(1)
             setParPage(5)

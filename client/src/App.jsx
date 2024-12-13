@@ -27,7 +27,11 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/login' element={<Login />} />
+        {/* Redirect root path to login */}
+        <Route path="/" element={<Navigate to="/login" replace />} />
+        
+        {/* Login route */}
+        <Route path="/login" element={<Login />} />
         <Route path='/dashboard' element={<ProtectDashboard />} >
         <Route path='' element={<MainLayout />} >
           <Route path='' element={store.userInfo.role === 'admin' ? <Navigate to='/dashboard/admin' /> : <Navigate to='/dashboard/inspecteur' />} />
