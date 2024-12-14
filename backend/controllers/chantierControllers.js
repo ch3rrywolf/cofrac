@@ -55,6 +55,17 @@ class chantierController {
             return res.status(500).json({ message: 'internal server error' })
         }
     }
+
+    get_dashboard_single_chantiers = async(req, res) => {
+            const { chantiers_id } = req.params
+            try {
+                const chantiers = await chantierModel.findById(chantiers_id)
+                return res.status(200).json({ chantiers })
+            } catch (error) {
+                console.log(error.message)
+                return res.status(500).json({ message: 'Internal server error' })
+            }
+        }
 }
 
 module.exports = new chantierController()
