@@ -42,20 +42,29 @@ const ChantierDetails = () => {
         
         
         <div className='w-full p-8 flex justify-center flex-col rounded-ms items-center gap-y-2 bg-white text-slate-700'>
-          <span className='text-xl font-bold'>{operationName}</span>
-          <span>Opération  </span>
+          <span className='text-xl font-bold'>Ref#{chantiers_id}</span>
+          <span>Opération : {operationName} </span>
         </div>
       </div>
       <div className='bg-white p-4 mt-5'>
+        <div className="flex justify-between p-4">
+                <Link
+                  to="/dashboard/chantiers/form"
+                  className="px-3 py-2 bg-purple-500 rounded text-white hover:bg-purple-600"
+                >
+                  + Formulaire
+                </Link>
+              </div>
         <div className='flex justify-between items-center pb-4'>
-          <h2>Recent Inspections</h2>
-          <Link>View all</Link>
+          <h2>Recent Rapport</h2>
+          <Link >View all</Link>
         </div>
+        
         <div className='relative overflow-y-auto p-4'>
             <table className='w-full text-sm text-left text-slate-600'>
                 <thead className='text-xs text-gray-700 uppercase bg-gray-50'>
                     <tr>
-                        <th className='px-7 py-3'>Etat</th>
+                        
                         <th className='px-7 py-3'>Référence</th>
                         <th className='px-7 py-3'>Référence Chantier</th>
                         <th className='px-7 py-3'>Client</th>
@@ -71,7 +80,7 @@ const ChantierDetails = () => {
                     {
                       [1,2,3,4,5,6,7].map((n,i)=> <tr key={i} className='bg-white border-b'>
                       <td className='px-6 py-4'><span className='px-2 py-[2px] bg-green-100 text-green-800 rounded-lg text-xs cursor-pointer'>Généré</span></td>
-                      <td className='px-6 py-4'>#RF454646587</td>
+                     
                       <td className='px-6 py-4'>#CH4546</td>
                       <td className='px-6 py-4'>Ali</td>
                       <td className='px-6 py-4'>BALON THERMODYNAMIQUE</td>

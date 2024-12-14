@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^1.7.9",
     "copy-text-to-clipboard": "^3.2.0",
+    "file-saver": "^2.0.5",
     "html-to-text": "^9.0.5",
     "jodit-react": "^4.1.2",
     "jwt-decode": "^4.0.0",
