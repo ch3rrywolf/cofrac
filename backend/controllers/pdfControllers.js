@@ -38,10 +38,8 @@ class pdfController {
         if (!fs.existsSync(pdfPath)) {
             return res.status(404).send('PDF not found for emailing');
         }
-
+    
         try {
-            const attachment = fs.readFileSync(pdfPath).toString('base64');
-
             const smtpTransport = nodemailer.createTransport({
                 host: 'smtp.gmail.com',
                 port: 465,
@@ -51,32 +49,29 @@ class pdfController {
                     pass: process.env.PASSWORD,
                 },
                 tls: {
-                    rejectUnauthorized: false,
+                    rejectUnauthorized: false, // Add this line
                 },
+                debug: true, // Enable debug logs
             });
-
+    
             const mailOptions = {
-                from: process.env.USER, // Sender's email address
-                to: req.body.email, // Receiver's email address
+                from: process.env.USER,
+                to: req.body.email, // Email provided in the request
                 subject: 'PDF Generated Document',
                 html: '<p>Testing PDF generation document. Thanks.</p>',
                 attachments: [
                     {
-                        content: attachment,
-                        filename: 'formulaire.pdf',
-                        type: 'application/pdf',
-                        disposition: 'attachment',
+                        path: pdfPath, // Use the file path directly
                     },
                 ],
             };
-
+    
             const info = await smtpTransport.sendMail(mailOptions);
-
-            console.log('Email sent: ', info.response);
+            console.log('Email sent:', info.response);
             res.send('Email has been sent. Check your inbox.');
         } catch (err) {
             console.error('Error sending email:', err);
-            res.status(500).send('Error sending email');
+            res.status(500).send('Error sending email. Please check the logs.');
         }
     };
 }
