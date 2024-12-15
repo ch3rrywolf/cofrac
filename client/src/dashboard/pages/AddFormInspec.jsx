@@ -194,24 +194,70 @@ const [ICQQ24,setICQQ24] = useState('')
 
     const [email,setEmail] = useState('')
 
-    const [imagesBase64, setImagesBase64] = useState([]);
+    const [imagesBase64CET, setImagesBase64CET] = useState([]);
+    const [imagesBase64AE, setImagesBase64AE] = useState([]);
+    const [imagesBase64AA, setImagesBase64AA] = useState([]);
+    const [imagesBase64IC, setImagesBase64IC] = useState([]);
+
+    const handleImageUploadIC = (e) => {
+      const files = Array.from(e.target.files); // Get all selected files
+      const newImagesBase64IC = [];
+
+      files.forEach((file) => {
+          const reader = new FileReader();
+          reader.onloadend = () => {
+              newImagesBase64IC.push(reader.result); // Store base64 string of each image
+              setImagesBase64IC((prevState) => [...prevState, reader.result]); // Add to state
+          };
+          reader.readAsDataURL(file); // Convert each file to base64
+      });
+  };
 
       // Handle image upload and conversion to base64 string
-      const handleImageUpload = (e) => {
+      const handleImageUploadAA = (e) => {
         const files = Array.from(e.target.files); // Get all selected files
-        const newImagesBase64 = [];
+        const newImagesBase64AA = [];
 
         files.forEach((file) => {
             const reader = new FileReader();
             reader.onloadend = () => {
-                newImagesBase64.push(reader.result); // Store base64 string of each image
-                setImagesBase64((prevState) => [...prevState, reader.result]); // Add to state
+                newImagesBase64AA.push(reader.result); // Store base64 string of each image
+                setImagesBase64AA((prevState) => [...prevState, reader.result]); // Add to state
             };
             reader.readAsDataURL(file); // Convert each file to base64
         });
     };
 
-    const data = {imagesBase64  ,Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19, CET1, AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApuissancenomina1l, AACO1P, AAmarqu2e, AAreferenc2e, AAnomberuni2t1, AAnomberuni2t2, AApuissancenomina2l, AACO2P, AAmarqu3e, AAreferenc3e, AAnomberuni3t1, AAnomberuni3t2, AApuissancenomina3l, AACO3P, AAmarqu4e, AAreferenc4e, AAnomberuni4t1, AAnomberuni4t2, AApuissancenomina4l, AACO4P, AAmarqu5e, AAreferenc5e, AAnomberuni5t1, AAnomberuni5t2, AApuissancenomina5l, AACO5P, AA1Q1, AAQ1, AAQ2, AAQ3, AAQ4, AAQ5, AAQ6, AAQ7, AAQ8, AAQ9, AAQ10, AAQ11, AAQ12, AAQ13, AAQ14, AAQ15, AAQ16, AAQ17, AEmarqu1e, AEreferenc1e, AEnomberuni1t1, AEnomberuni1t2, AEpuissancenomina1l, AECO1P, AEmarqu2e, AEreferenc2e, AEnomberuni2t1, AEnomberuni2t2, AEpuissancenomina2l, AECO2P, AEmarqu3e, AEreferenc3e, AEnomberuni3t1, AEnomberuni3t2, AEpuissancenomina3l, AECO3P, AEmarqu4e, AEreferenc4e, AEnomberuni4t1, AEnomberuni4t2, AEpuissancenomina4l, AECO4P, AEmarqu5e, AEreferenc5e, AEnomberuni5t1, AEnomberuni5t2, AEpuissancenomina5l, AECO5P, AE1Q1, AEQ1, AEQ2, AEQ3, AEQ4, AEQ5, AEQ6, AEQ7, AEQ8, AEQ9, AEQ10, AEQ11, AEQ12, CETQ1, CETQ2, CETQ3, CETQ4, CETQ5, CETQ6, CETQ7, CETQ8, CETQ9, CETQ10, CETQ11, CETQ12, CETQ13, CETQ14, ICQQ1, ICQQ2, ICQQ3, ICQQ4, ICQQ5, ICQQ6, ICQQ7, ICQQ8, ICQQ9, ICQQ10, ICQQ11, ICQQ12, ICQQ13,  ICQQ15, ICQQ16, ICQQ17, ICQQ18, ICQQ19, ICQQ20, ICQQ21, ICQQ22, ICQQ23, ICQQ24, email}
+
+      const handleImageUploadAE = (e) => {
+        const files = Array.from(e.target.files); // Get all selected files
+        const newImagesBase64AE = [];
+
+        files.forEach((file) => {
+            const reader = new FileReader();
+            reader.onloadend = () => {
+                newImagesBase64AE.push(reader.result); // Store base64 string of each image
+                setImagesBase64AE((prevState) => [...prevState, reader.result]); // Add to state
+            };
+            reader.readAsDataURL(file); // Convert each file to base64
+        });
+    };
+      
+      const handleImageUpload = (e) => {
+        const files = Array.from(e.target.files); // Get all selected files
+        const newImagesBase64CET = [];
+
+        files.forEach((file) => {
+            const reader = new FileReader();
+            reader.onloadend = () => {
+                newImagesBase64CET.push(reader.result); // Store base64 string of each image
+                setImagesBase64CET((prevState) => [...prevState, reader.result]); // Add to state
+            };
+            reader.readAsDataURL(file); // Convert each file to base64
+        });
+    };
+
+    const data = {imagesBase64IC, imagesBase64AA, imagesBase64AE ,imagesBase64CET  ,Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19, CET1, AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApuissancenomina1l, AACO1P, AAmarqu2e, AAreferenc2e, AAnomberuni2t1, AAnomberuni2t2, AApuissancenomina2l, AACO2P, AAmarqu3e, AAreferenc3e, AAnomberuni3t1, AAnomberuni3t2, AApuissancenomina3l, AACO3P, AAmarqu4e, AAreferenc4e, AAnomberuni4t1, AAnomberuni4t2, AApuissancenomina4l, AACO4P, AAmarqu5e, AAreferenc5e, AAnomberuni5t1, AAnomberuni5t2, AApuissancenomina5l, AACO5P, AA1Q1, AAQ1, AAQ2, AAQ3, AAQ4, AAQ5, AAQ6, AAQ7, AAQ8, AAQ9, AAQ10, AAQ11, AAQ12, AAQ13, AAQ14, AAQ15, AAQ16, AAQ17, AEmarqu1e, AEreferenc1e, AEnomberuni1t1, AEnomberuni1t2, AEpuissancenomina1l, AECO1P, AEmarqu2e, AEreferenc2e, AEnomberuni2t1, AEnomberuni2t2, AEpuissancenomina2l, AECO2P, AEmarqu3e, AEreferenc3e, AEnomberuni3t1, AEnomberuni3t2, AEpuissancenomina3l, AECO3P, AEmarqu4e, AEreferenc4e, AEnomberuni4t1, AEnomberuni4t2, AEpuissancenomina4l, AECO4P, AEmarqu5e, AEreferenc5e, AEnomberuni5t1, AEnomberuni5t2, AEpuissancenomina5l, AECO5P, AE1Q1, AEQ1, AEQ2, AEQ3, AEQ4, AEQ5, AEQ6, AEQ7, AEQ8, AEQ9, AEQ10, AEQ11, AEQ12, CETQ1, CETQ2, CETQ3, CETQ4, CETQ5, CETQ6, CETQ7, CETQ8, CETQ9, CETQ10, CETQ11, CETQ12, CETQ13, CETQ14, ICQQ1, ICQQ2, ICQQ3, ICQQ4, ICQQ5, ICQQ6, ICQQ7, ICQQ8, ICQQ9, ICQQ10, ICQQ11, ICQQ12, ICQQ13,  ICQQ15, ICQQ16, ICQQ17, ICQQ18, ICQQ19, ICQQ20, ICQQ21, ICQQ22, ICQQ23, ICQQ24, email}
 
     const submit = async (e) => {
         e.preventDefault();
@@ -222,7 +268,10 @@ const [ICQQ24,setICQQ24] = useState('')
                     .then((res) => {
                         const pdfBlob = new Blob([res.data], { type: 'application/pdf' });
                         saveAs(pdfBlob, 'FormulaireDocument.pdf');
-                        setImagesBase64([]);
+                        setImagesBase64CET([]);
+                        setImagesBase64AE([]);
+                        setImagesBase64AA([]);
+                        setImagesBase64IC([]);
     
                         setQ1MO('');
                         setQ2MO('');
@@ -1837,6 +1886,40 @@ fonctionnent-ils bien ?
       
     </tbody>
   </table>
+
+  <label
+        htmlFor="imgAA"
+        className="w-full h-[180px] flex rounded text-[#404040] gap-2 justify-center items-center cursor-pointer border-2 border-dashed"
+      >
+        <div className="flex justify-center items-center flex-col gap-y-2">
+          <span className="text-2xl">
+            <MdCloudUpload />
+          </span>
+          <span>Select Images</span>
+        </div>
+      </label>
+      <input
+        type="file"
+        id="imgAA"
+        className="hidden"
+        onChange={handleImageUploadAA}
+        multiple
+      />
+
+      {/* Display image previews */}
+      {imagesBase64AA.length > 0 && (
+        <div className="mt-4 flex gap-2 flex-wrap">
+          {imagesBase64AA.map((imgBase64AA, index) => (
+            <div className="image-container" key={index}>
+              <img
+                src={imgBase64AA}
+                alt={`Image preview ${index + 1}`}
+                className="w-20 h-20 object-cover rounded-md"
+              />
+            </div>
+          ))}
+        </div>
+      )}
 </div>
 
 
@@ -2481,6 +2564,40 @@ fonctionnent-ils bien ?
       
     </tbody>
   </table>
+
+  <label
+        htmlFor="imgAE"
+        className="w-full h-[180px] flex rounded text-[#404040] gap-2 justify-center items-center cursor-pointer border-2 border-dashed"
+      >
+        <div className="flex justify-center items-center flex-col gap-y-2">
+          <span className="text-2xl">
+            <MdCloudUpload />
+          </span>
+          <span>Select Images</span>
+        </div>
+      </label>
+      <input
+        type="file"
+        id="imgAE"
+        className="hidden"
+        onChange={handleImageUploadAE}
+        multiple
+      />
+
+      {/* Display image previews */}
+      {imagesBase64AE.length > 0 && (
+        <div className="mt-4 flex gap-2 flex-wrap">
+          {imagesBase64AE.map((imgBase64AE, index) => (
+            <div className="image-container" key={index}>
+              <img
+                src={imgBase64AE}
+                alt={`Image preview ${index + 1}`}
+                className="w-20 h-20 object-cover rounded-md"
+              />
+            </div>
+          ))}
+        </div>
+      )}
 </div>
 
 
@@ -2825,12 +2942,12 @@ fonctionnent-ils bien ?
       />
 
       {/* Display image previews */}
-      {imagesBase64.length > 0 && (
+      {imagesBase64CET.length > 0 && (
         <div className="mt-4 flex gap-2 flex-wrap">
-          {imagesBase64.map((imgBase64, index) => (
+          {imagesBase64CET.map((imgBase64CET, index) => (
             <div className="image-container" key={index}>
               <img
-                src={imgBase64}
+                src={imgBase64CET}
                 alt={`Image preview ${index + 1}`}
                 className="w-20 h-20 object-cover rounded-md"
               />
@@ -3414,6 +3531,40 @@ cas de dérogation du guide CSTB version 2016
       
     </tbody>
   </table>
+
+  <label
+        htmlFor="imgIC"
+        className="w-full h-[180px] flex rounded text-[#404040] gap-2 justify-center items-center cursor-pointer border-2 border-dashed"
+      >
+        <div className="flex justify-center items-center flex-col gap-y-2">
+          <span className="text-2xl">
+            <MdCloudUpload />
+          </span>
+          <span>Select Images</span>
+        </div>
+      </label>
+      <input
+        type="file"
+        id="imgIC"
+        className="hidden"
+        onChange={handleImageUploadIC}
+        multiple
+      />
+
+      {/* Display image previews */}
+      {imagesBase64IC.length > 0 && (
+        <div className="mt-4 flex gap-2 flex-wrap">
+          {imagesBase64IC.map((imgBase64IC, index) => (
+            <div className="image-container" key={index}>
+              <img
+                src={imgBase64IC}
+                alt={`Image preview ${index + 1}`}
+                className="w-20 h-20 object-cover rounded-md"
+              />
+            </div>
+          ))}
+        </div>
+      )}
 </div>
           
 
