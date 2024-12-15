@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import axios from 'axios'
 import { base_url} from '../config/config'
 import {saveAs} from 'file-saver'
+import {MdCloudUpload} from 'react-icons/md'
 
 const AddFormInspec = () => {
     // const [loader, setLoader] = useState(false)
@@ -209,10 +210,12 @@ const AddFormInspec = () => {
       <div className='p-4'>
         <form onSubmit={submit}>
 
-            <div className='text-center items-center text-white font-bold border border-solid bg-orange-700' >
-                <h4>Mise en œuvre conforme aux exigences du scénario retenu</h4>
-            </div>
-            <div className="overflow-x-auto">
+{/* Mise/Oeuv */}
+
+<div className='text-center items-center text-white font-bold border border-solid bg-orange-700' >
+    <h4>Mise en œuvre conforme aux exigences du scénario retenu</h4>
+</div>
+<div className="overflow-x-auto">
   <table className="table-auto w-full border-collapse border border-gray-300 text-sm text-gray-600">
     <thead>
       <tr>
@@ -745,10 +748,12 @@ const AddFormInspec = () => {
   </table>
 </div>
 
+{/* AIR/AIR */}
+
 <div>
-            <h4 className='text-center items-center text-white font-bold border border-solid bg-orange-700'>Pompe à chaleur - AIR/AIR </h4>
-          </div>
-          <div className="overflow-x-auto">
+    <h4 className='text-center items-center text-white font-bold border border-solid bg-orange-700'>Pompe à chaleur - AIR/AIR </h4>
+</div>
+<div className="overflow-x-auto">
   <table className="table-auto w-full border-collapse border border-gray-300 text-sm text-gray-600">
     <thead>
       <tr>
@@ -1079,9 +1084,7 @@ const AddFormInspec = () => {
   </table>
 </div>
 
-
-
-          <div className="overflow-x-auto">
+<div className="overflow-x-auto">
   <table className="table-auto w-full border-collapse border border-gray-300 text-sm text-gray-600">
     <thead>
       <tr>
@@ -1480,6 +1483,907 @@ fonctionnent-ils bien ?
     </tbody>
   </table>
 </div>
+
+
+
+{/* AIR/EAU */}
+
+
+
+<div>
+    <h4 className='text-center items-center text-white font-bold border border-solid bg-orange-700'>Pompe à chaleur - AIR/EAU </h4>
+</div>
+<div className="overflow-x-auto">
+  <table className="table-auto w-full border-collapse border border-gray-300 text-sm text-gray-600">
+    <thead>
+      <tr>
+        <th className="border border-gray-300 px-4 py-2">Marque</th>
+        <th className="border border-gray-300 px-4 py-2">Référence</th>
+        <th className="border border-gray-300 px-4 py-2">COP</th>
+        <th className="border border-gray-300 px-4 py-2">Puissance nominal (kW)</th>
+        <th className="border border-gray-300 px-4 py-2">Quantité</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="text"
+            name="AAmarqu1e"
+            value={AAmarqu1e}
+            onChange={(e)=>setAAmarqu1e(e.target.value)}
+            id="AAmarqu1e"
+            placeholder='...'
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="text"
+            name="AAreferenc1e"
+            value={AAreferenc1e}
+            onChange={(e)=>setAAreferenc1e(e.target.value)}
+            id="AAreferenc1e"
+            placeholder='...'
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="text"
+            name="AAnomberuni1t1"
+            value={AAnomberuni1t1}
+            onChange={(e)=>setAAnomberuni1t1(e.target.value)}
+            id="AAnomberuni1t1"
+            placeholder='...'
+          />
+        </td>
+        
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="text"
+            name="AApuissancenomina1l"
+            value={AApuissancenomina1l}
+            onChange={(e)=>setAApuissancenomina1l(e.target.value)}
+            id="AApuissancenomina1l"
+            placeholder='...'
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="text"
+            name="AACO1P"
+            value={AACO1P}
+            onChange={(e)=>setAACO1P(e.target.value)}
+            id="AACO1P"
+            placeholder='...'
+          />
+        </td>
+      </tr> 
+
+      <tr>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="text"
+            name="AAmarqu2e"
+            value={AAmarqu2e}
+            onChange={(e)=>setAAmarqu2e(e.target.value)}
+            id="AAmarqu2e"
+            placeholder='...'
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="text"
+            name="AAreferenc2e"
+            value={AAreferenc2e}
+            onChange={(e)=>setAAreferenc2e(e.target.value)}
+            id="AAreferenc2e"
+            placeholder='...'
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="text"
+            name="AAnomberuni2t1"
+            value={AAnomberuni2t1}
+            onChange={(e)=>setAAnomberuni2t1(e.target.value)}
+            id="AAnomberuni2t1"
+            placeholder='...'
+          />
+        </td>
+        
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="text"
+            name="AApuissancenomina2l"
+            value={AApuissancenomina2l}
+            onChange={(e)=>setAApuissancenomina2l(e.target.value)}
+            id="AApuissancenomina2l"
+            placeholder='...'
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="text"
+            name="AACO2P"
+            value={AACO2P}
+            onChange={(e)=>setAACO2P(e.target.value)}
+            id="AACO2P"
+            placeholder='...'
+          />
+        </td>
+      </tr>       
+
+      <tr>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="text"
+            name="AAmarqu3e"
+            value={AAmarqu3e}
+            onChange={(e)=>setAAmarqu3e(e.target.value)}
+            id="AAmarqu3e"
+            placeholder='...'
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="text"
+            name="AAreferenc3e"
+            value={AAreferenc3e}
+            onChange={(e)=>setAAreferenc3e(e.target.value)}
+            id="AAreferenc3e"
+            placeholder='...'
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="text"
+            name="AAnomberuni3t1"
+            value={AAnomberuni3t1}
+            onChange={(e)=>setAAnomberuni3t1(e.target.value)}
+            id="AAnomberuni3t1"
+            placeholder='...'
+          />
+        </td>
+        
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="text"
+            name="AApuissancenomina3l"
+            value={AApuissancenomina3l}
+            onChange={(e)=>setAApuissancenomina3l(e.target.value)}
+            id="AApuissancenomina3l"
+            placeholder='...'
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="text"
+            name="AACO3P"
+            value={AACO3P}
+            onChange={(e)=>setAACO3P(e.target.value)}
+            id="AACO3P"
+            placeholder='...'
+          />
+        </td>
+      </tr>  
+
+      <tr>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="text"
+            name="AAmarqu4e"
+            value={AAmarqu4e}
+            onChange={(e)=>setAAmarqu4e(e.target.value)}
+            id="AAmarqu4e"
+            placeholder='...'
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="text"
+            name="AAreferenc4e"
+            value={AAreferenc4e}
+            onChange={(e)=>setAAreferenc4e(e.target.value)}
+            id="AAreferenc4e"
+            placeholder='...'
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="text"
+            name="AAnomberuni4t1"
+            value={AAnomberuni4t1}
+            onChange={(e)=>setAAnomberuni4t1(e.target.value)}
+            id="AAnomberuni4t1"
+            placeholder='...'
+          />
+        </td>
+        
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="text"
+            name="AApuissancenomina4l"
+            value={AApuissancenomina4l}
+            onChange={(e)=>setAApuissancenomina4l(e.target.value)}
+            id="AApuissancenomina4l"
+            placeholder='...'
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="text"
+            name="AACO4P"
+            value={AACO4P}
+            onChange={(e)=>setAACO4P(e.target.value)}
+            id="AACO4P"
+            placeholder='...'
+          />
+        </td>
+      </tr>  
+
+      <tr>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="text"
+            name="AAmarqu5e"
+            value={AAmarqu5e}
+            onChange={(e)=>setAAmarqu5e(e.target.value)}
+            id="AAmarqu5e"
+            placeholder='...'
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="text"
+            name="AAreferenc5e"
+            value={AAreferenc5e}
+            onChange={(e)=>setAAreferenc5e(e.target.value)}
+            id="AAreferenc5e"
+            placeholder='...'
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="text"
+            name="AAnomberuni5t1"
+            value={AAnomberuni5t1}
+            onChange={(e)=>setAAnomberuni5t1(e.target.value)}
+            id="AAnomberuni5t1"
+            placeholder='...'
+          />
+        </td>
+        
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="text"
+            name="AApuissancenomina5l"
+            value={AApuissancenomina5l}
+            onChange={(e)=>setAApuissancenomina5l(e.target.value)}
+            id="AApuissancenomina5l"
+            placeholder='...'
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="text"
+            name="AACO5P"
+            value={AACO5P}
+            onChange={(e)=>setAACO5P(e.target.value)}
+            id="AACO5P"
+            placeholder='...'
+          />
+        </td>
+      </tr>  
+    </tbody>
+  </table>
+</div>
+<div className="overflow-x-auto">
+  <table className="table-auto w-full border-collapse border border-gray-300 text-sm text-gray-600">
+    <thead>
+      <tr>
+        <th className="border border-gray-300 px-4 py-2">Question</th>
+        <th className="border border-gray-300 px-4 py-2">OUI</th>
+        <th className="border border-gray-300 px-4 py-2">NON</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Ancien système de chauffage
+        </td>
+        <div className='items-center justify-center text-center'><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="AA1Q1"
+            value={AA1Q1}
+            onChange={(e)=>setAA1Q1(e.target.value)}
+            id="AA1Q1"
+            placeholder='...'
+          /></div>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        PAC utilisée pour le chauffage ?
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="AAQ1"
+            value="OUI"
+            checked={AAQ1 === "OUI"}
+            onChange={(e) => setAAQ1(e.target.value)}
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="AAQ1"
+            value="NON"
+            checked={AAQ1 === "NON"}
+            onChange={(e) => setAAQ1(e.target.value)}
+          />
+        </td>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        COP est-il conforme à l’audit énergétique ?
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="AAQ2"
+            value="OUI"
+            checked={AAQ2 === "OUI"}
+            onChange={(e) => setAAQ2(e.target.value)}
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="AAQ2"
+            value="NON"
+            checked={AAQ2 === "NON"}
+            onChange={(e) => setAAQ2(e.target.value)}
+          />
+        </td>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        La puissance de la PAC est-elle conforme à l’audit ?
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="AAQ3"
+            value="OUI"
+            checked={AAQ3 === "OUI"}
+            onChange={(e) => setAAQ3(e.target.value)}
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="AAQ3"
+            value="NON"
+            checked={AAQ3 === "NON"}
+            onChange={(e) => setAAQ3(e.target.value)}
+          />
+        </td>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Le taux de couverture (déperdition/puissance PAC)*100 est-il correct ?
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="AAQ4"
+            value="OUI"
+            checked={AAQ4 === "OUI"}
+            onChange={(e) => setAAQ4(e.target.value)}
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="AAQ4"
+            value="NON"
+            checked={AAQ4 === "NON"}
+            onChange={(e) => setAAQ4(e.target.value)}
+          />
+        </td>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        La PAC couvre-t-elle moins de 80 % des besoins (sous-dimensionnée)?
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="AAQ5"
+            value="OUI"
+            checked={AAQ5 === "OUI"}
+            onChange={(e) => setAAQ5(e.target.value)}
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="AAQ5"
+            value="NON"
+            checked={AAQ5 === "NON"}
+            onChange={(e) => setAAQ5(e.target.value)}
+          />
+        </td>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        La PAC couvre-t-elle plus de 120 % des besoins (surdimensionnée) ?
+
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="AAQ6"
+            value="OUI"
+            checked={AAQ6 === "OUI"}
+            onChange={(e) => setAAQ6(e.target.value)}
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="AAQ6"
+            value="NON"
+            checked={AAQ6 === "NON"}
+            onChange={(e) => setAAQ6(e.target.value)}
+          />
+        </td>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Le taux de couverture respecte-t-il les exigences BAR-TH-159 ?
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="AAQ7"
+            value="OUI"
+            checked={AAQ7 === "OUI"}
+            onChange={(e) => setAAQ7(e.target.value)}
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="AAQ7"
+            value="NON"
+            checked={AAQ7 === "NON"}
+            onChange={(e) => setAAQ7(e.target.value)}
+          />
+        </td>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Disjoncteur différentiel dédié à la PAC présent ?
+
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="AAQ8"
+            value="OUI"
+            checked={AAQ8 === "OUI"}
+            onChange={(e) => setAAQ8(e.target.value)}
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="AAQ8"
+            value="NON"
+            checked={AAQ8 === "NON"}
+            onChange={(e) => setAAQ8(e.target.value)}
+          />
+        </td>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Les modes (chauffage, refroidissement, déshumidification) fonctionnent-ils bien ?
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="AAQ9"
+            value="OUI"
+            checked={AAQ9 === "OUI"}
+            onChange={(e) => setAAQ9(e.target.value)}
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="AAQ9"
+            value="NON"
+            checked={AAQ9 === "NON"}
+            onChange={(e) => setAAQ9(e.target.value)}
+          />
+        </td>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Les raccords hydrauliques (vannes, filtres, purgeurs) sont-ils bien faits et sans fuites ?
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="AAQ10"
+            value="OUI"
+            checked={AAQ10 === "OUI"}
+            onChange={(e) => setAAQ10(e.target.value)}
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="AAQ10"
+            value="NON"
+            checked={AAQ10 === "NON"}
+            onChange={(e) => setAAQ10(e.target.value)}
+          />
+        </td>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Températures entrée/sortie conformes au fabricant ?
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="AAQ11"
+            value="OUI"
+            checked={AAQ11 === "OUI"}
+            onChange={(e) => setAAQ11(e.target.value)}
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="AAQ11"
+            value="NON"
+            checked={AAQ11 === "NON"}
+            onChange={(e) => setAAQ11(e.target.value)}
+          />
+        </td>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Réseaux hors volume chauffé bien isolés ?
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="AAQ12"
+            value="OUI"
+            checked={AAQ12 === "OUI"}
+            onChange={(e) => setAAQ12(e.target.value)}
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="AAQ12"
+            value="NON"
+            checked={AAQ12 === "NON"}
+            onChange={(e) => setAAQ12(e.target.value)}
+          />
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+
+{/* Chauffe-Eau Thermodynamique */}
+
+
+<div className='text-center items-center text-white font-bold border border-solid bg-orange-700' >
+    <h4>Chauffe-Eau Thermodynamique</h4>
+</div>
+<div className="overflow-x-auto">
+  <table className="table-auto w-full border-collapse border border-gray-300 text-sm text-gray-600">
+    <thead>
+      <tr>
+        <th className="border border-gray-300 px-4 py-2">Question</th>
+        <th className="border border-gray-300 px-4 py-2">OUI</th>
+        <th className="border border-gray-300 px-4 py-2">NON</th>
+      </tr>
+    </thead>
+    <tbody>
+
+    
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">Type de Chauffe-Eau Thermodynamique</td>
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="Q3"
+            value={Q3}
+            onChange={(e)=>setQ3(e.target.value)}
+            id="Q3"
+            placeholder='...'
+          /></div>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Marque du chauffe-eau installé
+        </td>
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="Q4"
+            value={Q4}
+            onChange={(e)=>setQ4(e.target.value)}
+            id="Q4"
+            placeholder='...'
+          /></div>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Référence
+        </td>
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="Q5"
+            value={Q5}
+            onChange={(e)=>setQ5(e.target.value)}
+            id="Q5"
+            placeholder='...'
+          /></div>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">Coefficient de performance COP</td>
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="Q3"
+            value={Q3}
+            onChange={(e)=>setQ3(e.target.value)}
+            id="Q3"
+            placeholder='...'
+          /></div>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Volume (L)
+        </td>
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="Q4"
+            value={Q4}
+            onChange={(e)=>setQ4(e.target.value)}
+            id="Q4"
+            placeholder='...'
+          /></div>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Quantité
+        </td>
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="Q5"
+            value={Q5}
+            onChange={(e)=>setQ5(e.target.value)}
+            id="Q5"
+            placeholder='...'
+          /></div>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Conforme à l’audit énergétique ? 
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="Q6"
+            value="OUI"
+            checked={Q6 === "OUI"}
+            onChange={(e) => setQ6(e.target.value)}
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="Q6"
+            value="NON"
+            checked={Q6 === "NON"}
+            onChange={(e) => setQ6(e.target.value)}
+          />
+        </td>
+      </tr>
+    
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Installation selon les instructions fabricant ?
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="Q7"
+            value="OUI"
+            checked={Q7 === "OUI"}
+            onChange={(e) => setQ7(e.target.value)}
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="Q7"
+            value="NON"
+            checked={Q7 === "NON"}
+            onChange={(e) => setQ7(e.target.value)}
+          />
+        </td>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Disjoncteur et protections fonctionnels ?
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="Q8"
+            value="OUI"
+            checked={Q8 === "OUI"}
+            onChange={(e) => setQ8(e.target.value)}
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="Q8"
+            value="NON"
+            checked={Q8 === "NON"}
+            onChange={(e) => setQ8(e.target.value)}
+          />
+        </td>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Absence de fuites sur les raccordements hydrauliques ?
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="Q9"
+            value="OUI"
+            checked={Q9 === "OUI"}
+            onChange={(e) => setQ9(e.target.value)}
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="Q9"
+            value="NON"
+            checked={Q9 === "NON"}
+            onChange={(e) => setQ9(e.target.value)}
+          />
+        </td>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Groupe de sécurité évacue correctement ?
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="Q10"
+            value="OUI"
+            checked={Q10 === "OUI"}
+            onChange={(e) => setQ10(e.target.value)}
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="Q10"
+            value="NON"
+            checked={Q10 === "NON"}
+            onChange={(e) => setQ10(e.target.value)}
+          />
+        </td>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Paramètres conformes à l’audit ?
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="Q11"
+            value="OUI"
+            checked={Q11 === "OUI"}
+            onChange={(e) => setQ11(e.target.value)}
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="Q11"
+            value="NON"
+            checked={Q11 === "NON"}
+            onChange={(e) => setQ11(e.target.value)}
+          />
+        </td>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Isolation thermique en bon état ?
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="Q12"
+            value="OUI"
+            checked={Q12 === "OUI"}
+            onChange={(e) => setQ12(e.target.value)}
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="Q12"
+            value="NON"
+            checked={Q12 === "NON"}
+            onChange={(e) => setQ12(e.target.value)}
+          />
+        </td>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Ballon fixé et stable ?
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="Q13"
+            value="OUI"
+            checked={Q13 === "OUI"}
+            onChange={(e) => setQ13(e.target.value)}
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="Q13"
+            value="NON"
+            checked={Q13 === "NON"}
+            onChange={(e) => setQ13(e.target.value)}
+          />
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+<div>
+          <label htmlFor="img" className={`w-full h-[180px] flex rounded text-[#404040] gap-2 justify-center items-center cursor-pointer border-2 border-dashed`}>
+            
+              <img src={''} className='w-full h-[240px]' alt='image' /> : <div className='flex justify-center items-center flex-col gap-y-2'>
+              <span className='text-2xl'><MdCloudUpload/></span>
+              <span>Select Image</span>
+            </div>
+            
+          </label>
+          <input  onChange={(e) => setQ13(e.target.value)} className='hidden' type="file" id='img' />
+        </div>
+
           
 
           <div className='grid grid-cols-2 gap-x-8 mb-3'>
