@@ -232,22 +232,26 @@ const AddFormInspec = () => {
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+            id="Q1MOoui"
             type="radio"
             name="Q1MO"
-            value="OUI"
-            checked={Q1MO === "OUI"}
+            value="⛝ Oui"
+            checked={Q1MO === "⛝ Oui"}
             onChange={(e) => setQ1MO(e.target.value)}
           />
+          <label for="Q1MOoui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+            id='Q1MOnon'
             type="radio"
             name="Q1MO"
-            value="NON"
-            checked={Q1MO === "NON"}
+            value="⛝ NON"
+            checked={Q1MO === "⛝ NON"}
             onChange={(e) => setQ1MO(e.target.value)}
           />
-        </td>
+          <label for="Q1MOnon">Non</label>
+          </td>
       </tr>
 
       <tr>
@@ -256,21 +260,25 @@ const AddFormInspec = () => {
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q2MOoui'
             type="radio"
             name="Q2MO"
-            value="OUI"
-            checked={Q2MO === "OUI"}
+            value="⛝ OUI"
+            checked={Q2MO === "⛝ OUI"}
             onChange={(e) => setQ2MO(e.target.value)}
           />
+          <label for="Q2MOoui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+            id='Q2MOnon'
             type="radio"
             name="Q2MO"
-            value="NON"
-            checked={Q2MO === "NON"}
+            value="⛝ NON"
+            checked={Q2MO === "⛝ NON"}
             onChange={(e) => setQ2MO(e.target.value)}
           />
+          <label for="Q2MOnon">Non</label>
         </td>
       </tr>
 
@@ -278,23 +286,30 @@ const AddFormInspec = () => {
         <td className="border border-gray-300 px-4 py-2">
         Document prouvant la réalisation de l’opération (facture des travaux, PV de réception, etc) remis au bénéficiaire :
         </td>
+        
         <td className="border border-gray-300 px-4 py-2 text-center">
+        
           <input
+            id='Q3MOoui'
             type="radio"
             name="Q3MO"
-            value="OUI"
-            checked={Q3MO === "OUI"}
+            value="⛝ OUI"
+            checked={Q3MO === "⛝ OUI"}
             onChange={(e) => setQ3MO(e.target.value)}
           />
+          <label for="Q3MOoui">Oui</label>
         </td>
+        
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+            id='Q3MOnon'
             type="radio"
             name="Q3MO"
-            value="NON"
-            checked={Q3MO === "NON"}
+            value="⛝ NON"
+            checked={Q3MO === "⛝ NON"}
             onChange={(e) => setQ3MO(e.target.value)}
           />
+          <label for="Q3MOnon">Non</label>
         </td>
       </tr>
 
@@ -304,21 +319,25 @@ const AddFormInspec = () => {
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q4MOoui'
             type="radio"
             name="Q4MO"
-            value="OUI"
-            checked={Q4MO === "OUI"}
+            value="⛝ OUI"
+            checked={Q4MO === "⛝ OUI"}
             onChange={(e) => setQ4MO(e.target.value)}
           />
+          <label for="Q4MOoui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q4MOnon'
             type="radio"
             name="Q4MO"
-            value="NON"
-            checked={Q4MO === "NON"}
+            value="⛝ NON"
+            checked={Q4MO === "⛝ NON"}
             onChange={(e) => setQ4MO(e.target.value)}
           />
+          <label for="Q4MOnon">Non</label>
         </td>
       </tr>
 
@@ -328,21 +347,25 @@ const AddFormInspec = () => {
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q5MOoui'
             type="radio"
             name="Q5MO"
-            value="OUI"
-            checked={Q5MO === "OUI"}
+            value="⛝ OUI"
+            checked={Q5MO === "⛝ OUI"}
             onChange={(e) => setQ5MO(e.target.value)}
           />
+          <label for="Q5MOoui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q5MOnon'
             type="radio"
             name="Q5MO"
-            value="NON"
-            checked={Q5MO === "NON"}
+            value="⛝ NON"
+            checked={Q5MO === "⛝ NON"}
             onChange={(e) => setQ5MO(e.target.value)}
           />
+          <label for="Q5MOnon">Non</label>
         </td>
       </tr>
       
@@ -353,21 +376,25 @@ const AddFormInspec = () => {
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q1oui'
             type="radio"
             name="Q1"
-            value="OUI"
-            checked={Q1 === "OUI"}
+            value="⛝ OUI"
+            checked={Q1 === "⛝ OUI"}
             onChange={(e) => setQ1(e.target.value)}
           />
+          <label for="Q1oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q1non'
             type="radio"
             name="Q1"
-            value="NON"
-            checked={Q1 === "NON"}
+            value="⛝ NON"
+            checked={Q1 === "⛝ NON"}
             onChange={(e) => setQ1(e.target.value)}
           />
+          <label for="Q1non">Non</label>
         </td>
       </tr>
       <tr>
@@ -380,21 +407,25 @@ const AddFormInspec = () => {
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q2oui'
             type="radio"
             name="Q2"
-            value="OUI"
-            checked={Q2 === "OUI"}
+            value="⛝ OUI"
+            checked={Q2 === "⛝ OUI"}
             onChange={(e) => setQ2(e.target.value)}
           />
+          <label for="Q2oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q2non'
             type="radio"
             name="Q2"
-            value="NON"
-            checked={Q2 === "NON"}
+            value="⛝ NON"
+            checked={Q2 === "⛝ NON"}
             onChange={(e) => setQ2(e.target.value)}
           />
+          <label for="Q2non">Non</label>
         </td>
       </tr>
       <tr>
@@ -443,21 +474,25 @@ const AddFormInspec = () => {
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q6oui'
             type="radio"
             name="Q6"
-            value="OUI"
-            checked={Q6 === "OUI"}
+            value="⛝ OUI"
+            checked={Q6 === "⛝ OUI"}
             onChange={(e) => setQ6(e.target.value)}
           />
+          <label for="Q6oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q6non'
             type="radio"
             name="Q6"
-            value="NON"
-            checked={Q6 === "NON"}
+            value="⛝ NON"
+            checked={Q6 === "⛝ NON"}
             onChange={(e) => setQ6(e.target.value)}
           />
+          <label for="Q6non">Non</label>
         </td>
       </tr>
     
@@ -467,21 +502,25 @@ const AddFormInspec = () => {
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q7oui'
             type="radio"
             name="Q7"
-            value="OUI"
-            checked={Q7 === "OUI"}
+            value="⛝ OUI"
+            checked={Q7 === "⛝ OUI"}
             onChange={(e) => setQ7(e.target.value)}
           />
+          <label for="Q7oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q7non'
             type="radio"
             name="Q7"
-            value="NON"
-            checked={Q7 === "NON"}
+            value="⛝ NON"
+            checked={Q7 === "⛝ NON"}
             onChange={(e) => setQ7(e.target.value)}
           />
+          <label for="Q7non">Non</label>
         </td>
       </tr>
       <tr>
@@ -490,21 +529,25 @@ const AddFormInspec = () => {
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q8oui'
             type="radio"
             name="Q8"
-            value="OUI"
-            checked={Q8 === "OUI"}
+            value="⛝ OUI"
+            checked={Q8 === "⛝ OUI"}
             onChange={(e) => setQ8(e.target.value)}
           />
+          <label for="Q8oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q8non'
             type="radio"
             name="Q8"
-            value="NON"
-            checked={Q8 === "NON"}
+            value="⛝ NON"
+            checked={Q8 === "⛝ NON"}
             onChange={(e) => setQ8(e.target.value)}
           />
+          <label for="Q8non">Non</label>
         </td>
       </tr>
       <tr>
@@ -513,21 +556,25 @@ const AddFormInspec = () => {
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q9oui'
             type="radio"
             name="Q9"
-            value="OUI"
-            checked={Q9 === "OUI"}
+            value="⛝ OUI"
+            checked={Q9 === "⛝ OUI"}
             onChange={(e) => setQ9(e.target.value)}
           />
+          <label for="Q9oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q9non'
             type="radio"
             name="Q9"
-            value="NON"
-            checked={Q9 === "NON"}
+            value="⛝ NON"
+            checked={Q9 === "⛝ NON"}
             onChange={(e) => setQ9(e.target.value)}
           />
+          <label for="Q9non">Non</label>
         </td>
       </tr>
       <tr>
@@ -536,21 +583,25 @@ const AddFormInspec = () => {
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q10oui'
             type="radio"
             name="Q10"
-            value="OUI"
-            checked={Q10 === "OUI"}
+            value="⛝ OUI"
+            checked={Q10 === "⛝ OUI"}
             onChange={(e) => setQ10(e.target.value)}
           />
+          <label for="Q10oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q10non'
             type="radio"
             name="Q10"
-            value="NON"
-            checked={Q10 === "NON"}
+            value="⛝ NON"
+            checked={Q10 === "⛝ NON"}
             onChange={(e) => setQ10(e.target.value)}
           />
+          <label for="Q10non">Non</label>
         </td>
       </tr>
       <tr>
@@ -561,21 +612,25 @@ const AddFormInspec = () => {
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q11oui'
             type="radio"
             name="Q11"
-            value="OUI"
-            checked={Q11 === "OUI"}
+            value="⛝ OUI"
+            checked={Q11 === "⛝ OUI"}
             onChange={(e) => setQ11(e.target.value)}
           />
+          <label for="Q11oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q11non'
             type="radio"
             name="Q11"
-            value="NON"
-            checked={Q11 === "NON"}
+            value="⛝ NON"
+            checked={Q11 === "⛝ NON"}
             onChange={(e) => setQ11(e.target.value)}
           />
+          <label for="Q11non">Non</label>
         </td>
       </tr>
       <tr>
@@ -585,21 +640,25 @@ const AddFormInspec = () => {
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q12oui'
             type="radio"
             name="Q12"
-            value="OUI"
-            checked={Q12 === "OUI"}
+            value="⛝ OUI"
+            checked={Q12 === "⛝ OUI"}
             onChange={(e) => setQ12(e.target.value)}
           />
+          <label for="Q12oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q12non'
             type="radio"
             name="Q12"
-            value="NON"
-            checked={Q12 === "NON"}
+            value="⛝ NON"
+            checked={Q12 === "⛝ NON"}
             onChange={(e) => setQ12(e.target.value)}
           />
+          <label for="Q12non">Non</label>
         </td>
       </tr>
       <tr>
@@ -609,21 +668,25 @@ const AddFormInspec = () => {
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q13oui'
             type="radio"
             name="Q13"
-            value="OUI"
-            checked={Q13 === "OUI"}
+            value="⛝ OUI"
+            checked={Q13 === "⛝ OUI"}
             onChange={(e) => setQ13(e.target.value)}
           />
+          <label for="Q13oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q13non'
             type="radio"
             name="Q13"
-            value="NON"
-            checked={Q13 === "NON"}
+            value="⛝ NON"
+            checked={Q13 === "⛝ NON"}
             onChange={(e) => setQ13(e.target.value)}
           />
+          <label for="Q13non">Non</label>
         </td>
       </tr>
       <tr>
@@ -633,21 +696,25 @@ const AddFormInspec = () => {
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q14oui'
             type="radio"
             name="Q14"
-            value="OUI"
-            checked={Q14 === "OUI"}
+            value="⛝ OUI"
+            checked={Q14 === "⛝ OUI"}
             onChange={(e) => setQ14(e.target.value)}
           />
+          <label for="Q14oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q14non'
             type="radio"
             name="Q14"
-            value="NON"
-            checked={Q14 === "NON"}
+            value="⛝ NON"
+            checked={Q14 === "⛝ NON"}
             onChange={(e) => setQ14(e.target.value)}
           />
+          <label for="Q14non">Non</label>
         </td>
       </tr>
       <tr>
@@ -657,21 +724,25 @@ const AddFormInspec = () => {
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q15oui'
             type="radio"
             name="Q15"
-            value="OUI"
-            checked={Q15 === "OUI"}
+            value="⛝ OUI"
+            checked={Q15 === "⛝ OUI"}
             onChange={(e) => setQ15(e.target.value)}
           />
+          <label for="Q15oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q15non'
             type="radio"
             name="Q15"
-            value="NON"
-            checked={Q15 === "NON"}
+            value="⛝ NON"
+            checked={Q15 === "⛝ NON"}
             onChange={(e) => setQ15(e.target.value)}
           />
+          <label for="Q15non">Non</label>
         </td>
       </tr>
       <tr>
@@ -680,21 +751,25 @@ const AddFormInspec = () => {
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q16oui'
             type="radio"
             name="Q16"
-            value="OUI"
-            checked={Q16 === "OUI"}
+            value="⛝ OUI"
+            checked={Q16 === "⛝ OUI"}
             onChange={(e) => setQ16(e.target.value)}
           />
+          <label for="Q16oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q16non'
             type="radio"
             name="Q16"
-            value="NON"
-            checked={Q16 === "NON"}
+            value="⛝ NON"
+            checked={Q16 === "⛝ NON"}
             onChange={(e) => setQ16(e.target.value)}
           />
+          <label for="Q16non">Non</label>
         </td>
       </tr>
       <tr>
@@ -704,21 +779,25 @@ const AddFormInspec = () => {
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q17oui'
             type="radio"
             name="Q17"
-            value="OUI"
-            checked={Q17 === "OUI"}
+            value="⛝ OUI"
+            checked={Q17 === "⛝ OUI"}
             onChange={(e) => setQ17(e.target.value)}
           />
+          <label for="Q17oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q17non'
             type="radio"
             name="Q17"
-            value="NON"
-            checked={Q17 === "NON"}
+            value="⛝ NON"
+            checked={Q17 === "⛝ NON"}
             onChange={(e) => setQ17(e.target.value)}
           />
+          <label for="Q17non">Non</label>
         </td>
       </tr>
       <tr>
@@ -727,21 +806,25 @@ const AddFormInspec = () => {
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q18oui'
             type="radio"
             name="Q18"
-            value="OUI"
-            checked={Q18 === "OUI"}
+            value="⛝ OUI"
+            checked={Q18 === "⛝ OUI"}
             onChange={(e) => setQ18(e.target.value)}
           />
+          <label for="Q18oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='Q18non'
             type="radio"
             name="Q18"
-            value="NON"
-            checked={Q18 === "NON"}
+            value="⛝ NON"
+            checked={Q18 === "⛝ NON"}
             onChange={(e) => setQ18(e.target.value)}
           />
+          <label for="Q18non">Non</label>
         </td>
       </tr>
     </tbody>
@@ -1114,21 +1197,25 @@ const AddFormInspec = () => {
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AAQ1oui'
             type="radio"
             name="AAQ1"
-            value="OUI"
-            checked={AAQ1 === "OUI"}
+            value="⛝ OUI"
+            checked={AAQ1 === "⛝ OUI"}
             onChange={(e) => setAAQ1(e.target.value)}
           />
+          <label for="AAQ1oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AAQ1non'
             type="radio"
             name="AAQ1"
-            value="NON"
-            checked={AAQ1 === "NON"}
+            value="⛝ NON"
+            checked={AAQ1 === "⛝ NON"}
             onChange={(e) => setAAQ1(e.target.value)}
           />
+          <label for="AAQ1non">Non</label>
         </td>
       </tr>
       <tr>
@@ -1137,21 +1224,25 @@ const AddFormInspec = () => {
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AAQ2oui'
             type="radio"
             name="AAQ2"
-            value="OUI"
-            checked={AAQ2 === "OUI"}
+            value="⛝ OUI"
+            checked={AAQ2 === "⛝ OUI"}
             onChange={(e) => setAAQ2(e.target.value)}
           />
+          <label for="AAQ2oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AAQ2non'
             type="radio"
             name="AAQ2"
-            value="NON"
-            checked={AAQ2 === "NON"}
+            value="⛝ NON"
+            checked={AAQ2 === "⛝ NON"}
             onChange={(e) => setAAQ2(e.target.value)}
           />
+          <label for="AAQ2non">Non</label>
         </td>
       </tr>
       <tr>
@@ -1160,21 +1251,25 @@ const AddFormInspec = () => {
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AAQ3oui'
             type="radio"
             name="AAQ3"
-            value="OUI"
-            checked={AAQ3 === "OUI"}
+            value="⛝ OUI"
+            checked={AAQ3 === "⛝ OUI"}
             onChange={(e) => setAAQ3(e.target.value)}
           />
+          <label for="AAQ3oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AAQ3non'
             type="radio"
             name="AAQ3"
-            value="NON"
-            checked={AAQ3 === "NON"}
+            value="⛝ NON"
+            checked={AAQ3 === "⛝ NON"}
             onChange={(e) => setAAQ3(e.target.value)}
           />
+          <label for="AAQ3non">Non</label>
         </td>
       </tr>
       <tr>
@@ -1183,21 +1278,25 @@ const AddFormInspec = () => {
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AAQ4oui'
             type="radio"
             name="AAQ4"
-            value="OUI"
-            checked={AAQ4 === "OUI"}
+            value="⛝ OUI"
+            checked={AAQ4 === "⛝ OUI"}
             onChange={(e) => setAAQ4(e.target.value)}
           />
+          <label for="AAQ4oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AAQ4non'
             type="radio"
             name="AAQ4"
-            value="NON"
-            checked={AAQ4 === "NON"}
+            value="⛝ NON"
+            checked={AAQ4 === "⛝ NON"}
             onChange={(e) => setAAQ4(e.target.value)}
           />
+          <label for="AAQ4non">Non</label>
         </td>
       </tr>
       <tr>
@@ -1207,21 +1306,25 @@ fonctionnent-ils bien ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AAQ5oui'
             type="radio"
             name="AAQ5"
-            value="OUI"
-            checked={AAQ5 === "OUI"}
+            value="⛝ OUI"
+            checked={AAQ5 === "⛝ OUI"}
             onChange={(e) => setAAQ5(e.target.value)}
           />
+          <label for="AAQ5oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AAQ5non'
             type="radio"
             name="AAQ5"
-            value="NON"
-            checked={AAQ5 === "NON"}
+            value="⛝ NON"
+            checked={AAQ5 === "⛝ NON"}
             onChange={(e) => setAAQ5(e.target.value)}
           />
+          <label for="AAQ5non">Non</label>
         </td>
       </tr>
       <tr>
@@ -1231,21 +1334,25 @@ fonctionnent-ils bien ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AAQ6oui'
             type="radio"
             name="AAQ6"
-            value="OUI"
-            checked={AAQ6 === "OUI"}
+            value="⛝ OUI"
+            checked={AAQ6 === "⛝ OUI"}
             onChange={(e) => setAAQ6(e.target.value)}
           />
+          <label for="AAQ6oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AAQ6non'
             type="radio"
             name="AAQ6"
-            value="NON"
-            checked={AAQ6 === "NON"}
+            value="⛝ NON"
+            checked={AAQ6 === "⛝ NON"}
             onChange={(e) => setAAQ6(e.target.value)}
           />
+          <label for="AAQ6non">Non</label>
         </td>
       </tr>
       <tr>
@@ -1254,21 +1361,25 @@ fonctionnent-ils bien ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AAQ7oui'
             type="radio"
             name="AAQ7"
-            value="OUI"
-            checked={AAQ7 === "OUI"}
+            value="⛝ OUI"
+            checked={AAQ7 === "⛝ OUI"}
             onChange={(e) => setAAQ7(e.target.value)}
           />
+          <label for="AAQ7oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AAQ7non'
             type="radio"
             name="AAQ7"
-            value="NON"
-            checked={AAQ7 === "NON"}
+            value="⛝ NON"
+            checked={AAQ7 === "⛝ NON"}
             onChange={(e) => setAAQ7(e.target.value)}
           />
+          <label for="AAQ7non">Non</label>
         </td>
       </tr>
       <tr>
@@ -1278,21 +1389,25 @@ fonctionnent-ils bien ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AAQ8oui'
             type="radio"
             name="AAQ8"
-            value="OUI"
-            checked={AAQ8 === "OUI"}
+            value="⛝ OUI"
+            checked={AAQ8 === "⛝ OUI"}
             onChange={(e) => setAAQ8(e.target.value)}
           />
+          <label for="AAQ8oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AAQ8non'
             type="radio"
             name="AAQ8"
-            value="NON"
-            checked={AAQ8 === "NON"}
+            value="⛝ NON"
+            checked={AAQ8 === "⛝ NON"}
             onChange={(e) => setAAQ8(e.target.value)}
           />
+          <label for="AAQ8non">Non</label>
         </td>
       </tr>
       <tr>
@@ -1301,21 +1416,25 @@ fonctionnent-ils bien ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AAQ9oui'
             type="radio"
             name="AAQ9"
-            value="OUI"
-            checked={AAQ9 === "OUI"}
+            value="⛝ OUI"
+            checked={AAQ9 === "⛝ OUI"}
             onChange={(e) => setAAQ9(e.target.value)}
           />
+          <label for="AAQ9oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AAQ9non'
             type="radio"
             name="AAQ9"
-            value="NON"
-            checked={AAQ9 === "NON"}
+            value="⛝ NON"
+            checked={AAQ9 === "⛝ NON"}
             onChange={(e) => setAAQ9(e.target.value)}
           />
+          <label for="AAQ9non">Non</label>
         </td>
       </tr>
       <tr>
@@ -1324,21 +1443,25 @@ fonctionnent-ils bien ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AAQ10oui'
             type="radio"
             name="AAQ10"
-            value="OUI"
-            checked={AAQ10 === "OUI"}
+            value="⛝ OUI"
+            checked={AAQ10 === "⛝ OUI"}
             onChange={(e) => setAAQ10(e.target.value)}
           />
+          <label for="AAQ10oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AAQ10non'
             type="radio"
             name="AAQ10"
-            value="NON"
-            checked={AAQ10 === "NON"}
+            value="⛝ NON"
+            checked={AAQ10 === "⛝ NON"}
             onChange={(e) => setAAQ10(e.target.value)}
           />
+          <label for="AAQ10non">Non</label>
         </td>
       </tr>
       <tr>
@@ -1347,21 +1470,25 @@ fonctionnent-ils bien ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AAQ11oui'
             type="radio"
             name="AAQ11"
-            value="OUI"
-            checked={AAQ11 === "OUI"}
+            value="⛝ OUI"
+            checked={AAQ11 === "⛝ OUI"}
             onChange={(e) => setAAQ11(e.target.value)}
           />
+          <label for="AAQ11oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AAQ11non'
             type="radio"
             name="AAQ11"
-            value="NON"
-            checked={AAQ11 === "NON"}
+            value="⛝ NON"
+            checked={AAQ11 === "⛝ NON"}
             onChange={(e) => setAAQ11(e.target.value)}
           />
+          <label for="AAQ11non">Non</label>
         </td>
       </tr>
       <tr>
@@ -1370,21 +1497,25 @@ fonctionnent-ils bien ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AAQ12oui'
             type="radio"
             name="AAQ12"
-            value="OUI"
-            checked={AAQ12 === "OUI"}
+            value="⛝ OUI"
+            checked={AAQ12 === "⛝ OUI"}
             onChange={(e) => setAAQ12(e.target.value)}
           />
+          <label for="AAQ12oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AAQ12non'
             type="radio"
             name="AAQ12"
-            value="NON"
-            checked={AAQ12 === "NON"}
+            value="⛝ NON"
+            checked={AAQ12 === "⛝ NON"}
             onChange={(e) => setAAQ12(e.target.value)}
           />
+          <label for="AAQ12non">Non</label>
         </td>
       </tr>
       <tr>
@@ -1393,21 +1524,25 @@ fonctionnent-ils bien ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AAQ13oui'
             type="radio"
             name="AAQ13"
-            value="OUI"
-            checked={AAQ13 === "OUI"}
+            value="⛝ OUI"
+            checked={AAQ13 === "⛝ OUI"}
             onChange={(e) => setAAQ13(e.target.value)}
           />
+          <label for="AAQ13oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AAQ13non'
             type="radio"
             name="AAQ13"
-            value="NON"
-            checked={AAQ13 === "NON"}
+            value="⛝ NON"
+            checked={AAQ13 === "⛝ NON"}
             onChange={(e) => setAAQ13(e.target.value)}
           />
+          <label for="AAQ13non">Non</label>
         </td>
       </tr>
       <tr>
@@ -1416,21 +1551,25 @@ fonctionnent-ils bien ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AAQ14oui'
             type="radio"
             name="AAQ14"
-            value="OUI"
-            checked={AAQ14 === "OUI"}
+            value="⛝ OUI"
+            checked={AAQ14 === "⛝ OUI"}
             onChange={(e) => setAAQ14(e.target.value)}
           />
+          <label for="AAQ14oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AAQ14non'
             type="radio"
             name="AAQ14"
-            value="NON"
-            checked={AAQ14 === "NON"}
+            value="⛝ NON"
+            checked={AAQ14 === "⛝ NON"}
             onChange={(e) => setAAQ14(e.target.value)}
           />
+          <label for="AAQ14non">Non</label>
         </td>
       </tr>
       <tr>
@@ -1439,21 +1578,25 @@ fonctionnent-ils bien ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AAQ15oui'
             type="radio"
             name="AAQ15"
-            value="OUI"
-            checked={AAQ15 === "OUI"}
+            value="⛝ OUI"
+            checked={AAQ15 === "⛝ OUI"}
             onChange={(e) => setAAQ15(e.target.value)}
           />
+          <label for="AAQ15oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AAQ1non'
             type="radio"
             name="AAQ15"
-            value="NON"
-            checked={AAQ15 === "NON"}
+            value="⛝ NON"
+            checked={AAQ15 === "⛝ NON"}
             onChange={(e) => setAAQ15(e.target.value)}
           />
+          <label for="AAQ15non">Non</label>
         </td>
       </tr>
       <tr>
@@ -1462,21 +1605,25 @@ fonctionnent-ils bien ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AAQ16oui'
             type="radio"
             name="AAQ16"
-            value="OUI"
-            checked={AAQ16 === "OUI"}
+            value="⛝ OUI"
+            checked={AAQ16 === "⛝ OUI"}
             onChange={(e) => setAAQ16(e.target.value)}
           />
+          <label for="AAQ16oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AAQ16non'
             type="radio"
             name="AAQ16"
-            value="NON"
-            checked={AAQ16 === "NON"}
+            value="⛝ NON"
+            checked={AAQ16 === "⛝ NON"}
             onChange={(e) => setAAQ16(e.target.value)}
           />
+          <label for="AAQ16non">Non</label>
         </td>
       </tr>
       
@@ -1490,7 +1637,7 @@ fonctionnent-ils bien ?
 
 
 
-<div>
+{/* <div>
     <h4 className='text-center items-center text-white font-bold border border-solid bg-orange-700'>Pompe à chaleur - AIR/EAU </h4>
 </div>
 <div className="overflow-x-auto">
@@ -2082,12 +2229,12 @@ fonctionnent-ils bien ?
       
     </tbody>
   </table>
-</div>
+</div> */}
 
 
 {/* Chauffe-Eau Thermodynamique */}
 
-
+{/* 
 <div className='text-center items-center text-white font-bold border border-solid bg-orange-700' >
     <h4>Chauffe-Eau Thermodynamique</h4>
 </div>
@@ -2372,17 +2519,18 @@ fonctionnent-ils bien ?
     </tbody>
   </table>
 </div>
+<br></br>
 <div>
           <label htmlFor="img" className={`w-full h-[180px] flex rounded text-[#404040] gap-2 justify-center items-center cursor-pointer border-2 border-dashed`}>
             
-              <img src={''} className='w-full h-[240px]' alt='image' /> : <div className='flex justify-center items-center flex-col gap-y-2'>
+              <img src={''} className='w-full h-[240px]' alt='' /> : <div className='flex justify-center items-center flex-col gap-y-2'>
               <span className='text-2xl'><MdCloudUpload/></span>
               <span>Select Image</span>
             </div>
             
           </label>
           <input  onChange={(e) => setQ13(e.target.value)} className='hidden' type="file" id='img' />
-        </div>
+        </div> */}
 
           
 
