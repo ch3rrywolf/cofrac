@@ -347,7 +347,7 @@
 //   }
 
 
-module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19, AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApuissancenomina1l, AACO1P, AAmarqu2e, AAreferenc2e, AAnomberuni2t1, AAnomberuni2t2, AApuissancenomina2l, AACO2P, AAmarqu3e, AAreferenc3e, AAnomberuni3t1, AAnomberuni3t2, AApuissancenomina3l, AACO3P, AAmarqu4e, AAreferenc4e, AAnomberuni4t1, AAnomberuni4t2, AApuissancenomina4l, AACO4P, AAmarqu5e, AAreferenc5e, AAnomberuni5t1, AAnomberuni5t2, AApuissancenomina5l, AACO5P, AA1Q1, AAQ1, AAQ2, AAQ3, AAQ4, AAQ5, AAQ6, AAQ7, AAQ8, AAQ9, AAQ10, AAQ11, AAQ12, AAQ13, AAQ14, AAQ15, AAQ16, AEmarqu1e, AEreferenc1e, AEnomberuni1t1, AEnomberuni1t2, AEpuissancenomina1l, AECO1P, AEmarqu2e, AEreferenc2e, AEnomberuni2t1, AEnomberuni2t2, AEpuissancenomina2l, AECO2P, AEmarqu3e, AEreferenc3e, AEnomberuni3t1, AEnomberuni3t2, AEpuissancenomina3l, AECO3P, AEmarqu4e, AEreferenc4e, AEnomberuni4t1, AEnomberuni4t2, AEpuissancenomina4l, AECO4P, AEmarqu5e, AEreferenc5e, AEnomberuni5t1, AEnomberuni5t2, AEpuissancenomina5l, AECO5P, AE1Q1, AEQ1, AEQ2, AEQ3, AEQ4, AEQ5, AEQ6, AEQ7, AEQ8, AEQ9, AEQ10, AEQ11, AEQ12}) => {
+module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19, AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApuissancenomina1l, AACO1P, AAmarqu2e, AAreferenc2e, AAnomberuni2t1, AAnomberuni2t2, AApuissancenomina2l, AACO2P, AAmarqu3e, AAreferenc3e, AAnomberuni3t1, AAnomberuni3t2, AApuissancenomina3l, AACO3P, AAmarqu4e, AAreferenc4e, AAnomberuni4t1, AAnomberuni4t2, AApuissancenomina4l, AACO4P, AAmarqu5e, AAreferenc5e, AAnomberuni5t1, AAnomberuni5t2, AApuissancenomina5l, AACO5P, AA1Q1, AAQ1, AAQ2, AAQ3, AAQ4, AAQ5, AAQ6, AAQ7, AAQ8, AAQ9, AAQ10, AAQ11, AAQ12, AAQ13, AAQ14, AAQ15, AAQ16, AEmarqu1e, AEreferenc1e, AEnomberuni1t1, AEnomberuni1t2, AEpuissancenomina1l, AECO1P, AEmarqu2e, AEreferenc2e, AEnomberuni2t1, AEnomberuni2t2, AEpuissancenomina2l, AECO2P, AEmarqu3e, AEreferenc3e, AEnomberuni3t1, AEnomberuni3t2, AEpuissancenomina3l, AECO3P, AEmarqu4e, AEreferenc4e, AEnomberuni4t1, AEnomberuni4t2, AEpuissancenomina4l, AECO4P, AEmarqu5e, AEreferenc5e, AEnomberuni5t1, AEnomberuni5t2, AEpuissancenomina5l, AECO5P, AE1Q1, AEQ1, AEQ2, AEQ3, AEQ4, AEQ5, AEQ6, AEQ7, AEQ8, AEQ9, AEQ10, AEQ11, AEQ12, CETQ1, CETQ2, CETQ3, CETQ4, CETQ5, CETQ6, CETQ7, CETQ8, CETQ9, CETQ10, CETQ11, CETQ12, CETQ13,CETQ14}) => {
     const today = new Date();
     return `
 
@@ -416,7 +416,7 @@ module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8,
 <p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${Q4MO === '⛝ OUI' ? '⛝ OUI' : ''}</p>
 </td>
 <td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: center; color: black;">${Q4MO === '⛝ NON' ? '⛝ NON' : ''}</p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${Q4MO === '⛝ NON' ? '⛝ NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:19pt">
@@ -1211,43 +1211,55 @@ module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8,
 <p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Type de Chauffe-Eau Thermodynamique</p>
 </td>
 <td style="width:179pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="4" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p></td></tr><tr style="height:25pt"><td style="width:301pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Marque du chauffe-eau installé</p></td><td style="width:179pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="4" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${CETQ1}</p>
+</td>
+</tr>
+<tr style="height:25pt">
+<td style="width:301pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Marque du chauffe-eau installé</p>
+</td>
+<td style="width:179pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="4" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${CETQ2}</p>
 </td>
 </tr>
 <tr style="height:25pt"><td style="width:301pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
 <p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Référence</p>
 </td>
 <td style="width:179pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="4" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${CETQ3}</p>
 </td>
 </tr>
 <tr style="height:25pt"><td style="width:301pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Coefficient de performance COP</p></td><td style="width:179pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="4" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Coefficient de performance COP</p>
+</td>
+<td style="width:179pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="4" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${CETQ4}</p>
 </td>
 </tr>
 <tr style="height:25pt"><td style="width:301pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
 <p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Volume (L)</p>
 </td>
 <td style="width:179pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="4" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p></td></tr><tr style="height:25pt"><td style="width:301pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${CETQ5}</p>
+</td>
+</tr>
+<tr style="height:25pt">
+<td style="width:301pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
 <p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Quantité</p>
 </td>
 <td style="width:179pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="4" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p></td></tr><tr style="height:25pt"><td style="width:301pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${CETQ6}</p>
+</td>
+</tr>
+<tr style="height:25pt">
+<td style="width:301pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
 <p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Conforme à l’audit énergétique ?</p>
 </td>
-<td style="width:32pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#BBBBBB"><p style="text-indent: 0pt;text-align: left;"/>
-<p class="s6" style="padding-top: 7pt;padding-right: 2pt;text-indent: 0pt;text-align: center;">X</p>
+<td style="width:91pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="3" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${CETQ7 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
 </td>
-<td style="width:45pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#BBBBBB;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#BBBBBB" bgcolor="#FFFFFF">
-<p class="s6" style="padding-top: 5pt;padding-left: 7pt;text-indent: 0pt;text-align: left;">OUI</p>
-</td>
-<td style="width:14pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#BBBBBB;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:88pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p style="text-indent: 0pt;text-align: left;"/>
-<p class="s6" style="padding-top: 6pt;padding-left: 39pt;text-indent: 0pt;text-align: left;">NON</p>
+<td style="width:88pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${CETQ7 === '⛝ NON' ? '⛝ NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:25pt">
@@ -1255,22 +1267,33 @@ module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8,
 <p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Installation selon les instructions fabricant ?</p>
 </td>
 <td style="width:91pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="3" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${CETQ8 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
 </td>
 <td style="width:88pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p></td></tr><tr style="height:25pt"><td style="width:301pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${CETQ8 === '⛝ NON' ? '⛝ NON' : ''}</p>
+</td>
+</tr>
+<tr style="height:25pt">
+<td style="width:301pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
 <p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Disjoncteur et protections fonctionnels ?</p>
 </td>
 <td style="width:91pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="3" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${CETQ9 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
 </td>
 <td style="width:88pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p></td></tr><tr style="height:25pt"><td style="width:301pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${CETQ9 === '⛝ NON' ? '⛝ NON' : ''}</p>
+</p>
+</td>
+</tr>
+<tr style="height:25pt"><td style="width:301pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
 <p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Absence de fuites sur les raccordements hydrauliques ?</p>
 </td>
 <td style="width:91pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="3" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:88pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${CETQ10 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
+</p>
+</td>
+<td style="width:88pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${CETQ10 === '⛝ NON' ? '⛝ NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:25pt">
@@ -1278,10 +1301,10 @@ module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8,
 <p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Groupe de sécurité évacue correctement ?</p>
 </td>
 <td style="width:91pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="3" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${CETQ11 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
 </td>
 <td style="width:88pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${CETQ11 === '⛝ NON' ? '⛝ NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:25pt">
@@ -1289,10 +1312,10 @@ module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8,
 <p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Paramètres conformes à l’audit ?</p>
 </td>
 <td style="width:91pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="3" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${CETQ12 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
 </td>
 <td style="width:88pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${CETQ12 === '⛝ NON' ? '⛝ NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:25pt">
@@ -1300,28 +1323,35 @@ module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8,
 <p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Isolation thermique en bon état ?</p>
 </td>
 <td style="width:91pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="3" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${CETQ13 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
 </td>
 <td style="width:88pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${CETQ13 === '⛝ NON' ? '⛝ NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:25pt"><td style="width:301pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
 <p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Ballon fixé et stable ?</p>
 </td>
 <td style="width:91pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="3" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${CETQ14 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
 </td>
 <td style="width:88pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${CETQ14 === '⛝ NON' ? '⛝ NON' : ''}</p>
 </td>
 </tr>
 </table>
-<p style="text-indent: 0pt;text-align: center;"><br/></p>
-<div class="textbox" style="border:1.0pt solid #A42F0F;display:block;min-height:189.5pt;width:480.2pt;">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
-<p class="s7" style="text-indent: 0pt;text-align: center;">Photos</p>
 </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>

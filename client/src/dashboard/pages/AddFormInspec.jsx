@@ -141,6 +141,23 @@ const [AEQ10,setAEQ10] = useState('')
 const [AEQ11,setAEQ11] = useState('')
 const [AEQ12,setAEQ12] = useState('')
 
+//CET
+
+const [CETQ1,setCETQ1] = useState('')
+const [CETQ2,setCETQ2] = useState('')
+const [CETQ3,setCETQ3] = useState('')
+const [CETQ4,setCETQ4] = useState('')
+const [CETQ5,setCETQ5] = useState('')
+const [CETQ6,setCETQ6] = useState('')
+const [CETQ7,setCETQ7] = useState('')
+const [CETQ8,setCETQ8] = useState('')
+const [CETQ9,setCETQ9] = useState('')
+const [CETQ10,setCETQ10] = useState('')
+const [CETQ11,setCETQ11] = useState('')
+const [CETQ12,setCETQ12] = useState('')
+const [CETQ13,setCETQ13] = useState('')
+const [CETQ14,setCETQ14] = useState('')
+
 
 
     const [CET1,setCET1] = useState('')
@@ -148,7 +165,7 @@ const [AEQ12,setAEQ12] = useState('')
 
     const [email,setEmail] = useState('')
 
-    const data = {Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19, CET1, AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApuissancenomina1l, AACO1P, AAmarqu2e, AAreferenc2e, AAnomberuni2t1, AAnomberuni2t2, AApuissancenomina2l, AACO2P, AAmarqu3e, AAreferenc3e, AAnomberuni3t1, AAnomberuni3t2, AApuissancenomina3l, AACO3P, AAmarqu4e, AAreferenc4e, AAnomberuni4t1, AAnomberuni4t2, AApuissancenomina4l, AACO4P, AAmarqu5e, AAreferenc5e, AAnomberuni5t1, AAnomberuni5t2, AApuissancenomina5l, AACO5P, AA1Q1, AAQ1, AAQ2, AAQ3, AAQ4, AAQ5, AAQ6, AAQ7, AAQ8, AAQ9, AAQ10, AAQ11, AAQ12, AAQ13, AAQ14, AAQ15, AAQ16, AAQ17, AEmarqu1e, AEreferenc1e, AEnomberuni1t1, AEnomberuni1t2, AEpuissancenomina1l, AECO1P, AEmarqu2e, AEreferenc2e, AEnomberuni2t1, AEnomberuni2t2, AEpuissancenomina2l, AECO2P, AEmarqu3e, AEreferenc3e, AEnomberuni3t1, AEnomberuni3t2, AEpuissancenomina3l, AECO3P, AEmarqu4e, AEreferenc4e, AEnomberuni4t1, AEnomberuni4t2, AEpuissancenomina4l, AECO4P, AEmarqu5e, AEreferenc5e, AEnomberuni5t1, AEnomberuni5t2, AEpuissancenomina5l, AECO5P, AE1Q1, AEQ1, AEQ2, AEQ3, AEQ4, AEQ5, AEQ6, AEQ7, AEQ8, AEQ9, AEQ10, AEQ11, AEQ12, email}
+    const data = {Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19, CET1, AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApuissancenomina1l, AACO1P, AAmarqu2e, AAreferenc2e, AAnomberuni2t1, AAnomberuni2t2, AApuissancenomina2l, AACO2P, AAmarqu3e, AAreferenc3e, AAnomberuni3t1, AAnomberuni3t2, AApuissancenomina3l, AACO3P, AAmarqu4e, AAreferenc4e, AAnomberuni4t1, AAnomberuni4t2, AApuissancenomina4l, AACO4P, AAmarqu5e, AAreferenc5e, AAnomberuni5t1, AAnomberuni5t2, AApuissancenomina5l, AACO5P, AA1Q1, AAQ1, AAQ2, AAQ3, AAQ4, AAQ5, AAQ6, AAQ7, AAQ8, AAQ9, AAQ10, AAQ11, AAQ12, AAQ13, AAQ14, AAQ15, AAQ16, AAQ17, AEmarqu1e, AEreferenc1e, AEnomberuni1t1, AEnomberuni1t2, AEpuissancenomina1l, AECO1P, AEmarqu2e, AEreferenc2e, AEnomberuni2t1, AEnomberuni2t2, AEpuissancenomina2l, AECO2P, AEmarqu3e, AEreferenc3e, AEnomberuni3t1, AEnomberuni3t2, AEpuissancenomina3l, AECO3P, AEmarqu4e, AEreferenc4e, AEnomberuni4t1, AEnomberuni4t2, AEpuissancenomina4l, AECO4P, AEmarqu5e, AEreferenc5e, AEnomberuni5t1, AEnomberuni5t2, AEpuissancenomina5l, AECO5P, AE1Q1, AEQ1, AEQ2, AEQ3, AEQ4, AEQ5, AEQ6, AEQ7, AEQ8, AEQ9, AEQ10, AEQ11, AEQ12, CETQ1, CETQ2, CETQ3, CETQ4, CETQ5, CETQ6, CETQ7, CETQ8, CETQ9, CETQ10, CETQ11, CETQ12, CETQ13, CETQ14, email}
 
     const submit = async (e) => {
         e.preventDefault();
@@ -283,6 +300,23 @@ const [AEQ12,setAEQ12] = useState('')
                         setAEQ10('');
                         setAEQ11('');
                         setAEQ12('');
+
+                        // CET
+
+                        setCETQ1('');
+                        setCETQ2('');
+                        setCETQ3('');
+                        setCETQ4('');
+                        setCETQ5('');
+                        setCETQ6('');
+                        setCETQ7('');
+                        setCETQ8('');
+                        setCETQ9('');
+                        setCETQ10('');
+                        setCETQ11('');
+                        setCETQ12('');
+                        setCETQ13('');
+                        setCETQ14('');
 
 
 
@@ -2378,7 +2412,7 @@ fonctionnent-ils bien ?
 
 {/* Chauffe-Eau Thermodynamique */}
 
-{/* 
+
 <div className='text-center items-center text-white font-bold border border-solid bg-orange-700' >
     <h4>Chauffe-Eau Thermodynamique</h4>
 </div>
@@ -2399,10 +2433,10 @@ fonctionnent-ils bien ?
         <div ><input
         className='items-center justify-center text-center'
             type="text"
-            name="Q3"
-            value={Q3}
-            onChange={(e)=>setQ3(e.target.value)}
-            id="Q3"
+            name="CETQ1"
+            value={CETQ1}
+            onChange={(e)=>setCETQ1(e.target.value)}
+            id="CETQ1"
             placeholder='...'
           /></div>
       </tr>
@@ -2413,10 +2447,10 @@ fonctionnent-ils bien ?
         <div ><input
         className='items-center justify-center text-center'
             type="text"
-            name="Q4"
-            value={Q4}
-            onChange={(e)=>setQ4(e.target.value)}
-            id="Q4"
+            name="CETQ2"
+            value={CETQ2}
+            onChange={(e)=>setCETQ2(e.target.value)}
+            id="CETQ2"
             placeholder='...'
           /></div>
       </tr>
@@ -2427,10 +2461,10 @@ fonctionnent-ils bien ?
         <div ><input
         className='items-center justify-center text-center'
             type="text"
-            name="Q5"
-            value={Q5}
-            onChange={(e)=>setQ5(e.target.value)}
-            id="Q5"
+            name="CETQ3"
+            value={CETQ3}
+            onChange={(e)=>setCETQ3(e.target.value)}
+            id="CETQ3"
             placeholder='...'
           /></div>
       </tr>
@@ -2439,10 +2473,10 @@ fonctionnent-ils bien ?
         <div ><input
         className='items-center justify-center text-center'
             type="text"
-            name="Q3"
-            value={Q3}
-            onChange={(e)=>setQ3(e.target.value)}
-            id="Q3"
+            name="CETQ4"
+            value={CETQ4}
+            onChange={(e)=>setCETQ4(e.target.value)}
+            id="CETQ4"
             placeholder='...'
           /></div>
       </tr>
@@ -2453,10 +2487,10 @@ fonctionnent-ils bien ?
         <div ><input
         className='items-center justify-center text-center'
             type="text"
-            name="Q4"
-            value={Q4}
-            onChange={(e)=>setQ4(e.target.value)}
-            id="Q4"
+            name="CETQ5"
+            value={CETQ5}
+            onChange={(e)=>setCETQ5(e.target.value)}
+            id="CETQ5"
             placeholder='...'
           /></div>
       </tr>
@@ -2467,10 +2501,10 @@ fonctionnent-ils bien ?
         <div ><input
         className='items-center justify-center text-center'
             type="text"
-            name="Q5"
-            value={Q5}
-            onChange={(e)=>setQ5(e.target.value)}
-            id="Q5"
+            name="CETQ6"
+            value={CETQ6}
+            onChange={(e)=>setCETQ6(e.target.value)}
+            id="CETQ6"
             placeholder='...'
           /></div>
       </tr>
@@ -2480,21 +2514,25 @@ fonctionnent-ils bien ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='CETQ7oui'
             type="radio"
-            name="Q6"
-            value="OUI"
-            checked={Q6 === "OUI"}
-            onChange={(e) => setQ6(e.target.value)}
+            name="CETQ7"
+            value="⛝ OUI"
+            checked={CETQ7 === "⛝ OUI"}
+            onChange={(e) => setCETQ7(e.target.value)}
           />
+          <label for="CETQ7oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='CETQ7non'
             type="radio"
-            name="Q6"
-            value="NON"
-            checked={Q6 === "NON"}
-            onChange={(e) => setQ6(e.target.value)}
+            name="CETQ7"
+            value="⛝ NON"
+            checked={CETQ7 === "⛝ NON"}
+            onChange={(e) => setCETQ7(e.target.value)}
           />
+          <label for="CETQ7non">Non</label>
         </td>
       </tr>
     
@@ -2504,21 +2542,25 @@ fonctionnent-ils bien ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='CETQ8oui'
             type="radio"
-            name="Q7"
-            value="OUI"
-            checked={Q7 === "OUI"}
-            onChange={(e) => setQ7(e.target.value)}
+            name="CETQ8"
+            value="⛝ OUI"
+            checked={CETQ8 === "⛝ OUI"}
+            onChange={(e) => setCETQ8(e.target.value)}
           />
+          <label for="CETQ8oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='CETQ8non'
             type="radio"
-            name="Q7"
-            value="NON"
-            checked={Q7 === "NON"}
-            onChange={(e) => setQ7(e.target.value)}
+            name="CETQ8"
+            value="⛝ NON"
+            checked={CETQ8 === "⛝ NON"}
+            onChange={(e) => setCETQ8(e.target.value)}
           />
+          <label for="CETQ8non">Non</label>
         </td>
       </tr>
       <tr>
@@ -2527,21 +2569,25 @@ fonctionnent-ils bien ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='CETQ9oui'
             type="radio"
-            name="Q8"
-            value="OUI"
-            checked={Q8 === "OUI"}
-            onChange={(e) => setQ8(e.target.value)}
+            name="CETQ9"
+            value="⛝ OUI"
+            checked={CETQ9 === "⛝ OUI"}
+            onChange={(e) => setCETQ9(e.target.value)}
           />
+          <label for="CETQ9oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='CETQ9non'
             type="radio"
-            name="Q8"
-            value="NON"
-            checked={Q8 === "NON"}
-            onChange={(e) => setQ8(e.target.value)}
+            name="CETQ9"
+            value="⛝ NON"
+            checked={CETQ9 === "⛝ NON"}
+            onChange={(e) => setCETQ9(e.target.value)}
           />
+          <label for="CETQ9non">Non</label>
         </td>
       </tr>
       <tr>
@@ -2550,21 +2596,25 @@ fonctionnent-ils bien ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='CETQ10oui'
             type="radio"
-            name="Q9"
-            value="OUI"
-            checked={Q9 === "OUI"}
-            onChange={(e) => setQ9(e.target.value)}
+            name="CETQ10"
+            value="⛝ OUI"
+            checked={CETQ10 === "⛝ OUI"}
+            onChange={(e) => setCETQ10(e.target.value)}
           />
+          <label for="CETQ10oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='CETQ10non'
             type="radio"
-            name="Q9"
-            value="NON"
-            checked={Q9 === "NON"}
-            onChange={(e) => setQ9(e.target.value)}
+            name="CETQ10"
+            value="⛝ NON"
+            checked={CETQ10 === "⛝ NON"}
+            onChange={(e) => setCETQ10(e.target.value)}
           />
+          <label for="CETQ10non">Non</label>
         </td>
       </tr>
       <tr>
@@ -2573,21 +2623,25 @@ fonctionnent-ils bien ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='CETQ11oui'
             type="radio"
-            name="Q10"
-            value="OUI"
-            checked={Q10 === "OUI"}
-            onChange={(e) => setQ10(e.target.value)}
+            name="CETQ11"
+            value="⛝ OUI"
+            checked={CETQ11 === "⛝ OUI"}
+            onChange={(e) => setCETQ11(e.target.value)}
           />
+          <label for="CETQ11oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='CETQ11non'
             type="radio"
-            name="Q10"
-            value="NON"
-            checked={Q10 === "NON"}
-            onChange={(e) => setQ10(e.target.value)}
+            name="CETQ11"
+            value="⛝ NON"
+            checked={CETQ11 === "⛝ NON"}
+            onChange={(e) => setCETQ11(e.target.value)}
           />
+          <label for="CETQ11non">Non</label>
         </td>
       </tr>
       <tr>
@@ -2596,21 +2650,25 @@ fonctionnent-ils bien ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='CETQ12oui'
             type="radio"
-            name="Q11"
-            value="OUI"
-            checked={Q11 === "OUI"}
-            onChange={(e) => setQ11(e.target.value)}
+            name="CETQ12"
+            value="⛝ OUI"
+            checked={CETQ12 === "⛝ OUI"}
+            onChange={(e) => setCETQ12(e.target.value)}
           />
+          <label for="CETQ12oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='CETQ12non'
             type="radio"
-            name="Q11"
-            value="NON"
-            checked={Q11 === "NON"}
-            onChange={(e) => setQ11(e.target.value)}
+            name="CETQ12"
+            value="⛝ NON"
+            checked={CETQ12 === "⛝ NON"}
+            onChange={(e) => setCETQ12(e.target.value)}
           />
+          <label for="CETQ12non">Non</label>
         </td>
       </tr>
       <tr>
@@ -2619,21 +2677,25 @@ fonctionnent-ils bien ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='CETQ13oui'
             type="radio"
-            name="Q12"
-            value="OUI"
-            checked={Q12 === "OUI"}
-            onChange={(e) => setQ12(e.target.value)}
+            name="CETQ13"
+            value="⛝ OUI"
+            checked={CETQ13 === "⛝ OUI"}
+            onChange={(e) => setCETQ13(e.target.value)}
           />
+          <label for="CETQ13oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='CETQ13non'
             type="radio"
-            name="Q12"
-            value="NON"
-            checked={Q12 === "NON"}
-            onChange={(e) => setQ12(e.target.value)}
+            name="CETQ13"
+            value="⛝ NON"
+            checked={CETQ13 === "⛝ NON"}
+            onChange={(e) => setCETQ13(e.target.value)}
           />
+          <label for="CETQ13non">Non</label>
         </td>
       </tr>
       <tr>
@@ -2642,21 +2704,25 @@ fonctionnent-ils bien ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='CETQ14oui'
             type="radio"
-            name="Q13"
-            value="OUI"
-            checked={Q13 === "OUI"}
-            onChange={(e) => setQ13(e.target.value)}
+            name="CETQ14"
+            value="⛝ OUI"
+            checked={CETQ14 === "⛝ OUI"}
+            onChange={(e) => setCETQ14(e.target.value)}
           />
+          <label for="CETQ14oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='CETQ14non'
             type="radio"
-            name="Q13"
-            value="NON"
-            checked={Q13 === "NON"}
-            onChange={(e) => setQ13(e.target.value)}
+            name="CETQ14"
+            value="⛝ NON"
+            checked={CETQ14 === "⛝ NON"}
+            onChange={(e) => setCETQ14(e.target.value)}
           />
+          <label for="CETQ14non">Non</label>
         </td>
       </tr>
       
@@ -2674,7 +2740,7 @@ fonctionnent-ils bien ?
             
           </label>
           <input  onChange={(e) => setQ13(e.target.value)} className='hidden' type="file" id='img' />
-        </div> */}
+        </div>
 
           
 
