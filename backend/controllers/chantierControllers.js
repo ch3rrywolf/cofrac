@@ -21,7 +21,7 @@ class chantierController {
         }
         
         try {
-            const chantier = await chantierModel.findOne({ })
+            const chantier = await chantierModel.findOne({ benefNom: benefNom.trim() })
             if (chantier) {
                 return res.status(404).json({ message: 'contrat alreasy exit' })
             } else {
