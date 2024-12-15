@@ -6,6 +6,12 @@ import {saveAs} from 'file-saver'
 
 const AddFormInspec = () => {
     // const [loader, setLoader] = useState(false)
+    // mise ouvre
+    const [Q1MO,setQ1MO] = useState('')
+    const [Q2MO,setQ2MO] = useState('')
+    const [Q3MO,setQ3MO] = useState('')
+    const [Q4MO,setQ4MO] = useState('')
+    const [Q5MO,setQ5MO] = useState('')
     const [Q1,setQ1] = useState('')
     const [Q2,setQ2] = useState('')
     const [Q3,setQ3] = useState('')
@@ -64,6 +70,7 @@ const AddFormInspec = () => {
     const [AACO5P,setAACO5P] = useState('')
 
     const [AAQ1,setAAQ1] = useState('')
+    const [AA1Q1,setAA1Q1] = useState('')
     const [AAQ2,setAAQ2] = useState('')
     const [AAQ3,setAAQ3] = useState('')
     const [AAQ4,setAAQ4] = useState('')
@@ -88,7 +95,7 @@ const AddFormInspec = () => {
 
     const [email,setEmail] = useState('')
 
-    const data = {Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19, CET1, AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApuissancenomina1l, AACO1P, AAmarqu2e, AAreferenc2e, AAnomberuni2t1, AAnomberuni2t2, AApuissancenomina2l, AACO2P, AAmarqu3e, AAreferenc3e, AAnomberuni3t1, AAnomberuni3t2, AApuissancenomina3l, AACO3P, AAmarqu4e, AAreferenc4e, AAnomberuni4t1, AAnomberuni4t2, AApuissancenomina4l, AACO4P, AAmarqu5e, AAreferenc5e, AAnomberuni5t1, AAnomberuni5t2, AApuissancenomina5l, AACO5P, AAQ1, AAQ2, AAQ3, AAQ4, AAQ5, AAQ6, AAQ7, AAQ8, AAQ9, AAQ10, AAQ11, AAQ12, AAQ13, AAQ14, AAQ15, AAQ16, AAQ17, email}
+    const data = {Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19, CET1, AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApuissancenomina1l, AACO1P, AAmarqu2e, AAreferenc2e, AAnomberuni2t1, AAnomberuni2t2, AApuissancenomina2l, AACO2P, AAmarqu3e, AAreferenc3e, AAnomberuni3t1, AAnomberuni3t2, AApuissancenomina3l, AACO3P, AAmarqu4e, AAreferenc4e, AAnomberuni4t1, AAnomberuni4t2, AApuissancenomina4l, AACO4P, AAmarqu5e, AAreferenc5e, AAnomberuni5t1, AAnomberuni5t2, AApuissancenomina5l, AACO5P, AA1Q1, AAQ1, AAQ2, AAQ3, AAQ4, AAQ5, AAQ6, AAQ7, AAQ8, AAQ9, AAQ10, AAQ11, AAQ12, AAQ13, AAQ14, AAQ15, AAQ16, AAQ17, email}
 
     const submit = async (e) => {
         e.preventDefault();
@@ -101,6 +108,11 @@ const AddFormInspec = () => {
     
                         saveAs(pdfBlob, 'FormulaireDocument.pdf');
     
+                        setQ1MO('');
+                        setQ2MO('');
+                        setQ3MO('');
+                        setQ4MO('');
+                        setQ5MO('');
                         setQ1('');
                         setQ2('');
                         setQ3('');
@@ -210,6 +222,128 @@ const AddFormInspec = () => {
       </tr>
     </thead>
     <tbody>
+
+    <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Document matérialisant l'engagement de l'opération (devis signés..)
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="Q1MO"
+            value="OUI"
+            checked={Q1MO === "OUI"}
+            onChange={(e) => setQ1MO(e.target.value)}
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="Q1MO"
+            value="NON"
+            checked={Q1MO === "NON"}
+            onChange={(e) => setQ1MO(e.target.value)}
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Date d'engagement de l'opération :
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="Q2MO"
+            value="OUI"
+            checked={Q2MO === "OUI"}
+            onChange={(e) => setQ2MO(e.target.value)}
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="Q2MO"
+            value="NON"
+            checked={Q2MO === "NON"}
+            onChange={(e) => setQ2MO(e.target.value)}
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Document prouvant la réalisation de l’opération (facture des travaux, PV de réception, etc) remis au bénéficiaire :
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="Q3MO"
+            value="OUI"
+            checked={Q3MO === "OUI"}
+            onChange={(e) => setQ3MO(e.target.value)}
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="Q3MO"
+            value="NON"
+            checked={Q3MO === "NON"}
+            onChange={(e) => setQ3MO(e.target.value)}
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Référence de la facture :
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="Q4MO"
+            value="OUI"
+            checked={Q4MO === "OUI"}
+            onChange={(e) => setQ4MO(e.target.value)}
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="Q4MO"
+            value="NON"
+            checked={Q4MO === "NON"}
+            onChange={(e) => setQ4MO(e.target.value)}
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Cadre contribution remis au bénéficiaire
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="Q5MO"
+            value="OUI"
+            checked={Q5MO === "OUI"}
+            onChange={(e) => setQ5MO(e.target.value)}
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="radio"
+            name="Q5MO"
+            value="NON"
+            checked={Q5MO === "NON"}
+            onChange={(e) => setQ5MO(e.target.value)}
+          />
+        </td>
+      </tr>
+      
+
       <tr>
         <td className="border border-gray-300 px-4 py-2">
           Bâtiment résidentiel collectif existant de plus de 2 ans à la date d’engagement de l’opération ?
@@ -262,70 +396,43 @@ const AddFormInspec = () => {
       </tr>
       <tr>
         <td className="border border-gray-300 px-4 py-2">Choix du scénario</td>
-        <td className="border border-gray-300 px-4 py-2 text-center">
-          <input
-            type="radio"
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
             name="Q3"
-            value="OUI"
-            checked={Q3 === "OUI"}
-            onChange={(e) => setQ3(e.target.value)}
-          />
-        </td>
-        <td className="border border-gray-300 px-4 py-2 text-center">
-          <input
-            type="radio"
-            name="Q3"
-            value="NON"
-            checked={Q3 === "NON"}
-            onChange={(e) => setQ3(e.target.value)}
-          />
-        </td>
+            value={Q3}
+            onChange={(e)=>setQ3(e.target.value)}
+            id="Q3"
+            placeholder='...'
+          /></div>
       </tr>
       <tr>
         <td className="border border-gray-300 px-4 py-2">
         Surface habitable prise en compte dans l’audit du bâtiment residentiel collectif rénovée (m²)
         </td>
-        <td className="border border-gray-300 px-4 py-2 text-center">
-          <input
-            type="radio"
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
             name="Q4"
-            value="OUI"
-            checked={Q4 === "OUI"}
-            onChange={(e) => setQ4(e.target.value)}
-          />
-        </td>
-        <td className="border border-gray-300 px-4 py-2 text-center">
-          <input
-            type="radio"
-            name="Q4"
-            value="NON"
-            checked={Q4 === "NON"}
-            onChange={(e) => setQ4(e.target.value)}
-          />
-        </td>
+            value={Q4}
+            onChange={(e)=>setQ4(e.target.value)}
+            id="Q4"
+            placeholder='...'
+          /></div>
       </tr>
       <tr>
         <td className="border border-gray-300 px-4 py-2">
         Surface habitable mesurée (m²) :
         </td>
-        <td className="border border-gray-300 px-4 py-2 text-center">
-          <input
-            type="radio"
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
             name="Q5"
-            value="OUI"
-            checked={Q5 === "OUI"}
-            onChange={(e) => setQ5(e.target.value)}
-          />
-        </td>
-        <td className="border border-gray-300 px-4 py-2 text-center">
-          <input
-            type="radio"
-            name="Q5"
-            value="NON"
-            checked={Q5 === "NON"}
-            onChange={(e) => setQ5(e.target.value)}
-          />
-        </td>
+            value={Q5}
+            onChange={(e)=>setQ5(e.target.value)}
+            id="Q5"
+            placeholder='...'
+          /></div>
       </tr>
       <tr>
         <td className="border border-gray-300 px-4 py-2">
@@ -350,9 +457,10 @@ const AddFormInspec = () => {
           />
         </td>
       </tr>
+    
       <tr>
         <td className="border border-gray-300 px-4 py-2">
-        Choix du scénario
+        Le prestataire ayant réalisé l’étude énergétique a-t-il proposé un scénario BBC:
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
@@ -375,7 +483,7 @@ const AddFormInspec = () => {
       </tr>
       <tr>
         <td className="border border-gray-300 px-4 py-2">
-        Le prestataire ayant réalisé l’étude énergétique a-t-il proposé un scénario BBC:
+        Le cep projet est ≤à 110 kWh/m² par an ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
@@ -398,7 +506,7 @@ const AddFormInspec = () => {
       </tr>
       <tr>
         <td className="border border-gray-300 px-4 py-2">
-        Le cep projet est ≤à 110 kWh/m² par an ?
+        La consommation conventionnelle annuelle en énergie primaire après travaux, rapportée à la surface habitable du bâtiment, est inférieur à 331 kWh/(m².an)
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
@@ -421,7 +529,7 @@ const AddFormInspec = () => {
       </tr>
       <tr>
         <td className="border border-gray-300 px-4 py-2">
-        La consommation conventionnelle annuelle en énergie primaire après travaux, rapportée à la surface habitable du bâtiment, est inférieur à 331 kWh/(m².an)
+        kgeqCO2/m².an, sont inférieures ou égales à la valeur initiale de ces émissions avant travaux :
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
@@ -444,7 +552,9 @@ const AddFormInspec = () => {
       </tr>
       <tr>
         <td className="border border-gray-300 px-4 py-2">
-        kgeqCO2/m².an, sont inférieures ou égales à la valeur initiale de ces émissions avant travaux :
+        L’audit énergétique ne prend en compte que les installations de chauffage fixes
+
+
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
@@ -467,8 +577,7 @@ const AddFormInspec = () => {
       </tr>
       <tr>
         <td className="border border-gray-300 px-4 py-2">
-        L’audit énergétique ne prend en compte que les installations de chauffage fixes
-
+        Les équipements de production de chaleur ou d’ECS installés utilisent plus de 50 % d’ENR ?
 
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
@@ -492,7 +601,7 @@ const AddFormInspec = () => {
       </tr>
       <tr>
         <td className="border border-gray-300 px-4 py-2">
-        Les équipements de production de chaleur ou d’ECS installés utilisent plus de 50 % d’ENR ?
+        L’audit énergétique a été réalisé à l’aide d’un logiciel répondant aux exigences de la fiche BAR-TH-145
 
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
@@ -516,7 +625,7 @@ const AddFormInspec = () => {
       </tr>
       <tr>
         <td className="border border-gray-300 px-4 py-2">
-        L’audit énergétique a été réalisé à l’aide d’un logiciel répondant aux exigences de la fiche BAR-TH-145
+        L’audit énergétique pris en compte pour la réalisation des travaux dispose d’un avis satisfaisant
 
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
@@ -540,7 +649,7 @@ const AddFormInspec = () => {
       </tr>
       <tr>
         <td className="border border-gray-300 px-4 py-2">
-        L’audit énergétique pris en compte pour la réalisation des travaux dispose d’un avis satisfaisant
+        conventionnelles en énergie primaire et en énergie finale avant et après l’opération
 
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
@@ -564,8 +673,7 @@ const AddFormInspec = () => {
       </tr>
       <tr>
         <td className="border border-gray-300 px-4 py-2">
-        conventionnelles en énergie primaire et en énergie finale avant et après l’opération
-
+        Le niveau de confort thermique après travaux est meilleur qu’avant les travaux ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
@@ -588,7 +696,8 @@ const AddFormInspec = () => {
       </tr>
       <tr>
         <td className="border border-gray-300 px-4 py-2">
-        Le niveau de confort thermique après travaux est meilleur qu’avant les travaux ?
+        Les changements d’équipements de chauffage ou de production d’eau chaude sanitaire le cas échéant préconisés, hors raccordement à un réseau de chaleur, ne conduisent : a) Ni à l'installation d'équipements de chauffage ou de production d'eau chaude sanitaire consommant majoritairement du charbon, du fioul ou du gaz ; b) Ni à une hausse des émissions de gaz à effet de serre.
+
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
@@ -611,8 +720,7 @@ const AddFormInspec = () => {
       </tr>
       <tr>
         <td className="border border-gray-300 px-4 py-2">
-        Les changements d’équipements de chauffage ou de production d’eau chaude sanitaire le cas échéant préconisés, hors raccordement à un réseau de chaleur, ne conduisent : a) Ni à l'installation d'équipements de chauffage ou de production d'eau chaude sanitaire consommant majoritairement du charbon, du fioul ou du gaz ; b) Ni à une hausse des émissions de gaz à effet de serre.
-
+        chauffage et d’eau chaude sanitaire du bâtiment après travaux calculé selon les modalités définies à l’annexe IV-1 de l’arrêté du 29 décembre 2014 modifié relatif aux modalités d’application du dispositif des certificats d’économies d’énergie correspond à celui utilisé pour le calcul du montant de CEE ; il vérifie, notamment dans le cas où une pompe à chaleur est installée, que le COP saisonnier retenu pour le calcul de ce taux est conforme aux indications du fournisseur ;
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
@@ -630,29 +738,6 @@ const AddFormInspec = () => {
             value="NON"
             checked={Q18 === "NON"}
             onChange={(e) => setQ18(e.target.value)}
-          />
-        </td>
-      </tr>
-      <tr>
-        <td className="border border-gray-300 px-4 py-2">
-        chauffage et d’eau chaude sanitaire du bâtiment après travaux calculé selon les modalités définies à l’annexe IV-1 de l’arrêté du 29 décembre 2014 modifié relatif aux modalités d’application du dispositif des certificats d’économies d’énergie correspond à celui utilisé pour le calcul du montant de CEE ; il vérifie, notamment dans le cas où une pompe à chaleur est installée, que le COP saisonnier retenu pour le calcul de ce taux est conforme aux indications du fournisseur ;
-        </td>
-        <td className="border border-gray-300 px-4 py-2 text-center">
-          <input
-            type="radio"
-            name="Q19"
-            value="OUI"
-            checked={Q19 === "OUI"}
-            onChange={(e) => setQ19(e.target.value)}
-          />
-        </td>
-        <td className="border border-gray-300 px-4 py-2 text-center">
-          <input
-            type="radio"
-            name="Q19"
-            value="NON"
-            checked={Q19 === "NON"}
-            onChange={(e) => setQ19(e.target.value)}
           />
         </td>
       </tr>
@@ -1010,6 +1095,20 @@ const AddFormInspec = () => {
         <td className="border border-gray-300 px-4 py-2">
         Ancien système de chauffage
         </td>
+        <div className='items-center justify-center text-center'><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="AA1Q1"
+            value={AA1Q1}
+            onChange={(e)=>setAA1Q1(e.target.value)}
+            id="AA1Q1"
+            placeholder='...'
+          /></div>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        PAC utilisée pour le chauffage ?
+        </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
             type="radio"
@@ -1031,7 +1130,7 @@ const AddFormInspec = () => {
       </tr>
       <tr>
         <td className="border border-gray-300 px-4 py-2">
-        PAC utilisée pour le chauffage ?
+        SCOP et COP sont-ils conformes à l’audit énergétique ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
@@ -1054,7 +1153,7 @@ const AddFormInspec = () => {
       </tr>
       <tr>
         <td className="border border-gray-300 px-4 py-2">
-        SCOP et COP sont-ils conformes à l’audit énergétique ?
+        La puissance de la PAC est-elle conforme à l’audit ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
@@ -1077,7 +1176,7 @@ const AddFormInspec = () => {
       </tr>
       <tr>
         <td className="border border-gray-300 px-4 py-2">
-        La puissance de la PAC est-elle conforme à l’audit ?
+        Disjoncteur différentiel dédié à la PAC présent ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
@@ -1100,7 +1199,8 @@ const AddFormInspec = () => {
       </tr>
       <tr>
         <td className="border border-gray-300 px-4 py-2">
-        Disjoncteur différentiel dédié à la PAC présent ?
+        Les modes (chauffage, refroidissement, déshumidification)
+fonctionnent-ils bien ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
@@ -1123,8 +1223,8 @@ const AddFormInspec = () => {
       </tr>
       <tr>
         <td className="border border-gray-300 px-4 py-2">
-        Les modes (chauffage, refroidissement, déshumidification)
-fonctionnent-ils bien ?
+        Raccords frigorifiques sans fuites ?
+
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
@@ -1147,8 +1247,7 @@ fonctionnent-ils bien ?
       </tr>
       <tr>
         <td className="border border-gray-300 px-4 py-2">
-        Raccords frigorifiques sans fuites ?
-
+        Températures entrée/sortie conformes au fabricant ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
@@ -1171,7 +1270,8 @@ fonctionnent-ils bien ?
       </tr>
       <tr>
         <td className="border border-gray-300 px-4 py-2">
-        Températures entrée/sortie conformes au fabricant ?
+        Pression du fluide frigorigène normale ?
+
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
@@ -1194,8 +1294,7 @@ fonctionnent-ils bien ?
       </tr>
       <tr>
         <td className="border border-gray-300 px-4 py-2">
-        Pression du fluide frigorigène normale ?
-
+        Nombre de splits adapté aux locaux ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
@@ -1218,7 +1317,7 @@ fonctionnent-ils bien ?
       </tr>
       <tr>
         <td className="border border-gray-300 px-4 py-2">
-        Nombre de splits adapté aux locaux ?
+        Réseaux hors volume chauffé bien isolés ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
@@ -1241,7 +1340,7 @@ fonctionnent-ils bien ?
       </tr>
       <tr>
         <td className="border border-gray-300 px-4 py-2">
-        Réseaux hors volume chauffé bien isolés ?
+        Coupe-circuit installé pour le groupe extérieur ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
@@ -1264,7 +1363,7 @@ fonctionnent-ils bien ?
       </tr>
       <tr>
         <td className="border border-gray-300 px-4 py-2">
-        Coupe-circuit installé pour le groupe extérieur ?
+        Évacuation des condensats sans fuites ni obstruction ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
@@ -1287,7 +1386,7 @@ fonctionnent-ils bien ?
       </tr>
       <tr>
         <td className="border border-gray-300 px-4 py-2">
-        Évacuation des condensats sans fuites ni obstruction ?
+        Tuyaux de réfrigérant bien isolés ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
@@ -1310,7 +1409,7 @@ fonctionnent-ils bien ?
       </tr>
       <tr>
         <td className="border border-gray-300 px-4 py-2">
-        Tuyaux de réfrigérant bien isolés ?
+        Température homogène et conforme à la consigne ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
@@ -1333,7 +1432,7 @@ fonctionnent-ils bien ?
       </tr>
       <tr>
         <td className="border border-gray-300 px-4 py-2">
-        Température homogène et conforme à la consigne ?
+        Zones humides bien isolées contre la corrosion ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
@@ -1356,7 +1455,7 @@ fonctionnent-ils bien ?
       </tr>
       <tr>
         <td className="border border-gray-300 px-4 py-2">
-        Zones humides bien isolées contre la corrosion ?
+        Conduits d’air bien isolés (notamment en zones non chauffées) ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
@@ -1374,29 +1473,6 @@ fonctionnent-ils bien ?
             value="NON"
             checked={AAQ16 === "NON"}
             onChange={(e) => setAAQ16(e.target.value)}
-          />
-        </td>
-      </tr>
-      <tr>
-        <td className="border border-gray-300 px-4 py-2">
-        Conduits d’air bien isolés (notamment en zones non chauffées) ?
-        </td>
-        <td className="border border-gray-300 px-4 py-2 text-center">
-          <input
-            type="radio"
-            name="AAQ17"
-            value="OUI"
-            checked={AAQ17 === "OUI"}
-            onChange={(e) => setAAQ17(e.target.value)}
-          />
-        </td>
-        <td className="border border-gray-300 px-4 py-2 text-center">
-          <input
-            type="radio"
-            name="AAQ17"
-            value="NON"
-            checked={AAQ17 === "NON"}
-            onChange={(e) => setAAQ17(e.target.value)}
           />
         </td>
       </tr>

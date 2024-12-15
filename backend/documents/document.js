@@ -347,7 +347,7 @@
 //   }
 
 
-module.exports = ({AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApuissancenomina1l, AACO1P, AAmarqu2e, AAreferenc2e, AAnomberuni2t1, AAnomberuni2t2, AApuissancenomina2l, AACO2P, AAmarqu3e, AAreferenc3e, AAnomberuni3t1, AAnomberuni3t2, AApuissancenomina3l, AACO3P, AAmarqu4e, AAreferenc4e, AAnomberuni4t1, AAnomberuni4t2, AApuissancenomina4l, AACO4P, AAmarqu5e, AAreferenc5e, AAnomberuni5t1, AAnomberuni5t2, AApuissancenomina5l, AACO5P, AAQ1, AAQ2, AAQ3, AAQ4, AAQ5, AAQ6, AAQ7, AAQ8, AAQ9, AAQ10, AAQ11, AAQ12, AAQ13, AAQ14, AAQ15, AAQ16, AAQ17}) => {
+module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19, AAmarque1, AAreference1, AAnomberunit11, AAnomberunit21, AApuissancenominal1, AACOP1,AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApuissancenomina1l, AACO1P, AAmarqu2e, AAreferenc2e, AAnomberuni2t1, AAnomberuni2t2, AApuissancenomina2l, AACO2P, AAmarqu3e, AAreferenc3e, AAnomberuni3t1, AAnomberuni3t2, AApuissancenomina3l, AACO3P, AAmarqu4e, AAreferenc4e, AAnomberuni4t1, AAnomberuni4t2, AApuissancenomina4l, AACO4P, AAmarqu5e, AAreferenc5e, AAnomberuni5t1, AAnomberuni5t2, AApuissancenomina5l, AACO5P, AA1Q1, AAQ1, AAQ2, AAQ3, AAQ4, AAQ5, AAQ6, AAQ7, AAQ8, AAQ9, AAQ10, AAQ11, AAQ12, AAQ13, AAQ14, AAQ15, AAQ16, AAQ17}) => {
     const today = new Date();
     return `
 
@@ -374,19 +374,20 @@ module.exports = ({AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApu
  table, tbody {vertical-align: top; overflow: visible; }
 </style></head><body style="justify-content: center; align-items: center;">
 <div class="textbox" style="background:#A42F0F;border:1.0pt solid #000000;display:block;min-height:26.8pt;width:493.1pt;">
-<p class="s1" style="padding-top: 3pt;padding-left: 48pt;text-indent: 0pt;text-align: left;">Mise en œuvre conforme aux exigences du scénario retenu</p>
+<p class="s1" style="padding-top: 3pt; padding-left: 6pt; text-indent: 0pt; text-align: center;">Mise en œuvre conforme aux exigences du scénario retenu</p>
 </div>
 <p style="padding-left: 6pt;text-indent: 0pt;text-align: left;"/>
 <p style="padding-top: 1pt;text-indent: 0pt;text-align: left;"><br/></p>
-<table style="border-collapse:collapse;margin-left:6.8957pt" cellspacing="0">
+<table style="border-collapse:collapse; margin: 0 auto;" cellspacing="0">
 <tr style="height:17pt">
 <td style="width:371pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
 <p class="s2" style="padding-top: 2pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Document matérialisant l&#39;engagement de l&#39;opération (devis signés..)</p>
 </td>
 <td style="width:58pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q1MO === "OUI" ? "OUI" : ""}</p>
 </td>
-<td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q1MO === 'NON' ? 'NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:18pt">
@@ -394,10 +395,10 @@ module.exports = ({AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApu
 <p class="s2" style="padding-top: 3pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Date d&#39;engagement de l&#39;opération :</p>
 </td>
 <td style="width:58pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q2MO === 'OUI' ? 'OUI' : ''}</p>
 </td>
 <td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q2MO === 'NON' ? 'NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:27pt">
@@ -405,20 +406,20 @@ module.exports = ({AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApu
 <p class="s2" style="padding-top: 2pt;padding-left: 1pt;text-indent: 0pt;line-height: 111%;text-align: left;">Document prouvant la réalisation de l’opération (facture des travaux, PV de réception, etc) remis au bénéficiaire :</p>
 </td>
 <td style="width:58pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q3MO === 'OUI' ? 'OUI' : ''}</p>
 </td>
 <td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q3MO === 'NON' ? 'NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:16pt"><td style="width:371pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
 <p class="s2" style="padding-top: 2pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Référence de la facture :</p>
 </td>
 <td style="width:58pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q4MO === 'OUI' ? 'OUI' : ''}</p>
 </td>
 <td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q4MO === 'NON' ? 'NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:19pt">
@@ -426,105 +427,210 @@ module.exports = ({AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApu
 <p class="s2" style="padding-top: 3pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Cadre contribution remis au bénéficiaire</p>
 </td>
 <td style="width:58pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q5MO === 'OUI' ? 'OUI' : ''}</p>
 </td>
 <td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q5MO === 'NON' ? 'NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:25pt"><td style="width:371pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
 <p class="s2" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">bâtiment residentiel collectif existant de plus de 2 ans à la date d’engagement de l’opération ?</p>
 </td>
 <td style="width:58pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q1 === 'OUI' ? 'OUI' : ''}</p>
 </td>
-<td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p></td></tr><tr style="height:44pt"><td style="width:371pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p class="s2" style="padding-top: 5pt;padding-left: 1pt;padding-right: 1pt;text-indent: 0pt;line-height: 111%;text-align: justify;">Les scénarios de travaux proposés dans l’étude énergétique correspondent-ils aux travaux réalisés sur site ? <span style=" color: #808080;">NB : Si «NON», une mise à jour de l’étude énergétique est à prévoir pour confirmer le gain (%) entre état initial et futur conformément aux travaux réels.</span></p>
+<td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q1 === 'NON' ? 'NON' : ''}</p>
 </td>
-<td style="width:58pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p></td></tr><tr style="height:19pt"><td style="width:371pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+</tr>
+<tr style="height:44pt"><td style="width:371pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s2" style="padding-top: 5pt;padding-left: 1pt;padding-right: 1pt;text-indent: 0pt;line-height: 111%;text-align: justify;">Les scénarios de travaux proposés dans l’étude énergétique correspondent-ils aux travaux réalisés sur site ? <span style=" color: #808080;">NB : Si «NON», une mise à jour de l’étude énergétique est à prévoir pour confirmer le gain (%) entre état initial et futur conformément aux travaux réels.</span></p>
+</td>
+<td style="width:58pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q2 === 'OUI' ? 'OUI' : ''}</p>
+</td>
+<td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q2 === 'NON' ? 'NON' : ''}</p>
+</td>
+</tr>
+<tr style="height:19pt">
+<td style="width:371pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
 <p class="s2" style="padding-top: 3pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Choix du scénario</p>
 </td>
 <td style="width:122pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="2" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q3}</p>
 </td>
 </tr>
-<tr style="height:24pt"><td style="width:371pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p class="s2" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Surface habitable prise en compte dans l’audit du bâtiment residentiel collectif rénovée (m²)</p></td><td style="width:122pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="2" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<tr style="height:24pt">
+<td style="width:371pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s2" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Surface habitable prise en compte dans l’audit du bâtiment residentiel collectif rénovée (m²)</p>
+</td>
+<td style="width:122pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="2" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q4}</p>
 </td>
 </tr>
 <tr style="height:18pt">
-<td style="width:371pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p class="s2" style="padding-top: 3pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Surface habitable mesurée (m²) :</p></td><td style="width:122pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="2" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:371pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s2" style="padding-top: 3pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Surface habitable mesurée (m²) :</p>
+</td>
+<td style="width:122pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="2" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q5}</p>
 </td>
 </tr>
 <tr style="height:28pt">
-<td style="width:371pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p class="s2" style="padding-top: 2pt;padding-left: 1pt;text-indent: 0pt;line-height: 111%;text-align: left;">Il est constaté un écart de surface habitable de plus de 10% ? (écart = (surface déclarée-surface mesurée) /surface mesurée *100)</p></td><td style="width:58pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:371pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s2" style="padding-top: 2pt;padding-left: 1pt;text-indent: 0pt;line-height: 111%;text-align: left;">Il est constaté un écart de surface habitable de plus de 10% ? (écart = (surface déclarée-surface mesurée) /surface mesurée *100)</p>
+</td>
+<td style="width:58pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q6 === 'OUI' ? 'OUI' : ''}</p>
+</td>
+<td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q6 === 'NON' ? 'NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:21pt">
-<td style="width:371pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p class="s2" style="padding-top: 5pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Le prestataire ayant réalisé l’étude énergétique a-t-il proposé un scénario BBC:</p></td><td style="width:58pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:371pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s2" style="padding-top: 5pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Le prestataire ayant réalisé l’étude énergétique a-t-il proposé un scénario BBC:</p></td><td style="width:58pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q7 === 'OUI' ? 'OUI' : ''}</p>
+</td>
+<td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q7 === 'NON' ? 'NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:18pt"><td style="width:371pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
 <p class="s2" style="padding-top: 3pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Le cep projet est ≤à 110 kWh/m² par an ?</p>
 </td>
-<td style="width:58pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
-</td>
-</tr>
-<tr style="height:31pt"><td style="width:371pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p class="s2" style="padding-top: 4pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">La consommation conventionnelle annuelle en énergie primaire après travaux, rapportée à la surface</p><p class="s2" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">habitable du bâtiment, est &lt; à 331 kWh/(m².an)</p></td><td style="width:58pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:58pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q8 === 'OUI' ? 'OUI' : ''}</p>
 </td>
 <td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q8 === 'NON' ? 'NON' : ''}</p>
+</td>
+</tr>
+<tr style="height:31pt">
+<td style="width:371pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s2" style="padding-top: 4pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">La consommation conventionnelle annuelle en énergie primaire après travaux, rapportée à la surface</p>
+<p class="s2" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">habitable du bâtiment, est &lt; à 331 kWh/(m².an)</p>
+</td>
+<td style="width:58pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q8 === 'OUI' ? 'OUI' : ''}</p></p>
+</td>
+<td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q8 === 'NON' ? 'NON' : ''}</p></p>
 </td>
 </tr>
 <tr style="height:34pt"><td style="width:371pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
 <p class="s2" style="padding-top: 5pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Les émissions de gaz à effet de serre après rénovation, exprimées en kgeqCO2/m².an, sont inférieures</p><p class="s2" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">ou égales à la valeur initiale de ces émissions avant travaux :</p>
 </td>
-<td style="width:58pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:58pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q9 === 'OUI' ? 'OUI' : ''}</p>
+</td>
+<td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q9 === 'NON' ? 'NON' : ''}</p>
 </td>
 </tr>
-<tr style="height:18pt"><td style="width:371pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p class="s2" style="padding-top: 3pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">L’audit énergétique ne prend en compte que les installations de chauffage fixes</p>
+<tr style="height:18pt">
+<td style="width:371pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s2" style="padding-top: 3pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">L’audit énergétique ne prend en compte que les installations de chauffage fixes</p>
 </td>
 <td style="width:58pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q10 === 'OUI' ? 'OUI' : ''}</p>
 </td>
-<td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p></td></tr><tr style="height:27pt"><td style="width:371pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p class="s2" style="padding-top: 8pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Les équipements de production de chaleur ou d’ECS installés utilisent plus de 50 % d’ENR ?</p>
-</td>
-<td style="width:58pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
-</td>
-<td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q10 === 'NON' ? 'NON' : ''}</p>
 </td>
 </tr>
-<tr style="height:32pt"><td style="width:371pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p class="s2" style="padding-top: 4pt;padding-left: 1pt;text-indent: 0pt;line-height: 111%;text-align: left;">L’audit énergétique a été réalisé à l’aide d’un logiciel répondant aux exigences de la fiche BAR-TH- 145</p></td><td style="width:58pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<tr style="height:27pt"><td style="width:371pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s2" style="padding-top: 8pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Les équipements de production de chaleur ou d’ECS installés utilisent plus de 50 % d’ENR ?</p>
 </td>
-<td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p></td></tr><tr style="height:25pt"><td style="width:371pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p class="s2" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">L’audit énergétique pris en compte pour la réalisation des travaux dispose d’un avis satisfaisant</p></td><td style="width:58pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:58pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q11 === 'OUI' ? 'OUI' : ''}</p>
 </td>
-<td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p></td></tr><tr style="height:31pt"><td style="width:371pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p class="s2" style="padding-top: 4pt;padding-left: 1pt;text-indent: 0pt;line-height: 111%;text-align: left;">L’audit énergétique mentionne les valeurs de consommations conventionnelles en énergie primaire et en énergie finale avant et après l’opération</p></td><td style="width:58pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q11 === 'NON' ? 'NON' : ''}</p>
+</td>
+</tr>
+<tr style="height:32pt">
+<td style="width:371pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s2" style="padding-top: 4pt;padding-left: 1pt;text-indent: 0pt;line-height: 111%;text-align: left;">L’audit énergétique a été réalisé à l’aide d’un logiciel répondant aux exigences de la fiche BAR-TH- 145</p>
+</td>
+<td style="width:58pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q12 === 'OUI' ? 'OUI' : ''}</p>
+</td>
+<td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q12 === 'NON' ? 'NON' : ''}</p>
+</td>
+</tr>
+<tr style="height:25pt">
+<td style="width:371pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s2" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">L’audit énergétique pris en compte pour la réalisation des travaux dispose d’un avis satisfaisant</p></td><td style="width:58pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q13 === 'OUI' ? 'OUI' : ''}</p>
+</td>
+<td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q13 === 'NON' ? 'NON' : ''}</p>
+</td>
+</tr>
+<tr style="height:31pt">
+<td style="width:371pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s2" style="padding-top: 4pt;padding-left: 1pt;text-indent: 0pt;line-height: 111%;text-align: left;">L’audit énergétique mentionne les valeurs de consommations conventionnelles en énergie primaire et en énergie finale avant et après l’opération</p>
+</td>
+<td style="width:58pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q14 === 'OUI' ? 'OUI' : ''}</p>
+</td>
+<td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q14 === 'NON' ? 'NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:20pt">
-<td style="width:371pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p class="s2" style="padding-top: 4pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Le niveau de confort thermique après travaux est meilleur qu’avant les travaux ?</p></td><td style="width:58pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:371pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s2" style="padding-top: 4pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Le niveau de confort thermique après travaux est meilleur qu’avant les travaux ?</p>
 </td>
-<td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p></td></tr><tr style="height:77pt"><td style="width:371pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p class="s2" style="padding-top: 5pt;padding-left: 1pt;text-indent: 0pt;line-height: 111%;text-align: left;">Les changements d’équipements de chauffage ou de production d’eau chaude sanitaire le cas échéant préconisés, hors raccordement à un réseau de chaleur, ne conduisent :</p><ol id="l1"><li data-list-text="a)"><p class="s2" style="padding-top: 7pt;padding-left: 1pt;padding-right: 1pt;text-indent: 0pt;line-height: 111%;text-align: left;">Ni à l&#39;installation d&#39;équipements de chauffage ou de production d&#39;eau chaude sanitaire consommant majoritairement du charbon, du fioul ou du gaz ;</p>
-</li>
-<li data-list-text="b)">
-<p class="s2" style="padding-top: 4pt;padding-left: 11pt;text-indent: -9pt;text-align: left;">Ni à une hausse des émissions de gaz à effet de serre.</p>
-</li>
-</ol>
+<td style="width:58pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q15 === 'OUI' ? 'OUI' : ''}</p>
 </td>
-<td style="width:58pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q15 === 'NON' ? 'NON' : ''}</p>
+</td>
+</tr>
+<tr style="height:77pt">
+<td style="width:371pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s2" style="padding-top: 5pt;padding-left: 1pt;text-indent: 0pt;line-height: 111%;text-align: left;">Les changements d’équipements de chauffage ou de production d’eau chaude sanitaire le cas échéant préconisés, hors raccordement à un réseau de chaleur, ne conduisent :</p><ol id="l1"><li data-list-text="a)">
+<p class="s2" style="padding-top: 7pt;padding-left: 1pt;padding-right: 1pt;text-indent: 0pt;line-height: 111%;text-align: left;">Ni à l&#39;installation d&#39;équipements de chauffage ou de production d&#39;eau chaude sanitaire consommant majoritairement du charbon, du fioul ou du gaz ;</p></li><li data-list-text="b)">
+<p class="s2" style="padding-top: 4pt;padding-left: 11pt;text-indent: -9pt;text-align: left;">Ni à une hausse des émissions de gaz à effet de serre.</p></li></ol>
+</td>
+<td style="width:58pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q16 === 'OUI' ? 'OUI' : ''}</p>
+</td>
+<td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q16 === 'NON' ? 'NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:84pt">
 <td style="width:371pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p class="s2" style="padding-top: 7pt;padding-left: 1pt;padding-right: 1pt;text-indent: 0pt;line-height: 111%;text-align: left;">le taux d’énergie renouvelable ou de récupération de la production de chauffage et d’eau chaude sanitaire du bâtiment après travaux calculé selon les modalités définies à l’annexe IV-1 de l’arrêté du 29 décembre 2014 modifié relatif aux modalités d’application du dispositif des certificats d’économies d’énergie correspond à celui utilisé pour le calcul du montant de CEE ; il vérifie, notamment dans le cas où une pompe à chaleur est installée, que le COP saisonnier retenu pour le calcul de ce taux est conforme aux indications du fournisseur ;</p></td><td style="width:58pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p class="s2" style="padding-top: 7pt;padding-left: 1pt;padding-right: 1pt;text-indent: 0pt;line-height: 111%;text-align: left;">le taux d’énergie renouvelable ou de récupération de la production de chauffage et d’eau chaude sanitaire du bâtiment après travaux calculé selon les modalités définies à l’annexe IV-1 de l’arrêté du 29 décembre 2014 modifié relatif aux modalités d’application du dispositif des certificats d’économies d’énergie correspond à celui utilisé pour le calcul du montant de CEE ; il vérifie, notamment dans le cas où une pompe à chaleur est installée, que le COP saisonnier retenu pour le calcul de ce taux est conforme aux indications du fournisseur ;</p>
+</td>
+<td style="width:58pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q17 === 'OUI' ? 'OUI' : ''}</p>
+</td>
+<td style="width:64pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${Q17 === 'NON' ? 'NON' : ''}</p>
 </td>
 </tr>
 </table>
-<p style="padding-top: 3pt;padding-left: 6pt;text-indent: 0pt;text-align: left;">
-<span class="p" style=" background-color: #A42F0F;">                Pompe à chaleur - AIR/AIR         </span></p>
-<p style="padding-top: 4pt;text-indent: 0pt;text-align: left;"><br/></p>
-<table style="border-collapse:collapse;margin-left:6.8962pt" cellspacing="0">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p style="padding-top: 3pt; padding-left: 6pt; text-indent: 0pt; text-align: center;">
+  <span class="p" style="background-color: #A42F0F;">Pompe à chaleur - AIR/AIR</span>
+</p>
+
+<p style="padding-top: 4pt; text-indent: 0pt; text-align: center;"><br/></p>
+
+<table style="border-collapse:collapse; margin: 0 auto;" cellspacing="0">
 <tr style="height:36pt">
 <td style="width:73pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
 <p class="s4" style="padding-top: 11pt;padding-left: 17pt;text-indent: 0pt;text-align: left;">Marque</p>
@@ -546,218 +652,391 @@ module.exports = ({AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApu
 </td>
 </tr>
 <tr style="height:23pt">
-<td style="width:73pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:73pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAmarqu1e}</p>
 </td>
-<td style="width:66pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:75pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:66pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAreferenc1e}</p>
+</td>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAnomberuni1t1}</p>
+</td>
+<td style="width:75pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAnomberuni1t2}</p>
+</td>
+<td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AApuissancenomina1l}</p>
+</td>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AACO1P}</p>
 </td>
 </tr>
-<tr style="height:21pt"><td style="width:73pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<tr style="height:21pt">
+<td style="width:73pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAmarqu2e}</p>
 </td>
-<td style="width:66pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:75pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:66pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAreferenc2e}</p>
 </td>
-<td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p></td></tr><tr style="height:21pt"><td style="width:73pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:66pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAnomberuni2t1}</p>
 </td>
-<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:75pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:75pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAnomberuni2t2}</p>
 </td>
-<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p></td></tr><tr style="height:21pt"><td style="width:73pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:66pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:75pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AApuissancenomina2l}</p>
 </td>
-<td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AACO2P}</p>
 </td>
-<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p></td></tr><tr style="height:21pt"><td style="width:73pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:66pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:75pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+</tr>
+<tr style="height:21pt"><td style="width:73pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAmarqu3e}</p>
 </td>
-<td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:66pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAreferenc3e}</p>
 </td>
-<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAnomberuni3t1}</p>
+</td>
+<td style="width:75pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAnomberuni3t2}</p>
+</td>
+<td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AApuissancenomina3l}</p>
+</td>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AACO3P}</p>
+</td>
+</tr>
+<tr style="height:21pt"><td style="width:73pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAmarqu4e}</p>
+</td>
+<td style="width:66pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAreferenc4e}</p>
+</td>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAnomberuni4t1}</p>
+</td>
+<td style="width:75pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAnomberuni4t2}</p>
+</td>
+<td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AApuissancenomina4l}</p>
+</td>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AACO4P}</p>
+</td>
+</tr>
+<tr style="height:21pt"><td style="width:73pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAmarqu5e}</p>
+</td>
+<td style="width:66pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAreferenc5e}</p>
+</td>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAnomberuni5t1}</p>
+</td>
+<td style="width:75pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAnomberuni5t2}</p>
+</td>
+<td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AApuissancenomina5l}</p>
+</td>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AACO5P}</p>
 </td>
 </tr>
 </table>
 <p style="padding-top: 10pt;text-indent: 0pt;text-align: left;"><br/></p>
-<table style="border-collapse:collapse;margin-left:6.8962pt" cellspacing="0">
+<table style="border-collapse:collapse; margin: 0 auto;" cellspacing="0">
 <tr style="height:23pt">
-<td style="width:292pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p class="s5" style="padding-top: 4pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Ancien système de chauffage</p></td><td style="width:158pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="2" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:292pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s5" style="padding-top: 4pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Ancien système de chauffage</p>
+</td>
+<td style="width:158pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="2" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AA1Q1}</p>
 </td>
 </tr>
 <tr style="height:29pt">
 <td style="width:292pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
 <p class="s5" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">PAC utilisée pour le chauffage ?</p>
 </td>
-<td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
-</td>
-<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
-</td>
-</tr>
-<tr style="height:29pt"><td style="width:292pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p class="s5" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">SCOP et COP sont-ils conformes à l’audit énergétique ?</p></td><td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p></td></tr><tr style="height:29pt"><td style="width:292pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p class="s5" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">La puissance de la PAC est-elle conforme à l’audit ?</p>
-</td>
-<td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAQ1 === 'OUI' ? 'OUI' : ''}</p>
 </td>
 <td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAQ1 === 'NON' ? 'NON' : ''}</p>
+</td>
+</tr>
+<tr style="height:29pt"><td style="width:292pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s5" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">SCOP et COP sont-ils conformes à l’audit énergétique ?</p></td><td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAQ2 === 'OUI' ? 'OUI' : ''}</p>
+</td>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAQ2 === 'NON' ? 'NON' : ''}</p>
+</td>
+</tr>
+<tr style="height:29pt">
+<td style="width:292pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s5" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">La puissance de la PAC est-elle conforme à l’audit ?</p>
+</td>
+<td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAQ3 === 'OUI' ? 'OUI' : ''}</p>
+</td>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAQ3 === 'NON' ? 'NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:33pt">
-<td style="width:292pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p class="s5" style="padding-top: 9pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Disjoncteur différentiel dédié à la PAC présent ?</p>
+<td style="width:292pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s5" style="padding-top: 9pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Disjoncteur différentiel dédié à la PAC présent ?</p>
 </td>
-<td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAQ4 === 'OUI' ? 'OUI' : ''}</p>
 </td>
-<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAQ4 === 'NON' ? 'NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:34pt"><td style="width:292pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p class="s5" style="padding-top: 3pt;padding-left: 1pt;padding-right: 27pt;text-indent: 0pt;line-height: 110%;text-align: left;">Les modes (chauffage, refroidissement, déshumidification) fonctionnent-ils bien ?</p></td><td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p class="s5" style="padding-top: 3pt;padding-left: 1pt;padding-right: 27pt;text-indent: 0pt;line-height: 110%;text-align: left;">Les modes (chauffage, refroidissement, déshumidification) fonctionnent-ils bien ?</p>
 </td>
-<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p></td></tr><tr style="height:29pt"><td style="width:292pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAQ5 === 'OUI' ? 'OUI' : ''}</p>
+</td>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAQ5 === 'NON' ? 'NON' : ''}</p>
+</td>
+</tr>
+<tr style="height:29pt"><td style="width:292pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
 <p class="s5" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Raccords frigorifiques sans fuites ?</p>
 </td>
-<td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p></td></tr><tr style="height:29pt"><td style="width:292pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p class="s5" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Températures entrée/sortie conformes au fabricant ?</p>
+<td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAQ6 === 'OUI' ? 'OUI' : ''}</p>
 </td>
-<td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAQ6 === 'NON' ? 'NON' : ''}</p>
+</td>
+</tr>
+<tr style="height:29pt"><td style="width:292pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p class="s5" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Températures entrée/sortie conformes au fabricant ?</p>
+</td>
+<td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAQ7 === 'OUI' ? 'OUI' : ''}</p>
+</td>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAQ7 === 'NON' ? 'NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:29pt">
-<td style="width:292pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p class="s5" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Pression du fluide frigorigène normale ?</p>
+<td style="width:292pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s5" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Pression du fluide frigorigène normale ?</p>
 </td>
-<td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAQ8 === 'OUI' ? 'OUI' : ''}</p>
 </td>
-<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAQ8 === 'NON' ? 'NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:29pt">
-<td style="width:292pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p class="s5" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Nombre de splits adapté aux locaux ?</p>
+<td style="width:292pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s5" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Nombre de splits adapté aux locaux ?</p>
 </td>
-<td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAQ9 === 'OUI' ? 'OUI' : ''}</p>
+</td>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAQ9 === 'NON' ? 'NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:29pt">
 <td style="width:292pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
 <p class="s5" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Réseaux hors volume chauffé bien isolés ?</p>
 </td>
-<td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/>
+<td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAQ10 === 'OUI' ? 'OUI' : ''}</p>
 </p>
 </td>
-<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p></td>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAQ10 === 'NON' ? 'NON' : ''}</p>
+</td>
 </tr>
 <tr style="height:29pt">
-<td style="width:292pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p class="s5" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Coupe-circuit installé pour le groupe extérieur ?</p>
+<td style="width:292pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s5" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Coupe-circuit installé pour le groupe extérieur ?</p>
 </td>
-<td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAQ11 === 'OUI' ? 'OUI' : ''}</p>
+</td>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAQ11 === 'NON' ? 'NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:29pt">
 <td style="width:292pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
 <p class="s5" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Évacuation des condensats sans fuites ni obstruction ?</p>
 </td>
-<td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAQ12 === 'OUI' ? 'OUI' : ''}</p>
+</td>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAQ12 === 'NON' ? 'NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:29pt">
-<td style="width:292pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p class="s5" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Tuyaux de réfrigérant bien isolés ?</p>
-</td><td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
-</td><td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
-</td>
-</tr>
-<tr style="height:29pt">
-<td style="width:292pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p class="s5" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Température homogène et conforme à la consigne ?</p>
-</td><td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
-</td><td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
-</td>
-</tr>
-<tr style="height:29pt">
-<td style="width:292pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p class="s5" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Zones humides bien isolées contre la corrosion ?</p>
-</td><td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
-</td><td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
-</td>
-</tr>
-<tr style="height:29pt">
-<td style="width:292pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p class="s5" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Conduits d’air bien isolés (notamment en zones non chauffées) ?</p>
+<td style="width:292pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s5" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Tuyaux de réfrigérant bien isolés ?</p>
 </td>
 <td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAQ13 === 'OUI' ? 'OUI' : ''}</p>
 </td>
-<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAQ13 === 'NON' ? 'NON' : ''}</p>
+</td>
+</tr>
+<tr style="height:29pt">
+<td style="width:292pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s5" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Température homogène et conforme à la consigne ?</p>
+</td>
+<td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAQ14 === 'OUI' ? 'OUI' : ''}</p>
+</td>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAQ14 === 'NON' ? 'NON' : ''}</p>
+</td>
+</tr>
+<tr style="height:29pt">
+<td style="width:292pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s5" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Zones humides bien isolées contre la corrosion ?</p>
+</td>
+<td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAQ15 === 'OUI' ? 'OUI' : ''}</p>
+</td>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAQ15 === 'NON' ? 'NON' : ''}</p>
+</td>
+</tr>
+<tr style="height:29pt">
+<td style="width:292pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s5" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Conduits d’air bien isolés (notamment en zones non chauffées) ?</p>
+</td>
+<td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAQ16 === 'OUI' ? 'OUI' : ''}</p>
+</td>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black;">${AAQ16 === 'NON' ? 'NON' : ''}</p>
 </td>
 </tr>
 </table>
 <p style="padding-top: 3pt;padding-left: 6pt;text-indent: 0pt;text-align: left;"><span class="p" style=" background-color: #A42F0F;">                Pompe à chaleur - AIR/EAU         </span></p>
 <p style="padding-top: 4pt;text-indent: 0pt;text-align: left;"><br/></p>
-<table style="border-collapse:collapse;margin-left:6.8962pt" cellspacing="0">
+<table style="border-collapse:collapse; margin: 0 auto;" cellspacing="0">
 <tr style="height:36pt">
-<td style="width:85pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p class="s4" style="padding-top: 11pt;padding-left: 23pt;text-indent: 0pt;text-align: left;">Marque</p>
+<td style="width:85pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p class="s4" style="padding-top: 11pt;padding-left: 23pt;text-indent: 0pt;text-align: left;">Marque</p>
 </td>
-<td style="width:112pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p class="s4" style="padding-top: 11pt;padding-left: 32pt;text-indent: 0pt;text-align: left;">Référence</p>
+<td style="width:112pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p class="s4" style="padding-top: 11pt;padding-left: 32pt;text-indent: 0pt;text-align: left;">Référence</p>
 </td>
-<td style="width:121pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p class="s4" style="padding-top: 11pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">COP</p>
+<td style="width:121pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p class="s4" style="padding-top: 11pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">COP</p>
 </td>
-<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p class="s4" style="padding-top: 4pt;padding-left: 6pt;padding-right: 4pt;text-indent: 9pt;line-height: 110%;text-align: left;">Puissance nominal (kW)</p></td><td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p class="s4" style="padding-top: 11pt;padding-left: 11pt;text-indent: 0pt;text-align: left;">Quantité</p>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p class="s4" style="padding-top: 4pt;padding-left: 6pt;padding-right: 4pt;text-indent: 9pt;line-height: 110%;text-align: left;">Puissance nominal (kW)</p></td><td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p class="s4" style="padding-top: 11pt;padding-left: 11pt;text-indent: 0pt;text-align: left;">Quantité</p>
 </td>
 </tr>
 <tr style="height:23pt">
-<td style="width:85pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:85pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: left;"><br/></p>
 </td>
-<td style="width:112pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:112pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: left;"><br/></p>
 </td>
 <td style="width:121pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
 <p style="text-indent: 0pt;text-align: left;"><br/></p>
 </td>
-<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: left;"><br/></p>
 </td>
-<td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: left;"><br/></p>
 </td>
 </tr>
 <tr style="height:21pt">
-<td style="width:85pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:85pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: left;"><br/></p>
 </td>
-<td style="width:112pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:112pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: left;"><br/></p>
 </td>
-<td style="width:121pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:121pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: left;"><br/></p>
 </td>
-<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: left;"><br/></p>
 </td>
-<td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: left;"><br/></p>
 </td>
 </tr>
-<tr style="height:21pt"><td style="width:85pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<tr style="height:21pt"><td style="width:85pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: left;"><br/></p>
 </td>
-<td style="width:112pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:112pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: left;"><br/></p>
 </td>
-<td style="width:121pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:121pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: left;"><br/></p>
 </td>
-<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: left;"><br/></p>
 </td>
-<td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p></td></tr><tr style="height:21pt">
-<td style="width:85pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: left;"><br/></p>
 </td>
-<td style="width:112pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:121pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p>
-</td><td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+</tr>
+<tr style="height:21pt">
+<td style="width:85pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: left;"><br/></p>
 </td>
-<td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p></td></tr><tr style="height:21pt">
-<td style="width:85pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:112pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: left;"><br/></p>
 </td>
-<td style="width:112pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:121pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: left;"><br/></p>
 </td>
-<td style="width:121pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: left;"><br/></p>
 </td>
-<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: left;"><br/></p>
 </td>
-<td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+</tr>
+<tr style="height:21pt">
+<td style="width:85pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: left;"><br/></p>
+</td>
+<td style="width:112pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: left;"><br/></p>
+</td>
+<td style="width:121pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: left;"><br/></p>
+</td>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: left;"><br/></p>
+</td>
+<td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: left;"><br/></p>
 </td>
 </tr>
 </table>
 <p style="padding-top: 10pt;text-indent: 0pt;text-align: left;"><br/></p>
-<table style="border-collapse:collapse;margin-left:6.8962pt" cellspacing="0">
-<tr style="height:23pt"><td style="width:318pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p class="s5" style="padding-top: 4pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Ancien système de chauffage</p>
+<table style="border-collapse:collapse; margin: 0 auto;" cellspacing="0">
+<tr style="height:23pt">
+<td style="width:318pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s5" style="padding-top: 4pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Ancien système de chauffage</p>
 </td>
 <td style="width:143pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="2" bgcolor="#F9CFC2">
 <p style="text-indent: 0pt;text-align: left;"><br/></p>
@@ -834,7 +1113,7 @@ module.exports = ({AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApu
 </td></tr></table><p style="padding-top: 2pt;text-indent: 0pt;text-align: center;"><span style=" color: #FFF; font-family:&quot;Times New Roman&quot;, serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 16pt;">Chauffe-Eau Thermodynamique</span></p>
 <p style="padding-left: 5pt;text-indent: 0pt;text-align: left;"/>
 <p style="text-indent: 0pt;text-align: left;"><br/></p>
-<table style="border-collapse:collapse;margin-left:6.8962pt" cellspacing="0">
+<table style="border-collapse:collapse; margin: 0 auto;" cellspacing="0">
 <tr style="height:25pt">
 <td style="width:301pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Type de Chauffe-Eau Thermodynamique</p>
 </td>
@@ -951,7 +1230,7 @@ module.exports = ({AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApu
 <p style="padding-top: 2pt;text-indent: 0pt;text-align: center;"><span style=" color: #FFF; font-family:&quot;Times New Roman&quot;, serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 16pt;">Isolation du comble</span></p>
 <p style="padding-left: 5pt;text-indent: 0pt;text-align: left;"/>
 <p style="text-indent: 0pt;text-align: left;"><br/></p>
-<table style="border-collapse:collapse;margin-left:6.8957pt" cellspacing="0">
+<table style="border-collapse:collapse; margin: 0 auto;" cellspacing="0">
 <tr style="height:20pt">
 <td style="width:289pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" rowspan="2">
 <p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Type de comble</p>
