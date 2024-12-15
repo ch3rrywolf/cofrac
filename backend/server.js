@@ -8,7 +8,8 @@ const pdfRoute = require('./routes/pdfRoutes')
 
 dotenv.config()
 
-app.use(body_parser.json())
+app.use(body_parser.json({ limit: '50mb' }));
+app.use(body_parser.urlencoded({ limit: '50mb', extended: true }));
 
 if (process.env.mode === 'production') {
     app.use(cors())
