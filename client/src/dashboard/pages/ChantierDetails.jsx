@@ -52,7 +52,7 @@ const ChantierDetails = () => {
                   to="/dashboard/chantiers/form"
                   className="px-3 py-2 bg-purple-500 rounded text-white hover:bg-purple-600"
                 >
-                  + Formulaire
+                  + Formulaire Après
                 </Link>
               </div>
         <div className='flex justify-between items-center pb-4'>
