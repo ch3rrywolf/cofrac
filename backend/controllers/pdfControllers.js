@@ -15,7 +15,7 @@ if (!fs.existsSync(pdfDirectory)) {
 class pdfController {
     createPdf = (req, res) => {
         const pdfPath = path.join(__dirname, '../pdfs/formulaire.pdf');
-
+    
         pdf.create(pdfTemplate(req.body), {}).toFile(pdfPath, (err) => {
             if (err) {
                 console.error(err);
