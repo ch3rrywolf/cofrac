@@ -930,7 +930,16 @@ module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8,
 </td>
 </tr>
 </table>
-<p style="padding-top: 3pt;padding-left: 6pt;text-indent: 0pt;text-align: left;"><span class="p" style=" background-color: #A42F0F;">                Pompe à chaleur - AIR/EAU         </span></p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p style="padding-top: 3pt; padding-left: 6pt; text-indent: 0pt; text-align: center;">
+  <span class="p" style="background-color: #A42F0F;">Pompe à chaleur - AIR/EAU</span>
+</p>
 <p style="padding-top: 4pt;text-indent: 0pt;text-align: left;"><br/></p>
 <table style="border-collapse:collapse; margin: 0 auto;" cellspacing="0">
 <tr style="height:36pt">
@@ -1110,7 +1119,28 @@ module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8,
 <p class="s5" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Réseaux hors volume chauffé bien isolés ?</p>
 </td>
 <td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
-</td></tr></table><p style="padding-top: 2pt;text-indent: 0pt;text-align: center;"><span style=" color: #FFF; font-family:&quot;Times New Roman&quot;, serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 16pt;">Chauffe-Eau Thermodynamique</span></p>
+</td>
+</tr>
+</table>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p style="padding-top: 3pt; padding-left: 6pt; text-indent: 0pt; text-align: center;">
+  <span class="p" style="background-color: #A42F0F;">Chauffe-Eau Thermodynamique</span>
+</p>
 <p style="padding-left: 5pt;text-indent: 0pt;text-align: left;"/>
 <p style="text-indent: 0pt;text-align: left;"><br/></p>
 <table style="border-collapse:collapse; margin: 0 auto;" cellspacing="0">
@@ -1221,13 +1251,31 @@ module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8,
 </td>
 </tr>
 </table>
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center;"><br/></p>
 <div class="textbox" style="border:1.0pt solid #A42F0F;display:block;min-height:189.5pt;width:480.2pt;">
 <p style="text-indent: 0pt;text-align: left;"><br/></p>
 <p class="s7" style="text-indent: 0pt;text-align: center;">Photos</p>
 </div>
-<p style="padding-left: 6pt;text-indent: 0pt;text-align: left;"/>
-<p style="padding-top: 2pt;text-indent: 0pt;text-align: center;"><span style=" color: #FFF; font-family:&quot;Times New Roman&quot;, serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 16pt;">Isolation du comble</span></p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p style="padding-left: 6pt;text-indent: 0pt;text-align: center;"/>
+<p style="padding-top: 3pt; padding-left: 6pt; text-indent: 0pt; text-align: center;">
+  <span class="p" style="background-color: #A42F0F;">Isolation du comble</span>
+</p>
 <p style="padding-left: 5pt;text-indent: 0pt;text-align: left;"/>
 <p style="text-indent: 0pt;text-align: left;"><br/></p>
 <table style="border-collapse:collapse; margin: 0 auto;" cellspacing="0">
@@ -1241,7 +1289,7 @@ module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8,
 <td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#BBBBBB;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#BBBBBB;border-right-style:solid;border-right-width:1pt;border-right-color:#BBBBBB" bgcolor="#FFFFFF">
 <p style="text-indent: 0pt;text-align: left;"/>
 <p style="text-indent: 0pt;text-align: left;"/>
-<p class="s6" style="padding-top: 4pt;padding-left: 9pt;text-indent: 0pt;text-align: left;">aménagés</p>
+<p class="s6" style="padding-top: 4pt;padding-left: 9pt;text-indent: 0pt;text-align: left;"></p>
 </td>
 <td style="width:6pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#BBBBBB;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
 <p style="text-indent: 0pt;text-align: left;"><br/></p>
@@ -1251,7 +1299,7 @@ module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8,
 <p style="padding-left: 2pt;text-indent: 0pt;text-align: left;"/>
 </td>
 <td style="width:71pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#BBBBBB;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#BBBBBB;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#FFFFFF">
-<p class="s6" style="padding-top: 3pt;padding-left: 17pt;text-indent: 0pt;text-align: left;">perdus</p>
+<p class="s6" style="padding-top: 3pt;padding-left: 17pt;text-indent: 0pt;text-align: left;"></p>
 </td>
 </tr>
 <tr style="height:3pt">
