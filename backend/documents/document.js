@@ -347,7 +347,7 @@
 //   }
 
 
-module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19, AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApuissancenomina1l, AACO1P, AAmarqu2e, AAreferenc2e, AAnomberuni2t1, AAnomberuni2t2, AApuissancenomina2l, AACO2P, AAmarqu3e, AAreferenc3e, AAnomberuni3t1, AAnomberuni3t2, AApuissancenomina3l, AACO3P, AAmarqu4e, AAreferenc4e, AAnomberuni4t1, AAnomberuni4t2, AApuissancenomina4l, AACO4P, AAmarqu5e, AAreferenc5e, AAnomberuni5t1, AAnomberuni5t2, AApuissancenomina5l, AACO5P, AA1Q1, AAQ1, AAQ2, AAQ3, AAQ4, AAQ5, AAQ6, AAQ7, AAQ8, AAQ9, AAQ10, AAQ11, AAQ12, AAQ13, AAQ14, AAQ15, AAQ16, AEmarqu1e, AEreferenc1e, AEnomberuni1t1, AEnomberuni1t2, AEpuissancenomina1l, AECO1P, AEmarqu2e, AEreferenc2e, AEnomberuni2t1, AEnomberuni2t2, AEpuissancenomina2l, AECO2P, AEmarqu3e, AEreferenc3e, AEnomberuni3t1, AEnomberuni3t2, AEpuissancenomina3l, AECO3P, AEmarqu4e, AEreferenc4e, AEnomberuni4t1, AEnomberuni4t2, AEpuissancenomina4l, AECO4P, AEmarqu5e, AEreferenc5e, AEnomberuni5t1, AEnomberuni5t2, AEpuissancenomina5l, AECO5P}) => {
+module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19, AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApuissancenomina1l, AACO1P, AAmarqu2e, AAreferenc2e, AAnomberuni2t1, AAnomberuni2t2, AApuissancenomina2l, AACO2P, AAmarqu3e, AAreferenc3e, AAnomberuni3t1, AAnomberuni3t2, AApuissancenomina3l, AACO3P, AAmarqu4e, AAreferenc4e, AAnomberuni4t1, AAnomberuni4t2, AApuissancenomina4l, AACO4P, AAmarqu5e, AAreferenc5e, AAnomberuni5t1, AAnomberuni5t2, AApuissancenomina5l, AACO5P, AA1Q1, AAQ1, AAQ2, AAQ3, AAQ4, AAQ5, AAQ6, AAQ7, AAQ8, AAQ9, AAQ10, AAQ11, AAQ12, AAQ13, AAQ14, AAQ15, AAQ16, AEmarqu1e, AEreferenc1e, AEnomberuni1t1, AEnomberuni1t2, AEpuissancenomina1l, AECO1P, AEmarqu2e, AEreferenc2e, AEnomberuni2t1, AEnomberuni2t2, AEpuissancenomina2l, AECO2P, AEmarqu3e, AEreferenc3e, AEnomberuni3t1, AEnomberuni3t2, AEpuissancenomina3l, AECO3P, AEmarqu4e, AEreferenc4e, AEnomberuni4t1, AEnomberuni4t2, AEpuissancenomina4l, AECO4P, AEmarqu5e, AEreferenc5e, AEnomberuni5t1, AEnomberuni5t2, AEpuissancenomina5l, AECO5P, AE1Q1, AEQ1, AEQ2, AEQ3, AEQ4, AEQ5, AEQ6, AEQ7, AEQ8, AEQ9, AEQ10, AEQ11, AEQ12}) => {
     const today = new Date();
     return `
 
@@ -1050,39 +1050,51 @@ module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8,
 <p class="s5" style="padding-top: 4pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Ancien système de chauffage</p>
 </td>
 <td style="width:143pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="2" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AE1Q1}</p>
 </td>
 </tr>
 <tr style="height:29pt">
 <td style="width:318pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
 <p class="s5" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">PAC utilisée pour le chauffage ?</p>
 </td>
-<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEQ1 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
 </td>
-<td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p></td></tr><tr style="height:29pt">
+<td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEQ1 === '⛝ NON' ? '⛝ NON' : ''}</p>
+</td>
+</tr>
+<tr style="height:29pt">
 <td style="width:318pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p class="s5" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">COP est-il conforme à l’audit énergétique ?</p></td><td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p class="s5" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">COP est-il conforme à l’audit énergétique ?</p>
 </td>
-<td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEQ2 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
+</td>
+<td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEQ2 === '⛝ NON' ? '⛝ NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:29pt">
 <td style="width:318pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
 <p class="s5" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">La puissance de la PAC est-elle conforme à l’audit ?</p>
 </td>
-<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEQ3 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
 </td>
 <td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEQ3 === '⛝ NON' ? '⛝ NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:29pt">
-<td style="width:318pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p class="s5" style="padding-left: 1pt;text-indent: 0pt;text-align: left;">Le taux de couverture (déperdition/puissance PAC)*100 est-il correct</p><p class="s5" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">?</p>
+<td style="width:318pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s5" style="padding-left: 1pt;text-indent: 0pt;text-align: left;">Le taux de couverture (déperdition/puissance PAC)*100 est-il correct</p><p class="s5" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">?</p>
 </td>
-<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEQ4 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
 </td>
-<td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEQ4 === '⛝ NON' ? '⛝ NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:29pt">
@@ -1090,41 +1102,85 @@ module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8,
 <p class="s5" style="padding-left: 1pt;text-indent: 0pt;text-align: left;">La PAC couvre-t-elle moins de 80 % des besoins (sous-dimensionnée)</p>
 <p class="s5" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">?</p>
 </td>
-<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEQ5 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
 </td>
-<td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
-</td>
-</tr>
-<tr style="height:29pt">
-<td style="width:318pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p class="s5" style="padding-top: 7pt;padding-left: 6pt;text-indent: 0pt;text-align: left;">La PAC couvre-t-elle plus de 120 % des besoins (surdimensionnée) ?</p></td><td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEQ5 === '⛝ NON' ? '⛝ NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:29pt">
-<td style="width:318pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p class="s5" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Le taux de couverture respecte-t-il les exigences BAR-TH-159 ?</p></td><td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p></td></tr><tr style="height:33pt"><td style="width:318pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p class="s5" style="padding-top: 9pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Disjoncteur différentiel dédié à la PAC présent ?</p></td><td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
-</td></tr><tr style="height:34pt"><td style="width:318pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p class="s5" style="padding-top: 3pt;padding-left: 1pt;padding-right: 54pt;text-indent: 0pt;line-height: 110%;text-align: left;">Les modes (chauffage, refroidissement, déshumidification) fonctionnent-ils bien ?</p>
+<td style="width:318pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s5" style="padding-top: 7pt;padding-left: 6pt;text-indent: 0pt;text-align: left;">La PAC couvre-t-elle plus de 120 % des besoins (surdimensionnée) ?</p>
 </td>
-<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEQ6 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
 </td>
-<td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
-</td>
-</tr>
-<tr style="height:29pt"><td style="width:318pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p class="s5" style="padding-left: 1pt;text-indent: 0pt;text-align: left;">Les raccords hydrauliques (vannes, filtres, purgeurs) sont-ils bien faits</p><p class="s5" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">et sans fuites ?</p>
-</td>
-<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEQ6 === '⛝ NON' ? '⛝ NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:29pt">
-<td style="width:318pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p class="s5" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Températures entrée/sortie conformes au fabricant ?</p>
+<td style="width:318pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s5" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Le taux de couverture respecte-t-il les exigences BAR-TH-159 ?</p></td><td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEQ7 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
 </td>
-<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEQ7 === '⛝ NON' ? '⛝ NON' : ''}</p>
+</td>
+</tr>
+<tr style="height:33pt">
+<td style="width:318pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s5" style="padding-top: 9pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Disjoncteur différentiel dédié à la PAC présent ?</p>
+</td>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEQ8 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
+</td>
+<td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEQ8 === '⛝ NON' ? '⛝ NON' : ''}</p>
+</td>
+</tr>
+<tr style="height:34pt">
+<td style="width:318pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s5" style="padding-top: 3pt;padding-left: 1pt;padding-right: 54pt;text-indent: 0pt;line-height: 110%;text-align: left;">Les modes (chauffage, refroidissement, déshumidification) fonctionnent-ils bien ?</p>
+</td>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEQ9 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
+</td>
+<td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEQ9 === '⛝ NON' ? '⛝ NON' : ''}</p>
+</td>
+</tr>
+<tr style="height:29pt"><td style="width:318pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s5" style="padding-left: 1pt;text-indent: 0pt;text-align: left;">Les raccords hydrauliques (vannes, filtres, purgeurs) sont-ils bien faits</p><p class="s5" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">et sans fuites ?</p>
+</td>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEQ10 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
+</td>
+<td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEQ10 === '⛝ NON' ? '⛝ NON' : ''}</p>
+</td>
+</tr>
+<tr style="height:29pt">
+<td style="width:318pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s5" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Températures entrée/sortie conformes au fabricant ?</p>
+</td>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEQ11 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
+</td>
+<td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEQ11 === '⛝ NON' ? '⛝ NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:29pt">
 <td style="width:318pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
 <p class="s5" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Réseaux hors volume chauffé bien isolés ?</p>
 </td>
-<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEQ12 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
+</td>
+<td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEQ12 === '⛝ NON' ? '⛝ NON' : ''}</p>
 </td>
 </tr>
 </table>
@@ -1151,13 +1207,16 @@ module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8,
 <p style="text-indent: 0pt;text-align: left;"><br/></p>
 <table style="border-collapse:collapse; margin: 0 auto;" cellspacing="0">
 <tr style="height:25pt">
-<td style="width:301pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Type de Chauffe-Eau Thermodynamique</p>
+<td style="width:301pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Type de Chauffe-Eau Thermodynamique</p>
 </td>
-<td style="width:179pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="4" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p></td></tr><tr style="height:25pt"><td style="width:301pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<td style="width:179pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="4" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: left;"><br/></p></td></tr><tr style="height:25pt"><td style="width:301pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
 <p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Marque du chauffe-eau installé</p></td><td style="width:179pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="4" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
 </td>
 </tr>
-<tr style="height:25pt"><td style="width:301pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Référence</p>
+<tr style="height:25pt"><td style="width:301pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Référence</p>
 </td>
 <td style="width:179pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="4" bgcolor="#F9CFC2">
 <p style="text-indent: 0pt;text-align: left;"><br/></p>
@@ -1186,7 +1245,8 @@ module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8,
 <p class="s6" style="padding-top: 5pt;padding-left: 7pt;text-indent: 0pt;text-align: left;">OUI</p>
 </td>
 <td style="width:14pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#BBBBBB;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:88pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F"><p style="text-indent: 0pt;text-align: left;"/>
+<p style="text-indent: 0pt;text-align: left;"><br/></p></td><td style="width:88pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: left;"/>
 <p class="s6" style="padding-top: 6pt;padding-left: 39pt;text-indent: 0pt;text-align: left;">NON</p>
 </td>
 </tr>

@@ -127,6 +127,20 @@ const [AEnomberuni5t2,setAEnomberuni5t2] = useState('')
 const [AEpuissancenomina5l,setAEpuissancenomina5l] = useState('')
 const [AECO5P,setAECO5P] = useState('')
 
+const [AEQ1,setAEQ1] = useState('')
+const [AE1Q1,setAE1Q1] = useState('')
+const [AEQ2,setAEQ2] = useState('')
+const [AEQ3,setAEQ3] = useState('')
+const [AEQ4,setAEQ4] = useState('')
+const [AEQ5,setAEQ5] = useState('')
+const [AEQ6,setAEQ6] = useState('')
+const [AEQ7,setAEQ7] = useState('')
+const [AEQ8,setAEQ8] = useState('')
+const [AEQ9,setAEQ9] = useState('')
+const [AEQ10,setAEQ10] = useState('')
+const [AEQ11,setAEQ11] = useState('')
+const [AEQ12,setAEQ12] = useState('')
+
 
 
     const [CET1,setCET1] = useState('')
@@ -134,7 +148,7 @@ const [AECO5P,setAECO5P] = useState('')
 
     const [email,setEmail] = useState('')
 
-    const data = {Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19, CET1, AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApuissancenomina1l, AACO1P, AAmarqu2e, AAreferenc2e, AAnomberuni2t1, AAnomberuni2t2, AApuissancenomina2l, AACO2P, AAmarqu3e, AAreferenc3e, AAnomberuni3t1, AAnomberuni3t2, AApuissancenomina3l, AACO3P, AAmarqu4e, AAreferenc4e, AAnomberuni4t1, AAnomberuni4t2, AApuissancenomina4l, AACO4P, AAmarqu5e, AAreferenc5e, AAnomberuni5t1, AAnomberuni5t2, AApuissancenomina5l, AACO5P, AA1Q1, AAQ1, AAQ2, AAQ3, AAQ4, AAQ5, AAQ6, AAQ7, AAQ8, AAQ9, AAQ10, AAQ11, AAQ12, AAQ13, AAQ14, AAQ15, AAQ16, AAQ17, AEmarqu1e, AEreferenc1e, AEnomberuni1t1, AEnomberuni1t2, AEpuissancenomina1l, AECO1P, AEmarqu2e, AEreferenc2e, AEnomberuni2t1, AEnomberuni2t2, AEpuissancenomina2l, AECO2P, AEmarqu3e, AEreferenc3e, AEnomberuni3t1, AEnomberuni3t2, AEpuissancenomina3l, AECO3P, AEmarqu4e, AEreferenc4e, AEnomberuni4t1, AEnomberuni4t2, AEpuissancenomina4l, AECO4P, AEmarqu5e, AEreferenc5e, AEnomberuni5t1, AEnomberuni5t2, AEpuissancenomina5l, AECO5P, email}
+    const data = {Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19, CET1, AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApuissancenomina1l, AACO1P, AAmarqu2e, AAreferenc2e, AAnomberuni2t1, AAnomberuni2t2, AApuissancenomina2l, AACO2P, AAmarqu3e, AAreferenc3e, AAnomberuni3t1, AAnomberuni3t2, AApuissancenomina3l, AACO3P, AAmarqu4e, AAreferenc4e, AAnomberuni4t1, AAnomberuni4t2, AApuissancenomina4l, AACO4P, AAmarqu5e, AAreferenc5e, AAnomberuni5t1, AAnomberuni5t2, AApuissancenomina5l, AACO5P, AA1Q1, AAQ1, AAQ2, AAQ3, AAQ4, AAQ5, AAQ6, AAQ7, AAQ8, AAQ9, AAQ10, AAQ11, AAQ12, AAQ13, AAQ14, AAQ15, AAQ16, AAQ17, AEmarqu1e, AEreferenc1e, AEnomberuni1t1, AEnomberuni1t2, AEpuissancenomina1l, AECO1P, AEmarqu2e, AEreferenc2e, AEnomberuni2t1, AEnomberuni2t2, AEpuissancenomina2l, AECO2P, AEmarqu3e, AEreferenc3e, AEnomberuni3t1, AEnomberuni3t2, AEpuissancenomina3l, AECO3P, AEmarqu4e, AEreferenc4e, AEnomberuni4t1, AEnomberuni4t2, AEpuissancenomina4l, AECO4P, AEmarqu5e, AEreferenc5e, AEnomberuni5t1, AEnomberuni5t2, AEpuissancenomina5l, AECO5P, AE1Q1, AEQ1, AEQ2, AEQ3, AEQ4, AEQ5, AEQ6, AEQ7, AEQ8, AEQ9, AEQ10, AEQ11, AEQ12, email}
 
     const submit = async (e) => {
         e.preventDefault();
@@ -255,6 +269,20 @@ const [AECO5P,setAECO5P] = useState('')
                         setAEnomberuni5t2('');
                         setAEpuissancenomina5l('');
                         setAECO5P('');
+
+                        setAE1Q1('');
+                        setAEQ1('');
+                        setAEQ2('');
+                        setAEQ3('');
+                        setAEQ4('');
+                        setAEQ5('');
+                        setAEQ6('');
+                        setAEQ7('');
+                        setAEQ8('');
+                        setAEQ9('');
+                        setAEQ10('');
+                        setAEQ11('');
+                        setAEQ12('');
 
 
 
@@ -2009,10 +2037,10 @@ fonctionnent-ils bien ?
         <div className='items-center justify-center text-center'><input
         className='items-center justify-center text-center'
             type="text"
-            name="AA1Q1"
-            value={AA1Q1}
-            onChange={(e)=>setAA1Q1(e.target.value)}
-            id="AA1Q1"
+            name="AE1Q1"
+            value={AE1Q1}
+            onChange={(e)=>setAE1Q1(e.target.value)}
+            id="AE1Q1"
             placeholder='...'
           /></div>
       </tr>
@@ -2022,21 +2050,25 @@ fonctionnent-ils bien ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AEQ1oui'
             type="radio"
-            name="AAQ1"
-            value="OUI"
-            checked={AAQ1 === "OUI"}
-            onChange={(e) => setAAQ1(e.target.value)}
+            name="AEQ1"
+            value="⛝ OUI"
+            checked={AEQ1 === "⛝ OUI"}
+            onChange={(e) => setAEQ1(e.target.value)}
           />
+          <label for="AEQ1oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AEQ1non'
             type="radio"
-            name="AAQ1"
-            value="NON"
-            checked={AAQ1 === "NON"}
-            onChange={(e) => setAAQ1(e.target.value)}
+            name="AEQ1"
+            value="⛝ NON"
+            checked={AEQ1 === "⛝ NON"}
+            onChange={(e) => setAEQ1(e.target.value)}
           />
+          <label for="AEQ1non">Non</label>
         </td>
       </tr>
       <tr>
@@ -2045,21 +2077,25 @@ fonctionnent-ils bien ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AEQ2oui'
             type="radio"
-            name="AAQ2"
-            value="OUI"
-            checked={AAQ2 === "OUI"}
-            onChange={(e) => setAAQ2(e.target.value)}
+            name="AEQ2"
+            value="⛝ OUI"
+            checked={AEQ2 === "⛝ OUI"}
+            onChange={(e) => setAEQ2(e.target.value)}
           />
+          <label for="AEQ2oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AEQ2non'
             type="radio"
-            name="AAQ2"
-            value="NON"
-            checked={AAQ2 === "NON"}
-            onChange={(e) => setAAQ2(e.target.value)}
+            name="AEQ2"
+            value="⛝ NON"
+            checked={AEQ2 === "⛝ NON"}
+            onChange={(e) => setAEQ2(e.target.value)}
           />
+          <label for="AEQ2non">Non</label>
         </td>
       </tr>
       <tr>
@@ -2068,21 +2104,25 @@ fonctionnent-ils bien ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AEQ3oui'
             type="radio"
-            name="AAQ3"
-            value="OUI"
-            checked={AAQ3 === "OUI"}
-            onChange={(e) => setAAQ3(e.target.value)}
+            name="AEQ3"
+            value="⛝ OUI"
+            checked={AEQ3 === "⛝ OUI"}
+            onChange={(e) => setAEQ3(e.target.value)}
           />
+          <label for="AEQ3oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AEQ3non'
             type="radio"
-            name="AAQ3"
-            value="NON"
-            checked={AAQ3 === "NON"}
-            onChange={(e) => setAAQ3(e.target.value)}
+            name="AEQ3"
+            value="⛝ NON"
+            checked={AEQ3 === "⛝ NON"}
+            onChange={(e) => setAEQ3(e.target.value)}
           />
+          <label for="AEQ3non">Non</label>
         </td>
       </tr>
       <tr>
@@ -2091,21 +2131,25 @@ fonctionnent-ils bien ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AEQ4oui'
             type="radio"
-            name="AAQ4"
-            value="OUI"
-            checked={AAQ4 === "OUI"}
-            onChange={(e) => setAAQ4(e.target.value)}
+            name="AEQ4"
+            value="⛝ OUI"
+            checked={AEQ4 === "⛝ OUI"}
+            onChange={(e) => setAEQ4(e.target.value)}
           />
+          <label for="AEQ4oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AEQ4non'
             type="radio"
-            name="AAQ4"
-            value="NON"
-            checked={AAQ4 === "NON"}
-            onChange={(e) => setAAQ4(e.target.value)}
+            name="AEQ4"
+            value="⛝ NON"
+            checked={AEQ4 === "⛝ NON"}
+            onChange={(e) => setAEQ4(e.target.value)}
           />
+          <label for="AEQ4non">Non</label>
         </td>
       </tr>
       <tr>
@@ -2114,21 +2158,25 @@ fonctionnent-ils bien ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AEQ5oui'
             type="radio"
-            name="AAQ5"
-            value="OUI"
-            checked={AAQ5 === "OUI"}
-            onChange={(e) => setAAQ5(e.target.value)}
+            name="AEQ5"
+            value="⛝ OUI"
+            checked={AEQ5 === "⛝ OUI"}
+            onChange={(e) => setAEQ5(e.target.value)}
           />
+          <label for="AEQ5oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AEQ5non'
             type="radio"
-            name="AAQ5"
-            value="NON"
-            checked={AAQ5 === "NON"}
-            onChange={(e) => setAAQ5(e.target.value)}
+            name="AEQ5"
+            value="⛝ NON"
+            checked={AEQ5 === "⛝ NON"}
+            onChange={(e) => setAEQ5(e.target.value)}
           />
+          <label for="AEQ5non">Non</label>
         </td>
       </tr>
       <tr>
@@ -2138,21 +2186,25 @@ fonctionnent-ils bien ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AEQ6oui'
             type="radio"
-            name="AAQ6"
-            value="OUI"
-            checked={AAQ6 === "OUI"}
-            onChange={(e) => setAAQ6(e.target.value)}
+            name="AEQ6"
+            value="⛝ OUI"
+            checked={AEQ6 === "⛝ OUI"}
+            onChange={(e) => setAEQ6(e.target.value)}
           />
+          <label for="AEQ6oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AEQ6non'
             type="radio"
-            name="AAQ6"
-            value="NON"
-            checked={AAQ6 === "NON"}
-            onChange={(e) => setAAQ6(e.target.value)}
+            name="AEQ6"
+            value="⛝ NON"
+            checked={AEQ6 === "⛝ NON"}
+            onChange={(e) => setAEQ6(e.target.value)}
           />
+          <label for="AEQ6non">Non</label>
         </td>
       </tr>
       <tr>
@@ -2161,21 +2213,25 @@ fonctionnent-ils bien ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AEQ7oui'
             type="radio"
-            name="AAQ7"
-            value="OUI"
-            checked={AAQ7 === "OUI"}
-            onChange={(e) => setAAQ7(e.target.value)}
+            name="AEQ7"
+            value="⛝ OUI"
+            checked={AEQ7 === "⛝ OUI"}
+            onChange={(e) => setAEQ7(e.target.value)}
           />
+          <label for="AEQ7oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AEQ7non'
             type="radio"
-            name="AAQ7"
-            value="NON"
-            checked={AAQ7 === "NON"}
-            onChange={(e) => setAAQ7(e.target.value)}
+            name="AEQ7"
+            value="⛝ NON"
+            checked={AEQ7 === "⛝ NON"}
+            onChange={(e) => setAEQ7(e.target.value)}
           />
+          <label for="AEQ7non">Non</label>
         </td>
       </tr>
       <tr>
@@ -2185,21 +2241,25 @@ fonctionnent-ils bien ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AEQ8oui'
             type="radio"
-            name="AAQ8"
-            value="OUI"
-            checked={AAQ8 === "OUI"}
-            onChange={(e) => setAAQ8(e.target.value)}
+            name="AEQ1"
+            value="⛝ OUI"
+            checked={AEQ8 === "⛝ OUI"}
+            onChange={(e) => setAEQ8(e.target.value)}
           />
+          <label for="AEQ8oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AEQ8non'
             type="radio"
-            name="AAQ8"
-            value="NON"
-            checked={AAQ8 === "NON"}
-            onChange={(e) => setAAQ8(e.target.value)}
+            name="AEQ8"
+            value="⛝ NON"
+            checked={AEQ8 === "⛝ NON"}
+            onChange={(e) => setAEQ8(e.target.value)}
           />
+          <label for="AEQ8non">Non</label>
         </td>
       </tr>
       <tr>
@@ -2208,21 +2268,25 @@ fonctionnent-ils bien ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AEQ9oui'
             type="radio"
-            name="AAQ9"
-            value="OUI"
-            checked={AAQ9 === "OUI"}
-            onChange={(e) => setAAQ9(e.target.value)}
+            name="AEQ9"
+            value="⛝ OUI"
+            checked={AEQ9 === "⛝ OUI"}
+            onChange={(e) => setAEQ9(e.target.value)}
           />
+          <label for="AEQ9oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AEQ9non'
             type="radio"
-            name="AAQ9"
-            value="NON"
-            checked={AAQ9 === "NON"}
-            onChange={(e) => setAAQ9(e.target.value)}
+            name="AEQ9"
+            value="⛝ NON"
+            checked={AEQ9 === "⛝ NON"}
+            onChange={(e) => setAEQ9(e.target.value)}
           />
+          <label for="AEQ9non">Non</label>
         </td>
       </tr>
       <tr>
@@ -2231,21 +2295,25 @@ fonctionnent-ils bien ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AEQ10oui'
             type="radio"
-            name="AAQ10"
-            value="OUI"
-            checked={AAQ10 === "OUI"}
-            onChange={(e) => setAAQ10(e.target.value)}
+            name="AEQ10"
+            value="⛝ OUI"
+            checked={AEQ10 === "⛝ OUI"}
+            onChange={(e) => setAEQ10(e.target.value)}
           />
+          <label for="AEQ10oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AEQ10non'
             type="radio"
-            name="AAQ10"
-            value="NON"
-            checked={AAQ10 === "NON"}
-            onChange={(e) => setAAQ10(e.target.value)}
+            name="AEQ10"
+            value="⛝ NON"
+            checked={AEQ10 === "⛝ NON"}
+            onChange={(e) => setAEQ10(e.target.value)}
           />
+          <label for="AEQ10non">Non</label>
         </td>
       </tr>
       <tr>
@@ -2254,21 +2322,25 @@ fonctionnent-ils bien ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AEQ11oui'
             type="radio"
-            name="AAQ11"
-            value="OUI"
-            checked={AAQ11 === "OUI"}
-            onChange={(e) => setAAQ11(e.target.value)}
+            name="AEQ11"
+            value="⛝ OUI"
+            checked={AEQ11 === "⛝ OUI"}
+            onChange={(e) => setAEQ11(e.target.value)}
           />
+          <label for="AEQ11oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AEQ11non'
             type="radio"
-            name="AAQ11"
-            value="NON"
-            checked={AAQ11 === "NON"}
-            onChange={(e) => setAAQ11(e.target.value)}
+            name="AEQ11"
+            value="⛝ NON"
+            checked={AEQ11 === "⛝ NON"}
+            onChange={(e) => setAEQ11(e.target.value)}
           />
+          <label for="AEQ11non">Non</label>
         </td>
       </tr>
       <tr>
@@ -2277,21 +2349,25 @@ fonctionnent-ils bien ?
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AEQ12oui'
             type="radio"
-            name="AAQ12"
-            value="OUI"
-            checked={AAQ12 === "OUI"}
-            onChange={(e) => setAAQ12(e.target.value)}
+            name="AEQ12"
+            value="⛝ OUI"
+            checked={AEQ12 === "⛝ OUI"}
+            onChange={(e) => setAEQ12(e.target.value)}
           />
+          <label for="AEQ12oui">Oui</label>
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
+          id='AEQ12non'
             type="radio"
-            name="AAQ12"
-            value="NON"
-            checked={AAQ12 === "NON"}
-            onChange={(e) => setAAQ12(e.target.value)}
+            name="AEQ12"
+            value="⛝ NON"
+            checked={AEQ12 === "⛝ NON"}
+            onChange={(e) => setAEQ12(e.target.value)}
           />
+          <label for="AEQ12non">Non</label>
         </td>
       </tr>
       
