@@ -1,7 +1,7 @@
 
 
 
-module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19, AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApuissancenomina1l, AACO1P, AAmarqu2e, AAreferenc2e, AAnomberuni2t1, AAnomberuni2t2, AApuissancenomina2l, AACO2P, AAmarqu3e, AAreferenc3e, AAnomberuni3t1, AAnomberuni3t2, AApuissancenomina3l, AACO3P, AAmarqu4e, AAreferenc4e, AAnomberuni4t1, AAnomberuni4t2, AApuissancenomina4l, AACO4P, AAmarqu5e, AAreferenc5e, AAnomberuni5t1, AAnomberuni5t2, AApuissancenomina5l, AACO5P, AA1Q1, AAQ1, AAQ2, AAQ3, AAQ4, AAQ5, AAQ6, AAQ7, AAQ8, AAQ9, AAQ10, AAQ11, AAQ12, AAQ13, AAQ14, AAQ15, AAQ16, AEmarqu1e, AEreferenc1e, AEnomberuni1t1, AEnomberuni1t2, AEpuissancenomina1l, AECO1P, AEmarqu2e, AEreferenc2e, AEnomberuni2t1, AEnomberuni2t2, AEpuissancenomina2l, AECO2P, AEmarqu3e, AEreferenc3e, AEnomberuni3t1, AEnomberuni3t2, AEpuissancenomina3l, AECO3P, AEmarqu4e, AEreferenc4e, AEnomberuni4t1, AEnomberuni4t2, AEpuissancenomina4l, AECO4P, AEmarqu5e, AEreferenc5e, AEnomberuni5t1, AEnomberuni5t2, AEpuissancenomina5l, AECO5P, AE1Q1, AEQ1, AEQ2, AEQ3, AEQ4, AEQ5, AEQ6, AEQ7, AEQ8, AEQ9, AEQ10, AEQ11, AEQ12, CETQ1, CETQ2, CETQ3, CETQ4, CETQ5, CETQ6, CETQ7, CETQ8, CETQ9, CETQ10, CETQ11, CETQ12, CETQ13,CETQ14}) => {
+module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19, AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApuissancenomina1l, AACO1P, AAmarqu2e, AAreferenc2e, AAnomberuni2t1, AAnomberuni2t2, AApuissancenomina2l, AACO2P, AAmarqu3e, AAreferenc3e, AAnomberuni3t1, AAnomberuni3t2, AApuissancenomina3l, AACO3P, AAmarqu4e, AAreferenc4e, AAnomberuni4t1, AAnomberuni4t2, AApuissancenomina4l, AACO4P, AAmarqu5e, AAreferenc5e, AAnomberuni5t1, AAnomberuni5t2, AApuissancenomina5l, AACO5P, AA1Q1, AAQ1, AAQ2, AAQ3, AAQ4, AAQ5, AAQ6, AAQ7, AAQ8, AAQ9, AAQ10, AAQ11, AAQ12, AAQ13, AAQ14, AAQ15, AAQ16, AEmarqu1e, AEreferenc1e, AEnomberuni1t1, AEnomberuni1t2, AEpuissancenomina1l, AECO1P, AEmarqu2e, AEreferenc2e, AEnomberuni2t1, AEnomberuni2t2, AEpuissancenomina2l, AECO2P, AEmarqu3e, AEreferenc3e, AEnomberuni3t1, AEnomberuni3t2, AEpuissancenomina3l, AECO3P, AEmarqu4e, AEreferenc4e, AEnomberuni4t1, AEnomberuni4t2, AEpuissancenomina4l, AECO4P, AEmarqu5e, AEreferenc5e, AEnomberuni5t1, AEnomberuni5t2, AEpuissancenomina5l, AECO5P, AE1Q1, AEQ1, AEQ2, AEQ3, AEQ4, AEQ5, AEQ6, AEQ7, AEQ8, AEQ9, AEQ10, AEQ11, AEQ12, CETQ1, CETQ2, CETQ3, CETQ4, CETQ5, CETQ6, CETQ7, CETQ8, CETQ9, CETQ10, CETQ11, CETQ12, CETQ13,CETQ14, ICQQ1, ICQQ2, ICQQ3, ICQQ4, ICQQ5, ICQQ6, ICQQ7, ICQQ8, ICQQ9, ICQQ10, ICQQ11, ICQQ12, ICQQ13,  ICQQ15, ICQQ16, ICQQ17, ICQQ18, ICQQ19, ICQQ20, ICQQ21, ICQQ22, ICQQ23, ICQQ24}) => {
     const today = new Date();
     return `
 
@@ -1031,35 +1031,15 @@ module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8,
 <p style="padding-left: 5pt;text-indent: 0pt;text-align: left;"/>
 <p style="text-indent: 0pt;text-align: left;"><br/></p>
 <table style="border-collapse:collapse; margin: 0 auto;" cellspacing="0">
-<tr style="height:20pt">
-<td style="width:289pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" rowspan="2">
+<tr style="height:25pt">
+<td style="width:289pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
 <p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Type de comble</p>
 </td>
-<td style="width:24pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#BBBBBB" bgcolor="#FFFFFF">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:95pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="3" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ1 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
 </td>
-<td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#BBBBBB;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#BBBBBB;border-right-style:solid;border-right-width:1pt;border-right-color:#BBBBBB" bgcolor="#FFFFFF">
-<p style="text-indent: 0pt;text-align: left;"/>
-<p style="text-indent: 0pt;text-align: left;"/>
-<p class="s6" style="padding-top: 4pt;padding-left: 9pt;text-indent: 0pt;text-align: left;"></p>
-</td>
-<td style="width:6pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#BBBBBB;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
-</td>
-<td style="width:25pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#BBBBBB" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
-<p style="padding-left: 2pt;text-indent: 0pt;text-align: left;"/>
-</td>
-<td style="width:71pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#BBBBBB;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#BBBBBB;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#FFFFFF">
-<p class="s6" style="padding-top: 3pt;padding-left: 17pt;text-indent: 0pt;text-align: left;"></p>
-</td>
-</tr>
-<tr style="height:3pt">
-<td style="width:95pt;border-top-style:solid;border-top-width:1pt;border-top-color:#BBBBBB;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="3" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
-</td>
-<td style="width:96pt;border-top-style:solid;border-top-width:1pt;border-top-color:#BBBBBB;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="2" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:96pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="2" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ1 === '⛝ NON' ? '⛝ NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:25pt">
@@ -1067,21 +1047,21 @@ module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8,
 <p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Marque et référence de l&#39;isolant déclarée</p>
 </td>
 <td style="width:191pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="5" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ2}</p>
 </td>
 </tr>
 <tr style="height:25pt"><td style="width:289pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
 <p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Référence</p>
 </td>
 <td style="width:191pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="5" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ3}</p>
 </td>
 </tr>
 <tr style="height:25pt"><td style="width:289pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
 <p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Epaisseur (mm)</p>
 </td>
 <td style="width:191pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="5" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ4}</p>
 </td>
 </tr>
 <tr style="height:25pt">
@@ -1089,7 +1069,7 @@ module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8,
 <p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Valeur R (m².K/W) déclaré</p>
 </td>
 <td style="width:191pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="5" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ5}</p>
 </td>
 </tr>
 <tr style="height:52pt"><td style="width:289pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
@@ -1097,21 +1077,12 @@ module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8,
 <p style="text-indent: 0pt;text-align: left;"><br/></p>
 <p class="s5" style="padding-left: 1pt;text-indent: 0pt;text-align: left;">Écart inférieur ou égal à 10 %?</p>
 </td>
-<td style="width:24pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F">
-<p style="padding-top: 1pt;text-indent: 0pt;text-align: left;"><br/></p>
-<p style="text-indent: 0pt;text-align: left;"/>
-<p class="s6" style="padding-left: 15pt;text-indent: 0pt;text-align: left;">X</p>
 </td>
-<td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
-<p class="s6" style="padding-left: 19pt;text-indent: 0pt;text-align: left;">OUI</p>
+<td style="width:95pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="3" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ6 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
 </td>
-<td style="width:6pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
-</td>
-<td style="width:96pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="2">
-<p style="padding-top: 2pt;text-indent: 0pt;text-align: left;"><br/></p>
-<p class="s6" style="padding-left: 43pt;text-indent: 0pt;text-align: left;">NON</p>
+<td style="width:96pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="2" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ6 === '⛝ NON' ? '⛝ NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:25pt">
@@ -1119,7 +1090,7 @@ module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8,
 <p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Surface déclarée (m2)</p>
 </td>
 <td style="width:191pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="5" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ7}</p>
 </td>
 </tr>
 <tr style="height:25pt">
@@ -1127,7 +1098,7 @@ module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8,
 <p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Surface mesurée (m2)</p>
 </td>
 <td style="width:191pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="5" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ8}</p>
 </td>
 </tr>
 <tr style="height:25pt">
@@ -1135,10 +1106,10 @@ module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8,
 <p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Écart inférieur ou égal à 10 %</p>
 </td>
 <td style="width:95pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="3" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ9 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
 </td>
 <td style="width:96pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="2" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ9 === '⛝ NON' ? '⛝ NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:25pt">
@@ -1146,10 +1117,10 @@ module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8,
 <p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Travaux réalisés?</p>
 </td>
 <td style="width:95pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="3" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ10 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
 </td>
 <td style="width:96pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="2" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ10 === '⛝ NON' ? '⛝ NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:25pt">
@@ -1157,20 +1128,20 @@ module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8,
 <p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Chantier accessible?</p>
 </td>
 <td style="width:95pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="3" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ11 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
 </td>
 <td style="width:96pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="2" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ11 === '⛝ NON' ? '⛝ NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:25pt"><td style="width:289pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
 <p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Resistance thermique minimale atteinte?</p>
 </td>
 <td style="width:95pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="3" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ12 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
 </td>
 <td style="width:96pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="2" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ12 === '⛝ NON' ? '⛝ NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:31pt">
@@ -1178,9 +1149,9 @@ module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8,
 <p class="s5" style="padding-top: 8pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Isolation réalisée entre un espace chauffé et non chauffé?</p>
 </td>
 <td style="width:95pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="3" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ13 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
 </td><td style="width:96pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="2" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ13 === '⛝ NON' ? '⛝ NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:25pt">
@@ -1188,10 +1159,10 @@ module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8,
 <p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Présence d&#39;un Pare-vapeur?</p>
 </td>
 <td style="width:95pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="3" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ15 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
 </td>
 <td style="width:96pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="2" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ5 === '⛝ NON' ? '⛝ NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:25pt">
@@ -1199,10 +1170,10 @@ module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8,
 <p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Présence d&#39;un Capot de protection?</p>
 </td>
 <td style="width:95pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="3" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ16 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
 </td>
 <td style="width:96pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="2" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ16 === '⛝ NON' ? '⛝ NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:25pt">
@@ -1210,10 +1181,10 @@ module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8,
 <p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Ecart aux feu?</p>
 </td>
 <td style="width:95pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="3" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ17 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
 </td>
 <td style="width:96pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="2" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ17 === '⛝ NON' ? '⛝ NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:25pt">
@@ -1221,20 +1192,20 @@ module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8,
 <p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Rehausse de trappe?</p>
 </td>
 <td style="width:95pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="3" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ18 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
 </td>
 <td style="width:96pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="2" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ18 === '⛝ NON' ? '⛝ NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:25pt"><td style="width:289pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
 <p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Absence de blocage de la trappe ?</p>
 </td>
 <td style="width:95pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="3" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ19 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
 </td>
 <td style="width:96pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="2" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ19 === '⛝ NON' ? '⛝ NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:25pt">
@@ -1242,10 +1213,10 @@ module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8,
 <p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Piges ou repérage de hauteur?</p>
 </td>
 <td style="width:95pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="3" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ20 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
 </td>
 <td style="width:96pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="2" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ20 === '⛝ NON' ? '⛝ NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:25pt">
@@ -1253,10 +1224,10 @@ module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8,
 <p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Risque incendie ?</p>
 </td>
 <td style="width:95pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="3" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ21 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
 </td>
 <td style="width:96pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="2" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ21 === '⛝ NON' ? '⛝ NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:25pt">
@@ -1264,10 +1235,10 @@ module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8,
 <p class="s5" style="padding-top: 6pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Absence de traces d&#39;humidité sur isolant?</p>
 </td>
 <td style="width:95pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="3" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ22 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
 </td>
 <td style="width:96pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="2" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ22 === '⛝ NON' ? '⛝ NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:44pt">
@@ -1275,19 +1246,20 @@ module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8,
 <p class="s5" style="padding-left: 1pt;text-indent: 0pt;line-height: 14pt;text-align: left;">Qualité de pose de l&#39;isolant garantissant une tenue dans le temps (fixations adaptées en type et en nombre pour BAR EN 103 ou BAT EN 103)</p>
 </td>
 <td style="width:95pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="3" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ23 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
 </td>
 <td style="width:96pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="2" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ23 === '⛝ NON' ? '⛝ NON' : ''}</p>
 </td>
 </tr>
 <tr style="height:44pt"><td style="width:289pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
 <p class="s5" style="padding-top: 8pt;padding-left: 1pt;text-indent: 0pt;line-height: 110%;text-align: left;">Les matériaux combustibles sont correctement recouverts hors cas de dérogation du guide CSTB version 2016</p>
 </td>
 <td style="width:95pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="3" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ24 === '⛝ OUI' ? '⛝ OUI' : ''}</p>
 </td>
-<td style="width:96pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="2" bgcolor="#F9CFC2"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+<td style="width:96pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="2" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${ICQQ24 === '⛝ NON' ? '⛝ NON' : ''}</p>
 </td>
 </tr>
 </table>

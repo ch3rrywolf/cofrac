@@ -159,13 +159,42 @@ const [CETQ13,setCETQ13] = useState('')
 const [CETQ14,setCETQ14] = useState('')
 
 
+//IC
+
+const [ICQQ1,setICQQ1] = useState('')
+const [ICQQ2,setICQQ2] = useState('')
+const [ICQQ3,setICQQ3] = useState('')
+const [ICQQ4,setICQQ4] = useState('')
+const [ICQQ5,setICQQ5] = useState('')
+const [ICQQ6,setICQQ6] = useState('')
+const [ICQQ7,setICQQ7] = useState('')
+const [ICQQ8,setICQQ8] = useState('')
+const [ICQQ9,setICQQ9] = useState('')
+const [ICQQ10,setICQQ10] = useState('')
+const [ICQQ11,setICQQ11] = useState('')
+const [ICQQ12,setICQQ12] = useState('')
+const [ICQQ13,setICQQ13] = useState('')
+
+const [ICQQ15,setICQQ15] = useState('')
+const [ICQQ16,setICQQ16] = useState('')
+const [ICQQ17,setICQQ17] = useState('')
+const [ICQQ18,setICQQ18] = useState('')
+const [ICQQ19,setICQQ19] = useState('')
+const [ICQQ20,setICQQ20] = useState('')
+const [ICQQ21,setICQQ21] = useState('')
+const [ICQQ22,setICQQ22] = useState('')
+const [ICQQ23,setICQQ23] = useState('')
+const [ICQQ24,setICQQ24] = useState('')
+
+
+
 
     const [CET1,setCET1] = useState('')
 
 
     const [email,setEmail] = useState('')
 
-    const data = {Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19, CET1, AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApuissancenomina1l, AACO1P, AAmarqu2e, AAreferenc2e, AAnomberuni2t1, AAnomberuni2t2, AApuissancenomina2l, AACO2P, AAmarqu3e, AAreferenc3e, AAnomberuni3t1, AAnomberuni3t2, AApuissancenomina3l, AACO3P, AAmarqu4e, AAreferenc4e, AAnomberuni4t1, AAnomberuni4t2, AApuissancenomina4l, AACO4P, AAmarqu5e, AAreferenc5e, AAnomberuni5t1, AAnomberuni5t2, AApuissancenomina5l, AACO5P, AA1Q1, AAQ1, AAQ2, AAQ3, AAQ4, AAQ5, AAQ6, AAQ7, AAQ8, AAQ9, AAQ10, AAQ11, AAQ12, AAQ13, AAQ14, AAQ15, AAQ16, AAQ17, AEmarqu1e, AEreferenc1e, AEnomberuni1t1, AEnomberuni1t2, AEpuissancenomina1l, AECO1P, AEmarqu2e, AEreferenc2e, AEnomberuni2t1, AEnomberuni2t2, AEpuissancenomina2l, AECO2P, AEmarqu3e, AEreferenc3e, AEnomberuni3t1, AEnomberuni3t2, AEpuissancenomina3l, AECO3P, AEmarqu4e, AEreferenc4e, AEnomberuni4t1, AEnomberuni4t2, AEpuissancenomina4l, AECO4P, AEmarqu5e, AEreferenc5e, AEnomberuni5t1, AEnomberuni5t2, AEpuissancenomina5l, AECO5P, AE1Q1, AEQ1, AEQ2, AEQ3, AEQ4, AEQ5, AEQ6, AEQ7, AEQ8, AEQ9, AEQ10, AEQ11, AEQ12, CETQ1, CETQ2, CETQ3, CETQ4, CETQ5, CETQ6, CETQ7, CETQ8, CETQ9, CETQ10, CETQ11, CETQ12, CETQ13, CETQ14, email}
+    const data = {Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19, CET1, AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApuissancenomina1l, AACO1P, AAmarqu2e, AAreferenc2e, AAnomberuni2t1, AAnomberuni2t2, AApuissancenomina2l, AACO2P, AAmarqu3e, AAreferenc3e, AAnomberuni3t1, AAnomberuni3t2, AApuissancenomina3l, AACO3P, AAmarqu4e, AAreferenc4e, AAnomberuni4t1, AAnomberuni4t2, AApuissancenomina4l, AACO4P, AAmarqu5e, AAreferenc5e, AAnomberuni5t1, AAnomberuni5t2, AApuissancenomina5l, AACO5P, AA1Q1, AAQ1, AAQ2, AAQ3, AAQ4, AAQ5, AAQ6, AAQ7, AAQ8, AAQ9, AAQ10, AAQ11, AAQ12, AAQ13, AAQ14, AAQ15, AAQ16, AAQ17, AEmarqu1e, AEreferenc1e, AEnomberuni1t1, AEnomberuni1t2, AEpuissancenomina1l, AECO1P, AEmarqu2e, AEreferenc2e, AEnomberuni2t1, AEnomberuni2t2, AEpuissancenomina2l, AECO2P, AEmarqu3e, AEreferenc3e, AEnomberuni3t1, AEnomberuni3t2, AEpuissancenomina3l, AECO3P, AEmarqu4e, AEreferenc4e, AEnomberuni4t1, AEnomberuni4t2, AEpuissancenomina4l, AECO4P, AEmarqu5e, AEreferenc5e, AEnomberuni5t1, AEnomberuni5t2, AEpuissancenomina5l, AECO5P, AE1Q1, AEQ1, AEQ2, AEQ3, AEQ4, AEQ5, AEQ6, AEQ7, AEQ8, AEQ9, AEQ10, AEQ11, AEQ12, CETQ1, CETQ2, CETQ3, CETQ4, CETQ5, CETQ6, CETQ7, CETQ8, CETQ9, CETQ10, CETQ11, CETQ12, CETQ13, CETQ14, ICQQ1, ICQQ2, ICQQ3, ICQQ4, ICQQ5, ICQQ6, ICQQ7, ICQQ8, ICQQ9, ICQQ10, ICQQ11, ICQQ12, ICQQ13,  ICQQ15, ICQQ16, ICQQ17, ICQQ18, ICQQ19, ICQQ20, ICQQ21, ICQQ22, ICQQ23, ICQQ24, email}
 
     const submit = async (e) => {
         e.preventDefault();
@@ -317,6 +346,34 @@ const [CETQ14,setCETQ14] = useState('')
                         setCETQ12('');
                         setCETQ13('');
                         setCETQ14('');
+
+                        // IC
+                        setICQQ1('');
+                        setICQQ2('');
+                        setICQQ3('');
+                        setICQQ4('');
+                        setICQQ5('');
+                        setICQQ6('');
+                        setICQQ7('');
+                        setICQQ8('');
+                        setICQQ9('');
+                        setICQQ10('');
+                        setICQQ11('');
+                        setICQQ12('');
+                        setICQQ13('');
+                      
+                        setICQQ15('');
+                        setICQQ16('');
+                        setICQQ17('');
+                        setICQQ18('');
+                        setICQQ19('');
+                        setICQQ20('');
+                        setICQQ21('');
+                        setICQQ22('');
+                        setICQQ23('');
+                        setICQQ24('');
+                        
+                        
 
 
 
@@ -2742,6 +2799,581 @@ fonctionnent-ils bien ?
           <input  onChange={(e) => setQ13(e.target.value)} className='hidden' type="file" id='img' />
         </div>
 
+{/* Isolation du comble*/}
+        <div className='text-center items-center text-white font-bold border border-solid bg-orange-700' >
+    <h4>Isolation du comble</h4>
+</div>
+<div className="overflow-x-auto">
+  <table className="table-auto w-full border-collapse border border-gray-300 text-sm text-gray-600">
+    <thead>
+      <tr>
+        <th className="border border-gray-300 px-4 py-2">Question</th>
+        <th className="border border-gray-300 px-4 py-2">OUI</th>
+        <th className="border border-gray-300 px-4 py-2">NON</th>
+      </tr>
+    </thead>
+    <tbody>
+
+    
+    <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Type de comble
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+          id='ICQQ1oui'
+            type="radio"
+            name="ICQQ1"
+            value="⛝ OUI"
+            checked={ICQQ1 === "⛝ OUI"}
+            onChange={(e) => setICQQ1(e.target.value)}
+          />
+          <label for="ICQQ1oui">Oui</label>
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+          id='ICQQ1non'
+            type="radio"
+            name="ICQQ1"
+            value="⛝ NON"
+            checked={ICQQ1 === "⛝ NON"}
+            onChange={(e) => setICQQ1(e.target.value)}
+          />
+          <label for="ICQQ1non">Non</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Marque du chauffe-eau installé
+        </td>
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="ICQQ2"
+            value={ICQQ2}
+            onChange={(e)=>setICQQ2(e.target.value)}
+            id="ICQQ2"
+            placeholder='...'
+          /></div>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Référence
+        </td>
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="ICQQ3"
+            value={ICQQ3}
+            onChange={(e)=>setICQQ3(e.target.value)}
+            id="ICQQ3"
+            placeholder='...'
+          /></div>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">Epaisseur (mm)</td>
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="ICQQ4"
+            value={ICQQ4}
+            onChange={(e)=>setICQQ4(e.target.value)}
+            id="ICQQ4"
+            placeholder='...'
+          /></div>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Valeur R (m².K/W) déclaré
+        </td>
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="ICQQ5"
+            value={ICQQ5}
+            onChange={(e)=>setICQQ5(e.target.value)}
+            id="ICQQ5"
+            placeholder='...'
+          /></div>
+      </tr>
+      
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        R=7 Comble / R= 6 Rampant 
+        Écart inférieur ou égal à 10 %?
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+          id='ICQQ6oui'
+            type="radio"
+            name="ICQQ6"
+            value="⛝ OUI"
+            checked={ICQQ6 === "⛝ OUI"}
+            onChange={(e) => setICQQ6(e.target.value)}
+          />
+          <label for="ICQQ6oui">Oui</label>
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+          id='ICQQ6non'
+            type="radio"
+            name="ICQQ6"
+            value="⛝ NON"
+            checked={ICQQ6 === "⛝ NON"}
+            onChange={(e) => setICQQ6(e.target.value)}
+          />
+          <label for="ICQQ6non">Non</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">Surface déclarée (m2)</td>
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="ICQQ7"
+            value={ICQQ7}
+            onChange={(e)=>setICQQ7(e.target.value)}
+            id="ICQQ7"
+            placeholder='...'
+          /></div>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Surface mesurée (m2)
+        </td>
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="ICQQ8"
+            value={ICQQ8}
+            onChange={(e)=>setICQQ8(e.target.value)}
+            id="ICQQ8"
+            placeholder='...'
+          /></div>
+      </tr>
+    
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Écart inférieur ou égal à 10 %
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+          id='ICQQ9oui'
+            type="radio"
+            name="ICQQ9"
+            value="⛝ OUI"
+            checked={ICQQ9 === "⛝ OUI"}
+            onChange={(e) => setICQQ9(e.target.value)}
+          />
+          <label for="ICQQ9oui">Oui</label>
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+          id='ICQQ9non'
+            type="radio"
+            name="ICQQ9"
+            value="⛝ NON"
+            checked={ICQQ9 === "⛝ NON"}
+            onChange={(e) => setICQQ9(e.target.value)}
+          />
+          <label for="ICQQ9non">Non</label>
+        </td>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Travaux réalisés?
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+          id='ICQQ10oui'
+            type="radio"
+            name="ICQQ10"
+            value="⛝ OUI"
+            checked={ICQQ10 === "⛝ OUI"}
+            onChange={(e) => setICQQ10(e.target.value)}
+          />
+          <label for="ICQQ10oui">Oui</label>
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+          id='ICQQ10non'
+            type="radio"
+            name="ICQQ10"
+            value="⛝ NON"
+            checked={ICQQ10 === "⛝ NON"}
+            onChange={(e) => setICQQ10(e.target.value)}
+          />
+          <label for="ICQQ10non">Non</label>
+        </td>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Chantier accessible?
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+          id='ICQQ11oui'
+            type="radio"
+            name="ICQQ11"
+            value="⛝ OUI"
+            checked={ICQQ11 === "⛝ OUI"}
+            onChange={(e) => setICQQ11(e.target.value)}
+          />
+          <label for="ICQQ11oui">Oui</label>
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+          id='ICQQ11non'
+            type="radio"
+            name="ICQQ11"
+            value="⛝ NON"
+            checked={ICQQ11 === "⛝ NON"}
+            onChange={(e) => setICQQ11(e.target.value)}
+          />
+          <label for="ICQQ11non">Non</label>
+        </td>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Resistance thermique minimale atteinte?
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+          id='ICQQ12oui'
+            type="radio"
+            name="ICQQ12"
+            value="⛝ OUI"
+            checked={ICQQ12 === "⛝ OUI"}
+            onChange={(e) => setICQQ12(e.target.value)}
+          />
+          <label for="ICQQ12oui">Oui</label>
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+          id='ICQQ12non'
+            type="radio"
+            name="ICQQ12"
+            value="⛝ NON"
+            checked={ICQQ12 === "⛝ NON"}
+            onChange={(e) => setICQQ12(e.target.value)}
+          />
+          <label for="ICQQ12non">Non</label>
+        </td>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Isolation réalisée entre un espace chauffé et non chauffé?
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+          id='ICQQ13oui'
+            type="radio"
+            name="ICQQ13"
+            value="⛝ OUI"
+            checked={ICQQ13 === "⛝ OUI"}
+            onChange={(e) => setICQQ13(e.target.value)}
+          />
+          <label for="ICQQ13oui">Oui</label>
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+          id='ICQQ13non'
+            type="radio"
+            name="ICQQ13"
+            value="⛝ NON"
+            checked={ICQQ13 === "⛝ NON"}
+            onChange={(e) => setICQQ13(e.target.value)}
+          />
+          <label for="ICQQ13non">Non</label>
+        </td>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Présence d'un Pare-vapeur?
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+          id='ICQQ15oui'
+            type="radio"
+            name="ICQQ15"
+            value="⛝ OUI"
+            checked={ICQQ15 === "⛝ OUI"}
+            onChange={(e) => setICQQ15(e.target.value)}
+          />
+          <label for="ICQQ15oui">Oui</label>
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+          id='ICQQ15non'
+            type="radio"
+            name="ICQQ15"
+            value="⛝ NON"
+            checked={ICQQ15 === "⛝ NON"}
+            onChange={(e) => setICQQ15(e.target.value)}
+          />
+          <label for="ICQQ15non">Non</label>
+        </td>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Présence d'un Capot de protection?
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+          id='ICQQ16oui'
+            type="radio"
+            name="ICQQ16"
+            value="⛝ OUI"
+            checked={ICQQ16 === "⛝ OUI"}
+            onChange={(e) => setICQQ16(e.target.value)}
+          />
+          <label for="ICQQ16oui">Oui</label>
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+          id='ICQQ16non'
+            type="radio"
+            name="ICQQ16"
+            value="⛝ NON"
+            checked={ICQQ16 === "⛝ NON"}
+            onChange={(e) => setICQQ16(e.target.value)}
+          />
+          <label for="ICQQ16non">Non</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Ecart aux feu?
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+          id='ICQQ17oui'
+            type="radio"
+            name="ICQQ17"
+            value="⛝ OUI"
+            checked={ICQQ17 === "⛝ OUI"}
+            onChange={(e) => setICQQ17(e.target.value)}
+          />
+          <label for="ICQQ17oui">Oui</label>
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+          id='ICQQ17non'
+            type="radio"
+            name="ICQQ17"
+            value="⛝ NON"
+            checked={ICQQ17 === "⛝ NON"}
+            onChange={(e) => setICQQ17(e.target.value)}
+          />
+          <label for="ICQQ17non">Non</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Rehausse de trappe?
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+          id='ICQQ18oui'
+            type="radio"
+            name="ICQQ18"
+            value="⛝ OUI"
+            checked={ICQQ18 === "⛝ OUI"}
+            onChange={(e) => setICQQ18(e.target.value)}
+          />
+          <label for="ICQQ18oui">Oui</label>
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+          id='ICQQ18non'
+            type="radio"
+            name="ICQQ18"
+            value="⛝ NON"
+            checked={ICQQ18 === "⛝ NON"}
+            onChange={(e) => setICQQ18(e.target.value)}
+          />
+          <label for="ICQQ84non">Non</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Absence de blocage de la trappe ?
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+          id='ICQQ19oui'
+            type="radio"
+            name="ICQQ19"
+            value="⛝ OUI"
+            checked={ICQQ19 === "⛝ OUI"}
+            onChange={(e) => setICQQ19(e.target.value)}
+          />
+          <label for="ICQQ19oui">Oui</label>
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+          id='ICQQ19non'
+            type="radio"
+            name="ICQQ19"
+            value="⛝ NON"
+            checked={ICQQ19 === "⛝ NON"}
+            onChange={(e) => setICQQ19(e.target.value)}
+          />
+          <label for="ICQQ19non">Non</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Piges ou repérage de hauteur?
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+          id='ICQQ20oui'
+            type="radio"
+            name="ICQQ20"
+            value="⛝ OUI"
+            checked={ICQQ20 === "⛝ OUI"}
+            onChange={(e) => setICQQ20(e.target.value)}
+          />
+          <label for="ICQQ20oui">Oui</label>
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+          id='ICQQ20non'
+            type="radio"
+            name="ICQQ20"
+            value="⛝ NON"
+            checked={ICQQ20 === "⛝ NON"}
+            onChange={(e) => setICQQ20(e.target.value)}
+          />
+          <label for="ICQQ20non">Non</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Risque incendie ?
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+          id='ICQQ21oui'
+            type="radio"
+            name="ICQQ21"
+            value="⛝ OUI"
+            checked={ICQQ21 === "⛝ OUI"}
+            onChange={(e) => setICQQ21(e.target.value)}
+          />
+          <label for="ICQQ21oui">Oui</label>
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+          id='ICQQ21non'
+            type="radio"
+            name="ICQQ21"
+            value="⛝ NON"
+            checked={ICQQ21 === "⛝ NON"}
+            onChange={(e) => setICQQ21(e.target.value)}
+          />
+          <label for="ICQQ21non">Non</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Absence de traces d'humidité sur isolant?
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+          id='ICQQ22oui'
+            type="radio"
+            name="ICQQ22"
+            value="⛝ OUI"
+            checked={ICQQ22 === "⛝ OUI"}
+            onChange={(e) => setICQQ22(e.target.value)}
+          />
+          <label for="ICQQ22oui">Oui</label>
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+          id='ICQQ22non'
+            type="radio"
+            name="ICQQ22"
+            value="⛝ NON"
+            checked={ICQQ22 === "⛝ NON"}
+            onChange={(e) => setICQQ22(e.target.value)}
+          />
+          <label for="ICQQ22non">Non</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Qualité de pose de l'isolant garantissant une tenue dans le temps
+(fixations adaptées en type et en nombre pour BAR EN 103 ou
+BAT EN 103)
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+          id='ICQQ23oui'
+            type="radio"
+            name="ICQQ23"
+            value="⛝ OUI"
+            checked={ICQQ23 === "⛝ OUI"}
+            onChange={(e) => setICQQ23(e.target.value)}
+          />
+          <label for="ICQQ23oui">Oui</label>
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+          id='ICQQ23non'
+            type="radio"
+            name="ICQQ23"
+            value="⛝ NON"
+            checked={ICQQ23 === "⛝ NON"}
+            onChange={(e) => setICQQ23(e.target.value)}
+          />
+          <label for="ICQQ23non">Non</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Les matériaux combustibles sont correctement recouverts hors
+cas de dérogation du guide CSTB version 2016
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+          id='ICQQ24oui'
+            type="radio"
+            name="ICQQ24"
+            value="⛝ OUI"
+            checked={ICQQ24 === "⛝ OUI"}
+            onChange={(e) => setICQQ24(e.target.value)}
+          />
+          <label for="ICQQ24oui">Oui</label>
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+          id='ICQQ24non'
+            type="radio"
+            name="ICQQ24"
+            value="⛝ NON"
+            checked={ICQQ24 === "⛝ NON"}
+            onChange={(e) => setICQQ24(e.target.value)}
+          />
+          <label for="ICQQ24non">Non</label>
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
           
 
           <div className='grid grid-cols-2 gap-x-8 mb-3'>
