@@ -347,7 +347,7 @@
 //   }
 
 
-module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19, AAmarque1, AAreference1, AAnomberunit11, AAnomberunit21, AApuissancenominal1, AACOP1,AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApuissancenomina1l, AACO1P, AAmarqu2e, AAreferenc2e, AAnomberuni2t1, AAnomberuni2t2, AApuissancenomina2l, AACO2P, AAmarqu3e, AAreferenc3e, AAnomberuni3t1, AAnomberuni3t2, AApuissancenomina3l, AACO3P, AAmarqu4e, AAreferenc4e, AAnomberuni4t1, AAnomberuni4t2, AApuissancenomina4l, AACO4P, AAmarqu5e, AAreferenc5e, AAnomberuni5t1, AAnomberuni5t2, AApuissancenomina5l, AACO5P, AA1Q1, AAQ1, AAQ2, AAQ3, AAQ4, AAQ5, AAQ6, AAQ7, AAQ8, AAQ9, AAQ10, AAQ11, AAQ12, AAQ13, AAQ14, AAQ15, AAQ16, AAQ17}) => {
+module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19, AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApuissancenomina1l, AACO1P, AAmarqu2e, AAreferenc2e, AAnomberuni2t1, AAnomberuni2t2, AApuissancenomina2l, AACO2P, AAmarqu3e, AAreferenc3e, AAnomberuni3t1, AAnomberuni3t2, AApuissancenomina3l, AACO3P, AAmarqu4e, AAreferenc4e, AAnomberuni4t1, AAnomberuni4t2, AApuissancenomina4l, AACO4P, AAmarqu5e, AAreferenc5e, AAnomberuni5t1, AAnomberuni5t2, AApuissancenomina5l, AACO5P, AA1Q1, AAQ1, AAQ2, AAQ3, AAQ4, AAQ5, AAQ6, AAQ7, AAQ8, AAQ9, AAQ10, AAQ11, AAQ12, AAQ13, AAQ14, AAQ15, AAQ16, AEmarqu1e, AEreferenc1e, AEnomberuni1t1, AEnomberuni1t2, AEpuissancenomina1l, AECO1P, AEmarqu2e, AEreferenc2e, AEnomberuni2t1, AEnomberuni2t2, AEpuissancenomina2l, AECO2P, AEmarqu3e, AEreferenc3e, AEnomberuni3t1, AEnomberuni3t2, AEpuissancenomina3l, AECO3P, AEmarqu4e, AEreferenc4e, AEnomberuni4t1, AEnomberuni4t2, AEpuissancenomina4l, AECO4P, AEmarqu5e, AEreferenc5e, AEnomberuni5t1, AEnomberuni5t2, AEpuissancenomina5l, AECO5P}) => {
     const today = new Date();
     return `
 
@@ -952,91 +952,94 @@ module.exports = ({Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8,
 <p class="s4" style="padding-top: 11pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">COP</p>
 </td>
 <td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p class="s4" style="padding-top: 4pt;padding-left: 6pt;padding-right: 4pt;text-indent: 9pt;line-height: 110%;text-align: left;">Puissance nominal (kW)</p></td><td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2"><p class="s4" style="padding-top: 11pt;padding-left: 11pt;text-indent: 0pt;text-align: left;">Quantité</p>
+<p class="s4" style="padding-top: 4pt;padding-left: 6pt;padding-right: 4pt;text-indent: 9pt;line-height: 110%;text-align: left;">Puissance nominal (kW)</p>
+</td>
+<td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p class="s4" style="padding-top: 11pt;padding-left: 11pt;text-indent: 0pt;text-align: left;">Quantité</p>
 </td>
 </tr>
 <tr style="height:23pt">
 <td style="width:85pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEmarqu1e}</p>
 </td>
 <td style="width:112pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEreferenc1e}</p>
 </td>
 <td style="width:121pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AECO1P}</p>
 </td>
 <td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEpuissancenomina1l}</p>
 </td>
 <td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEnomberuni1t1}</p>
 </td>
 </tr>
 <tr style="height:21pt">
 <td style="width:85pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEmarqu2e}</p>
 </td>
 <td style="width:112pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEreferenc2e}</p>
 </td>
 <td style="width:121pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AECO2P}</p>
 </td>
 <td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEpuissancenomina2l}</p>
 </td>
 <td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEnomberuni2t1}</p>
 </td>
 </tr>
 <tr style="height:21pt"><td style="width:85pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEmarqu3e}</p>
 </td>
 <td style="width:112pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEreferenc3e}</p>
 </td>
 <td style="width:121pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AECO3P}</p>
 </td>
 <td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEpuissancenomina3l}</p>
 </td>
 <td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEnomberuni3t1}</p>
 </td>
 </tr>
 <tr style="height:21pt">
 <td style="width:85pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEmarqu4e}</p>
 </td>
 <td style="width:112pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEreferenc4e}</p>
 </td>
 <td style="width:121pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AECO4P}</p>
 </td>
 <td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEpuissancenomina4l}</p>
 </td>
 <td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEnomberuni4t1}</p>
 </td>
 </tr>
 <tr style="height:21pt">
 <td style="width:85pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEmarqu5e}</p>
 </td>
 <td style="width:112pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEreferenc5e}</p>
 </td>
 <td style="width:121pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AECO5P}</p>
 </td>
 <td style="width:78pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEpuissancenomina5l}</p>
 </td>
 <td style="width:65pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
-<p style="text-indent: 0pt;text-align: left;"><br/></p>
+<p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEnomberuni5t1}</p>
 </td>
 </tr>
 </table>

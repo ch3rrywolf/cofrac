@@ -91,12 +91,50 @@ const AddFormInspec = () => {
 
 
 
+// Air-Eau
+const [AEmarqu1e,setAEmarqu1e] = useState('')
+const [AEreferenc1e,setAEreferenc1e] = useState('')
+const [AEnomberuni1t1,setAEnomberuni1t1] = useState('')
+const [AEnomberuni1t2,setAEnomberuni1t2] = useState('')
+const [AEpuissancenomina1l,setAEpuissancenomina1l] = useState('')
+const [AECO1P,setAECO1P] = useState('')
+
+const [AEmarqu2e,setAEmarqu2e] = useState('')
+const [AEreferenc2e,setAEreferenc2e] = useState('')
+const [AEnomberuni2t1,setAEnomberuni2t1] = useState('')
+const [AEnomberuni2t2,setAEnomberuni2t2] = useState('')
+const [AEpuissancenomina2l,setAEpuissancenomina2l] = useState('')
+const [AECO2P,setAECO2P] = useState('')
+
+const [AEmarqu3e,setAEmarqu3e] = useState('')
+const [AEreferenc3e,setAEreferenc3e] = useState('')
+const [AEnomberuni3t1,setAEnomberuni3t1] = useState('')
+const [AEnomberuni3t2,setAEnomberuni3t2] = useState('')
+const [AEpuissancenomina3l,setAEpuissancenomina3l] = useState('')
+const [AECO3P,setAECO3P] = useState('')
+
+const [AEmarqu4e,setAEmarqu4e] = useState('')
+const [AEreferenc4e,setAEreferenc4e] = useState('')
+const [AEnomberuni4t1,setAEnomberuni4t1] = useState('')
+const [AEnomberuni4t2,setAEnomberuni4t2] = useState('')
+const [AEpuissancenomina4l,setAEpuissancenomina4l] = useState('')
+const [AECO4P,setAECO4P] = useState('')
+
+const [AEmarqu5e,setAEmarqu5e] = useState('')
+const [AEreferenc5e,setAEreferenc5e] = useState('')
+const [AEnomberuni5t1,setAEnomberuni5t1] = useState('')
+const [AEnomberuni5t2,setAEnomberuni5t2] = useState('')
+const [AEpuissancenomina5l,setAEpuissancenomina5l] = useState('')
+const [AECO5P,setAECO5P] = useState('')
+
+
+
     const [CET1,setCET1] = useState('')
 
 
     const [email,setEmail] = useState('')
 
-    const data = {Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19, CET1, AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApuissancenomina1l, AACO1P, AAmarqu2e, AAreferenc2e, AAnomberuni2t1, AAnomberuni2t2, AApuissancenomina2l, AACO2P, AAmarqu3e, AAreferenc3e, AAnomberuni3t1, AAnomberuni3t2, AApuissancenomina3l, AACO3P, AAmarqu4e, AAreferenc4e, AAnomberuni4t1, AAnomberuni4t2, AApuissancenomina4l, AACO4P, AAmarqu5e, AAreferenc5e, AAnomberuni5t1, AAnomberuni5t2, AApuissancenomina5l, AACO5P, AA1Q1, AAQ1, AAQ2, AAQ3, AAQ4, AAQ5, AAQ6, AAQ7, AAQ8, AAQ9, AAQ10, AAQ11, AAQ12, AAQ13, AAQ14, AAQ15, AAQ16, AAQ17, email}
+    const data = {Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19, CET1, AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApuissancenomina1l, AACO1P, AAmarqu2e, AAreferenc2e, AAnomberuni2t1, AAnomberuni2t2, AApuissancenomina2l, AACO2P, AAmarqu3e, AAreferenc3e, AAnomberuni3t1, AAnomberuni3t2, AApuissancenomina3l, AACO3P, AAmarqu4e, AAreferenc4e, AAnomberuni4t1, AAnomberuni4t2, AApuissancenomina4l, AACO4P, AAmarqu5e, AAreferenc5e, AAnomberuni5t1, AAnomberuni5t2, AApuissancenomina5l, AACO5P, AA1Q1, AAQ1, AAQ2, AAQ3, AAQ4, AAQ5, AAQ6, AAQ7, AAQ8, AAQ9, AAQ10, AAQ11, AAQ12, AAQ13, AAQ14, AAQ15, AAQ16, AAQ17, AEmarqu1e, AEreferenc1e, AEnomberuni1t1, AEnomberuni1t2, AEpuissancenomina1l, AECO1P, AEmarqu2e, AEreferenc2e, AEnomberuni2t1, AEnomberuni2t2, AEpuissancenomina2l, AECO2P, AEmarqu3e, AEreferenc3e, AEnomberuni3t1, AEnomberuni3t2, AEpuissancenomina3l, AECO3P, AEmarqu4e, AEreferenc4e, AEnomberuni4t1, AEnomberuni4t2, AEpuissancenomina4l, AECO4P, AEmarqu5e, AEreferenc5e, AEnomberuni5t1, AEnomberuni5t2, AEpuissancenomina5l, AECO5P, email}
 
     const submit = async (e) => {
         e.preventDefault();
@@ -183,6 +221,40 @@ const AddFormInspec = () => {
                         setAAQ15('');
                         setAAQ16('');
                         setAAQ17('');
+
+                        // Air/Eau
+
+                        //air-air
+                        setAEmarqu1e('');
+                        setAEreferenc1e('');
+                        setAEnomberuni1t1('');
+                        setAEnomberuni1t2('');
+                        setAEpuissancenomina1l('');
+                        setAECO1P('');
+                        setAEmarqu2e('');
+                        setAEreferenc2e('');
+                        setAEnomberuni2t1('');
+                        setAEnomberuni2t2('');
+                        setAEpuissancenomina2l('');
+                        setAECO2P('');
+                        setAEmarqu3e('');
+                        setAEreferenc3e('');
+                        setAEnomberuni3t1('');
+                        setAEnomberuni3t2('');
+                        setAEpuissancenomina3l('');
+                        setAECO3P('');
+                        setAEmarqu4e('');
+                        setAEreferenc4e('');
+                        setAEnomberuni4t1('');
+                        setAEnomberuni4t2('');
+                        setAEpuissancenomina4l('');
+                        setAECO4P('');
+                        setAEmarqu5e('');
+                        setAEreferenc5e('');
+                        setAEnomberuni5t1('');
+                        setAEnomberuni5t2('');
+                        setAEpuissancenomina5l('');
+                        setAECO5P('');
 
 
 
@@ -1637,7 +1709,7 @@ fonctionnent-ils bien ?
 
 
 
-{/* <div>
+<div>
     <h4 className='text-center items-center text-white font-bold border border-solid bg-orange-700'>Pompe à chaleur - AIR/EAU </h4>
 </div>
 <div className="overflow-x-auto">
@@ -1656,159 +1728,210 @@ fonctionnent-ils bien ?
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
             type="text"
-            name="AAmarqu1e"
-            value={AAmarqu1e}
-            onChange={(e)=>setAAmarqu1e(e.target.value)}
-            id="AAmarqu1e"
+            name="AEmarqu1e"
+            value={AEmarqu1e}
+            onChange={(e)=>setAEmarqu1e(e.target.value)}
+            id="AEmarqu1e"
             placeholder='...'
           />
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
             type="text"
-            name="AAreferenc1e"
-            value={AAreferenc1e}
-            onChange={(e)=>setAAreferenc1e(e.target.value)}
-            id="AAreferenc1e"
+            name="AEreferenc1e"
+            value={AEreferenc1e}
+            onChange={(e)=>setAEreferenc1e(e.target.value)}
+            id="AEreferenc1e"
+            placeholder='...'
+          />
+        </td>        
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="text"
+            name="AECO1P"
+            value={AECO1P}
+            onChange={(e)=>setAECO1P(e.target.value)}
+            id="AECO1P"
+            placeholder='...'
+          />
+        </td>        
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="text"
+            name="AEpuissancenomina1l"
+            value={AEpuissancenomina1l}
+            onChange={(e)=>setAEpuissancenomina1l(e.target.value)}
+            id="AEpuissancenomina1l"
             placeholder='...'
           />
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
             type="text"
-            name="AAnomberuni1t1"
-            value={AAnomberuni1t1}
-            onChange={(e)=>setAAnomberuni1t1(e.target.value)}
-            id="AAnomberuni1t1"
+            name="AEnomberuni1t1"
+            value={AEnomberuni1t1}
+            onChange={(e)=>setAEnomberuni1t1(e.target.value)}
+            id="AEnomberuni1t1"
             placeholder='...'
           />
-        </td>
-        
-        <td className="border border-gray-300 px-4 py-2 text-center">
-          <input
-            type="text"
-            name="AApuissancenomina1l"
-            value={AApuissancenomina1l}
-            onChange={(e)=>setAApuissancenomina1l(e.target.value)}
-            id="AApuissancenomina1l"
-            placeholder='...'
-          />
-        </td>
-        <td className="border border-gray-300 px-4 py-2 text-center">
-          <input
-            type="text"
-            name="AACO1P"
-            value={AACO1P}
-            onChange={(e)=>setAACO1P(e.target.value)}
-            id="AACO1P"
-            placeholder='...'
-          />
-        </td>
+        </td>        
       </tr> 
 
       <tr>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
             type="text"
-            name="AAmarqu2e"
-            value={AAmarqu2e}
-            onChange={(e)=>setAAmarqu2e(e.target.value)}
-            id="AAmarqu2e"
+            name="AEmarqu2e"
+            value={AEmarqu2e}
+            onChange={(e)=>setAEmarqu2e(e.target.value)}
+            id="AEmarqu2e"
             placeholder='...'
           />
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
             type="text"
-            name="AAreferenc2e"
-            value={AAreferenc2e}
-            onChange={(e)=>setAAreferenc2e(e.target.value)}
-            id="AAreferenc2e"
+            name="AEreferenc2e"
+            value={AEreferenc2e}
+            onChange={(e)=>setAEreferenc2e(e.target.value)}
+            id="AEreferenc2e"
+            placeholder='...'
+          />
+        </td>            
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="text"
+            name="AECO2P"
+            value={AECO2P}
+            onChange={(e)=>setAECO2P(e.target.value)}
+            id="AECO2P"
+            placeholder='...'
+          />
+        </td>    
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="text"
+            name="AEpuissancenomina2l"
+            value={AEpuissancenomina2l}
+            onChange={(e)=>setAEpuissancenomina2l(e.target.value)}
+            id="AEpuissancenomina2l"
             placeholder='...'
           />
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
             type="text"
-            name="AAnomberuni2t1"
-            value={AAnomberuni2t1}
-            onChange={(e)=>setAAnomberuni2t1(e.target.value)}
-            id="AAnomberuni2t1"
+            name="AEnomberuni2t1"
+            value={AEnomberuni2t1}
+            onChange={(e)=>setAEnomberuni2t1(e.target.value)}
+            id="AEnomberuni2t1"
             placeholder='...'
           />
-        </td>
-        
-        <td className="border border-gray-300 px-4 py-2 text-center">
-          <input
-            type="text"
-            name="AApuissancenomina2l"
-            value={AApuissancenomina2l}
-            onChange={(e)=>setAApuissancenomina2l(e.target.value)}
-            id="AApuissancenomina2l"
-            placeholder='...'
-          />
-        </td>
-        <td className="border border-gray-300 px-4 py-2 text-center">
-          <input
-            type="text"
-            name="AACO2P"
-            value={AACO2P}
-            onChange={(e)=>setAACO2P(e.target.value)}
-            id="AACO2P"
-            placeholder='...'
-          />
-        </td>
+        </td>        
       </tr>       
 
       <tr>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
             type="text"
-            name="AAmarqu3e"
-            value={AAmarqu3e}
-            onChange={(e)=>setAAmarqu3e(e.target.value)}
-            id="AAmarqu3e"
+            name="AEmarqu3e"
+            value={AEmarqu3e}
+            onChange={(e)=>setAEmarqu3e(e.target.value)}
+            id="AEmarqu3e"
             placeholder='...'
           />
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
             type="text"
-            name="AAreferenc3e"
-            value={AAreferenc3e}
-            onChange={(e)=>setAAreferenc3e(e.target.value)}
-            id="AAreferenc3e"
+            name="AEreferenc3e"
+            value={AEreferenc3e}
+            onChange={(e)=>setAEreferenc3e(e.target.value)}
+            id="AEreferenc3e"
+            placeholder='...'
+          />
+        </td>        
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="text"
+            name="AECO3P"
+            value={AECO3P}
+            onChange={(e)=>setAECO3P(e.target.value)}
+            id="AECO3P"
+            placeholder='...'
+          />
+        </td>        
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="text"
+            name="AEpuissancenomina3l"
+            value={AEpuissancenomina3l}
+            onChange={(e)=>setAEpuissancenomina3l(e.target.value)}
+            id="AEpuissancenomina3l"
             placeholder='...'
           />
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
             type="text"
-            name="AAnomberuni3t1"
-            value={AAnomberuni3t1}
-            onChange={(e)=>setAAnomberuni3t1(e.target.value)}
-            id="AAnomberuni3t1"
+            name="AEnomberuni3t1"
+            value={AEnomberuni3t1}
+            onChange={(e)=>setAEnomberuni3t1(e.target.value)}
+            id="AEnomberuni3t1"
             placeholder='...'
           />
         </td>
         
+      </tr>  
+
+      <tr>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
             type="text"
-            name="AApuissancenomina3l"
-            value={AApuissancenomina3l}
-            onChange={(e)=>setAApuissancenomina3l(e.target.value)}
-            id="AApuissancenomina3l"
+            name="AEmarqu4e"
+            value={AEmarqu4e}
+            onChange={(e)=>setAEmarqu4e(e.target.value)}
+            id="AEmarqu4e"
             placeholder='...'
           />
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
             type="text"
-            name="AACO3P"
-            value={AACO3P}
-            onChange={(e)=>setAACO3P(e.target.value)}
-            id="AACO3P"
+            name="AEreferenc4e"
+            value={AEreferenc4e}
+            onChange={(e)=>setAEreferenc4e(e.target.value)}
+            id="AEreferenc4e"
+            placeholder='...'
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="text"
+            name="AECO4P"
+            value={AECO4P}
+            onChange={(e)=>setAECO4P(e.target.value)}
+            id="AECO4P"
+            placeholder='...'
+          />
+        </td>        
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="text"
+            name="AEpuissancenomina4l"
+            value={AEpuissancenomina4l}
+            onChange={(e)=>setAEpuissancenomina4l(e.target.value)}
+            id="AEpuissancenomina4l"
+            placeholder='...'
+          />
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            type="text"
+            name="AEnomberuni4t1"
+            value={AEnomberuni4t1}
+            onChange={(e)=>setAEnomberuni4t1(e.target.value)}
+            id="AEnomberuni4t1"
             placeholder='...'
           />
         </td>
@@ -1818,105 +1941,50 @@ fonctionnent-ils bien ?
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
             type="text"
-            name="AAmarqu4e"
-            value={AAmarqu4e}
-            onChange={(e)=>setAAmarqu4e(e.target.value)}
-            id="AAmarqu4e"
+            name="AEmarqu5e"
+            value={AEmarqu5e}
+            onChange={(e)=>setAEmarqu5e(e.target.value)}
+            id="AEmarqu5e"
             placeholder='...'
           />
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
             type="text"
-            name="AAreferenc4e"
-            value={AAreferenc4e}
-            onChange={(e)=>setAAreferenc4e(e.target.value)}
-            id="AAreferenc4e"
+            name="AEreferenc5e"
+            value={AEreferenc5e}
+            onChange={(e)=>setAEreferenc5e(e.target.value)}
+            id="AEreferenc5e"
             placeholder='...'
           />
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
             type="text"
-            name="AAnomberuni4t1"
-            value={AAnomberuni4t1}
-            onChange={(e)=>setAAnomberuni4t1(e.target.value)}
-            id="AAnomberuni4t1"
-            placeholder='...'
-          />
-        </td>
-        
-        <td className="border border-gray-300 px-4 py-2 text-center">
-          <input
-            type="text"
-            name="AApuissancenomina4l"
-            value={AApuissancenomina4l}
-            onChange={(e)=>setAApuissancenomina4l(e.target.value)}
-            id="AApuissancenomina4l"
+            name="AECO5P"
+            value={AECO5P}
+            onChange={(e)=>setAECO5P(e.target.value)}
+            id="AECO5P"
             placeholder='...'
           />
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
             type="text"
-            name="AACO4P"
-            value={AACO4P}
-            onChange={(e)=>setAACO4P(e.target.value)}
-            id="AACO4P"
-            placeholder='...'
-          />
-        </td>
-      </tr>  
-
-      <tr>
-        <td className="border border-gray-300 px-4 py-2 text-center">
-          <input
-            type="text"
-            name="AAmarqu5e"
-            value={AAmarqu5e}
-            onChange={(e)=>setAAmarqu5e(e.target.value)}
-            id="AAmarqu5e"
+            name="AEpuissancenomina5l"
+            value={AEpuissancenomina5l}
+            onChange={(e)=>setAEpuissancenomina5l(e.target.value)}
+            id="AEpuissancenomina5l"
             placeholder='...'
           />
         </td>
         <td className="border border-gray-300 px-4 py-2 text-center">
           <input
             type="text"
-            name="AAreferenc5e"
-            value={AAreferenc5e}
-            onChange={(e)=>setAAreferenc5e(e.target.value)}
-            id="AAreferenc5e"
-            placeholder='...'
-          />
-        </td>
-        <td className="border border-gray-300 px-4 py-2 text-center">
-          <input
-            type="text"
-            name="AAnomberuni5t1"
-            value={AAnomberuni5t1}
-            onChange={(e)=>setAAnomberuni5t1(e.target.value)}
-            id="AAnomberuni5t1"
-            placeholder='...'
-          />
-        </td>
-        
-        <td className="border border-gray-300 px-4 py-2 text-center">
-          <input
-            type="text"
-            name="AApuissancenomina5l"
-            value={AApuissancenomina5l}
-            onChange={(e)=>setAApuissancenomina5l(e.target.value)}
-            id="AApuissancenomina5l"
-            placeholder='...'
-          />
-        </td>
-        <td className="border border-gray-300 px-4 py-2 text-center">
-          <input
-            type="text"
-            name="AACO5P"
-            value={AACO5P}
-            onChange={(e)=>setAACO5P(e.target.value)}
-            id="AACO5P"
+            name="AEnomberuni5t1"
+            value={AEnomberuni5t1}
+            onChange={(e)=>setAEnomberuni5t1(e.target.value)}
+            id="AEnomberuni5t1"
             placeholder='...'
           />
         </td>
@@ -2229,7 +2297,7 @@ fonctionnent-ils bien ?
       
     </tbody>
   </table>
-</div> */}
+</div>
 
 
 {/* Chauffe-Eau Thermodynamique */}
