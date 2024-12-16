@@ -524,10 +524,14 @@ p {margin: 0; padding: 0;}	.ft10{font-size:35px;font-family:UCBYRP+ArialNarrow;c
 </td>
 </tr>
 </table>
-</table>
+</table><br></br>
 <div style="justify-content: center; align-items: center; text-align: center;">
 ${imagesAA}
 </div>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>
@@ -699,20 +703,23 @@ ${imagesAA}
 <p style="text-indent: 0pt;text-align: center; color: black; font-size: 12px;">${AEQ12 === '⛝ NON' ? '⛝ NON' : ''}</p>
 </td>
 </tr>
-</table>
+</table><br></br>
 <div style="justify-content: center; align-items: center; text-align: center;">
 ${imagesAE}
 </div>
-
-
-
-
-
-
-
-
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <p style="padding-top: 3pt; padding-left: 6pt; text-indent: 0pt; text-align: center;">
   <span class="p" style="background-color: #A42F0F;">Chauffe-Eau Thermodynamique</span>
 </p>
@@ -787,36 +794,29 @@ ${imagesAE}
 </td>
 </tr>
 
-</table>
-<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+</table><br></br>
+<div style="justify-content: center; align-items: center; text-align: center;">
 ${imagesCET}
 </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <p style="padding-left: 6pt;text-indent: 0pt;text-align: center;"/>
 <p style="padding-top: 3pt; padding-left: 6pt; text-indent: 0pt; text-align: center;">
   <span class="p" style="background-color: #A42F0F;">Isolation du comble</span>
