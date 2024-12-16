@@ -14,6 +14,16 @@ const ChantierDetails = () => {
     const [show, setShow] = useState(false)
 
     const [operationName, setOperationName] = useState('')
+    const [benefNom, setbenefNom] = useState('')
+    const [benefPreNom, setbenefPreNom] = useState('')
+    const [chantierAdresse, setchantierAdresse] = useState('')
+    const [chantierCodePostal, setchantierCodePostal] = useState('')
+    const [chantierVille, setchantierVille] = useState('')
+    const [chantierPhone, setchantierPhone] = useState('')
+    const [chantierEmail, setchantierEmail] = useState('')
+    const [chantierNomDO, setchantierNomDO] = useState('')
+    const [chantierAdresseDO, setchantierAdresseDO] = useState('')
+    const [chantierSirenDO, setchantierSirenDO] = useState('')
 
       
     const get_chantiers = async()=>{
@@ -24,6 +34,16 @@ const ChantierDetails = () => {
                 }
             })
             setOperationName(data?.chantiers?.operationName)
+            setbenefNom(data?.chantiers?.benefNom)
+            setbenefPreNom(data?.chantiers?.benefPreNom)
+            setchantierAdresse(data?.chantiers?.chantierAdresse)
+            setchantierCodePostal(data?.chantiers?.chantierCodePostal)
+            setchantierVille(data?.chantiers?.chantierVille)
+            setchantierPhone(data?.chantiers?.chantierPhone)
+            setchantierEmail(data?.chantiers?.chantierEmail)
+            setchantierNomDO(data?.chantiers?.chantierNomDO)
+            setchantierAdresseDO(data?.chantiers?.chantierAdresseDO)
+            setchantierSirenDO(data?.chantiers?.chantierSirenDO)
             
         } catch (error) {
             console.log(error)            
@@ -37,13 +57,36 @@ const ChantierDetails = () => {
           },[chantiers_id])
   return (
     <div className='mt-3'>
-      <div className='grid grid-cols-1 gap-x-4'>
-        
-        
-        
+      <div className='grid grid-cols-6 gap-x-4'>
         <div className='w-full p-8 flex justify-center flex-col rounded-ms items-center gap-y-2 bg-white text-slate-700'>
-          <span className='text-xl font-bold'>Ref#{chantiers_id}</span>
+          <span className='text-xl font-bold'>Référance</span>
+          <span>#{chantiers_id} </span>
+        </div>
+        <div className='w-full p-8 flex justify-center flex-col rounded-ms items-center gap-y-2 bg-white text-slate-700'>
+          <span className='text-xl font-bold'>Opération</span>
           <span>Opération : {operationName} </span>
+        </div>
+        <div className='w-full p-8 flex justify-center flex-col rounded-ms items-center gap-y-2 bg-white text-slate-700'>
+          <span className='text-xl font-bold'>Info Bénéficiare</span>
+          <span>Nome du bénéficiare : {benefNom} </span>
+          <span>Prénom du bénéficiare* : {benefPreNom} </span>
+        </div>
+        <div className='w-full p-8 flex justify-center flex-col rounded-ms items-center gap-y-2 bg-white text-slate-700'>
+          <span className='text-xl font-bold'>Info Localisation</span>
+          <span>Adresse : {chantierAdresse} </span>
+          <span>Code postal : {chantierCodePostal} </span>
+          <span>Ville : {chantierVille} </span>
+        </div>
+        <div className='w-full p-8 flex justify-center flex-col rounded-ms items-center gap-y-2 bg-white text-slate-700'>
+          <span className='text-xl font-bold'>Info Contact</span>
+          <span>Téléphone : {chantierPhone} </span>
+          <span>Email : {chantierEmail} </span>
+        </div>
+        <div className='w-full p-8 flex justify-center flex-col rounded-ms items-center gap-y-2 bg-white text-slate-700'>
+          <span className='text-xl font-bold'>Info Donneur</span>
+          <span>Nom Donneur d'ordre : {chantierNomDO} </span>
+          <span>Adresse Donneur d'ordre : {chantierAdresseDO} </span>
+          <span>Siren Donneur d'ordre : {chantierSirenDO} </span>
         </div>
       </div>
       <div className='bg-white p-4 mt-5'>
@@ -61,42 +104,7 @@ const ChantierDetails = () => {
         </div>
         
         <div className='relative overflow-y-auto p-4'>
-            <table className='w-full text-sm text-left text-slate-600'>
-                <thead className='text-xs text-gray-700 uppercase bg-gray-50'>
-                    <tr>
-                        
-                        <th className='px-7 py-3'>Référence</th>
-                        <th className='px-7 py-3'>Référence Chantier</th>
-                        <th className='px-7 py-3'>Client</th>
-                        <th className='px-7 py-3'>Opération</th>
-
-                        <th className='px-7 py-3'>Date d'affectation</th>
-                        <th className='px-7 py-3'>Date réalisée</th>
-                        <th className='px-7 py-3'>Inspecteur</th>
-                        <th className='px-7 py-3'>Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {
-                      [1,2,3,4,5,6,7].map((n,i)=> <tr key={i} className='bg-white border-b'>
-                      <td className='px-6 py-4'><span className='px-2 py-[2px] bg-green-100 text-green-800 rounded-lg text-xs cursor-pointer'>Généré</span></td>
-                     
-                      <td className='px-6 py-4'>#CH4546</td>
-                      <td className='px-6 py-4'>Ali</td>
-                      <td className='px-6 py-4'>BALON THERMODYNAMIQUE</td>
-
-                      <td className='px-6 py-4'>11-12-2024</td>
-                      <td className='px-6 py-4'>11-12-2024</td>
-                      <td className='px-6 py-4'>InspecteurOne</td>
-                      <td className='px-6 py-4'>
-                          <div className='flex justify-start items-center gap-x-4 text-white'>
-                              <Link className='p-[6px] bg-green-500 rounded hover:shadow-lg hover:shadow-green-500/50'><FaEye/></Link>
-                          </div>
-                      </td>
-                  </tr>)
-                    }
-                </tbody>
-            </table>
+            
         </div>
 
       </div>
