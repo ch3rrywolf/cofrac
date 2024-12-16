@@ -23,7 +23,7 @@ class pdfController {
         }).join('');
 
         const imagesAE = imagesBase64AE.map((imageBase64AE) => {
-            return `<img src="${imageBase64AE}" style="width: 240px; height: 340px; padding-left: 20px; margin-top: 10px;" />`;
+            return `<img src="${imageBase64AE}" style="width: 240px; height: 290px; padding-left: 20px; margin-top: 10px;" />`;
         }).join('');
 
         const imagesAA = imagesBase64AA.map((imageBase64AA) => {
@@ -31,7 +31,7 @@ class pdfController {
         }).join('');
 
         const imagesIC = imagesBase64IC.map((imageBase64IC) => {
-            return `<img src="${imageBase64IC}" style="width: 200px; height: 200px; padding-left: 20px; margin-top: 10px;" />`;
+            return `<img src="${imageBase64IC}" style="width: 200px; height: 170px; padding-left: 20px; margin-top: 10px;" />`;
         }).join('');
 
         const imagesMO = imagesBase64MO.map((imageBase64MO) => {
