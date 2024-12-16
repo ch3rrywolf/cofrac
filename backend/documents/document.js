@@ -7,12 +7,17 @@ module.exports = ({imagesMO, imagesIC, imagesAA, imagesAE, imagesCET,Q1MO, Q2MO,
 
 <!DOCTYPE  html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>13a5cf5c-8a7a-408d-b488-a77d25ac7404</title><style type="text/css"> * {margin:0; padding:0; text-indent:0; }
- .s1 { color: #FFF; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 16pt; }
+ .s1 { color: #7A1D1D; font-family:"Arial Black", sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 24pt; }
  .s2 { color: #585858; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 9pt; }
- .p, p { color: #FFF; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 16pt; margin:0pt; }
+ .s3 { color: black; font-family:Calibri, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt; }
+ p { color: #393939; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 8pt; margin:0pt; }
  .s4 { color: #585858; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 11pt; }
  .s5 { color: #585858; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt; }
  .s6 { color: black; font-family:Calibri, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt; }
+ h4 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 11pt; }
+ h1 { color: #E26C09; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 18pt; }
+ h3 { color: #1B1A5E; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 12pt; }
+ h2 { color: #7A1D1D; font-family:"Arial Narrow", sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 16pt; }
  .s7 { color: #403308; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 18pt; }
  li {display: block; }
  #l1 {padding-left: 0pt;counter-reset: c1 1; }
@@ -43,27 +48,6 @@ header {
     margin-bottom: 20px;
 }
 
-h1, h2 {
-    margin: 0;
-}
-
-h1 {
-    color: #2c3e50;
-}
-
-h2 {
-    color: #34495e;
-}
-
-.bar-code {
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-h3 {
-    text-align: center;
-    color: #2980b9;
-}
 
 .conclusion {
     background-color: #ecf0f1;
@@ -166,11 +150,120 @@ p {margin: 0; padding: 0;}	.ft10{font-size:35px;font-family:UCBYRP+ArialNarrow;c
 </style>
 </head>
 <body style="justify-content: center; align-items: center;">
-
-
-<p style="padding-top: 3pt; padding-left: 6pt; text-indent: 0pt; text-align: center;">
-  <span class="p" style="background-color: #A42F0F;">Mise en œuvre conforme aux exigences du scénario retenu</span>
+<p style="padding-top: 11pt;text-indent: 0pt;text-align: left;">
+<br/>
 </p>
+<p class="s1" style="text-indent: 0pt;text-align: center;">RAPPORT D’INSPECTION</p>
+<h4 style="padding-top: 1pt;padding-left: 28pt;text-indent: 0pt;text-align: center;">CONTRÔLE APRES TRAVAUX</h4>
+<h1 style="padding-top: 10pt;padding-left: 295pt;text-indent: 0pt;text-align: left;">L. A I N S P E C T I O N</h1>
+<h3 style="padding-top: 1pt;text-indent: 0pt;text-align: right;">B AR - TH - 14 5</h3>
+<h2 style="padding-top: 6pt;padding-left: 30pt;text-indent: 0pt;text-align: center;">RENOVATION D ’ UN BÂTIMENT RESIDENTIEL COLLECTIF</h2><h4 style="padding-top: 12pt;padding-left: 25pt;text-indent: 0pt;text-align: center;">Photo bâtiment</h4>
+<p style="text-indent: 0pt;text-align: center; border: 1 solide black;">${imagesMO}</p><br></br>
+<table style="border-collapse:collapse;margin-left:6.17pt" cellspacing="0">
+<tr style="height:28pt">
+<td style="width:219pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#FFFFFF">
+<p class="s2" style="padding-top: 6pt;padding-left: 3pt;text-indent: 0pt;text-align: left;">Nom et Prénom du client :</p>
+</td>
+<td style="width:272pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: left;"><br/></p></td></tr>
+<tr style="height:39pt">
+<td style="width:219pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#FFFFFF">
+<p class="s2" style="padding-top: 12pt;padding-left: 3pt;text-indent: 0pt;text-align: left;">Adresse des travaux :</p>
+</td>
+<td style="width:272pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: left;">
+<br/>
+</p>
+</td>
+</tr>
+</table>
+<p style="text-indent: 0pt;text-align: left;">
+<br/>
+</p>
+<table style="border-collapse:collapse;margin-left:35.45pt" cellspacing="0">
+<tr style="height:15pt">
+<td style="width:425pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" colspan="2" bgcolor="#F9CFC2">
+<p class="s3" style="padding-top: 1pt;text-indent: 0pt;line-height: 13pt;text-align: center;">Conclusion générale</p>
+</td>
+</tr>
+<tr style="height:31pt">
+<td style="width:206pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: left;"/>
+<p class="s3" style="padding-top: 8pt;padding-right: 12pt;text-indent: 0pt;text-align: center;">Satisfaisant</p>
+</td>
+<td style="width:219pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F">
+<p style="text-indent: 0pt;text-align: left;"/>
+<p class="s3" style="padding-top: 8pt;padding-left: 68pt;text-indent: 0pt;text-align: left;">Non satisfaisant</p>
+</td>
+</tr>
+</table>
+<p style="padding-top: 4pt;text-indent: 0pt;text-align: left;">
+<br/>
+</p>
+<table style="border-collapse:collapse;margin-left:10.01pt" cellspacing="0">
+<tr style="height:21pt">
+<td style="width:146pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#FFFFFF">
+<p class="s2" style="padding-top: 3pt;padding-left: 3pt;text-indent: 0pt;text-align: left;">Référence de l’audit :</p>
+</td>
+<td style="width:324pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: left;">
+<br/>
+</p>
+</td>
+</tr>
+<tr style="height:22pt">
+<td style="width:146pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#FFFFFF">
+<p class="s2" style="padding-top: 3pt;padding-left: 3pt;text-indent: 0pt;text-align: left;">Référence du rapport</p>
+</td>
+<td style="width:324pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: left;">
+<br/>
+</p>
+</td>
+</tr>
+<tr style="height:21pt">
+<td style="width:146pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#FFFFFF">
+<p class="s2" style="padding-top: 2pt;padding-left: 3pt;text-indent: 0pt;text-align: left;">Date de la visite :</p>
+</td>
+<td style="width:324pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: left;">
+<br/>
+</p>
+</td>
+</tr>
+<tr style="height:21pt">
+<td style="width:146pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#FFFFFF">
+<p class="s2" style="padding-top: 3pt;padding-left: 3pt;text-indent: 0pt;text-align: left;">Date du rapport :</p>
+</td>
+<td style="width:324pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
+<p style="text-indent: 0pt;text-align: left;">
+<br/>
+</p>
+</td>
+</tr>
+</table>
+<p style="text-indent: 0pt;text-align: left;">
+<br/>
+</p>
+<p style="padding-left: 163pt;text-indent: -103pt;text-align: left;">
+<b>L.A INSPECTION</b>, société par actions simplifiée, son <span style=" color: #000;">siège social </span>est domicilié au <span style=" color: #000;">15 RUE FRANCOISE GIROUD 57280 MAIZIERES-LES-METZ</span>- FRANCE - SIREN : 918710492</p>
+<p style="text-indent: 0pt;text-align: left;">
+<span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+</td>
+</tr>
+</table>
+</span>
+</p>
+
+<br></br>
+
+
+<h2 style="padding-top: 3pt; padding-left: 6pt; text-indent: 0pt; text-align: center;">
+  <span style="background-color: #A42F0F; color: #FFF;">Mise en œuvre conforme aux exigences du scénario retenu</span>
+</h2>
 
 <p style="padding-left: 6pt;text-indent: 0pt;text-align: left;"/>
 <p style="padding-top: 1pt;text-indent: 0pt;text-align: left;"></p>
@@ -348,9 +441,9 @@ p {margin: 0; padding: 0;}	.ft10{font-size:35px;font-family:UCBYRP+ArialNarrow;c
 <br>
 <br>
 
-<p style="padding-top: 3pt; padding-left: 6pt; text-indent: 0pt; text-align: center;">
-  <span class="p" style="background-color: #A42F0F;">Pompe à chaleur - AIR/AIR</span>
-</p>
+<h2 style="padding-top: 3pt; padding-left: 6pt; text-indent: 0pt; text-align: center;">
+  <span style="background-color: #A42F0F; color: #FFF;">Pompe à chaleur - AIR/AIR</span>
+</h2>
 <p style="padding-top: 4pt; text-indent: 0pt; text-align: center;"></p>
 <table style="border-collapse:collapse; margin: 0 auto;" cellspacing="0">
 <tr style="height:36pt">
@@ -541,9 +634,9 @@ ${imagesAA}
 <br>
 <br>
 <br>
-<p style="padding-top: 3pt; padding-left: 6pt; text-indent: 0pt; text-align: center;">
-  <span class="p" style="background-color: #A42F0F;">Pompe à chaleur - AIR/EAU</span>
-</p>
+<h2 style="padding-top: 3pt; padding-left: 6pt; text-indent: 0pt; text-align: center;">
+  <span style="background-color: #A42F0F; color: #FFF;">Pompe à chaleur - AIR/EAU</span>
+</h2>
 <p style="padding-top: 4pt;text-indent: 0pt;text-align: left;"></p>
 <table style="border-collapse:collapse; margin: 0 auto;" cellspacing="0">
 <tr style="height:36pt">
@@ -720,9 +813,9 @@ ${imagesAE}
 <br>
 <br>
 <br>
-<p style="padding-top: 3pt; padding-left: 6pt; text-indent: 0pt; text-align: center;">
-  <span class="p" style="background-color: #A42F0F;">Chauffe-Eau Thermodynamique</span>
-</p>
+<h2 style="padding-top: 3pt; padding-left: 6pt; text-indent: 0pt; text-align: center;">
+  <span style="background-color: #A42F0F; color: #FFF;">Chauffe-Eau Thermodynamique</span>
+</h2>
 <p style="padding-left: 5pt;text-indent: 0pt;text-align: left;"/>
 <p style="text-indent: 0pt;text-align: left;"></p>
 <table style="border-collapse:collapse; margin: 0 auto;" cellspacing="0">
@@ -818,9 +911,9 @@ ${imagesCET}
 <br>
 <br>
 <p style="padding-left: 6pt;text-indent: 0pt;text-align: center;"/>
-<p style="padding-top: 3pt; padding-left: 6pt; text-indent: 0pt; text-align: center;">
-  <span class="p" style="background-color: #A42F0F;">Isolation du comble</span>
-</p>
+<h2 style="padding-top: 3pt; padding-left: 6pt; text-indent: 0pt; text-align: center;">
+  <span style="background-color: #A42F0F; color: #FFF;">Isolation du comble</span>
+</h2>
 <p style="padding-left: 5pt;text-indent: 0pt;text-align: left;"/>
 <p style="text-indent: 0pt;text-align: left;"></p>
 <table style="border-collapse:collapse; margin: 0 auto;" cellspacing="0">

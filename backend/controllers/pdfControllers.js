@@ -36,7 +36,7 @@ class pdfController {
         }).join('');
 
         const imagesMO = imagesBase64MO.map((imageBase64MO) => {
-            return `<img src="${imageBase64MO}" style="width: 220px; height: 250px; padding-left: 20px; margin-top: 10px;" />`;
+            return `<img src="${imageBase64MO}" style="width: 550px; height: 320px; padding-left: 20px; margin-top: 10px;" />`;
         }).join('');
 
 

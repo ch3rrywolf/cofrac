@@ -482,6 +482,44 @@ const [ICQQ24,setICQQ24] = useState('')
       </div>
       <div className='p-4'>
         <form onSubmit={submit}>
+        <div className='text-center items-center text-white font-bold border border-solid bg-orange-700' >
+    <h4>Photo bâtiment</h4>
+</div>
+        <label
+  htmlFor="imgMO"
+  className="w-full h-[180px] flex rounded text-[#404040] gap-2 justify-center items-center cursor-pointer border-2 border-dashed"
+>
+  <div className="flex justify-center items-center flex-col gap-y-2">
+    <span className="text-2xl">
+      <MdCloudUpload />
+    </span>
+    <span>Select Images</span>
+  </div>
+</label>
+
+<input
+  type="file"
+  id="imgMO"
+  className="hidden"
+  onChange={handleImageUploadMO}
+  multiple
+/>
+
+{/* Display image previews */}
+{imagesBase64MO.length > 0 && (
+  <div className="mt-4 flex justify-center items-center flex-wrap gap-4">
+    {imagesBase64MO.map((imgBase64MO, index) => (
+      <div className="image-container" key={index}>
+        <img
+          src={imgBase64MO}
+          alt={`Image preview ${index + 1}`}
+          className="w-20 h-20 object-cover rounded-md"
+          style={{ marginTop: '10px', marginLeft: '20px' }}
+        />
+      </div>
+    ))}
+  </div>
+)}
 
 {/* Mise/Oeuv */}
 
@@ -884,41 +922,7 @@ conforme auxindications du fournisseur ;        </td>
     </tbody>
   </table>
 
-  <label
-  htmlFor="imgMO"
-  className="w-full h-[180px] flex rounded text-[#404040] gap-2 justify-center items-center cursor-pointer border-2 border-dashed"
->
-  <div className="flex justify-center items-center flex-col gap-y-2">
-    <span className="text-2xl">
-      <MdCloudUpload />
-    </span>
-    <span>Select Images</span>
-  </div>
-</label>
 
-<input
-  type="file"
-  id="imgMO"
-  className="hidden"
-  onChange={handleImageUploadMO}
-  multiple
-/>
-
-{/* Display image previews */}
-{imagesBase64MO.length > 0 && (
-  <div className="mt-4 flex justify-center items-center flex-wrap gap-4">
-    {imagesBase64MO.map((imgBase64MO, index) => (
-      <div className="image-container" key={index}>
-        <img
-          src={imgBase64MO}
-          alt={`Image preview ${index + 1}`}
-          className="w-20 h-20 object-cover rounded-md"
-          style={{ marginTop: '10px', marginLeft: '20px' }}
-        />
-      </div>
-    ))}
-  </div>
-)}
 </div>
 
 {/* AIR/AIR */}
