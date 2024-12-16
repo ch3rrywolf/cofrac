@@ -19,9 +19,154 @@ module.exports = ({imagesMO, imagesIC, imagesAA, imagesAE, imagesCET,Q1MO, Q2MO,
  #l1> li>*:first-child:before {counter-increment: c1; content: counter(c1, lower-latin)") "; color: #585858; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 9pt; }
  #l1> li:first-child>*:first-child:before {counter-increment: c1 0;  }
  table, tbody {vertical-align: top; overflow: visible; }
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+h2 {
+    color: #34495e;
+}
+
+.bar-code {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+h3 {
+    text-align: center;
+    color: #2980b9;
+}
+
+.conclusion {
+    background-color: #ecf0f1;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.satisfaction-status {
+    display: flex;
+    justify-content: space-around;
+}
+
+.company-info {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+.client-info, .report-info {
+    margin-bottom: 20px;
+}
+
+.info-row {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.info-row label {
+    flex: 1;
+    font-weight: bold;
+}
+
+.info-row .info-value {
+    flex: 2;
+    border-bottom: 1px solid #bdc3c7;
+}
+
+.additional-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.qr-code, .photo-maps {
+    border: 1px solid #bdc3c7;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    border-top: 2px solid #333;
+    padding-top: 10px;
+}
+
+.building-photo {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ecf0f1;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .info-row {
+        flex-direction: column;
+    }
+    
+    .info-row label, .info-row .info-value {
+        width: 100%;
+    }
+}
+p {margin: 0; padding: 0;}	.ft10{font-size:35px;font-family:UCBYRP+ArialNarrow;color:#000000;}
+	.ft11{font-size:35px;font-family:RVNGBV+Arial-Black;color:#7a1d1d;}
+	.ft12{font-size:35px;font-family:RVNGBV+Arial-Black;color:#000000;}
+	.ft13{font-size:77px;font-family:RVNGBV+Arial-Black;color:#7a1d1d;}
+	.ft14{font-size:77px;font-family:RVNGBV+Arial-Black;color:#000000;}
+	.ft15{font-size:72px;font-family:UCBYRP+ArialNarrow;color:#e26c09;}
+	.ft16{font-size:41px;font-family:PSOUZZ+Arial;color:#1b1a5e;}
+	.ft17{font-size:41px;font-family:PSOUZZ+Arial;color:#000000;}
+	.ft18{font-size:50px;font-family:UCBYRP+ArialNarrow;color:#7a1d1d;}
+	.ft19{font-size:50px;font-family:UCBYRP+ArialNarrow;color:#000000;}
+	.ft110{font-size:14px;font-family:UCBYRP+ArialNarrow;color:#000000;}
+	.ft111{font-size:48px;font-family:RVNGBV+Arial-Black;color:#000000;}
+	.ft112{font-size:16px;font-family:MQACJF+LucidaSans;color:#000000;}
+	.ft113{font-size:18px;font-family:IKCEFN+LucidaSans-Demi;color:#000000;}
+	.ft114{font-size:13px;font-family:EEEGBV+TimesNewRomanPS;color:#393939;}
+	.ft115{font-size:13px;font-family:BXQOLB+TimesNewRomanPSMT;color:#393939;}
+	.ft116{font-size:13px;font-family:BXQOLB+TimesNewRomanPSMT;color:#000000;}
+	.ft117{font-size:21px;font-family:MQACJF+LucidaSans;color:#000000;}
+	.ft118{font-size:23px;font-family:IKCEFN+LucidaSans-Demi;color:#000000;}
+	.ft119{font-size:16px;font-family:IKCEFN+LucidaSans-Demi;color:#000000;}
+	.ft120{font-size:35px;line-height:61px;font-family:UCBYRP+ArialNarrow;color:#000000;}
+	.ft121{font-size:14px;line-height:29px;font-family:UCBYRP+ArialNarrow;color:#000000;}
+	.ft122{font-size:18px;line-height:21px;font-family:IKCEFN+LucidaSans-Demi;color:#000000;}
+	.ft123{font-size:16px;line-height:19px;font-family:MQACJF+LucidaSans;color:#000000;}
 </style>
 </head>
 <body style="justify-content: center; align-items: center;">
+
 
 <p style="padding-top: 3pt; padding-left: 6pt; text-indent: 0pt; text-align: center;">
   <span class="p" style="background-color: #A42F0F;">Mise en œuvre conforme aux exigences du scénario retenu</span>

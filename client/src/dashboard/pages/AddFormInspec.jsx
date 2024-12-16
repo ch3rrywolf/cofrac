@@ -477,7 +477,7 @@ const [ICQQ24,setICQQ24] = useState('')
   return (
     <div className='bg-white rounded-md'>
       <div className='flex justify-between p-4'>
-        <h2 className='text-xl font-medium'>Formulaire inspection</h2>
+        <h2 className='text-xl font-medium'>Formulaire inspection Après chantier</h2>
         <Link className='px-3 py-[6px] bg-purple-500 rounded-sm text-white hover:bg-purple-600' to='/dashboard/chantiers'>Chantiers</Link>
       </div>
       <div className='p-4'>
