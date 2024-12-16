@@ -1,11 +1,67 @@
-import React, {useState} from 'react'
-import { Link } from 'react-router-dom'
-import axios from 'axios'
-import { base_url} from '../config/config'
+
 import {saveAs} from 'file-saver'
 import {MdCloudUpload} from 'react-icons/md'
+import React, {useState, useRef, useContext, useEffect} from 'react'
+import { Link, useParams } from 'react-router-dom'
+import {FaEye} from "react-icons/fa"
+import JoditEditor from 'jodit-react'
+import {base_url} from '../config/config'
+import axios from 'axios'
+import storeContext from '../../context/storeContext'
+import toast from 'react-hot-toast'
 
 const AddFormInspec = () => {
+  const {chantiers_id} = useParams()
+  const {store} = useContext(storeContext)
+  const [show, setShow] = useState(false)
+
+  const [operationName, setOperationName] = useState('')
+  const [benefNom, setbenefNom] = useState('')
+  const [benefPreNom, setbenefPreNom] = useState('')
+  const [chantierAdresse, setchantierAdresse] = useState('')
+  const [chantierCodePostal, setchantierCodePostal] = useState('')
+  const [chantierVille, setchantierVille] = useState('')
+  const [chantierPhone, setchantierPhone] = useState('')
+  const [chantierEmail, setchantierEmail] = useState('')
+  const [chantierNomDO, setchantierNomDO] = useState('')
+  const [chantierAdresseDO, setchantierAdresseDO] = useState('')
+  const [chantierSirenDO, setchantierSirenDO] = useState('')
+  const [clientName, setclientName] = useState('')
+
+
+      const get_chantiers = async()=>{
+        try {
+            const { data } = await axios.get(`${base_url}/api/chantiers/${chantiers_id}`, {
+                headers: {
+                    "Authorization": `Bearer ${store.token}`
+                }
+            })
+            setOperationName(data?.chantiers?.operationName)
+            setbenefNom(data?.chantiers?.benefNom)
+            setbenefPreNom(data?.chantiers?.benefPreNom)
+            setchantierAdresse(data?.chantiers?.chantierAdresse)
+            setchantierCodePostal(data?.chantiers?.chantierCodePostal)
+            setchantierVille(data?.chantiers?.chantierVille)
+            setchantierPhone(data?.chantiers?.chantierPhone)
+            setchantierEmail(data?.chantiers?.chantierEmail)
+            setchantierNomDO(data?.chantiers?.chantierNomDO)
+            setchantierAdresseDO(data?.chantiers?.chantierAdresseDO)
+            setchantierSirenDO(data?.chantiers?.chantierSirenDO)
+            setclientName(data?.chantiers?.clientName)
+            
+        } catch (error) {
+            console.log(error)            
+        }
+    }
+
+
+
+       useEffect(()=>{
+            get_chantiers()
+          },[chantiers_id])
+
+        
+    
     // const [loader, setLoader] = useState(false)
     // mise ouvre
     const [Q1MO,setQ1MO] = useState('')
@@ -272,7 +328,7 @@ const [ICQQ24,setICQQ24] = useState('')
         });
     };
 
-    const data = {imagesBase64MO, imagesBase64IC, imagesBase64AA, imagesBase64AE ,imagesBase64CET  ,Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19, CET1, AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApuissancenomina1l, AACO1P, AAmarqu2e, AAreferenc2e, AAnomberuni2t1, AAnomberuni2t2, AApuissancenomina2l, AACO2P, AAmarqu3e, AAreferenc3e, AAnomberuni3t1, AAnomberuni3t2, AApuissancenomina3l, AACO3P, AAmarqu4e, AAreferenc4e, AAnomberuni4t1, AAnomberuni4t2, AApuissancenomina4l, AACO4P, AAmarqu5e, AAreferenc5e, AAnomberuni5t1, AAnomberuni5t2, AApuissancenomina5l, AACO5P, AA1Q1, AAQ1, AAQ2, AAQ3, AAQ4, AAQ5, AAQ6, AAQ7, AAQ8, AAQ9, AAQ10, AAQ11, AAQ12, AAQ13, AAQ14, AAQ15, AAQ16, AAQ17, AEmarqu1e, AEreferenc1e, AEnomberuni1t1, AEnomberuni1t2, AEpuissancenomina1l, AECO1P, AEmarqu2e, AEreferenc2e, AEnomberuni2t1, AEnomberuni2t2, AEpuissancenomina2l, AECO2P, AEmarqu3e, AEreferenc3e, AEnomberuni3t1, AEnomberuni3t2, AEpuissancenomina3l, AECO3P, AEmarqu4e, AEreferenc4e, AEnomberuni4t1, AEnomberuni4t2, AEpuissancenomina4l, AECO4P, AEmarqu5e, AEreferenc5e, AEnomberuni5t1, AEnomberuni5t2, AEpuissancenomina5l, AECO5P, AE1Q1, AEQ1, AEQ2, AEQ3, AEQ4, AEQ5, AEQ6, AEQ7, AEQ8, AEQ9, AEQ10, AEQ11, AEQ12, CETQ1, CETQ2, CETQ3, CETQ4, CETQ5, CETQ6, CETQ7, CETQ8, CETQ9, CETQ10, CETQ11, CETQ12, CETQ13, CETQ14, ICQQ1, ICQQ2, ICQQ3, ICQQ4, ICQQ5, ICQQ6, ICQQ7, ICQQ8, ICQQ9, ICQQ10, ICQQ11, ICQQ12, ICQQ13,  ICQQ15, ICQQ16, ICQQ17, ICQQ18, ICQQ19, ICQQ20, ICQQ21, ICQQ22, ICQQ23, ICQQ24, email}
+    const data = {clientName, chantierSirenDO, chantierAdresseDO, chantierNomDO, chantierEmail, chantierPhone, chantierVille, chantierCodePostal, chantierAdresse, benefPreNom, benefNom, operationName, imagesBase64MO, imagesBase64IC, imagesBase64AA, imagesBase64AE ,imagesBase64CET  ,Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19, CET1, AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApuissancenomina1l, AACO1P, AAmarqu2e, AAreferenc2e, AAnomberuni2t1, AAnomberuni2t2, AApuissancenomina2l, AACO2P, AAmarqu3e, AAreferenc3e, AAnomberuni3t1, AAnomberuni3t2, AApuissancenomina3l, AACO3P, AAmarqu4e, AAreferenc4e, AAnomberuni4t1, AAnomberuni4t2, AApuissancenomina4l, AACO4P, AAmarqu5e, AAreferenc5e, AAnomberuni5t1, AAnomberuni5t2, AApuissancenomina5l, AACO5P, AA1Q1, AAQ1, AAQ2, AAQ3, AAQ4, AAQ5, AAQ6, AAQ7, AAQ8, AAQ9, AAQ10, AAQ11, AAQ12, AAQ13, AAQ14, AAQ15, AAQ16, AAQ17, AEmarqu1e, AEreferenc1e, AEnomberuni1t1, AEnomberuni1t2, AEpuissancenomina1l, AECO1P, AEmarqu2e, AEreferenc2e, AEnomberuni2t1, AEnomberuni2t2, AEpuissancenomina2l, AECO2P, AEmarqu3e, AEreferenc3e, AEnomberuni3t1, AEnomberuni3t2, AEpuissancenomina3l, AECO3P, AEmarqu4e, AEreferenc4e, AEnomberuni4t1, AEnomberuni4t2, AEpuissancenomina4l, AECO4P, AEmarqu5e, AEreferenc5e, AEnomberuni5t1, AEnomberuni5t2, AEpuissancenomina5l, AECO5P, AE1Q1, AEQ1, AEQ2, AEQ3, AEQ4, AEQ5, AEQ6, AEQ7, AEQ8, AEQ9, AEQ10, AEQ11, AEQ12, CETQ1, CETQ2, CETQ3, CETQ4, CETQ5, CETQ6, CETQ7, CETQ8, CETQ9, CETQ10, CETQ11, CETQ12, CETQ13, CETQ14, ICQQ1, ICQQ2, ICQQ3, ICQQ4, ICQQ5, ICQQ6, ICQQ7, ICQQ8, ICQQ9, ICQQ10, ICQQ11, ICQQ12, ICQQ13,  ICQQ15, ICQQ16, ICQQ17, ICQQ18, ICQQ19, ICQQ20, ICQQ21, ICQQ22, ICQQ23, ICQQ24, email}
 
     const submit = async (e) => {
         e.preventDefault();
@@ -289,6 +345,19 @@ const [ICQQ24,setICQQ24] = useState('')
                         setImagesBase64IC([]);
                         setImagesBase64MO([]);
     
+                        setOperationName(data?.chantiers?.operationName)
+                        setbenefNom(data?.chantiers?.benefNom)
+                        setbenefPreNom(data?.chantiers?.benefPreNom)
+                        setchantierAdresse(data?.chantiers?.chantierAdresse)
+                        setchantierCodePostal(data?.chantiers?.chantierCodePostal)
+                        setchantierVille(data?.chantiers?.chantierVille)
+                        setchantierPhone(data?.chantiers?.chantierPhone)
+                        setchantierEmail(data?.chantiers?.chantierEmail)
+                        setchantierNomDO(data?.chantiers?.chantierNomDO)
+                        setchantierAdresseDO(data?.chantiers?.chantierAdresseDO)
+                        setchantierSirenDO(data?.chantiers?.chantierSirenDO)
+                        setclientName(data?.chantiers?.clientName)
+
                         setQ1MO('');
                         setQ2MO('');
                         setQ3MO('');

@@ -63,7 +63,7 @@ function App() {
             <Route path='chantiers' element={<Chantiers />} />
             <Route path='chantiers/add' element={<AddChantier />} />
             <Route path='chantiers/view/:chantiers_id' element={<ChantierDetails />} />
-            <Route path='chantiers/form' element={<AddFormInspec />} />
+            <Route path='chantiers/form/apres/:chantiers_id' element={<AddFormInspec />} />
             
           </Route>
 

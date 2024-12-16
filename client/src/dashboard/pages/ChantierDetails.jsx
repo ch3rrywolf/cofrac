@@ -44,6 +44,7 @@ const ChantierDetails = () => {
             setchantierNomDO(data?.chantiers?.chantierNomDO)
             setchantierAdresseDO(data?.chantiers?.chantierAdresseDO)
             setchantierSirenDO(data?.chantiers?.chantierSirenDO)
+            setclientName(data?.chantiers?.clientName)
             
         } catch (error) {
             console.log(error)            
@@ -92,7 +93,7 @@ const ChantierDetails = () => {
       <div className='bg-white p-4 mt-5'>
         <div className="flex justify-between p-4">
                 <Link
-                  to="/dashboard/chantiers/form"
+                  to={`/dashboard/chantiers/form/apres/${chantiers_id}`}
                   className="px-3 py-2 bg-purple-500 rounded text-white hover:bg-purple-600"
                 >
                   + Formulaire Après
