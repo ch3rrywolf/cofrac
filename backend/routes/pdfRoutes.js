@@ -8,4 +8,8 @@ router.post('/api/createPdf', pdfControllers.createPdf)
 router.get('/api/fetchPdf', pdfControllers.fetchPdf)
 router.post('/api/sendPdf',pdfControllers.sendPdf)
 
+router.post('/api/createPdfAp', pdfControllers.createPdfAp)
+router.get('/api/fetchPdfAp', pdfControllers.fetchPdfAp)
+router.post('/api/sendPdfAp',pdfControllers.sendPdfAp)
+
 module.exports = router

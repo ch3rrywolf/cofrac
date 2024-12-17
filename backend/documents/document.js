@@ -165,7 +165,7 @@ p {margin: 0; padding: 0;}	.ft10{font-size:35px;font-family:UCBYRP+ArialNarrow;c
 <p class="s2" style="padding-top: 6pt;padding-left: 3pt;text-indent: 0pt;text-align: left;">Nom et Prénom du client :</p>
 </td>
 <td style="width:272pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#F9CFC2">
-<p style="text-indent: 0pt;text-align: center;">${chantierEmail}</p></td></tr>
+<p style="text-indent: 0pt;text-align: center;">${chantierEmail} ${clientName}</p></td></tr>
 <tr style="height:39pt">
 <td style="width:219pt;border-top-style:solid;border-top-width:1pt;border-top-color:#A42F0F;border-left-style:solid;border-left-width:1pt;border-left-color:#A42F0F;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#A42F0F;border-right-style:solid;border-right-width:1pt;border-right-color:#A42F0F" bgcolor="#FFFFFF">
 <p class="s2" style="padding-top: 12pt;padding-left: 3pt;text-indent: 0pt;text-align: left;">Adresse des travaux :</p>

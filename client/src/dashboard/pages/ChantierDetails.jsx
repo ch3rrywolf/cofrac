@@ -24,6 +24,7 @@ const ChantierDetails = () => {
     const [chantierNomDO, setchantierNomDO] = useState('')
     const [chantierAdresseDO, setchantierAdresseDO] = useState('')
     const [chantierSirenDO, setchantierSirenDO] = useState('')
+    const [clientName, setclientName] = useState('')
 
       
     const get_chantiers = async()=>{
@@ -70,7 +71,8 @@ const ChantierDetails = () => {
         <div className='w-full p-8 flex justify-center flex-col rounded-ms items-center gap-y-2 bg-white text-slate-700'>
           <span className='text-xl font-bold'>Info Bénéficiare</span>
           <span>Nome du bénéficiare : {benefNom} </span>
-          <span>Prénom du bénéficiare* : {benefPreNom} </span>
+          <span>Prénom du bénéficiare : {benefPreNom} </span>
+          <span>Nome et Prénom du client : {clientName} </span>
         </div>
         <div className='w-full p-8 flex justify-center flex-col rounded-ms items-center gap-y-2 bg-white text-slate-700'>
           <span className='text-xl font-bold'>Info Localisation</span>
@@ -96,7 +98,15 @@ const ChantierDetails = () => {
                   to={`/dashboard/chantiers/form/apres/${chantiers_id}`}
                   className="px-3 py-2 bg-purple-500 rounded text-white hover:bg-purple-600"
                 >
-                  + Formulaire Après
+                  + Formulaire AprèsV0
+                </Link>
+              </div>
+              <div className="flex justify-between p-4">
+                <Link
+                  to={`/dashboard/chantiers/form/ap/${chantiers_id}`}
+                  className="px-3 py-2 bg-purple-500 rounded text-white hover:bg-purple-600"
+                >
+                  + Formulaire Inspection BAR-TH-145 après travaux
                 </Link>
               </div>
         <div className='flex justify-between items-center pb-4'>
