@@ -355,6 +355,7 @@ const [ICQQ24,setICQQ24] = useState('')
                         setPGAVQ2('');
                         setPGAVQ3('');
                         setPGAVQ4('');
+
     
                         setOperationName(data?.chantiers?.operationName)
                         setbenefNom(data?.chantiers?.benefNom)
