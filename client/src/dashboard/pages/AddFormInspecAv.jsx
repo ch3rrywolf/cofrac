@@ -27,6 +27,7 @@ const AddFormInspecAv = () => {
   const [chantierAdresseDO, setchantierAdresseDO] = useState('')
   const [chantierSirenDO, setchantierSirenDO] = useState('')
   const [clientName, setclientName] = useState('')
+  const [createdAt, setcreatedAt] = useState('')
 
 
       const get_chantiers = async()=>{
@@ -48,6 +49,7 @@ const AddFormInspecAv = () => {
             setchantierAdresseDO(data?.chantiers?.chantierAdresseDO)
             setchantierSirenDO(data?.chantiers?.chantierSirenDO)
             setclientName(data?.chantiers?.clientName)
+            setcreatedAt(data?.chantiers?.createdAt)
             
         } catch (error) {
             console.log(error)            
@@ -60,7 +62,11 @@ const AddFormInspecAv = () => {
             get_chantiers()
           },[chantiers_id])
 
-        
+        // page garde 
+        const [PGAVQ1,setPGAVQ1] = useState('')
+        const [PGAVQ2,setPGAVQ2] = useState('')
+        const [PGAVQ3,setPGAVQ3] = useState('')
+        const [PGAVQ4,setPGAVQ4] = useState('')
     
     // const [loader, setLoader] = useState(false)
     // mise ouvre
@@ -331,7 +337,7 @@ const [ICQQ24,setICQQ24] = useState('')
     
     const submit = async (e) => {
         e.preventDefault();
-        const data = {clientName, chantierSirenDO, chantierAdresseDO, chantierNomDO, chantierEmail, chantierPhone, chantierVille, chantierCodePostal, chantierAdresse, benefPreNom, benefNom, operationName, imagesBase64MO, imagesBase64IC, imagesBase64AA, imagesBase64AE ,imagesBase64CET  ,Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19, CET1, AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApuissancenomina1l, AACO1P, AAmarqu2e, AAreferenc2e, AAnomberuni2t1, AAnomberuni2t2, AApuissancenomina2l, AACO2P, AAmarqu3e, AAreferenc3e, AAnomberuni3t1, AAnomberuni3t2, AApuissancenomina3l, AACO3P, AAmarqu4e, AAreferenc4e, AAnomberuni4t1, AAnomberuni4t2, AApuissancenomina4l, AACO4P, AAmarqu5e, AAreferenc5e, AAnomberuni5t1, AAnomberuni5t2, AApuissancenomina5l, AACO5P, AA1Q1, AAQ1, AAQ2, AAQ3, AAQ4, AAQ5, AAQ6, AAQ7, AAQ8, AAQ9, AAQ10, AAQ11, AAQ12, AAQ13, AAQ14, AAQ15, AAQ16, AAQ17, AEmarqu1e, AEreferenc1e, AEnomberuni1t1, AEnomberuni1t2, AEpuissancenomina1l, AECO1P, AEmarqu2e, AEreferenc2e, AEnomberuni2t1, AEnomberuni2t2, AEpuissancenomina2l, AECO2P, AEmarqu3e, AEreferenc3e, AEnomberuni3t1, AEnomberuni3t2, AEpuissancenomina3l, AECO3P, AEmarqu4e, AEreferenc4e, AEnomberuni4t1, AEnomberuni4t2, AEpuissancenomina4l, AECO4P, AEmarqu5e, AEreferenc5e, AEnomberuni5t1, AEnomberuni5t2, AEpuissancenomina5l, AECO5P, AE1Q1, AEQ1, AEQ2, AEQ3, AEQ4, AEQ5, AEQ6, AEQ7, AEQ8, AEQ9, AEQ10, AEQ11, AEQ12, CETQ1, CETQ2, CETQ3, CETQ4, CETQ5, CETQ6, CETQ7, CETQ8, CETQ9, CETQ10, CETQ11, CETQ12, CETQ13, CETQ14, ICQQ1, ICQQ2, ICQQ3, ICQQ4, ICQQ5, ICQQ6, ICQQ7, ICQQ8, ICQQ9, ICQQ10, ICQQ11, ICQQ12, ICQQ13,  ICQQ15, ICQQ16, ICQQ17, ICQQ18, ICQQ19, ICQQ20, ICQQ21, ICQQ22, ICQQ23, ICQQ24, email}
+        const data = {PGAVQ1, PGAVQ2, PGAVQ3, PGAVQ4, createdAt, clientName, chantierSirenDO, chantierAdresseDO, chantierNomDO, chantierEmail, chantierPhone, chantierVille, chantierCodePostal, chantierAdresse, benefPreNom, benefNom, operationName, imagesBase64MO, imagesBase64IC, imagesBase64AA, imagesBase64AE ,imagesBase64CET  ,Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19, CET1, AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApuissancenomina1l, AACO1P, AAmarqu2e, AAreferenc2e, AAnomberuni2t1, AAnomberuni2t2, AApuissancenomina2l, AACO2P, AAmarqu3e, AAreferenc3e, AAnomberuni3t1, AAnomberuni3t2, AApuissancenomina3l, AACO3P, AAmarqu4e, AAreferenc4e, AAnomberuni4t1, AAnomberuni4t2, AApuissancenomina4l, AACO4P, AAmarqu5e, AAreferenc5e, AAnomberuni5t1, AAnomberuni5t2, AApuissancenomina5l, AACO5P, AA1Q1, AAQ1, AAQ2, AAQ3, AAQ4, AAQ5, AAQ6, AAQ7, AAQ8, AAQ9, AAQ10, AAQ11, AAQ12, AAQ13, AAQ14, AAQ15, AAQ16, AAQ17, AEmarqu1e, AEreferenc1e, AEnomberuni1t1, AEnomberuni1t2, AEpuissancenomina1l, AECO1P, AEmarqu2e, AEreferenc2e, AEnomberuni2t1, AEnomberuni2t2, AEpuissancenomina2l, AECO2P, AEmarqu3e, AEreferenc3e, AEnomberuni3t1, AEnomberuni3t2, AEpuissancenomina3l, AECO3P, AEmarqu4e, AEreferenc4e, AEnomberuni4t1, AEnomberuni4t2, AEpuissancenomina4l, AECO4P, AEmarqu5e, AEreferenc5e, AEnomberuni5t1, AEnomberuni5t2, AEpuissancenomina5l, AECO5P, AE1Q1, AEQ1, AEQ2, AEQ3, AEQ4, AEQ5, AEQ6, AEQ7, AEQ8, AEQ9, AEQ10, AEQ11, AEQ12, CETQ1, CETQ2, CETQ3, CETQ4, CETQ5, CETQ6, CETQ7, CETQ8, CETQ9, CETQ10, CETQ11, CETQ12, CETQ13, CETQ14, ICQQ1, ICQQ2, ICQQ3, ICQQ4, ICQQ5, ICQQ6, ICQQ7, ICQQ8, ICQQ9, ICQQ10, ICQQ11, ICQQ12, ICQQ13,  ICQQ15, ICQQ16, ICQQ17, ICQQ18, ICQQ19, ICQQ20, ICQQ21, ICQQ22, ICQQ23, ICQQ24, email}
 
         await axios.post(`${base_url}/api/createPdfAv`, data)
             .then(() =>
@@ -344,6 +350,11 @@ const [ICQQ24,setICQQ24] = useState('')
                         setImagesBase64AA([]);
                         setImagesBase64IC([]);
                         setImagesBase64MO([]);
+
+                        setPGAVQ1('');
+                        setPGAVQ2('');
+                        setPGAVQ3('');
+                        setPGAVQ4('');
     
                         setOperationName(data?.chantiers?.operationName)
                         setbenefNom(data?.chantiers?.benefNom)
@@ -357,6 +368,7 @@ const [ICQQ24,setICQQ24] = useState('')
                         setchantierAdresseDO(data?.chantiers?.chantierAdresseDO)
                         setchantierSirenDO(data?.chantiers?.chantierSirenDO)
                         setclientName(data?.chantiers?.clientName)
+                        setcreatedAt(data?.chantiers?.createdAt)
 
                         setQ1MO('');
                         setQ2MO('');
@@ -589,6 +601,87 @@ const [ICQQ24,setICQQ24] = useState('')
     ))}
   </div>
 )}
+
+{/* Page garde */}
+<div className='text-center items-center text-white font-bold border border-solid bg-orange-700' >
+    <h4>Page de Garde Information</h4>
+</div>
+<div className="overflow-x-auto">
+  <table className="table-auto w-full border-collapse border border-gray-300 text-sm text-gray-600">
+    <thead>
+      <tr>
+        <th className="border border-gray-300 px-4 py-2">Question</th>
+        <th className="border border-gray-300 px-4 py-2">Réponse</th>
+      </tr>
+    </thead>
+    <tbody>
+
+    
+
+      
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Type de Logement :
+        </td>
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="PGAVQ1"
+            value={PGAVQ1}
+            onChange={(e)=>setPGAVQ1(e.target.value)}
+            id="PGAVQ1"
+            placeholder='...'
+          /></div>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Numéro de dossier :
+        </td>
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="PGAVQ2"
+            value={PGAVQ2}
+            onChange={(e)=>setPGAVQ2(e.target.value)}
+            id="PGAVQ2"
+            placeholder='...'
+          /></div>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Référence demandeur:
+        </td>
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="PGAVQ3"
+            value={PGAVQ3}
+            onChange={(e)=>setPGAVQ3(e.target.value)}
+            id="PGAVQ3"
+            placeholder='...'
+          /></div>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Date de visite
+        </td>
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="PGAVQ4"
+            value={PGAVQ4}
+            onChange={(e)=>setPGAVQ4(e.target.value)}
+            id="PGAVQ4"
+            placeholder='...'
+          /></div>
+      </tr>
+     
+    
+      
+      
+    </tbody>
+  </table>
+</div>
 
 {/* Mise/Oeuv */}
 
@@ -990,8 +1083,6 @@ conforme auxindications du fournisseur ;        </td>
       </tr>
     </tbody>
   </table>
-
-
 </div>
 
 {/* AIR/AIR */}
