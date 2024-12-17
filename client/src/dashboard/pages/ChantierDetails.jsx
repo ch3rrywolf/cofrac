@@ -109,6 +109,14 @@ const ChantierDetails = () => {
                   + Formulaire Inspection BAR-TH-145 après travaux
                 </Link>
               </div>
+              <div className="flex justify-between p-4">
+                <Link
+                  to={`/dashboard/chantiers/form/av/${chantiers_id}`}
+                  className="px-3 py-2 bg-purple-500 rounded text-white hover:bg-purple-600"
+                >
+                  + Formulaire Inspection BAR-TH-145 Avant travaux
+                </Link>
+              </div>
         <div className='flex justify-between items-center pb-4'>
           <h2>Recent Rapport</h2>
           <Link >View all</Link>

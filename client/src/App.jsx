@@ -25,6 +25,7 @@ import Chantiers from './dashboard/pages/Chantiers'
 import ChantierDetails from './dashboard/pages/ChantierDetails'
 import AddFormInspec from './dashboard/pages/AddFormInspec'
 import AddFormInspecAp from './dashboard/pages/AddFormInspecAp'
+import AddFormInspecAv from './dashboard/pages/AddFormInspecAv'
 
 function App() {
   const { store } = useContext(storeContext)
@@ -66,6 +67,7 @@ function App() {
             <Route path='chantiers/view/:chantiers_id' element={<ChantierDetails />} />
             <Route path='chantiers/form/apres/:chantiers_id' element={<AddFormInspec />} />
             <Route path='chantiers/form/ap/:chantiers_id' element={<AddFormInspecAp />} />
+            <Route path='chantiers/form/av/:chantiers_id' element={<AddFormInspecAv />} />
             
           </Route>
 

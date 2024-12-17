@@ -12,4 +12,8 @@ router.post('/api/createPdfAp', pdfControllers.createPdfAp)
 router.get('/api/fetchPdfAp', pdfControllers.fetchPdfAp)
 router.post('/api/sendPdfAp',pdfControllers.sendPdfAp)
 
+router.post('/api/createPdfAv', pdfControllers.createPdfAv)
+router.get('/api/fetchPdfAv', pdfControllers.fetchPdfAv)
+router.post('/api/sendPdfAv',pdfControllers.sendPdfAv)
+
 module.exports = router

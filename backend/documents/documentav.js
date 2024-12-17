@@ -1,3 +1,7 @@
+
+module.exports = ({clientName, chantierSirenDO, imagesMO})=> {
+    const today = new Date();
+    return `
 <!DOCTYPE  html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <title>5eb41550-0e85-4658-911d-ebcab58831c7</title><style type="text/css"> * {margin:0; padding:0; text-indent:0; }
@@ -26,7 +30,7 @@
 
   .content {
     text-align: center;
-    background: #fff;
+    background-color: #f4f4f4;
     padding: 20px;
     border: 1px solid #ccc;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -38,7 +42,7 @@
 
     <p style="text-indent: 0pt;text-align: left;">
         <span>
-        <table border="1" style="margin: 10px auto; border-collapse: collapse;">
+        <table border="1" style="margin: 10px auto; margin-right:auto; margin-left: 0; border-collapse: collapse;">
         <tr>
         <td>
             <img width="70" height="67" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABDCAYAAAAh43M3AAACtVBMVEX///////7//v7//v3//f3//fz+/f3+/fz+/Pz++/r++vr++vn++fn9+vn9+fj9+Pf9+Pb99/X89vX89PL88/H78O777+z67er67Oj56+j56OX56OT46OP45+P45uL45uH45eH45OD45N/449/449735N/34dv34Nv34Nr239n23tj13df129X12tT119D019D01s/01s701M3z1c7z0srz0cnyz8fyzsXyzcTxy8LxysDwxrzvxr3vxLnuwbfuwbbuwLXuv7TtvbLtvbHtvLHtu7Dtu6/tuq7tua7st6vstqrrt6vrtanrtajqsaTpsKPprJ3oqpvop5joppfoppbnppfnppbnpZbnpZXnpJTno5PmpJXmo5PmopLmoZHmoJDmoI/mn47ln47lno3lnYzlnYvkm4rkmojkmYjkmYfjmIXjloTjlIHjk4DilILilIHik4Dikn/ikX7hkH3hjnrgjXngjHjgjHfgi3fginXgiXXfinbfiXTfiHPfhnDehG/ehG7egWvdg23dgm3dgmzdgWvdgGrcfmfcfWfcfWbcfGbcfGXcemPbeWHbeGHbeGDadl/adl7adV3ac1vaclrZc1vZcVjZb1bYbVXYbVTYbFPYalDXbFLXalHXalDXaU/XZ03XZkvWZkzWZkvWZUrVZEjVY0jVYkbVYUbVYUXVSSjUYETUSSjURiTTXD/TWTzTRiTSVzrSVjnSVDfRVTfRVDfRVDbRUzXRUjTRUjPRUTPQUDLQUDHQTzDQTi/QTS7PTS3PTC3PSyzPSyvPSivPSirPSSrPSCjPRibOSSrOSSnOSCjORyjORyfORybORibORiXORSXORSTNRSXNRSTNRCTNRCPNQyPNQyLNQiPNQiLNQiHNQSHNQSDNQB/MRCTMQiDMQSDMQR/MQCDMQB/MQB7MPx4vQT24AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAMv0lEQVR4nO1bXahdRxX+1j7n5qdpIkTTWONfbUnibUTT+iJWQaRUKwr2QbH4JCJaBJHik8W/Qn3ywVK0BAVRsA8KWhCNYLFIwQdpgqRCtPgbtaA2piU0N7nn7OXD3jPzrTVr9jn33YHL2Xv2mvU362+v2Veeee/xF/H/YYYuF5hf6/V6AJLm6Lq+HSYAqABSPfT4oQqIiJnzawaY+NkU7jIaaxTEY8RLG3mv2lnEKpamvRlvZVwiTbDCMim8BRMqfgrvKGziJc36NY7HdXihB52lLowr2MGWwsP5ZFXpegqBIy6wvxExz1q4hul7XiZwQ7zFsNoZmaOTr/02uV+NOFBMbBnxUXBpZQ58Sc+0/A5rJObF4NNgPluMFhIJoTLcOM/WlC2ALCvDp/mW4mRE6TU93gub7nCt6uCEeM2XaUPHWaMc4sH4rwTzOgdbTJpXxcYNNwLW5kj7VbBOv6vgw+vtfz1nA2OhH41VtHfMC9HPa+ecFsZsg/7qlp743pO1GyRQVR0RCV3XQ/3m1M6tyyXOvucYZDYvc4sFTnz3l56WXV9wF+sTsjTPV81LHk+/6/Xodu8x+DsoaVpJq9bM7WCCIgW2tWYKl4WbphXhSXMJrnW/BnX2uI60KJTS1s75BnaKGZ5T1RBmFUnPU2Stq+5jvkpsGlUwH5EjK0yoIEqIvVDRfAuu9bzAFN8u8T1ZYL0+Us4UjalhYBMvQwCfj4xIyUtj4ZT8m5mJBWdFcgCz7mUZ5mCYsuDo1CYjxYrwrhwJGs1Hz0vQJV44Kw2KIJ5qAtv//Y88c+87gK4DIfKDA6VHqO75cDGbIwV+AJD5HL/94G2AVnXQVGZcRVPfeOqnsuuGG7VyfbKUdD83ONbxz773jBohiR+FQiASMR4IZvjQfusKTWQUgdAqjry4NZJ5wWhtSr9ljUHS1Zs+EScMPytdWWCsNC1SDMLkFOAUwK6Y+R4vQgtqkqcs095w4QBbmJ3XuBv+64mWIBmYrYmp4he1hRKeZ3ihH0dz6i3fs9ZUkDja6GgX8+r8W6dVKswDQlaAkWnCrXZXUJmeIa/
@@ -54,10 +58,17 @@
             <p style="text-indent: 0pt;text-align: left;"><br/></p>
             <p style="text-indent: 0pt;text-align: left;">
             <span>
-            <table border="1" style="margin: 10px auto; border-collapse: collapse;"><tr><td>
+            <table border="1" style="margin: 10px auto; margin-right:auto; margin-left: 0; border-collapse: collapse;">
+            <tr>
+            <td>
                 <img width="25" height="40" src="data:image/jpg;base64,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"/></td></tr></table></span></p>
-                </td></tr></table></span></p>
-                <table style="border-collapse:collapse;margin-left:3pt" cellspacing="0"><tr style="height:11pt">
+                </td>
+                </tr>
+                </table>
+                </span>
+                </p>
+                <table style="border-collapse:collapse;margin-left:auto; margin-right: 0;" cellspacing="0">
+                <tr style="height:11pt">
                 <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#CE4627">
                 <p class="s1" style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: left;">Numéro de dossier :</p></td>
                 <td style="width:111pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
@@ -72,8 +83,8 @@
                 <p style="text-indent: 0pt;text-align: left;"/>
                 <p class="s2" style="padding-left: 72pt;text-indent: 0pt;text-align: left;">N°3-2067</p>
                 <p style="padding-top: 1pt;padding-left: 72pt;text-indent: 0pt;text-align: left;">
-                <a href="http://www.cofrac.fr/" style=" color: black; font-family:Calibri, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 8.5pt;" target="_blank">Liste des implantations et portées disponibles sur </a>
-                <a href="http://www.cofrac.fr/" target="_blank">www.cofrac.fr</a></p>
+                <a href="http://www.cofrac.fr/" style=" color: black; font-family:Calibri, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 8.5pt;" target="_blank">Liste des implantations et portées </a></p>
+                <p style="padding-top: 1pt;padding-left: 72pt;text-indent: 0pt;text-align: left;">disponibles sur<a href="http://www.cofrac.fr/" target="_blank">www.cofrac.fr</a></p>
                 <p style="text-indent: 0pt;text-align: left;"><br/></p>
                 <div class="textbox" style="background:#CE4627;border:1.4pt solid #000000;display:block;min-height:47.3pt;width:462.8pt;">
                 <p class="s3" style="padding-left: 139pt;text-indent: 0pt;line-height: 106%;text-align: center;">Contrôle de l&#39;audit énergétique AVANT TRAVAUX</p>
@@ -81,7 +92,8 @@
                 <p style="padding-left: 5pt;text-indent: 0pt;text-align: left;"/>
                 <p style="text-indent: 0pt;text-align: left;"><br/></p>
                 <div class="textbox" style="background:#CE4627;border:0.7pt solid #000000;display:block;left:0.4pt;min-height:18.4pt;top:0.4pt;width:462.8pt;">
-                <p style="padding-left: 1pt;text-indent: 0pt;line-height: 11pt;text-align: center;"><span style=" color: #FFF; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 11pt;">PHOTO BÂTIMENT</span></p></div>
+                <p style="padding-left: 1pt;text-indent: 0pt;line-height: 11pt;text-align: center;">
+                <span style=" color: #FFF; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 11pt;">PHOTO BÂTIMENT</span></p></div>
                 <p style="padding-left: 5pt;text-indent: 0pt;text-align: left;"/>
                 <p style="padding-top: 10pt;text-indent: 0pt;text-align: left;"><br/></p>
                 <table style="border-collapse:collapse;margin-left:3pt" cellspacing="0">
@@ -137,3 +149,7 @@
 
     </body>
     </html>
+
+    
+     `;
+   }
