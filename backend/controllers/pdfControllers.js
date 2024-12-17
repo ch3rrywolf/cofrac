@@ -139,10 +139,10 @@ class pdfController {
             return `<img src="${imageBase64CET}" style="width: 220px; height: 250px; margin: 7px auto;" />`;
         }).join('');
         const imagesAE = imagesBase64AE.map((imageBase64AE) => {
-            return `<img src="${imageBase64AE}" style="width: 220px; height: 250px; padding-left: 20px; margin-top: 10px;" />`;
+            return `<img src="${imageBase64AE}" style="width: 300px; height: 200px; padding-left: 20px; margin-top: 10px;" />`;
         }).join('');
         const imagesAA = imagesBase64AA.map((imageBase64AA) => {
-            return `<img src="${imageBase64AA}" style="width: 220px; height: 250px; padding-left: 20px; margin-top: 10px;" />`;
+            return `<img src="${imageBase64AA}" style="width: 300px; height: 200px; padding-left: 20px; margin-top: 10px;" />`;
         }).join('');
         const imagesIC = imagesBase64IC.map((imageBase64IC) => {
             return `<img src="${imageBase64IC}" style="width: 220px; height: 250px; padding-left: 20px; margin-top: 10px;" />`;

@@ -1,5 +1,5 @@
 
-module.exports = ({PGAVQ1, PGAVQ2, PGAVQ3, PGAVQ4, benefNom, benefPreNom, chantierNomDO, chantierSirenDO, chantierAdresseDO, chantierAdresse, createdAt, imagesMO})=> {
+module.exports = ({PGAVQ1, PGAVQ2, PGAVQ3, PGAVQ4, benefNom, benefPreNom, chantierNomDO, chantierSirenDO, chantierAdresseDO, chantierAdresse, createdAt, imagesMO, imagesAA, imagesAE})=> {
     const today = new Date();
     return `
 <!DOCTYPE  html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -926,13 +926,410 @@ travaux.
     <br/>
     <br/>
     <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
 
                 <p style="text-indent: 0pt;text-align: center;">Les résultats de ce contrôle ne se rapportent qu&#39;aux parties accessibles lors de l&#39;intervention sur site.</p>
                 <p class="s6" style="padding-top: 5pt;text-indent: 0pt;text-align: center;">Code document : <span class="s7">INS-047    </span>Version : <span class="s7">V05</span></p>
                 <p style="text-indent: 0pt;text-align: left;"><br/></p>
-                <p class="s2" style="padding-left: 1pt;text-indent: 0pt;text-align: center;">4/8</p>
+                <p class="s2" style="padding-left: 1pt;text-indent: 0pt;text-align: center;">5/8</p>
 
 
+
+<br/>
+<br/>
+                
+                
+    <div style="display: flex; align-items: center; justify-content: space-between; margin: 10px;">
+    <!-- Left Section -->
+    <div id="left-section">
+        <table border="1" style="border-collapse: collapse;">
+            <tr>
+                <td>
+                    <img width="70" height="67" 
+                        <img width="70" height="67" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABDCAYAAAAh43M3AAACtVBMVEX///////7//v7//v3//f3//fz+/f3+/fz+/Pz++/r++vr++vn++fn9+vn9+fj9+Pf9+Pb99/X89vX89PL88/H78O777+z67er67Oj56+j56OX56OT46OP45+P45uL45uH45eH45OD45N/449/449735N/34dv34Nv34Nr239n23tj13df129X12tT119D019D01s/01s701M3z1c7z0srz0cnyz8fyzsXyzcTxy8LxysDwxrzvxr3vxLnuwbfuwbbuwLXuv7TtvbLtvbHtvLHtu7Dtu6/tuq7tua7st6vstqrrt6vrtanrtajqsaTpsKPprJ3oqpvop5joppfoppbnppfnppbnpZbnpZXnpJTno5PmpJXmo5PmopLmoZHmoJDmoI/mn47ln47lno3lnYzlnYvkm4rkmojkmYjkmYfjmIXjloTjlIHjk4DilILilIHik4Dikn/ikX7hkH3hjnrgjXngjHjgjHfgi3fginXgiXXfinbfiXTfiHPfhnDehG/ehG7egWvdg23dgm3dgmzdgWvdgGrcfmfcfWfcfWbcfGbcfGXcemPbeWHbeGHbeGDadl/adl7adV3ac1vaclrZc1vZcVjZb1bYbVXYbVTYbFPYalDXbFLXalHXalDXaU/XZ03XZkvWZkzWZkvWZUrVZEjVY0jVYkbVYUbVYUXVSSjUYETUSSjURiTTXD/TWTzTRiTSVzrSVjnSVDfRVTfRVDfRVDbRUzXRUjTRUjPRUTPQUDLQUDHQTzDQTi/QTS7PTS3PTC3PSyzPSyvPSivPSirPSSrPSCjPRibOSSrOSSnOSCjORyjORyfORybORibORiXORSXORSTNRSXNRSTNRCTNRCPNQyPNQyLNQiPNQiLNQiHNQSHNQSDNQB/MRCTMQiDMQSDMQR/MQCDMQB/MQB7MPx4vQT24AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAMv0lEQVR4nO1bXahdRxX+1j7n5qdpIkTTWONfbUnibUTT+iJWQaRUKwr2QbH4JCJaBJHik8W/Qn3ywVK0BAVRsA8KWhCNYLFIwQdpgqRCtPgbtaA2piU0N7nn7OXD3jPzrTVr9jn33YHL2Xv2mvU362+v2Veeee/x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"/>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Right Section -->
+    <div id="right-section">
+        <table border="1" style="border-collapse: collapse;">
+            <tr>
+                <td>
+                    <table style="border-collapse:collapse;margin-left:auto; margin-right: 0;" cellspacing="0">
+                <tr style="height:11pt">
+                <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#CE4627">
+                <p class="s1" style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: left;">Numéro de dossier :</p></td>
+                <td style="width:111pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: left;">${PGAVQ2}</p>
+                </td>
+                </tr>
+                <tr style="height:11pt">
+                <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#CE4627">
+                <p class="s1" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Référence demandeur:</p></td>
+                <td style="width:111pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: left;">${PGAVQ3}</p>
+                </td>
+                </tr>
+                </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<br/>
+                <div style="background:#CE4627;border:1.4pt solid #000000;display:flex;justify-content:center;align-items:center;min-height:47.3pt;width:550.8pt;text-align: center;flex-direction: column;">
+                <p class="s3" style="margin: 0;font-weight: bold;font-family: Calibri, sans-serif;font-style: normal;text-align: center;">CONTRÔLE DE L'AUDIT </p>
+                </div>
+                <br/>
+                <div style="background:#CE4627;border:1.4pt solid #000000;display:flex;justify-content:center;align-items:center;min-height:37.3pt;width:550.8pt;text-align: center;flex-direction: column;">
+                <p class="s3" style="margin: 0;font-weight: bold;font-family: Calibri, sans-serif;font-style: normal;text-align: center;">Contrôle des données d'entrée de la situation initiale utilisées dans l'audit énergétique  </p>
+                </div>
+                <br/>
+
+<table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
+                <tr style="height:16pt">
+                <td style="width:360pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Ecart manifeste entre les données d'entrées de la situation initiale utilisée dans l'audit énergétique et les
+éléments constatés lors de la visite sur site (avant travaux): 
+</p></td>
+                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                </td>
+                </tr>
+                </table><br/>
+
+                <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
+                <tr style="height:16pt">
+                <td style="width:280pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Ecart concernant le niveau d'isolation des parois enveloppes du bâtiment:
+</p></td>
+                <td style="width:220pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                </td>
+                </tr>
+                </table><br/>
+
+                <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
+                <tr style="height:16pt">
+                <td style="width:280pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Ecart concernant le niveau d'isolation des menuiseries et surfaces mises en jeu :
+</p></td>
+                <td style="width:220pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                </td>
+                </tr>
+                </table><br/>
+
+                <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
+                <tr style="height:16pt">
+                <td style="width:280pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Ecart concernant la nature des combles (aménagés, perdus) ;
+</p></td>
+                <td style="width:220pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                </td>
+                </tr>
+                </table><br/>
+
+                <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
+                <tr style="height:16pt">
+                <td style="width:280pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Ecart dans la description des sytèmes de chauffage et de production d'eau
+chaude sanitaire, de la génération à l'émission :
+</p></td>
+                <td style="width:220pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                </td>
+                </tr>
+                </table><br/>
+
+                <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
+                <tr style="height:16pt">
+                <td style="width:280pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Ecart dans la description des systèmes de chauffage et de production d’eau
+chaude sanitaire, de la génération à l’émission :
+</p></td>
+                <td style="width:220pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                </td>
+                </tr>
+                </table><br/>
+
+                <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
+                <tr style="height:16pt">
+                <td style="width:280pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Ecart dans la description des systèmes de ventilation :
+</p></td>
+                <td style="width:220pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                </td>
+                </tr>
+                </table><br/>
+
+                <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
+                <tr style="height:16pt">
+                <td style="width:280pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Ecart dans la description de refroidissement, le cas échéant :
+</p></td>
+                <td style="width:220pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                </td>
+                </tr>
+                </table>
+                <br/>
+
+                <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
+                <tr style="height:16pt">
+                <td style="width:160pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Conclusion du constat de l'audit :
+</p></td>
+                <td style="width:340pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                </td>
+                </tr>
+                </table>
+
+                <br/>
+
+                <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
+                <tr style="height:16pt">
+                <td style="width:500pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt; border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#CE4627">
+                <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: left;" >Commentaires:
+</p>
+                </tr>
+                <tr style="height:30pt">
+                <td style="width:500pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt; border-right-style:solid;border-right-width:1pt;">
+                <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">
+</p>
+                </tr>
+                </table>
+
+                <br/>
+                <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
+                <tr style="height:16pt">
+                <td style="width:110pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Nom du technicien : </p></td>
+                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-left-style:solid;border-left-width:1pt; border-bottom-style:solid;border-bottom-width:1pt">
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;"></p>
+                </td>
+                <td style="width:110pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Signature le :</p></td>
+                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-left-style:solid;border-left-width:1pt; border-bottom-style:solid;border-bottom-width:1pt">
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;"></p>
+                </td>
+                </tr>
+                </table>
+
+                <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
+                <tr style="height:20pt">
+                <td style="width:250pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;"></p></td>
+                
+                <td style="width:250pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt; border-right-style:solid;border-right-width:1pt">
+                <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;"></p></td>
+                
+                </tr>
+                </table>
+
+                   <br/>
+    <br/>
+    <br/>
+
+                <p style="text-indent: 0pt;text-align: center;">Les résultats de ce contrôle ne se rapportent qu&#39;aux parties accessibles lors de l&#39;intervention sur site.</p>
+                <p class="s6" style="padding-top: 5pt;text-indent: 0pt;text-align: center;">Code document : <span class="s7">INS-047    </span>Version : <span class="s7">V05</span></p>
+                <p style="text-indent: 0pt;text-align: left;"><br/></p>
+                <p class="s2" style="padding-left: 1pt;text-indent: 0pt;text-align: center;">6/8</p>
+                
+
+
+                <br/>
+                <br/>
+                                
+                                
+                    <div style="display: flex; align-items: center; justify-content: space-between; margin: 10px;">
+                    <!-- Left Section -->
+                    <div id="left-section">
+                        <table border="1" style="border-collapse: collapse;">
+                            <tr>
+                                <td>
+                                    <img width="70" height="67" 
+                                        <img width="70" height="67" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABDCAYAAAAh43M3AAACtVBMVEX///////7//v7//v3//f3//fz+/f3+/fz+/Pz++/r++vr++vn++fn9+vn9+fj9+Pf9+Pb99/X89vX89PL88/H78O777+z67er67Oj56+j56OX56OT46OP45+P45uL45uH45eH45OD45N/449/449735N/34dv34Nv34Nr239n23tj13df129X12tT119D019D01s/01s701M3z1c7z0srz0cnyz8fyzsXyzcTxy8LxysDwxrzvxr3vxLnuwbfuwbbuwLXuv7TtvbLtvbHtvLHtu7Dtu6/tuq7tua7st6vstqrrt6vrtanrtajqsaTpsKPprJ3oqpvop5joppfoppbnppfnppbnpZbnpZXnpJTno5PmpJXmo5PmopLmoZHmoJDmoI/mn47ln47lno3lnYzlnYvkm4rkmojkmYjkmYfjmIXjloTjlIHjk4DilILilIHik4Dikn/ikX7hkH3hjnrgjXngjHjgjHfgi3fginXgiXXfinbfiXTfiHPfhnDehG/ehG7egWvdg23dgm3dgmzdgWvdgGrcfmfcfWfcfWbcfGbcfGXcemPbeWHbeGHbeGDadl/adl7adV3ac1vaclrZc1vZcVjZb1bYbVXYbVTYbFPYalDXbFLXalHXalDXaU/XZ03XZkvWZkzWZkvWZUrVZEjVY0jVYkbVYUbVYUXVSSjUYETUSSjURiTTXD/TWTzTRiTSVzrSVjnSVDfRVTfRVDfRVDbRUzXRUjTRUjPRUTPQUDLQUDHQTzDQTi/QTS7PTS3PTC3PSyzPSyvPSivPSirPSSrPSCjPRibOSSrOSSnOSCjORyjORyfORybORibORiXORSXORSTNRSXNRSTNRCTNRCPNQyPNQyLNQiPNQiLNQiHNQSHNQSDNQB/MRCTMQiDMQSDMQR/MQCDMQB/MQB7MPx4vQT24AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAMv0lEQVR4nO1bXahdRxX+1j7n5qdpIkTTWONfbUnibUTT+iJWQaRUKwr2QbH4JCJaBJHik8W/Qn3ywVK0BAVRsA8KWhCNYLFIwQdpgqRCtPgbtaA2piU0N7nn7OXD3jPzrTVr9jn33YHL2Xv2mvU362+v2Veeee/xF/H/YYYuF5hf6/V6AJLm6Lq+HSYAqABSPfT4oQqIiJnzawaY+NkU7jIaaxTEY8RLG3mv2lnEKpamvRlvZVwiTbDCMim8BRMqfgrvKGziJc36NY7HdXihB52lLowr2MGWwsP5ZFXpegqBIy6wvxExz1q4hul7XiZwQ7zFsNoZmaOTr/02uV+NOFBMbBnxUXBpZQ58Sc+0/A5rJObF4NNgPluMFhIJoTLcOM/WlC2ALCvDp/mW4mRE6TU93gub7nCt6uCEeM2XaUPHWaMc4sH4rwTzOgdbTJpXxcYNNwLW5kj7VbBOv6vgw+vtfz1nA2OhH41VtHfMC9HPa+ecFsZsg/7qlp743pO1GyRQVR0RCV3XQ/3m1M6tyyXOvucYZDYvc4sFTnz3l56WXV9wF+sTsjTPV81LHk+/6/Xodu8x+DsoaVpJq9bM7WCCIgW2tWYKl4WbphXhSXMJrnW/BnX2uI60KJTS1s75BnaKGZ5T1RBmFUnPU2Stq+5jvkpsGlUwH5EjK0yoIEqIvVDRfAuu9bzAFN8u8T1ZYL0+Us4UjalhYBMvQwCfj4xIyUtj4ZT8m5mJBWdFcgCz7mUZ5mCYsuDo1CYjxYrwrhwJGs1Hz0vQJV44Kw2KIJ5qAtv//Y88c+87gK4DIfKDA6VHqO75cDGbIwV+AJD5HL/94G2AVnXQVGZcRVPfeOqnsuuGG7VyfbKUdD83ONbxz773jBohiR+FQiASMR4IZvjQfusKTWQUgdAqjry4NZJ5wWhtSr9ljUHS1Zs+EScMPytdWWCsNC1SDMLkFOAUwK6Y+R4vQgtqkqcs095w4QBbmJ3XuBv+64mWIBmYrYmp4he1hRKeZ3ihH0dz6i3fs9ZUkDja6GgX8+r8W6dVKswDQlaAkWnCrXZXUJmeIa/
+                            xX7Ia4wbrjNoTKo8ot3PaUTWbEadW2kOJGIuid6Eo4uFT0HOojBU0LCRP7VRBhMp7RLntiuanM5IptzNLHD/STxh7aJerN9uGQNULJuMiy6kCZ7GuUrw5bqryo4LhGGN3MumkXTkKhaMM3IAdYVbFmBA2gkvP2cTTZVHc+pW0+D2ifsyOLHFlShrBdm7ePs7Fz0shmuGE1/hNyADtTGvhXQeP0lb8PkOEQ0t3pispyCGQk4Nu4CqOpxK4B9fJL7zK8C2+7E0oV2JyeNahGqM5ikjkRpoR++5emLqBUupXnHqijblh94dyg2Me41uVrosVJrkq5eQYKoBxpbx+yk3GvOIDMXXjjUA6SpQTjKeVlOzItFxQPEzgMrxh+dIIjSKDIco05iQLa3+YrEtnltwrwhEpXlmY4B0caYYBUgDTSlU0ygrJbqhe2LTelypJ/ul+TQduToWVpSUog8JG/nKx5SxBhaJBEDNoB6sXxcyO2+VUiI5cDJlfM0gp7Z2biBB1qZRirT9DzoMdi82YX88l+X1mlIStkpxXtFf6GuR981pBBSZgXiRFIQGNFLxbLQtHmJrh2VyLIFPvShbXRPD0HsqPNFBMOFou63ehhWzHZUPpQJeQESMp3TagYrTmW/s++7N0nWYrM+yux68ul0Xy2SzRaiyeKKZ3MOYO04r0l/bY9UACvRz52P1y+MOfAACcfd+tMvRxcjSeomGw6nKJN//oaZ3t2y8AcO4jd2Bx6fmYqpkdlk/KY/sxZnTB5FSMSa0vW51KVdOImlMZph+8c8VDoIr9t70ds+sPpPJeX3f/Q6kWq1OOcuwRLSndDe5bi3ijAGBeIs2jVpXoNVwFG4KL0qDaP1MS+zWq/VJv/sqjCgAv/PoJQEQOvPWdOp4sj2k6L1PXLaTLoDGfZMsvmqaG07C12e3eM/R2nblq3wcvZqFFT1kEE3QFoYW77uibhoMwVfzpS/fhxGNP6cbBQ3L8mz/G+U9+YODFVBKmzjSCAYrff+ZDkM4U+4O8u3ZXPNojWsKzffHfkVCpIAt2JYKuuutktiqYiL7a93jDFx4BAFx97oJq38uzn/soNr91GntvOobZvv26fOmyUGoj3y1BJpMT0cWl56N0mBKD8YaObJHNO11Ktq7SShGCL3LWrmPjkIUZgnfd0cu3192yiV2HjwAANg69Ut7yk3M4/o3HsyJvfvAU3KkGlwfepbQUhKxA4gUKXuP7MWrgS1kulEiSoEnLrO0U8HjIxisOA8sl0xAAWF5+UfurW7L36Am8/M57cOlXP8Plc7+B9ksc+/oPMoJuY9eIvZwp7ds8ORzj8EFiUkJlxtmofLmh0NS3sUtqV1II0OvuIzcJaXHIfaq49s+/cfCyzSrSI2McD+irk8S/fPWzcvEXj+P4wz9UiMih99+LM3fegpe97d2Q+fC9wflP3zO6zCj1Yhu3fucJla7DzQ+e0j9+/uN0GkHZ0XjLYJ27XvVaFRsKBBBc/cefMQT0ojQq8DIy7be2ZPPbp1NKS0KrLhc4e/cmRGYDVcmIQLDjpauikxtyguhmQNdBlwuR2RyqPQDBqz/1AADo4oWL8tKzvxPpxJj/3x99SF5z3wN64PY7RFV1oOVKhrotoUe/9n3ZOHgIfoPGrx1MEpAzdx2rYkO/dUVuf/Kv8EMX23r27k0ZIvt0KaJ9r8FJouW96xQiossluj170W9dgcxm0MHtBpjZLKMEKVn7fkg9+XmYHY3LnHjsKWwcPFTxQZ+BDIuWC8wrKBcHgmeNRw6w6ySXBzb5VClaZjPo9rWsBFJGgrdERQb8Ba8PqI7ficq38T4YdPAoOrdbm+uNrBSzzGePKbxJiUFJYbLi2GrwteIKdmOlKAB0RXgFZaEaY1gB+6MQLYdq/HlJgk+VJnft6oM7xikFPguuWV+ZJxl3XkgjoijVMQdle13LNdYx3F3z6oh7F1qAxZmqlAwhqQkiBU5QV6vtfpAklMivaZxymYZZIzk16vg+ZXpJq454htEVWXkarY98RqioT2vfLQCMXxiADEscjvyOwoQM0TqAj7JnsInYUmqXVswEKc0w0lmZJrRpNL1WIyV9AmIthK0LpjgkEKJTH+vWYCvYQEko7pGxeIPRnitVZ9xho3gqoqm9bILyQy9iEJCDo1RdyUsLV
+                            eQJFZ4OtoTXzETjXAlZ+yarOGach9RxO+2QE14V4dGJVBfVOVPB7QlaXuKPo6rN6VxoKJExthZTSgcIpcQ/7zWJxfDcR0uUbfqI3+kA1oeEij6vdxnJWKX4L6rKTfx1pGfOE/O4vFU0Jak5b0qdcK9RU1lhMSWfy7Cdo78q+HozZEb9zjihc2KQGmTlcNkNzZakvXfvazX/TQZ85RtEq5XPeTemmFxjhydpesVz6ud5soyGN6wxWDFtzQLJldLum5xKv97cPdxk0QKreM5aNE9WYwuwYE1wpt76Kt3xxYpJRddAZAqBruXjjZ1TLwDDR0pmHL7uYZ79xnh8dbZtyyj+XKkgrWOTRV7VLOJuQn6nsk5r2AxTaKpNfSEvNJeXtcsRam65OmZlRet2pFWjpbk1jxp3NlwOnkpeZk7GZa36zLDrs1I9Gm+fw3W4libVuVKrKFw5okJyjDer40UTx0SsmTPU8BtWhhkJ1YAtjZLyUlA0u1vbuZpTRYGqynwDsF9mOtzhfZMX/oomN6iq72myqyvFGEnNbBvB+duY+Yac/PkfGJf/LzLfEZs2R1XVvpfhP9xmOf7oYiEnT58vHxX5/6gDJmsQI6t9gUV7ra3BKMZobQnRf7K1/vWF71tfXkf/wxQzhiYcf0O3E/zM0/TrDgATYwRr+GtR0DoMtf4db72xGjbamFbcYJ7W4MN/GV58faod6K+j96rWjja/4w+rVUunvbaMSOiWldgvw8e/IUHQP4s6i2Htt0yZYbwy/HduHH9sLHIV7wqXagnY2gRPN7b2dN6VC8j50GVLr/BDjJGNDb3w8BdlYmNc9Wl+uQwHXddVKDAeg7hXttkMFx758vBVVp15IoUCtUZ99gphRGTIgCmBpkB75q6jI4FKFjHzOl4M/efyP5NDQ5oYSPfpOZfxRtE8TxWx6Scn4kK4xx0GWSKJLyj/31ka8uJ4SXhCXnS5THVMMrV0mQoxqj/ImWjaV59i1lWvDpX/u3onE+L6gucId0bJnPFvwu148bKZ1WlTtEPVDsiWy4joGchPHe7sp/meTdApqXJT75LMi4PRmK9aEOaNClivlGq9zHd1sqT7aT7DuYDv5v26z1bB7ITOznlRFfwPEBsr5BCiCw4AAAAASUVORK5CYIIA"/>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                
+                    <!-- Right Section -->
+                    <div id="right-section">
+                        <table border="1" style="border-collapse: collapse;">
+                            <tr>
+                                <td>
+                                    <table style="border-collapse:collapse;margin-left:auto; margin-right: 0;" cellspacing="0">
+                                <tr style="height:11pt">
+                                <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#CE4627">
+                                <p class="s1" style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: left;">Numéro de dossier :</p></td>
+                                <td style="width:111pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
+                                <p style="text-indent: 0pt;text-align: left;">${PGAVQ2}</p>
+                                </td>
+                                </tr>
+                                <tr style="height:11pt">
+                                <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#CE4627">
+                                <p class="s1" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Référence demandeur:</p></td>
+                                <td style="width:111pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
+                                <p style="text-indent: 0pt;text-align: left;">${PGAVQ3}</p>
+                                </td>
+                                </tr>
+                                </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+                <br/>
+                                <div style="background:#CE4627;border:1.4pt solid #000000;display:flex;justify-content:center;align-items:center;min-height:47.3pt;width:550.8pt;text-align: center;flex-direction: column;">
+                                <p class="s3" style="margin: 0;font-weight: bold;font-family: Calibri, sans-serif;font-style: normal;text-align: center;">Planche photos </p>
+                                </div>
+                                <br/>
+
+                                <div>
+                                <p style="padding-top: 10pt;text-indent: 0pt;text-align: center; border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt">${imagesAA}</p>
+                                </div>
+
+                 <br/>
+                                <div style="background:#CE4627;border:1.4pt solid #000000;display:flex;justify-content:center;align-items:center;min-height:10.3pt;width:550.8pt;text-align: center;flex-direction: column;">
+                                <p class="s3" style="margin: 0;font-weight: bold;font-family: Calibri, sans-serif;font-style: normal;text-align: center;">HISTORIQUE DES MODIFICATIONS</p>
+                                </div>
+                                
+
+                                <br/>
+                <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
+                <tr style="height:16pt">
+                <td style="width:60pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt; background:#CE4627;">
+                <p class="s4" style="margin: 0;font-weight: bold;font-family: Calibri, sans-serif;font-style: normal;text-align: center; color: #FFF;">Version du
+rapport </p></td>
+                <td style="width:190pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-left-style:solid;border-left-width:1pt; border-bottom-style:solid;border-bottom-width:1pt; background:#CE4627;">
+                <p style="margin: 0;font-weight: bold;font-family: Calibri, sans-serif;font-style: normal;text-align: center; color: #FFF;">Date de
+modification</p>
+                </td>
+                <td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt; background:#CE4627;">
+                <p class="s4" style="margin: 0;font-weight: bold;font-family: Calibri, sans-serif;font-style: normal;text-align: center; color: #FFF;">Nom du correcteur</p></td>
+                <td style="width:200pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-left-style:solid;border-left-width:1pt; border-bottom-style:solid;border-bottom-width:1pt; background:#CE4627;">
+                <p style="margin: 0;font-weight: bold;font-family: Calibri, sans-serif;font-style: normal;text-align: center; color: #FFF;">Commentaire modification</p>
+                </td>
+                </tr>
+                </table>
+                <br/>
+                  <p style="text-indent: 0pt;text-align: center;">Les résultats de ce contrôle ne se rapportent qu&#39;aux parties accessibles lors de l&#39;intervention sur site.</p>
+                <p class="s6" style="padding-top: 5pt;text-indent: 0pt;text-align: center;">Code document : <span class="s7">INS-047    </span>Version : <span class="s7">V05</span></p>
+                <p style="text-indent: 0pt;text-align: left;"><br/></p>
+                <p class="s2" style="padding-left: 1pt;text-indent: 0pt;text-align: center;">7/8</p>
+
+
+                 <br/>
+                <br/>
+                                
+                                
+                    <div style="display: flex; align-items: center; justify-content: space-between; margin: 10px;">
+                    <!-- Left Section -->
+                    <div id="left-section">
+                        <table border="1" style="border-collapse: collapse;">
+                            <tr>
+                                <td>
+                                    <img width="70" height="67" 
+                                        <img width="70" height="67" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABDCAYAAAAh43M3AAACtVBMVEX///////7//v7//v3//f3//fz+/f3+/fz+/Pz++/r++vr++vn++fn9+vn9+fj9+Pf9+Pb99/X89vX89PL88/H78O777+z67er67Oj56+j56OX56OT46OP45+P45uL45uH45eH45OD45N/449/449735N/34dv34Nv34Nr239n23tj13df129X12tT119D019D01s/01s701M3z1c7z0srz0cnyz8fyzsXyzcTxy8LxysDwxrzvxr3vxLnuwbfuwbbuwLXuv7TtvbLtvbHtvLHtu7Dtu6/tuq7tua7st6vstqrrt6vrtanrtajqsaTpsKPprJ3oqpvop5joppfoppbnppfnppbnpZbnpZXnpJTno5PmpJXmo5PmopLmoZHmoJDmoI/mn47ln47lno3lnYzlnYvkm4rkmojkmYjkmYfjmIXjloTjlIHjk4DilILilIHik4Dikn/ikX7hkH3hjnrgjXngjHjgjHfgi3fginXgiXXfinbfiXTfiHPfhnDehG/ehG7egWvdg23dgm3dgmzdgWvdgGrcfmfcfWfcfWbcfGbcfGXcemPbeWHbeGHbeGDadl/adl7adV3ac1vaclrZc1vZcVjZb1bYbVXYbVTYbFPYalDXbFLXalHXalDXaU/XZ03XZkvWZkzWZkvWZUrVZEjVY0jVYkbVYUbVYUXVSSjUYETUSSjURiTTXD/TWTzTRiTSVzrSVjnSVDfRVTfRVDfRVDbRUzXRUjTRUjPRUTPQUDLQUDHQTzDQTi/QTS7PTS3PTC3PSyzPSyvPSivPSirPSSrPSCjPRibOSSrOSSnOSCjORyjORyfORybORibORiXORSXORSTNRSXNRSTNRCTNRCPNQyPNQyLNQiPNQiLNQiHNQSHNQSDNQB/MRCTMQiDMQSDMQR/MQCDMQB/MQB7MPx4vQT24AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAMv0lEQVR4nO1bXahdRxX+1j7n5qdpIkTTWONfbUnibUTT+iJWQaRUKwr2QbH4JCJaBJHik8W/Qn3ywVK0BAVRsA8KWhCNYLFIwQdpgqRCtPgbtaA2piU0N7nn7OXD3jPzrTVr9jn33YHL2Xv2mvU362+v2Veeee/xF/H/YYYuF5hf6/V6AJLm6Lq+HSYAqABSPfT4oQqIiJnzawaY+NkU7jIaaxTEY8RLG3mv2lnEKpamvRlvZVwiTbDCMim8BRMqfgrvKGziJc36NY7HdXihB52lLowr2MGWwsP5ZFXpegqBIy6wvxExz1q4hul7XiZwQ7zFsNoZmaOTr/02uV+NOFBMbBnxUXBpZQ58Sc+0/A5rJObF4NNgPluMFhIJoTLcOM/WlC2ALCvDp/mW4mRE6TU93gub7nCt6uCEeM2XaUPHWaMc4sH4rwTzOgdbTJpXxcYNNwLW5kj7VbBOv6vgw+vtfz1nA2OhH41VtHfMC9HPa+ecFsZsg/7qlp743pO1GyRQVR0RCV3XQ/3m1M6tyyXOvucYZDYvc4sFTnz3l56WXV9wF+sTsjTPV81LHk+/6/Xodu8x+DsoaVpJq9bM7WCCIgW2tWYKl4WbphXhSXMJrnW/BnX2uI60KJTS1s75BnaKGZ5T1RBmFUnPU2Stq+5jvkpsGlUwH5EjK0yoIEqIvVDRfAuu9bzAFN8u8T1ZYL0+Us4UjalhYBMvQwCfj4xIyUtj4ZT8m5mJBWdFcgCz7mUZ5mCYsuDo1CYjxYrwrhwJGs1Hz0vQJV44Kw2KIJ5qAtv//Y88c+87gK4DIfKDA6VHqO75cDGbIwV+AJD5HL/94G2AVnXQVGZcRVPfeOqnsuuGG7VyfbKUdD83ONbxz773jBohiR+FQiASMR4IZvjQfusKTWQUgdAqjry4NZJ5wWhtSr9ljUHS1Zs+EScMPytdWWCsNC1SDMLkFOAUwK6Y+R4vQgtqkqcs095w4QBbmJ3XuBv+64mWIBmYrYmp4he1hRKeZ3ihH0dz6i3fs9ZUkDja6GgX8+r8W6dVKswDQlaAkWnCrXZXUJmeIa/
+                            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
+                            eQJFZ4OtoTXzETjXAlZ+yarOGach9RxO+2QE14V4dGJVBfVOVPB7QlaXuKPo6rN6VxoKJExthZTSgcIpcQ/7zWJxfDcR0uUbfqI3+kA1oeEij6vdxnJWKX4L6rKTfx1pGfOE/O4vFU0Jak5b0qdcK9RU1lhMSWfy7Cdo78q+HozZEb9zjihc2KQGmTlcNkNzZakvXfvazX/TQZ85RtEq5XPeTemmFxjhydpesVz6ud5soyGN6wxWDFtzQLJldLum5xKv97cPdxk0QKreM5aNE9WYwuwYE1wpt76Kt3xxYpJRddAZAqBruXjjZ1TLwDDR0pmHL7uYZ79xnh8dbZtyyj+XKkgrWOTRV7VLOJuQn6nsk5r2AxTaKpNfSEvNJeXtcsRam65OmZlRet2pFWjpbk1jxp3NlwOnkpeZk7GZa36zLDrs1I9Gm+fw3W4libVuVKrKFw5okJyjDer40UTx0SsmTPU8BtWhhkJ1YAtjZLyUlA0u1vbuZpTRYGqynwDsF9mOtzhfZMX/oomN6iq72myqyvFGEnNbBvB+duY+Yac/PkfGJf/LzLfEZs2R1XVvpfhP9xmOf7oYiEnT58vHxX5/6gDJmsQI6t9gUV7ra3BKMZobQnRf7K1/vWF71tfXkf/wxQzhiYcf0O3E/zM0/TrDgATYwRr+GtR0DoMtf4db72xGjbamFbcYJ7W4MN/GV58faod6K+j96rWjja/4w+rVUunvbaMSOiWldgvw8e/IUHQP4s6i2Htt0yZYbwy/HduHH9sLHIV7wqXagnY2gRPN7b2dN6VC8j50GVLr/BDjJGNDb3w8BdlYmNc9Wl+uQwHXddVKDAeg7hXttkMFx758vBVVp15IoUCtUZ99gphRGTIgCmBpkB75q6jI4FKFjHzOl4M/efyP5NDQ5oYSPfpOZfxRtE8TxWx6Scn4kK4xx0GWSKJLyj/31ka8uJ4SXhCXnS5THVMMrV0mQoxqj/ImWjaV59i1lWvDpX/u3onE+L6gucId0bJnPFvwu148bKZ1WlTtEPVDsiWy4joGchPHe7sp/meTdApqXJT75LMi4PRmK9aEOaNClivlGq9zHd1sqT7aT7DuYDv5v26z1bB7ITOznlRFfwPEBsr5BCiCw4AAAAASUVORK5CYIIA"/>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                
+                    <!-- Right Section -->
+                    <div id="right-section">
+                        <table border="1" style="border-collapse: collapse;">
+                            <tr>
+                                <td>
+                                    <table style="border-collapse:collapse;margin-left:auto; margin-right: 0;" cellspacing="0">
+                                <tr style="height:11pt">
+                                <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#CE4627">
+                                <p class="s1" style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: left;">Numéro de dossier :</p></td>
+                                <td style="width:111pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
+                                <p style="text-indent: 0pt;text-align: left;">${PGAVQ2}</p>
+                                </td>
+                                </tr>
+                                <tr style="height:11pt">
+                                <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#CE4627">
+                                <p class="s1" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Référence demandeur:</p></td>
+                                <td style="width:111pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
+                                <p style="text-indent: 0pt;text-align: left;">${PGAVQ3}</p>
+                                </td>
+                                </tr>
+                                </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+                <br/>
+                                <div style="background:#CE4627;border:1.4pt solid #000000;display:flex;justify-content:center;align-items:center;min-height:47.3pt;width:550.8pt;text-align: center;flex-direction: column;">
+                                <p class="s3" style="margin: 0;font-weight: bold;font-family: Calibri, sans-serif;font-style: normal;text-align: center;">Planche photos </p>
+                                </div>
+                                <br/>
+
+                                <div>
+                                <p style="padding-top: 10pt;text-indent: 0pt;text-align: center; border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt">${imagesAE}</p>
+                                </div>
+
+                 <br/>
+                                <div style="background:#CE4627;border:1.4pt solid #000000;display:flex;justify-content:center;align-items:center;min-height:10.3pt;width:550.8pt;text-align: center;flex-direction: column;">
+                                <p class="s3" style="margin: 0;font-weight: bold;font-family: Calibri, sans-serif;font-style: normal;text-align: center;">HISTORIQUE DES MODIFICATIONS</p>
+                                </div>
+                                
+
+                                <br/>
+                <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
+                <tr style="height:16pt">
+                <td style="width:60pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt; background:#CE4627;">
+                <p class="s4" style="margin: 0;font-weight: bold;font-family: Calibri, sans-serif;font-style: normal;text-align: center; color: #FFF;">Version du
+rapport </p></td>
+                <td style="width:190pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-left-style:solid;border-left-width:1pt; border-bottom-style:solid;border-bottom-width:1pt; background:#CE4627;">
+                <p style="margin: 0;font-weight: bold;font-family: Calibri, sans-serif;font-style: normal;text-align: center; color: #FFF;">Date de
+modification</p>
+                </td>
+                <td style="width:80pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt; background:#CE4627;">
+                <p class="s4" style="margin: 0;font-weight: bold;font-family: Calibri, sans-serif;font-style: normal;text-align: center; color: #FFF;">Nom du correcteur</p></td>
+                <td style="width:200pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-left-style:solid;border-left-width:1pt; border-bottom-style:solid;border-bottom-width:1pt; background:#CE4627;">
+                <p style="margin: 0;font-weight: bold;font-family: Calibri, sans-serif;font-style: normal;text-align: center; color: #FFF;">Commentaire modification</p>
+                </td>
+                </tr>
+                </table>
+                <br/>
+                  <p style="text-indent: 0pt;text-align: center;">Les résultats de ce contrôle ne se rapportent qu&#39;aux parties accessibles lors de l&#39;intervention sur site.</p>
+                <p class="s6" style="padding-top: 5pt;text-indent: 0pt;text-align: center;">Code document : <span class="s7">INS-047    </span>Version : <span class="s7">V05</span></p>
+                <p style="text-indent: 0pt;text-align: left;"><br/></p>
+                <p class="s2" style="padding-left: 1pt;text-indent: 0pt;text-align: center;">8/8</p>
 
 </div>
 

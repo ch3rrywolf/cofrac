@@ -1566,7 +1566,7 @@ conforme auxindications du fournisseur ;        </td>
           <span className="text-2xl">
             <MdCloudUpload />
           </span>
-          <span>Select Images</span>
+          <span>Select Images max 6 par page</span>
         </div>
       </label>
       <input
@@ -2026,7 +2026,7 @@ conforme auxindications du fournisseur ;        </td>
           <span className="text-2xl">
             <MdCloudUpload />
           </span>
-          <span>Select Images</span>
+          <span>Select Images max 6 par page</span>
         </div>
       </label>
       <input
