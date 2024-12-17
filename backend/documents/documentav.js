@@ -114,36 +114,36 @@ module.exports = ({PGAVQ1, PGAVQ2, PGAVQ3, PGAVQ4, benefNom, benefPreNom, chanti
 </div>
 
 
-                <div style="background:#CE4627;border:1.4pt solid #000000;display:flex;justify-content:center;align-items:center;min-height:47.3pt;width:462.8pt;text-align: center;flex-direction: column;">
+                <div style="background:#CE4627;border:1.4pt solid #000000;display:flex;justify-content:center;align-items:center;min-height:47.3pt;width:550.8pt;text-align: center;flex-direction: column;">
                 <p class="s3" style="margin: 0;font-weight: bold;font-family: Calibri, sans-serif;font-style: normal;text-align: center;">Contrôle de l'audit énergétique <br>AVANT TRAVAUX</p>
                 <p class="s3" style="margin: 0;line-height: 14pt;font-family: Calibri, sans-serif;text-align: center;">pour la fiche BAR TH 145</p>
                 </div>
 
                 <p style="padding-left: 5pt;text-indent: 0pt;text-align: left;"/>
                 <p style="text-indent: 0pt;text-align: left;"><br/></p>
-                <div style="background:#CE4627;border:0.7pt solid #000000;display:block;left:0.4pt;min-height:18.4pt;top:0.4pt;width:462.8pt;">
+                <div style="background:#CE4627;border:0.7pt solid #000000;display:block;left:0.4pt;min-height:18.4pt;top:0.4pt;width:550.8pt;">
                 <p style="padding-left: 1pt;text-indent: 0pt;line-height: 11pt;text-align: center;">
                 <span style=" color: #FFF; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 11pt;">PHOTO BÂTIMENT</span></p></div>
-                <p style="padding-left: 5pt;text-indent: 0pt;text-align: left;"/>
-                <p style="padding-top: 10pt;text-indent: 0pt;text-align: left;">${imagesMO}</p><br/>
+                <p style="padding-left: 5pt;text-indent: 0pt;text-align: center;"/>
+                <p style="padding-top: 10pt;text-indent: 0pt;text-align: center;">${imagesMO}</p><br/>
                 
                 <table style="border-collapse:collapse;margin-left: 120pt" cellspacing="0">
                 <tr style="height:16pt">
                 <p style="text-indent: 0pt;text-align: left;"/>
                 <h1 style="padding-left: 7pt;text-indent: 0pt;text-align: left;">Adresse des travaux :</h1>
-                <td style="width:56pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:100pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Nom :</p></td>
                 <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
                 <p style="text-indent: 0pt;text-align: center;">${benefNom}${' '}${benefPreNom}</p></td></tr>
                 <tr style="height:25pt">
-                <td style="width:56pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:100pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Adresse :</p></td>
                 <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
                 <p style="text-indent: 0pt;text-align: center;">${chantierAdresse}</p>
                 </td>
                 </tr>
                 <tr style="height:25pt">
-                <td style="width:56pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:100pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Type de Logement :</p></td>
                 <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
                 <p style="text-indent: 0pt;text-align: center;">${PGAVQ1}</p>
@@ -154,7 +154,7 @@ module.exports = ({PGAVQ1, PGAVQ2, PGAVQ3, PGAVQ4, benefNom, benefPreNom, chanti
                
                 <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:15pt">
-                <td style="width:176pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt" rowspan="2">
+                <td style="width:220pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt" rowspan="2">
                 <p class="s4" style="padding-top: 9pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Accompagnateur :</p></td>
                 <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
                 <p style="text-indent: 0pt;text-align: center;">${benefNom}</p>
@@ -169,7 +169,7 @@ module.exports = ({PGAVQ1, PGAVQ2, PGAVQ3, PGAVQ4, benefNom, benefPreNom, chanti
 <br/>
                 <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:15pt">
-                <td style="width:176pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:220pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 9pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Conclusion du constat de l'audit :</p></td>
                 <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
                 <p style="text-indent: 0pt;text-align: center;">${benefNom}</p>
@@ -179,7 +179,7 @@ module.exports = ({PGAVQ1, PGAVQ2, PGAVQ3, PGAVQ4, benefNom, benefPreNom, chanti
 <br/>
                 <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:15pt">
-                <td style=" background:#CE4627; width:176pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style=" background:#CE4627; width:220pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p style=" color: #FFF; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">Date de visite</p></td>
                 <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#FFF">
                 <p style="text-indent: 0pt;text-align: center;">${PGAVQ4.split("T")[0]}</p>
@@ -189,7 +189,7 @@ module.exports = ({PGAVQ1, PGAVQ2, PGAVQ3, PGAVQ4, benefNom, benefPreNom, chanti
                 <br/>
                  <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:15pt">
-                <td style=" background:#CE4627; width:176pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style=" background:#CE4627; width:220pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p style=" color: #FFF; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">Date saisie rapport</p></td>
                 <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#FFF">
                 <p style="text-indent: 0pt;text-align: center;">${createdAt.split("T")[0]}</p>
@@ -252,7 +252,7 @@ module.exports = ({PGAVQ1, PGAVQ2, PGAVQ3, PGAVQ4, benefNom, benefPreNom, chanti
     </div>
 </div>
 
-<div style="background:#CE4627;border:1.4pt solid #000000;display:flex;justify-content:center;align-items:center;min-height:47.3pt;width:462.8pt;text-align: center;flex-direction: column;">
+<div style="background:#CE4627;border:1.4pt solid #000000;display:flex;justify-content:center;align-items:center;min-height:47.3pt;width:550.8pt;text-align: center;flex-direction: column;">
                 <p class="s3" style="margin: 0;font-weight: bold;font-family: Calibri, sans-serif;font-style: normal;text-align: center;">Administratif</p>
                 </div>
 
