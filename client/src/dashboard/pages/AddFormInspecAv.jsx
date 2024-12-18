@@ -83,6 +83,8 @@ const AddFormInspecAv = () => {
         const [AVCCAQ12,setAVCCAQ12] = useState('')
         const [AVCCAQ13,setAVCCAQ13] = useState('')
         const [AVCCAQ14,setAVCCAQ14] = useState('')
+        const [AVCCAQ15,setAVCCAQ15] = useState('')
+        const [AVCCAQ16,setAVCCAQ16] = useState('')
 
         const [AVCDPQ1,setAVCDPQ1] = useState('')
         const [AVCDPQ2,setAVCDPQ2] = useState('')
@@ -114,6 +116,15 @@ const AddFormInspecAv = () => {
         const [AVCDAQ9,setAVCDAQ9] = useState('')
         const [AVCDAQ10,setAVCDAQ10] = useState('')
         const [AVCDAQ11,setAVCDAQ11] = useState('')
+        const [AVCDAQ12,setAVCDAQ12] = useState('')
+
+        //Administratif
+        const [ADAVQ1,setADAVQ1] = useState('')
+        const [ADAVQ2,setADAVQ2] = useState('')
+        const [ADAVQ3,setADAVQ3] = useState('')
+        const [ADAVQ4,setADAVQ4] = useState('')
+        const [ADAVQ5,setADAVQ5] = useState('')
+        const [ADAVQ6,setADAVQ6] = useState('')
         
             
     // const [loader, setLoader] = useState(false)
@@ -385,7 +396,7 @@ const [ICQQ24,setICQQ24] = useState('')
     
     const submit = async (e) => {
         e.preventDefault();
-        const data = {AVCDAQ1,AVCDAQ2,AVCDAQ3,AVCDAQ4,AVCDAQ5,AVCDAQ6,AVCDAQ7,AVCDAQ8,AVCDAQ9,AVCDAQ10,AVCDAQ11, AVHCPQ1,AVHCPQ2,AVHCPQ3,AVHCPQ4,AVHCPQ5, AVHCPQ6, AVCDPQ1,AVCDPQ2,AVCDPQ3,AVCDPQ4,AVCDPQ5,AVCDPQ6,AVCDPQ7,AVCDPQ8,AVCDPQ9,AVCDPQ10,AVCDPQ11, AVCCAQ1, AVCCAQ2, AVCCAQ3, AVCCAQ4, AVCCAQ5, AVCCAQ6, AVCCAQ7,AVCCAQ8,AVCCAQ9,AVCCAQ10,AVCCAQ11,AVCCAQ12, AVCCAQ13,AVCCAQ14 , PGAVQ1, PGAVQ2, PGAVQ3, PGAVQ4, createdAt, clientName, chantierSirenDO, chantierAdresseDO, chantierNomDO, chantierEmail, chantierPhone, chantierVille, chantierCodePostal, chantierAdresse, benefPreNom, benefNom, operationName, imagesBase64MO, imagesBase64IC, imagesBase64AA, imagesBase64AE ,imagesBase64CET  ,Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19, CET1, AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApuissancenomina1l, AACO1P, AAmarqu2e, AAreferenc2e, AAnomberuni2t1, AAnomberuni2t2, AApuissancenomina2l, AACO2P, AAmarqu3e, AAreferenc3e, AAnomberuni3t1, AAnomberuni3t2, AApuissancenomina3l, AACO3P, AAmarqu4e, AAreferenc4e, AAnomberuni4t1, AAnomberuni4t2, AApuissancenomina4l, AACO4P, AAmarqu5e, AAreferenc5e, AAnomberuni5t1, AAnomberuni5t2, AApuissancenomina5l, AACO5P, AA1Q1, AAQ1, AAQ2, AAQ3, AAQ4, AAQ5, AAQ6, AAQ7, AAQ8, AAQ9, AAQ10, AAQ11, AAQ12, AAQ13, AAQ14, AAQ15, AAQ16, AAQ17, AEmarqu1e, AEreferenc1e, AEnomberuni1t1, AEnomberuni1t2, AEpuissancenomina1l, AECO1P, AEmarqu2e, AEreferenc2e, AEnomberuni2t1, AEnomberuni2t2, AEpuissancenomina2l, AECO2P, AEmarqu3e, AEreferenc3e, AEnomberuni3t1, AEnomberuni3t2, AEpuissancenomina3l, AECO3P, AEmarqu4e, AEreferenc4e, AEnomberuni4t1, AEnomberuni4t2, AEpuissancenomina4l, AECO4P, AEmarqu5e, AEreferenc5e, AEnomberuni5t1, AEnomberuni5t2, AEpuissancenomina5l, AECO5P, AE1Q1, AEQ1, AEQ2, AEQ3, AEQ4, AEQ5, AEQ6, AEQ7, AEQ8, AEQ9, AEQ10, AEQ11, AEQ12, CETQ1, CETQ2, CETQ3, CETQ4, CETQ5, CETQ6, CETQ7, CETQ8, CETQ9, CETQ10, CETQ11, CETQ12, CETQ13, CETQ14, ICQQ1, ICQQ2, ICQQ3, ICQQ4, ICQQ5, ICQQ6, ICQQ7, ICQQ8, ICQQ9, ICQQ10, ICQQ11, ICQQ12, ICQQ13,  ICQQ15, ICQQ16, ICQQ17, ICQQ18, ICQQ19, ICQQ20, ICQQ21, ICQQ22, ICQQ23, ICQQ24, email}
+        const data = {ADAVQ1,ADAVQ2,ADAVQ3,ADAVQ4,ADAVQ5,ADAVQ6, AVCDAQ1,AVCDAQ2,AVCDAQ3,AVCDAQ4,AVCDAQ5,AVCDAQ6,AVCDAQ7,AVCDAQ8,AVCDAQ9,AVCDAQ10,AVCDAQ11, AVCDAQ12, AVHCPQ1,AVHCPQ2,AVHCPQ3,AVHCPQ4,AVHCPQ5, AVHCPQ6, AVCDPQ1,AVCDPQ2,AVCDPQ3,AVCDPQ4,AVCDPQ5,AVCDPQ6,AVCDPQ7,AVCDPQ8,AVCDPQ9,AVCDPQ10,AVCDPQ11, AVCCAQ1, AVCCAQ2, AVCCAQ3, AVCCAQ4, AVCCAQ5, AVCCAQ6, AVCCAQ7,AVCCAQ8, AVCCAQ15, AVCCAQ16 ,AVCCAQ9,AVCCAQ10,AVCCAQ11,AVCCAQ12, AVCCAQ13,AVCCAQ14 , PGAVQ1, PGAVQ2, PGAVQ3, PGAVQ4, createdAt, clientName, chantierSirenDO, chantierAdresseDO, chantierNomDO, chantierEmail, chantierPhone, chantierVille, chantierCodePostal, chantierAdresse, benefPreNom, benefNom, operationName, imagesBase64MO, imagesBase64IC, imagesBase64AA, imagesBase64AE ,imagesBase64CET  ,Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19, CET1, AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApuissancenomina1l, AACO1P, AAmarqu2e, AAreferenc2e, AAnomberuni2t1, AAnomberuni2t2, AApuissancenomina2l, AACO2P, AAmarqu3e, AAreferenc3e, AAnomberuni3t1, AAnomberuni3t2, AApuissancenomina3l, AACO3P, AAmarqu4e, AAreferenc4e, AAnomberuni4t1, AAnomberuni4t2, AApuissancenomina4l, AACO4P, AAmarqu5e, AAreferenc5e, AAnomberuni5t1, AAnomberuni5t2, AApuissancenomina5l, AACO5P, AA1Q1, AAQ1, AAQ2, AAQ3, AAQ4, AAQ5, AAQ6, AAQ7, AAQ8, AAQ9, AAQ10, AAQ11, AAQ12, AAQ13, AAQ14, AAQ15, AAQ16, AAQ17, AEmarqu1e, AEreferenc1e, AEnomberuni1t1, AEnomberuni1t2, AEpuissancenomina1l, AECO1P, AEmarqu2e, AEreferenc2e, AEnomberuni2t1, AEnomberuni2t2, AEpuissancenomina2l, AECO2P, AEmarqu3e, AEreferenc3e, AEnomberuni3t1, AEnomberuni3t2, AEpuissancenomina3l, AECO3P, AEmarqu4e, AEreferenc4e, AEnomberuni4t1, AEnomberuni4t2, AEpuissancenomina4l, AECO4P, AEmarqu5e, AEreferenc5e, AEnomberuni5t1, AEnomberuni5t2, AEpuissancenomina5l, AECO5P, AE1Q1, AEQ1, AEQ2, AEQ3, AEQ4, AEQ5, AEQ6, AEQ7, AEQ8, AEQ9, AEQ10, AEQ11, AEQ12, CETQ1, CETQ2, CETQ3, CETQ4, CETQ5, CETQ6, CETQ7, CETQ8, CETQ9, CETQ10, CETQ11, CETQ12, CETQ13, CETQ14, ICQQ1, ICQQ2, ICQQ3, ICQQ4, ICQQ5, ICQQ6, ICQQ7, ICQQ8, ICQQ9, ICQQ10, ICQQ11, ICQQ12, ICQQ13,  ICQQ15, ICQQ16, ICQQ17, ICQQ18, ICQQ19, ICQQ20, ICQQ21, ICQQ22, ICQQ23, ICQQ24, email}
 
         await axios.post(`${base_url}/api/createPdfAv`, data)
             .then(() =>
@@ -418,6 +429,8 @@ const [ICQQ24,setICQQ24] = useState('')
                         setAVCCAQ12('');
                         setAVCCAQ13('');
                         setAVCCAQ14('');
+                        setAVCCAQ15('');
+                        setAVCCAQ16('');
 
                         setAVCDPQ1('');
                         setAVCDPQ2('');
@@ -449,6 +462,14 @@ const [ICQQ24,setICQQ24] = useState('')
                         setAVCDAQ9('');
                         setAVCDAQ10('');
                         setAVCDAQ11('');
+                        setAVCDAQ12('');
+
+                        setADAVQ1('');
+                        setADAVQ2('');
+                        setADAVQ3('');
+                        setADAVQ4('');
+                        setADAVQ5('');
+                        setADAVQ6('');
                         
 
     
@@ -779,6 +800,122 @@ const [ICQQ24,setICQQ24] = useState('')
   </table>
 </div>
 
+{/* Administratif */}
+
+<div className='text-center items-center text-white font-bold border border-solid bg-orange-700' >
+    <h4>Administratif</h4>
+</div>
+<div className="overflow-x-auto">
+  <table className="table-auto w-full border-collapse border border-gray-300 text-sm text-gray-600">
+    <thead>
+      <tr>
+        <th className="border border-gray-300 px-4 py-2">Entreprise ayant effectué
+l'étude énergéque:
+ Question</th>
+        <th className="border border-gray-300 px-4 py-2">Réponse</th>
+      </tr>
+    </thead>
+    <tbody>
+
+    
+
+      
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Raison sociale :
+        </td>
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="ADAVQ1"
+            value={ADAVQ1}
+            onChange={(e)=>setADAVQ1(e.target.value)}
+            id="ADAVQ1"
+            placeholder='...'
+          /></div>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Adresse : 
+        </td>
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="ADAVQ2"
+            value={ADAVQ2}
+            onChange={(e)=>setADAVQ2(e.target.value)}
+            id="ADAVQ2"
+            placeholder='...'
+          /></div>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Siren : 
+        </td>
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="ADAVQ3"
+            value={ADAVQ3}
+            onChange={(e)=>setADAVQ3(e.target.value)}
+            id="ADAVQ3"
+            placeholder='...'
+          /></div>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Référence de l'étude énergéque (RGE étude) :
+        </td>
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="ADAVQ4"
+            value={ADAVQ4}
+            onChange={(e)=>setADAVQ4(e.target.value)}
+            id="ADAVQ4"
+            placeholder='...'
+          /></div>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Numéro de diagnosqueur (si pernent):
+
+        </td>
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="ADAVQ5"
+            value={ADAVQ5}
+            onChange={(e)=>setADAVQ5(e.target.value)}
+            id="ADAVQ5"
+            placeholder='...'
+          /></div>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Inspecteur : 
+Nom, Prénom :
+
+        </td>
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="ADAVQ6"
+            value={ADAVQ6}
+            onChange={(e)=>setADAVQ6(e.target.value)}
+            id="ADAVQ6"
+            placeholder='...'
+          /></div>
+      </tr>
+     
+    
+      
+      
+    </tbody>
+  </table>
+</div>
+
+
 {/*Controle du contenu de audit*/}
 
 
@@ -852,20 +989,9 @@ fiche d’opération standardisée BAR-TH-164
 
       
 
+      
       <tr>
-        <td className="border border-gray-300 px-4 py-2">Logiciel énergétique :</td>
-        <div ><input
-        className='items-center justify-center text-center'
-            type="text"
-            name="AVCCAQ4"
-            value={AVCCAQ4}
-            onChange={(e)=>setAVCCAQ4(e.target.value)}
-            id="AVCCAQ4"
-            placeholder='...'
-          /></div>
-      </tr>
-      <tr>
-        <td className="border border-gray-300 px-4 py-2">Version et date :</td>
+        <td className="border border-gray-300 px-4 py-2">Version et date Logiciel énergétique:</td>
         <div ><input
         className='items-center justify-center text-center'
             type="text"
@@ -907,7 +1033,7 @@ conventionnelles en énergie primaire et en énergie finale avant et après l’
       </tr>
 
       <tr>
-        <td className="border border-gray-300 px-4 py-2">Surface habitable déclaré :</td>
+        <td className="border border-gray-300 px-4 py-2">Surface habitable déclaré (m²):</td>
         <div ><input
         className='items-center justify-center text-center'
             type="text"
@@ -920,7 +1046,7 @@ conventionnelles en énergie primaire et en énergie finale avant et après l’
       </tr>
       <tr>
         <td className="border border-gray-300 px-4 py-2">Surface habitable
-        Mesurée :</td>
+        Mesurée (m²):</td>
         <div ><input
         className='items-center justify-center text-center'
             type="text"
@@ -931,18 +1057,33 @@ conventionnelles en énergie primaire et en énergie finale avant et après l’
             placeholder='...'
           /></div>
       </tr>
+
       <tr>
-        <td className="border border-gray-300 px-4 py-2">Ecart (en %):</td>
+        <td className="border border-gray-300 px-4 py-2">Surface tertiaire déclaré (m²):</td>
         <div ><input
         className='items-center justify-center text-center'
             type="text"
-            name="AVCCAQ9"
-            value={AVCCAQ9}
-            onChange={(e)=>setAVCCAQ9(e.target.value)}
-            id="AVCCAQ9"
+            name="AVCCAQ15"
+            value={AVCCAQ15}
+            onChange={(e)=>setAVCCAQ15(e.target.value)}
+            id="AVCCAQ15"
             placeholder='...'
           /></div>
       </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">Surface tertiaire
+        Mesurée (m²):</td>
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="AVCCAQ16"
+            value={AVCCAQ16}
+            onChange={(e)=>setAVCCAQ16(e.target.value)}
+            id="AVCCAQ16"
+            placeholder='...'
+          /></div>
+      </tr>
+
      
       <tr>
         <td className="border border-gray-300 px-4 py-2">
@@ -1839,11 +1980,58 @@ chaude sanitaire, de la génération à l’émission :
           /></div>
       </tr>
 
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">Signature le :</td>
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="AVCDAQ12"
+            value={AVCDAQ12}
+            onChange={(e)=>setAVCDAQ12(e.target.value)}
+            id="AVCDAQ12"
+            placeholder='...'
+          /></div>
+      </tr>
+
       
   
     </tbody>
   </table>
 </div>
+
+<label
+        htmlFor="imgIC"
+        className="w-full h-[180px] flex rounded text-[#404040] gap-2 justify-center items-center cursor-pointer border-2 border-dashed"
+      >
+        <div className="flex justify-center items-center flex-col gap-y-2">
+          <span className="text-2xl">
+            <MdCloudUpload />
+          </span>
+          <span>Select Image Signature technicien</span>
+        </div>
+      </label>
+      <input
+        type="file"
+        id="imgIC"
+        className="hidden"
+        onChange={handleImageUploadIC}
+        multiple
+      />
+
+      {/* Display image previews */}
+      {imagesBase64IC.length > 0 && (
+        <div className="mt-4 flex gap-2 flex-wrap">
+          {imagesBase64IC.map((imgBase64IC, index) => (
+            <div className="image-container" key={index}>
+              <img
+                src={imgBase64IC}
+                alt={`Image preview ${index + 1}`}
+                className="w-20 h-20 object-cover rounded-md"
+              />
+            </div>
+          ))}
+        </div>
+      )}
 
 {/* Mise/Oeuv */}
 
@@ -2720,7 +2908,9 @@ conforme auxindications du fournisseur ;        </td>
   </table>
 
 </div> */}
-
+<div className='text-center items-center text-white font-bold border border-solid bg-orange-700' >
+    <h4>Photos</h4>
+</div>
 
 <label
         htmlFor="imgAA"
@@ -3216,6 +3406,12 @@ conforme auxindications du fournisseur ;        </td>
           ))}
         </div>
       )}
+
+
+<br></br>
+
+
+      
 
 
 {/* Chauffe-Eau Thermodynamique */}
