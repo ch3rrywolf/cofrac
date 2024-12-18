@@ -1,5 +1,5 @@
 
-module.exports = ({AVCDPQ1,AVCDPQ2,AVCDPQ3,AVCDPQ4,AVCDPQ5,AVCDPQ6,AVCDPQ7,AVCDPQ8,AVCDPQ9,AVCDPQ10,AVCDPQ11, AVCCAQ1, AVCCAQ2, AVCCAQ3, AVCCAQ4, AVCCAQ5, AVCCAQ6, AVCCAQ7,AVCCAQ8,AVCCAQ9,AVCCAQ10,AVCCAQ11,AVCCAQ12, AVCCAQ13,AVCCAQ14 , PGAVQ1, PGAVQ2, PGAVQ3, PGAVQ4, benefNom, benefPreNom, chantierNomDO, chantierSirenDO, chantierAdresseDO, chantierAdresse, createdAt, imagesMO, imagesAA, imagesAE})=> {
+module.exports = ({AVCDAQ1,AVCDAQ2,AVCDAQ3,AVCDAQ4,AVCDAQ5,AVCDAQ6,AVCDAQ7,AVCDAQ8,AVCDAQ9,AVCDAQ10,AVCDAQ11, AVHCPQ1,AVHCPQ2,AVHCPQ3,AVHCPQ4,AVHCPQ5, AVHCPQ6, AVCDPQ1,AVCDPQ2,AVCDPQ3,AVCDPQ4,AVCDPQ5,AVCDPQ6,AVCDPQ7,AVCDPQ8,AVCDPQ9,AVCDPQ10,AVCDPQ11, AVCCAQ1, AVCCAQ2, AVCCAQ3, AVCCAQ4, AVCCAQ5, AVCCAQ6, AVCCAQ7,AVCCAQ8,AVCCAQ9,AVCCAQ10,AVCCAQ11,AVCCAQ12, AVCCAQ13,AVCCAQ14 , PGAVQ1, PGAVQ2, PGAVQ3, PGAVQ4, benefNom, benefPreNom, chantierNomDO, chantierSirenDO, chantierAdresseDO, chantierAdresse, createdAt, imagesMO, imagesAA, imagesAE})=> {
     const today = new Date();
     return `
 <!DOCTYPE  html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -869,12 +869,12 @@ bas situés entre un volume chauffé et un sous-sol non chauffé, un vide sanita
 critères de la fiche d'opération
 standardisée BAR-TH-145</p></td>
                 <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-left-style:solid;border-left-width:1pt; border-bottom-style:solid;border-bottom-width:1pt">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;"></p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVHCPQ1}</p>
                 </td>
                 <td style="width:110pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
-                <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;"></p></td>
+                <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVHCPQ2}</p></td>
                 <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-left-style:solid;border-left-width:1pt; border-bottom-style:solid;border-bottom-width:1pt">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;"></p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVHCPQ3}</p>
                 </td>
                 </tr>
                 </table>
@@ -889,7 +889,7 @@ déduction de la production d'électricité autoconsommée ou exportée) sur les
 refroidissement et production d'eau chaude sanitaire
 </p></td>
                 <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVHCPQ4}</p>
                 </td>
                 </tr>
                 </table>
@@ -901,7 +901,7 @@ refroidissement et production d'eau chaude sanitaire
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">La consommation conventionnelle annuelle en énergie primaire après travaux, rapportée à la
 surface habitable du bâtiment, est inférieure à 331 kWh/(m2 .an).</p></td>
                 <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVHCPQ5}</p>
                 </td>
                 </tr>
                 </table>
@@ -915,7 +915,7 @@ habitable du bâtiment, sont inférieures ou égales à la valeur initiale de ce
 travaux.
 </p></td>
                 <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVHCPQ6}</p>
                 </td>
                 </tr>
                 </table>
@@ -1011,7 +1011,7 @@ travaux.
 éléments constatés lors de la visite sur site (avant travaux): 
 </p></td>
                 <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDAQ1}</p>
                 </td>
                 </tr>
                 </table><br/>
@@ -1022,7 +1022,7 @@ travaux.
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Ecart concernant le niveau d'isolation des parois enveloppes du bâtiment:
 </p></td>
                 <td style="width:220pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDAQ2}</p>
                 </td>
                 </tr>
                 </table><br/>
@@ -1033,7 +1033,7 @@ travaux.
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Ecart concernant le niveau d'isolation des menuiseries et surfaces mises en jeu :
 </p></td>
                 <td style="width:220pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDAQ3}</p>
                 </td>
                 </tr>
                 </table><br/>
@@ -1044,7 +1044,7 @@ travaux.
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Ecart concernant la nature des combles (aménagés, perdus) ;
 </p></td>
                 <td style="width:220pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDAQ4}</p>
                 </td>
                 </tr>
                 </table><br/>
@@ -1056,7 +1056,7 @@ travaux.
 chaude sanitaire, de la génération à l'émission :
 </p></td>
                 <td style="width:220pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDAQ5}</p>
                 </td>
                 </tr>
                 </table><br/>
@@ -1068,7 +1068,7 @@ chaude sanitaire, de la génération à l'émission :
 chaude sanitaire, de la génération à l’émission :
 </p></td>
                 <td style="width:220pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDAQ6}</p>
                 </td>
                 </tr>
                 </table><br/>
@@ -1079,7 +1079,7 @@ chaude sanitaire, de la génération à l’émission :
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Ecart dans la description des systèmes de ventilation :
 </p></td>
                 <td style="width:220pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDAQ7}</p>
                 </td>
                 </tr>
                 </table><br/>
@@ -1090,7 +1090,7 @@ chaude sanitaire, de la génération à l’émission :
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Ecart dans la description de refroidissement, le cas échéant :
 </p></td>
                 <td style="width:220pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDAQ8}</p>
                 </td>
                 </tr>
                 </table>
@@ -1102,7 +1102,7 @@ chaude sanitaire, de la génération à l’émission :
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Conclusion du constat de l'audit :
 </p></td>
                 <td style="width:340pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDAQ9}</p>
                 </td>
                 </tr>
                 </table>
@@ -1117,7 +1117,7 @@ chaude sanitaire, de la génération à l’émission :
                 </tr>
                 <tr style="height:30pt">
                 <td style="width:500pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt; border-right-style:solid;border-right-width:1pt;">
-                <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">
+                <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDAQ10}
 </p>
                 </tr>
                 </table>
@@ -1128,7 +1128,7 @@ chaude sanitaire, de la génération à l’émission :
                 <td style="width:110pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Nom du technicien : </p></td>
                 <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-left-style:solid;border-left-width:1pt; border-bottom-style:solid;border-bottom-width:1pt">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;"></p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDAQ11}</p>
                 </td>
                 <td style="width:110pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Signature le :</p></td>
