@@ -96,14 +96,14 @@ module.exports = ({AVCDAQ1,AVCDAQ2,AVCDAQ3,AVCDAQ4,AVCDAQ5,AVCDAQ6,AVCDAQ7,AVCDA
                 <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#CE4627">
                 <p class="s1" style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: left;">Numéro de dossier :</p></td>
                 <td style="width:111pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: left;">${PGAVQ2}</p>
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${PGAVQ2}</p>
                 </td>
                 </tr>
                 <tr style="height:11pt">
                 <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#CE4627">
                 <p class="s1" style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: left;">Référence demandeur:</p></td>
                 <td style="width:111pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: left;">${PGAVQ3}</p>
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${PGAVQ3}</p>
                 </td>
                 </tr>
                 </table>
@@ -127,41 +127,41 @@ module.exports = ({AVCDAQ1,AVCDAQ2,AVCDAQ3,AVCDAQ4,AVCDAQ5,AVCDAQ6,AVCDAQ7,AVCDA
                 <p style="padding-left: 5pt;text-indent: 0pt;text-align: center;"/>
                 <p style="padding-top: 10pt;text-indent: 0pt;text-align: center; border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt; border-left-style:solid;border-left-width:1pt"">${imagesMO}</p><br/>
                 
-                <table style="border-collapse:collapse;margin-left: 120pt" cellspacing="0">
-                <tr style="height:16pt">
+                <table style="border-collapse:collapse;margin-left: 165pt" cellspacing="0">
+                <tr style="height:16pt; ">
                 <p style="text-indent: 0pt;text-align: left;"/>
                 <h1 style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: left;">Adresse des travaux :</h1>
                 <td style="width:100pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: left;">Nom :</p></td>
                 <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: center;">${benefNom}${' '}${benefPreNom}</p></td></tr>
+                <p style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${benefNom}${' '}${benefPreNom}</p></td></tr>
                 <tr style="height:25pt">
                 <td style="width:100pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: left;">Adresse :</p></td>
                 <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: center;">${chantierAdresse}</p>
+                <p style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${chantierAdresse}</p>
                 </td>
                 </tr>
                 <tr style="height:25pt">
                 <td style="width:100pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: left;">Type de Logement :</p></td>
                 <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="text-indent: 0pt;text-align: center;">${PGAVQ1}</p>
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${PGAVQ1}</p>
                 </td>
                 </tr>
                 </table>
                 <br/>
                
-                <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
+                <table style="border-collapse:collapse;margin-right: 0; " cellspacing="0">
                 <tr style="height:15pt">
-                <td style="width:220pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt" rowspan="2">
+                <td style="width:270pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt" rowspan="2">
                 <p class="s4" style="padding-top: 9pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Accompagnateur :</p></td>
-                <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: center;">${benefNom}</p>
+                <td style="width:280pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
+                <p style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${benefNom}</p>
                 </td>
                 </tr>
                 <tr style="height:15pt">
-                <td style="width:287pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#CE4627">
+                <td style="width:280pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#CE4627">
                 <p style="text-indent: 0pt;text-align: center;"></p>
                 </td>
                 </tr>
@@ -169,30 +169,30 @@ module.exports = ({AVCDAQ1,AVCDAQ2,AVCDAQ3,AVCDAQ4,AVCDAQ5,AVCDAQ6,AVCDAQ7,AVCDA
 <br/>
                 <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:15pt">
-                <td style="width:220pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:270pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 9pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Conclusion du constat de l'audit :</p></td>
-                <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="text-indent: 0pt;text-align: center;">${AVCDAQ9}</p>
+                <td style="width:280pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCDAQ9}</p>
                 </td>
                 </tr>
                 </table>
 <br/>
                 <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:15pt">
-                <td style=" background:#CE4627; width:220pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style=" background:#CE4627; width:270pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p style=" color: #FFF; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">Date de visite</p></td>
-                <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#FFF">
-                <p style="text-indent: 0pt;text-align: center;">${PGAVQ4.split("T")[0]}</p>
+                <td style="width:280pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#FFF">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${PGAVQ4.split("T")[0]}</p>
                 </td>
                 </tr>
                 </table>
                 <br/>
                  <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:15pt">
-                <td style=" background:#CE4627; width:220pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style=" background:#CE4627; width:270pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p style=" color: #FFF; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">Date saisie rapport</p></td>
-                <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#FFF">
-                <p style="text-indent: 0pt;text-align: center;">${createdAt.split("T")[0]}</p>
+                <td style="width:280pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#FFF">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${createdAt.split("T")[0]}</p>
                 </td>
                 </tr>
                 </table>
@@ -230,19 +230,19 @@ module.exports = ({AVCDAQ1,AVCDAQ2,AVCDAQ3,AVCDAQ4,AVCDAQ5,AVCDAQ6,AVCDAQ7,AVCDA
         <table border="1" style="border-collapse: collapse;">
             <tr>
                 <td>
-                    <table style="border-collapse:collapse;margin-left:auto; margin-right: 0;" cellspacing="0">
+                    <table style="border-collapse:collapse;margin-left:120pt; margin-right: 0;" cellspacing="0">
                 <tr style="height:11pt">
                 <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#CE4627">
                 <p class="s1" style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: left;">Numéro de dossier :</p></td>
                 <td style="width:111pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="text-indent: 0pt;text-align: left;">${PGAVQ2}</p>
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${PGAVQ2}</p>
                 </td>
                 </tr>
                 <tr style="height:11pt">
                 <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#CE4627">
                 <p class="s1" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Référence demandeur:</p></td>
                 <td style="width:111pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="text-indent: 0pt;text-align: left;">${PGAVQ3}</p>
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${PGAVQ3}</p>
                 </td>
                 </tr>
                 </table>
@@ -257,68 +257,68 @@ module.exports = ({AVCDAQ1,AVCDAQ2,AVCDAQ3,AVCDAQ4,AVCDAQ5,AVCDAQ6,AVCDAQ7,AVCDA
                 </div>
 
 <br/>
-                <table style="border-collapse:collapse;margin-left: 120pt" cellspacing="0">
+                <table style="border-collapse:collapse;margin-left: 165pt" cellspacing="0">
                 <tr style="height:16pt">
                 <p style="text-indent: 0pt;text-align: left;"/>
                 <h1 style="padding-left: 7pt;text-indent: 0pt;text-align: left;">Donneur d’ordre :</h1>
                 <td style="width:100pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Nom :</p></td>
                 <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="text-indent: 0pt;text-align: center;">${chantierNomDO}</p></td></tr>
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${chantierNomDO}</p></td></tr>
                 <tr style="height:25pt">
                 <td style="width:100pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Adresse :</p></td>
                 <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="text-indent: 0pt;text-align: center;">${chantierAdresseDO}</p>
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${chantierAdresseDO}</p>
                 </td>
                 </tr>
                 <tr style="height:25pt">
                 <td style="width:100pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Siren :</p></td>
                 <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="text-indent: 0pt;text-align: center;">${chantierSirenDO}</p>
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${chantierSirenDO}</p>
                 </td>
                 </tr>
                 </table>
                 <br/>
 
-                 <table style="border-collapse:collapse;margin-left: 120pt" cellspacing="0">
+                 <table style="border-collapse:collapse;margin-left: 165pt" cellspacing="0">
                 <tr style="height:16pt">
                 <p style="text-indent: 0pt;text-align: left;"/>
                 <h1 style="padding-left: 7pt;text-indent: 0pt;text-align: left;">Bénéficiaire :</h1>
                 <td style="width:100pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Nom ou personne moral :</p></td>
                 <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="text-indent: 0pt;text-align: center;">${benefNom}${' '}${benefPreNom}</p></td></tr>
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${benefNom}${' '}${benefPreNom}</p></td></tr>
                 <tr style="height:25pt">
                 <td style="width:100pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Adresse :</p></td>
                 <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="text-indent: 0pt;text-align: center;">${chantierAdresse}</p>
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${chantierAdresse}</p>
                 </td>
                 </table>
                 <br/>
 
-                <table style="border-collapse:collapse;margin-left: 120pt" cellspacing="0">
+                <table style="border-collapse:collapse;margin-left: 165pt" cellspacing="0">
                 <tr style="height:16pt">
                 <p style="text-indent: 0pt;text-align: left;"/>
                 <h1 style="padding-left: 7pt;text-indent: 0pt;text-align: left;">Entreprise <br/> ayant effectué <br/> l'étude énergétique:</h1>
                 <td style="width:100pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Raison sociale :</p></td>
                 <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="text-indent: 0pt;text-align: center;">CONSEIL ETUDE ET REALISATIONS NORMANDIE</p></td></tr>
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">CONSEIL ETUDE ET REALISATIONS NORMANDIE</p></td></tr>
                 <tr style="height:25pt">
                 <td style="width:100pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Adresse :</p></td>
                 <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="text-indent: 0pt;text-align: center;">92 RUE DU DOCTEUR PARAT 93230 ROMAINVILLE</p>
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">92 RUE DU DOCTEUR PARAT 93230 ROMAINVILLE</p>
                 </td>
                 </tr>
                 <tr style="height:16pt">
                 <td style="width:100pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Siren :</p></td>
                 <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="text-indent: 0pt;text-align: center;">897751830</p>
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">897751830</p>
                 </td>
                 </tr>
                 </tr>
@@ -326,7 +326,7 @@ module.exports = ({AVCDAQ1,AVCDAQ2,AVCDAQ3,AVCDAQ4,AVCDAQ5,AVCDAQ6,AVCDAQ7,AVCDA
                 <td style="width:100pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Référence de l'étude énergétique (RGE étude) :</p></td>
                 <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="text-indent: 0pt;text-align: center;">AU-ENE-PXN-LC-21062023-04</p>
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">AU-ENE-PXN-LC-21062023-04</p>
                 </td>
                 </tr>
                 </tr>
@@ -334,33 +334,33 @@ module.exports = ({AVCDAQ1,AVCDAQ2,AVCDAQ3,AVCDAQ4,AVCDAQ5,AVCDAQ6,AVCDAQ7,AVCDA
                 <td style="width:100pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Numéro de diagnostiqueur (si pertinent):</p></td>
                 <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="text-indent: 0pt;text-align: center;">SANS OBJET</p>
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">SANS OBJET</p>
                 </td>
                 </tr>
                 </table>
                 <br/>
 
 
-                <table style="border-collapse:collapse;margin-left: 120pt" cellspacing="0">
+                <table style="border-collapse:collapse;margin-left: 165pt" cellspacing="0">
                 <tr style="height:16pt">
                 <p style="text-indent: 0pt;text-align: left;"/>
                 <h1 style="padding-left: 7pt;text-indent: 0pt;text-align: left;">Bureau de contrôle :</h1>
                 <td style="width:56pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Raison sociale :</p></td>
                 <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="text-indent: 0pt;text-align: center;">L.A INSPECTION</p></td></tr>
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">L.A INSPECTION</p></td></tr>
                 <tr style="height:25pt">
                 <td style="width:56pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Adresse :</p></td>
                 <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="text-indent: 0pt;text-align: center;">15 Rue Françoise Giroud 57280 Maizières-Lès-Metz</p>
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">15 Rue Françoise Giroud 57280 Maizières-Lès-Metz</p>
                 </td>
                 </tr>
                 <tr style="height:16pt">
                 <td style="width:56pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Siren :</p></td>
                 <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="text-indent: 0pt;text-align: center;">918 710 492</p>
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">918 710 492</p>
                 </td>
                 </tr>
                 </tr>
@@ -368,21 +368,21 @@ module.exports = ({AVCDAQ1,AVCDAQ2,AVCDAQ3,AVCDAQ4,AVCDAQ5,AVCDAQ6,AVCDAQ7,AVCDA
                 <td style="width:100pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Numéro d’accréditation COFRAC :</p></td>
                 <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="text-indent: 0pt;text-align: center;">3-2067</p>
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">3-2067</p>
                 </td>
                 </tr>
                 </tr>
                 </table>
                 <br/>
 
-                <table style="border-collapse:collapse;margin-left: 120pt" cellspacing="0">
+                <table style="border-collapse:collapse;margin-left: 165pt" cellspacing="0">
                 <tr style="height:16pt">
                 <p style="text-indent: 0pt;text-align: left;"/>
                 <h1 style="padding-left: 7pt;text-indent: 0pt;text-align: left;">Inspecteur :</h1>
-                <td style="width:100pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:220pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Nom, Prénom :</p></td>
                 <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${benefNom}${' '}${benefPreNom}</p>
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${benefNom}${' '}${benefPreNom}</p>
                 </td>
                 </tr>
                 
@@ -391,20 +391,20 @@ module.exports = ({AVCDAQ1,AVCDAQ2,AVCDAQ3,AVCDAQ4,AVCDAQ5,AVCDAQ6,AVCDAQ7,AVCDA
 
                 <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:15pt">
-                <td style="width:220pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:270pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Compagnie d’assurance : </p></td>
-                <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Assureur Lloyd’s : Lloyd’s Insurance Company S.A. par l’intermédiaire de Add Value Assurances</p>
+                <td style="width:280pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">Assureur Lloyd’s : Lloyd’s Insurance Company S.A. par l’intermédiaire de Add Value Assurances</p>
                 </td>
                 </tr>
                 </table>
                 <br/>
                 <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:15pt">
-                <td style="width:220pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:270pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">N° de police et date de validité : </p></td>
-                <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">BRCP101020 du 31/01/2024 au 31/01/2025</p>
+                <td style="width:280pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">BRCP101020 du 31/01/2024 au 31/01/2025</p>
                 </td>
                 </tr>
                 </table>
@@ -445,14 +445,14 @@ module.exports = ({AVCDAQ1,AVCDAQ2,AVCDAQ3,AVCDAQ4,AVCDAQ5,AVCDAQ6,AVCDAQ7,AVCDA
                 <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#CE4627">
                 <p class="s1" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Numéro de dossier :</p></td>
                 <td style="width:111pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${PGAVQ2}</p>
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${PGAVQ2}</p>
                 </td>
                 </tr>
                 <tr style="height:11pt">
                 <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#CE4627">
                 <p class="s1" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Référence demandeur:</p></td>
                 <td style="width:111pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${PGAVQ3}</p>
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${PGAVQ3}</p>
                 </td>
                 </tr>
                 </table>
@@ -468,15 +468,15 @@ module.exports = ({AVCDAQ1,AVCDAQ2,AVCDAQ3,AVCDAQ4,AVCDAQ5,AVCDAQ6,AVCDAQ7,AVCDA
                 <br/>
                 <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:16pt">
-                <td style="width:110pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Date de l'étude énergétique: </p></td>
-                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCCAQ1}</p>
+                <td style="width:155pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCCAQ1}</p>
                 </td>
-                <td style="width:110pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Référence de l'audit énergétique: </p></td>
-                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCCAQ2}</p>
+                <td style="width:155pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCCAQ2}</p>
                 </td>
                 </tr>
                 </table>
@@ -484,10 +484,10 @@ module.exports = ({AVCDAQ1,AVCDAQ2,AVCDAQ3,AVCDAQ4,AVCDAQ5,AVCDAQ6,AVCDAQ7,AVCDA
 
                 <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:16pt">
-                <td style="width:360pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:390pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">L’audit énergétique à été réalisé à l’aide d’un logiciel répondant aux exigences de la fiche d’opération standardisée BAR-TH-164</p></td>
-                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCCAQ3}</p>
+                <td style="width:160pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCCAQ3}</p>
                 </td>
                 </tr>
                 </table>
@@ -495,15 +495,15 @@ module.exports = ({AVCDAQ1,AVCDAQ2,AVCDAQ3,AVCDAQ4,AVCDAQ5,AVCDAQ6,AVCDAQ7,AVCDA
                 <br/>
                 <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:16pt">
-                <td style="width:110pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Logiciel énergétique : </p></td>
-                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCCAQ4}</p>
+                <td style="width:155pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCCAQ4}</p>
                 </td>
-                <td style="width:110pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Version et date : </p></td>
-                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCCAQ5}</p>
+                <td style="width:155pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCCAQ5}</p>
                 </td>
                 </tr>
                 </table>
@@ -511,10 +511,10 @@ module.exports = ({AVCDAQ1,AVCDAQ2,AVCDAQ3,AVCDAQ4,AVCDAQ5,AVCDAQ6,AVCDAQ7,AVCDA
 
                 <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:16pt">
-                <td style="width:360pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:390pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">L’audit énergétique ne mentionne pas les valeurs des consommations conventionnelles en énergie primaire et en énergie finale avant et après l’opération</p></td>
-                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCCAQ6}</p>
+                <td style="width:160pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCCAQ6}</p>
                 </td>
                 </tr>
                 </table>
@@ -523,15 +523,15 @@ module.exports = ({AVCDAQ1,AVCDAQ2,AVCDAQ3,AVCDAQ4,AVCDAQ5,AVCDAQ6,AVCDAQ7,AVCDA
                 <br/>
                 <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:16pt">
-                <td style="width:110pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Surface habitable déclaré : </p></td>
-                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCCAQ7}</p>
+                <td style="width:155pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCCAQ7}</p>
                 </td>
-                <td style="width:110pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Surface habitable Mesurée :</p></td>
-                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCCAQ8}</p>
+                <td style="width:155pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCCAQ8}</p>
                 </td>
                 </tr>
                 </table>
@@ -539,10 +539,10 @@ module.exports = ({AVCDAQ1,AVCDAQ2,AVCDAQ3,AVCDAQ4,AVCDAQ5,AVCDAQ6,AVCDAQ7,AVCDA
                 <br/>
                 <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:16pt">
-                <td style="width:110pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Ecart (en %):  </p></td>
-                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCCAQ9}</p>
+                <td style="width:155pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCCAQ9}</p>
                 </td>
                 </tr>
                 </table>
@@ -550,10 +550,10 @@ module.exports = ({AVCDAQ1,AVCDAQ2,AVCDAQ3,AVCDAQ4,AVCDAQ5,AVCDAQ6,AVCDAQ7,AVCDA
 
                 <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:16pt">
-                <td style="width:360pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:390pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Il est constaté un écart de surface habitable de plus de 10 %</p></td>
-                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCCAQ10}</p>
+                <td style="width:160pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCCAQ10}</p>
                 </td>
                 </tr>
                 </table>
@@ -562,13 +562,13 @@ module.exports = ({AVCDAQ1,AVCDAQ2,AVCDAQ3,AVCDAQ4,AVCDAQ5,AVCDAQ6,AVCDAQ7,AVCDA
                 
                 <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:16pt">
-                <td style="width:360pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:390pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">L’audit énergétique montre que le niveau de confort thermique de la situation après
 travaux est inférieur à celui de la situation initiale, y compris en période de rigueur
 hivernale, notamment au travers de la note de calcul de dimensionnement du
 nouveau générateur de chauffage le cas échéant</p></td>
-                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCCAQ11}</p>
+                <td style="width:160pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCCAQ11}</p>
                 </td>
                 </tr>
                 </table>
@@ -577,11 +577,11 @@ nouveau générateur de chauffage le cas échéant</p></td>
                 
                 <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:16pt">
-                <td style="width:360pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:390pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">L’audit énergétique retranche des consommations conventionnelles d’énergies
 primaire ou finale la production d’électricité autoconsommée ou exportée</p></td>
-                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCCAQ12}</p>
+                <td style="width:160pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCCAQ12}</p>
                 </td>
                 </tr>
                 </table>
@@ -590,11 +590,11 @@ primaire ou finale la production d’électricité autoconsommée ou exportée</
                 
                 <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:16pt">
-                <td style="width:360pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:390pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">L’audit énergétique prend en compte des installations de chauffage qui ne sont pas
 fixes.</p></td>
-                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCCAQ13}</p>
+                <td style="width:160pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCCAQ13}</p>
                 </td>
                 </tr>
                 </table>
@@ -603,11 +603,11 @@ fixes.</p></td>
                 
                 <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:16pt">
-                <td style="width:360pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:390pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Batiment résidentiel collectif existant depuis plus de 2 ans la date d'engagement de
 l'opration</p></td>
-                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCCAQ14}</p>
+                <td style="width:160pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCCAQ14}</p>
                 </td>
                 </tr>
                 </table>
@@ -658,14 +658,14 @@ l'opration</p></td>
                 <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#CE4627">
                 <p class="s1" style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: left;">Numéro de dossier :</p></td>
                 <td style="width:111pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="text-indent: 0pt;text-align: left;">${PGAVQ2}</p>
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${PGAVQ2}</p>
                 </td>
                 </tr>
                 <tr style="height:11pt">
                 <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#CE4627">
                 <p class="s1" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Référence demandeur:</p></td>
                 <td style="width:111pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="text-indent: 0pt;text-align: left;">${PGAVQ3}</p>
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${PGAVQ3}</p>
                 </td>
                 </tr>
                 </table>
@@ -681,15 +681,15 @@ l'opration</p></td>
                 <br/>
                 <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:16pt">
-                <td style="width:110pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Scénarios de travaux répondant aux critères du coup de pouce</p></td>
-                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-left-style:solid;border-left-width:1pt; border-bottom-style:solid;border-bottom-width:1pt">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDPQ1}</p>
+                <td style="width:155pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-left-style:solid;border-left-width:1pt; border-bottom-style:solid;border-bottom-width:1pt">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCDPQ1}</p>
                 </td>
-                <td style="width:110pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
-                <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDPQ2}</p></td>
-                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-left-style:solid;border-left-width:1pt; border-bottom-style:solid;border-bottom-width:1pt">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDPQ3}</p>
+                <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <p class="s4" style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCDPQ2}</p></td>
+                <td style="width:155pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-left-style:solid;border-left-width:1pt; border-bottom-style:solid;border-bottom-width:1pt">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCDPQ3}</p>
                 </td>
                 </tr>
                 </table>
@@ -698,11 +698,11 @@ l'opration</p></td>
 
                 <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:16pt">
-                <td style="width:360pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:390pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">La consommation conventionnelle annuelle en énergie primaire après travaux, rapportée à la
 surface habitable du bâtiment, est inférieure à 331 kWh/(m2 .an).</p></td>
-                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDPQ4}</p>
+                <td style="width:160pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCDPQ4}</p>
                 </td>
                 </tr>
                 </table>
@@ -710,12 +710,12 @@ surface habitable du bâtiment, est inférieure à 331 kWh/(m2 .an).</p></td>
 
     <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:16pt">
-                <td style="width:360pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:390pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Baisse de consommation conventionnelle annuelle en énergie primaire d'au moins 35 % (sans
 déduction de la production d'électricité autoconsommée ou exportée) sur les usages chauffage,
 refroidissement et production d'eau chaude sanitaire</p></td>
-                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDPQ5}</p>
+                <td style="width:160pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCDPQ5}</p>
                 </td>
                 </tr>
                 </table>
@@ -723,12 +723,12 @@ refroidissement et production d'eau chaude sanitaire</p></td>
 
     <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:16pt">
-                <td style="width:360pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:390pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Les émissions annuelles de gaz à effet de serre après rénovation, rapportées à la surface
 habitable du bâtiment, sont inférieures ou égales à la valeur initiale de ces émissions avant
 travaux</p></td>
-                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDPQ6}</p>
+                <td style="width:160pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCDPQ6}</p>
                 </td>
                 </tr>
                 </table>
@@ -736,14 +736,14 @@ travaux</p></td>
 
     <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:16pt">
-                <td style="width:360pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:390pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Les changements d’équipements de chauffage ou de production d’eau chaude sanitaire le cas
 échéant préconisés, hors raccordement à un réseau de chaleur, ne conduisent :
 a. Ni à l’installation d’équipements de chauffage ou de production d’eau chaude sanitaire
 consommant majoritairement du charbon, du fioul ou du gaz
 b. Ni à une hausse des émissions de gaz à effet de serre</p></td>
-                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDPQ7}</p>
+                <td style="width:160pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCDPQ7}</p>
                 </td>
                 </tr>
                 </table>
@@ -751,10 +751,10 @@ b. Ni à une hausse des émissions de gaz à effet de serre</p></td>
 
     <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:16pt">
-                <td style="width:360pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:390pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Les travaux de rénovation préconisés comportent au moins un des gestes d’isolation listés cidessous:</p></td>
-                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDPQ8}</p>
+                <td style="width:160pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCDPQ8}</p>
                 </td>
                 </tr>
                 </table>
@@ -762,11 +762,11 @@ b. Ni à une hausse des émissions de gaz à effet de serre</p></td>
 
     <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:16pt">
-                <td style="width:360pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:390pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Travaux d'isolation thermique des murs couvrant au moins 75 % de la surface totale des murs
 donnant sur l'extérieur et mettant en œuvre un procédé d'isolation par l'intérieur ou par</p></td>
-                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDPQ9}</p>
+                <td style="width:160pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCDPQ9}</p>
                 </td>
                 </tr>
                 </table>
@@ -774,12 +774,12 @@ donnant sur l'extérieur et mettant en œuvre un procédé d'isolation par l'int
 
     <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:16pt">
-                <td style="width:360pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:390pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Travaux d'isolation thermique des toitures mettant en œuvre un procédé d'isolation
 comportant un ou des matériaux d'isolation thermique en toiture-terrasse ou en rampant de
 toiture et couvrant au moins 75 % de la surface totale des toitures</p></td>
-                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDPQ10}</p>
+                <td style="width:160pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCDPQ10}</p>
                 </td>
                 </tr>
                 </table>
@@ -787,12 +787,12 @@ toiture et couvrant au moins 75 % de la surface totale des toitures</p></td>
 
     <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:16pt">
-                <td style="width:360pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:390pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Travaux d'isolation thermique des planchers des combles perdus et des planchers bas et
 couvrant au moins 75 % de la surface totale des planchers des combles perdus et des planchers
 bas situés entre un volume chauffé et un sous-sol non chauffé, un vide sanitaire ou un passage </p></td>
-                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDPQ11}</p>
+                <td style="width:160pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCDPQ11}</p>
                 </td>
                 </tr>
                 </table>
@@ -841,14 +841,14 @@ bas situés entre un volume chauffé et un sous-sol non chauffé, un vide sanita
                 <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#CE4627">
                 <p class="s1" style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: left;">Numéro de dossier :</p></td>
                 <td style="width:111pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="text-indent: 0pt;text-align: left;">${PGAVQ2}</p>
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${PGAVQ2}</p>
                 </td>
                 </tr>
                 <tr style="height:11pt">
                 <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#CE4627">
                 <p class="s1" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Référence demandeur:</p></td>
                 <td style="width:111pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="text-indent: 0pt;text-align: left;">${PGAVQ3}</p>
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${PGAVQ3}</p>
                 </td>
                 </tr>
                 </table>
@@ -864,17 +864,17 @@ bas situés entre un volume chauffé et un sous-sol non chauffé, un vide sanita
                 <br/>
                 <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:16pt">
-                <td style="width:110pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Scénarios de travaux répondant aux
 critères de la fiche d'opération
 standardisée BAR-TH-145</p></td>
-                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-left-style:solid;border-left-width:1pt; border-bottom-style:solid;border-bottom-width:1pt">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVHCPQ1}</p>
+                <td style="width:155pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-left-style:solid;border-left-width:1pt; border-bottom-style:solid;border-bottom-width:1pt">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVHCPQ1}</p>
                 </td>
-                <td style="width:110pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
-                <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVHCPQ2}</p></td>
-                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-left-style:solid;border-left-width:1pt; border-bottom-style:solid;border-bottom-width:1pt">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVHCPQ3}</p>
+                <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <p class="s4" style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVHCPQ2}</p></td>
+                <td style="width:155pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-left-style:solid;border-left-width:1pt; border-bottom-style:solid;border-bottom-width:1pt">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVHCPQ3}</p>
                 </td>
                 </tr>
                 </table>
@@ -883,13 +883,13 @@ standardisée BAR-TH-145</p></td>
 
                 <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:16pt">
-                <td style="width:360pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:390pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Baisse de consommation conventionnelle annuelle en énergie primaire d'au moins 35 % (sans
 déduction de la production d'électricité autoconsommée ou exportée) sur les usages chauffage,
 refroidissement et production d'eau chaude sanitaire
 </p></td>
-                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVHCPQ4}</p>
+                <td style="width:160pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVHCPQ4}</p>
                 </td>
                 </tr>
                 </table>
@@ -897,11 +897,11 @@ refroidissement et production d'eau chaude sanitaire
 
     <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:16pt">
-                <td style="width:360pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:390pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">La consommation conventionnelle annuelle en énergie primaire après travaux, rapportée à la
 surface habitable du bâtiment, est inférieure à 331 kWh/(m2 .an).</p></td>
-                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVHCPQ5}</p>
+                <td style="width:160pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVHCPQ5}</p>
                 </td>
                 </tr>
                 </table>
@@ -909,13 +909,13 @@ surface habitable du bâtiment, est inférieure à 331 kWh/(m2 .an).</p></td>
 
     <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:16pt">
-                <td style="width:360pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:390pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Les émissions annuelles de gaz à effet de serre après rénovation, rapportées à la surface
 habitable du bâtiment, sont inférieures ou égales à la valeur initiale de ces émissions avant
 travaux.
 </p></td>
-                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVHCPQ6}</p>
+                <td style="width:160pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVHCPQ6}</p>
                 </td>
                 </tr>
                 </table>
@@ -977,14 +977,14 @@ travaux.
                 <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#CE4627">
                 <p class="s1" style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: left;">Numéro de dossier :</p></td>
                 <td style="width:111pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="text-indent: 0pt;text-align: left;">${PGAVQ2}</p>
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${PGAVQ2}</p>
                 </td>
                 </tr>
                 <tr style="height:11pt">
                 <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#CE4627">
                 <p class="s1" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Référence demandeur:</p></td>
                 <td style="width:111pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="text-indent: 0pt;text-align: left;">${PGAVQ3}</p>
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${PGAVQ3}</p>
                 </td>
                 </tr>
                 </table>
@@ -1006,12 +1006,12 @@ travaux.
 
 <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:16pt">
-                <td style="width:360pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:390pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Ecart manifeste entre les données d'entrées de la situation initiale utilisée dans l'audit énergétique et les
 éléments constatés lors de la visite sur site (avant travaux): 
 </p></td>
-                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDAQ1}</p>
+                <td style="width:160pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCDAQ1}</p>
                 </td>
                 </tr>
                 </table><br/>
@@ -1021,8 +1021,8 @@ travaux.
                 <td style="width:280pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Ecart concernant le niveau d'isolation des parois enveloppes du bâtiment:
 </p></td>
-                <td style="width:220pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDAQ2}</p>
+                <td style="width:270pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCDAQ2}</p>
                 </td>
                 </tr>
                 </table><br/>
@@ -1032,8 +1032,8 @@ travaux.
                 <td style="width:280pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Ecart concernant le niveau d'isolation des menuiseries et surfaces mises en jeu :
 </p></td>
-                <td style="width:220pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDAQ3}</p>
+                <td style="width:270pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCDAQ3}</p>
                 </td>
                 </tr>
                 </table><br/>
@@ -1043,8 +1043,8 @@ travaux.
                 <td style="width:280pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Ecart concernant la nature des combles (aménagés, perdus) ;
 </p></td>
-                <td style="width:220pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDAQ4}</p>
+                <td style="width:270pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCDAQ4}</p>
                 </td>
                 </tr>
                 </table><br/>
@@ -1055,8 +1055,8 @@ travaux.
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Ecart dans la description des sytèmes de chauffage et de production d'eau
 chaude sanitaire, de la génération à l'émission :
 </p></td>
-                <td style="width:220pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDAQ5}</p>
+                <td style="width:270pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCDAQ5}</p>
                 </td>
                 </tr>
                 </table><br/>
@@ -1067,8 +1067,8 @@ chaude sanitaire, de la génération à l'émission :
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Ecart dans la description des systèmes de chauffage et de production d’eau
 chaude sanitaire, de la génération à l’émission :
 </p></td>
-                <td style="width:220pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDAQ6}</p>
+                <td style="width:270pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCDAQ6}</p>
                 </td>
                 </tr>
                 </table><br/>
@@ -1078,8 +1078,8 @@ chaude sanitaire, de la génération à l’émission :
                 <td style="width:280pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Ecart dans la description des systèmes de ventilation :
 </p></td>
-                <td style="width:220pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDAQ7}</p>
+                <td style="width:270pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCDAQ7}</p>
                 </td>
                 </tr>
                 </table><br/>
@@ -1089,8 +1089,8 @@ chaude sanitaire, de la génération à l’émission :
                 <td style="width:280pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Ecart dans la description de refroidissement, le cas échéant :
 </p></td>
-                <td style="width:220pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDAQ8}</p>
+                <td style="width:270pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCDAQ8}</p>
                 </td>
                 </tr>
                 </table>
@@ -1098,11 +1098,11 @@ chaude sanitaire, de la génération à l’émission :
 
                 <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:16pt">
-                <td style="width:160pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Conclusion du constat de l'audit :
 </p></td>
-                <td style="width:340pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDAQ9}</p>
+                <td style="width:430pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCDAQ9}</p>
                 </td>
                 </tr>
                 </table>
@@ -1111,13 +1111,13 @@ chaude sanitaire, de la génération à l’émission :
 
                 <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:16pt">
-                <td style="width:500pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt; border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#CE4627">
+                <td style="width:550pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt; border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#CE4627">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: left;" >Commentaires:
 </p>
                 </tr>
                 <tr style="height:30pt">
-                <td style="width:500pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt; border-right-style:solid;border-right-width:1pt;">
-                <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDAQ10}
+                <td style="width:550pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt; border-right-style:solid;border-right-width:1pt;">
+                <p class="s4" style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCDAQ10}
 </p>
                 </tr>
                 </table>
@@ -1125,14 +1125,14 @@ chaude sanitaire, de la génération à l’émission :
                 <br/>
                 <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:16pt">
-                <td style="width:110pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Nom du technicien : </p></td>
-                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-left-style:solid;border-left-width:1pt; border-bottom-style:solid;border-bottom-width:1pt">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDAQ11}</p>
+                <td style="width:155pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-left-style:solid;border-left-width:1pt; border-bottom-style:solid;border-bottom-width:1pt">
+                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${AVCDAQ11}</p>
                 </td>
-                <td style="width:110pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Signature le :</p></td>
-                <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-left-style:solid;border-left-width:1pt; border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:155pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-left-style:solid;border-left-width:1pt; border-bottom-style:solid;border-bottom-width:1pt">
                 <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;"></p>
                 </td>
                 </tr>
@@ -1140,7 +1140,7 @@ chaude sanitaire, de la génération à l’émission :
 
                 <table style="border-collapse:collapse;margin-right: 0;" cellspacing="0">
                 <tr style="height:20pt">
-                <td style="width:250pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
+                <td style="width:275pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;"></p></td>
                 
                 <td style="width:250pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt; border-right-style:solid;border-right-width:1pt">
@@ -1189,14 +1189,14 @@ chaude sanitaire, de la génération à l’émission :
                                 <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#CE4627">
                                 <p class="s1" style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: left;">Numéro de dossier :</p></td>
                                 <td style="width:111pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                                <p style="text-indent: 0pt;text-align: left;">${PGAVQ2}</p>
+                                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${PGAVQ2}</p>
                                 </td>
                                 </tr>
                                 <tr style="height:11pt">
                                 <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#CE4627">
                                 <p class="s1" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Référence demandeur:</p></td>
                                 <td style="width:111pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                                <p style="text-indent: 0pt;text-align: left;">${PGAVQ3}</p>
+                                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${PGAVQ3}</p>
                                 </td>
                                 </tr>
                                 </table>
@@ -1275,14 +1275,14 @@ modification</p>
                                 <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#CE4627">
                                 <p class="s1" style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: left;">Numéro de dossier :</p></td>
                                 <td style="width:111pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                                <p style="text-indent: 0pt;text-align: left;">${PGAVQ2}</p>
+                                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${PGAVQ2}</p>
                                 </td>
                                 </tr>
                                 <tr style="height:11pt">
                                 <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#CE4627">
                                 <p class="s1" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Référence demandeur:</p></td>
                                 <td style="width:111pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                                <p style="text-indent: 0pt;text-align: left;">${PGAVQ3}</p>
+                                <p style="text-indent: 0pt;text-align: center; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt;">${PGAVQ3}</p>
                                 </td>
                                 </tr>
                                 </table>
