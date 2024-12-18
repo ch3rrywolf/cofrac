@@ -67,7 +67,36 @@ const AddFormInspecAv = () => {
         const [PGAVQ2,setPGAVQ2] = useState('')
         const [PGAVQ3,setPGAVQ3] = useState('')
         const [PGAVQ4,setPGAVQ4] = useState('')
-    
+
+        // Controle plage
+        const [AVCCAQ2,setAVCCAQ2] = useState('')
+        const [AVCCAQ1,setAVCCAQ1] = useState('')
+        const [AVCCAQ3,setAVCCAQ3] = useState('')
+        const [AVCCAQ4,setAVCCAQ4] = useState('')
+        const [AVCCAQ5,setAVCCAQ5] = useState('')
+        const [AVCCAQ6,setAVCCAQ6] = useState('')
+        const [AVCCAQ7,setAVCCAQ7] = useState('')
+        const [AVCCAQ8,setAVCCAQ8] = useState('')
+        const [AVCCAQ9,setAVCCAQ9] = useState('')
+        const [AVCCAQ10,setAVCCAQ10] = useState('')
+        const [AVCCAQ11,setAVCCAQ11] = useState('')
+        const [AVCCAQ12,setAVCCAQ12] = useState('')
+        const [AVCCAQ13,setAVCCAQ13] = useState('')
+        const [AVCCAQ14,setAVCCAQ14] = useState('')
+
+        const [AVCDPQ1,setAVCDPQ1] = useState('')
+        const [AVCDPQ2,setAVCDPQ2] = useState('')
+        const [AVCDPQ3,setAVCDPQ3] = useState('')
+        const [AVCDPQ4,setAVCDPQ4] = useState('')
+        const [AVCDPQ5,setAVCDPQ5] = useState('')
+        const [AVCDPQ6,setAVCDPQ6] = useState('')
+        const [AVCDPQ7,setAVCDPQ7] = useState('')
+        const [AVCDPQ8,setAVCDPQ8] = useState('')
+        const [AVCDPQ9,setAVCDPQ9] = useState('')
+        const [AVCDPQ10,setAVCDPQ10] = useState('')
+        const [AVCDPQ11,setAVCDPQ11] = useState('')
+        
+            
     // const [loader, setLoader] = useState(false)
     // mise ouvre
     const [Q1MO,setQ1MO] = useState('')
@@ -337,7 +366,7 @@ const [ICQQ24,setICQQ24] = useState('')
     
     const submit = async (e) => {
         e.preventDefault();
-        const data = {PGAVQ1, PGAVQ2, PGAVQ3, PGAVQ4, createdAt, clientName, chantierSirenDO, chantierAdresseDO, chantierNomDO, chantierEmail, chantierPhone, chantierVille, chantierCodePostal, chantierAdresse, benefPreNom, benefNom, operationName, imagesBase64MO, imagesBase64IC, imagesBase64AA, imagesBase64AE ,imagesBase64CET  ,Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19, CET1, AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApuissancenomina1l, AACO1P, AAmarqu2e, AAreferenc2e, AAnomberuni2t1, AAnomberuni2t2, AApuissancenomina2l, AACO2P, AAmarqu3e, AAreferenc3e, AAnomberuni3t1, AAnomberuni3t2, AApuissancenomina3l, AACO3P, AAmarqu4e, AAreferenc4e, AAnomberuni4t1, AAnomberuni4t2, AApuissancenomina4l, AACO4P, AAmarqu5e, AAreferenc5e, AAnomberuni5t1, AAnomberuni5t2, AApuissancenomina5l, AACO5P, AA1Q1, AAQ1, AAQ2, AAQ3, AAQ4, AAQ5, AAQ6, AAQ7, AAQ8, AAQ9, AAQ10, AAQ11, AAQ12, AAQ13, AAQ14, AAQ15, AAQ16, AAQ17, AEmarqu1e, AEreferenc1e, AEnomberuni1t1, AEnomberuni1t2, AEpuissancenomina1l, AECO1P, AEmarqu2e, AEreferenc2e, AEnomberuni2t1, AEnomberuni2t2, AEpuissancenomina2l, AECO2P, AEmarqu3e, AEreferenc3e, AEnomberuni3t1, AEnomberuni3t2, AEpuissancenomina3l, AECO3P, AEmarqu4e, AEreferenc4e, AEnomberuni4t1, AEnomberuni4t2, AEpuissancenomina4l, AECO4P, AEmarqu5e, AEreferenc5e, AEnomberuni5t1, AEnomberuni5t2, AEpuissancenomina5l, AECO5P, AE1Q1, AEQ1, AEQ2, AEQ3, AEQ4, AEQ5, AEQ6, AEQ7, AEQ8, AEQ9, AEQ10, AEQ11, AEQ12, CETQ1, CETQ2, CETQ3, CETQ4, CETQ5, CETQ6, CETQ7, CETQ8, CETQ9, CETQ10, CETQ11, CETQ12, CETQ13, CETQ14, ICQQ1, ICQQ2, ICQQ3, ICQQ4, ICQQ5, ICQQ6, ICQQ7, ICQQ8, ICQQ9, ICQQ10, ICQQ11, ICQQ12, ICQQ13,  ICQQ15, ICQQ16, ICQQ17, ICQQ18, ICQQ19, ICQQ20, ICQQ21, ICQQ22, ICQQ23, ICQQ24, email}
+        const data = {AVCDPQ1,AVCDPQ2,AVCDPQ3,AVCDPQ4,AVCDPQ5,AVCDPQ6,AVCDPQ7,AVCDPQ8,AVCDPQ9,AVCDPQ10,AVCDPQ11, AVCCAQ1, AVCCAQ2, AVCCAQ3, AVCCAQ4, AVCCAQ5, AVCCAQ6, AVCCAQ7,AVCCAQ8,AVCCAQ9,AVCCAQ10,AVCCAQ11,AVCCAQ12, AVCCAQ13,AVCCAQ14 , PGAVQ1, PGAVQ2, PGAVQ3, PGAVQ4, createdAt, clientName, chantierSirenDO, chantierAdresseDO, chantierNomDO, chantierEmail, chantierPhone, chantierVille, chantierCodePostal, chantierAdresse, benefPreNom, benefNom, operationName, imagesBase64MO, imagesBase64IC, imagesBase64AA, imagesBase64AE ,imagesBase64CET  ,Q1MO, Q2MO, Q3MO, Q4MO, Q5MO, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19, CET1, AAmarqu1e, AAreferenc1e, AAnomberuni1t1, AAnomberuni1t2, AApuissancenomina1l, AACO1P, AAmarqu2e, AAreferenc2e, AAnomberuni2t1, AAnomberuni2t2, AApuissancenomina2l, AACO2P, AAmarqu3e, AAreferenc3e, AAnomberuni3t1, AAnomberuni3t2, AApuissancenomina3l, AACO3P, AAmarqu4e, AAreferenc4e, AAnomberuni4t1, AAnomberuni4t2, AApuissancenomina4l, AACO4P, AAmarqu5e, AAreferenc5e, AAnomberuni5t1, AAnomberuni5t2, AApuissancenomina5l, AACO5P, AA1Q1, AAQ1, AAQ2, AAQ3, AAQ4, AAQ5, AAQ6, AAQ7, AAQ8, AAQ9, AAQ10, AAQ11, AAQ12, AAQ13, AAQ14, AAQ15, AAQ16, AAQ17, AEmarqu1e, AEreferenc1e, AEnomberuni1t1, AEnomberuni1t2, AEpuissancenomina1l, AECO1P, AEmarqu2e, AEreferenc2e, AEnomberuni2t1, AEnomberuni2t2, AEpuissancenomina2l, AECO2P, AEmarqu3e, AEreferenc3e, AEnomberuni3t1, AEnomberuni3t2, AEpuissancenomina3l, AECO3P, AEmarqu4e, AEreferenc4e, AEnomberuni4t1, AEnomberuni4t2, AEpuissancenomina4l, AECO4P, AEmarqu5e, AEreferenc5e, AEnomberuni5t1, AEnomberuni5t2, AEpuissancenomina5l, AECO5P, AE1Q1, AEQ1, AEQ2, AEQ3, AEQ4, AEQ5, AEQ6, AEQ7, AEQ8, AEQ9, AEQ10, AEQ11, AEQ12, CETQ1, CETQ2, CETQ3, CETQ4, CETQ5, CETQ6, CETQ7, CETQ8, CETQ9, CETQ10, CETQ11, CETQ12, CETQ13, CETQ14, ICQQ1, ICQQ2, ICQQ3, ICQQ4, ICQQ5, ICQQ6, ICQQ7, ICQQ8, ICQQ9, ICQQ10, ICQQ11, ICQQ12, ICQQ13,  ICQQ15, ICQQ16, ICQQ17, ICQQ18, ICQQ19, ICQQ20, ICQQ21, ICQQ22, ICQQ23, ICQQ24, email}
 
         await axios.post(`${base_url}/api/createPdfAv`, data)
             .then(() =>
@@ -355,6 +384,34 @@ const [ICQQ24,setICQQ24] = useState('')
                         setPGAVQ2('');
                         setPGAVQ3('');
                         setPGAVQ4('');
+
+                        setAVCCAQ1('');
+                        setAVCCAQ2('');
+                        setAVCCAQ3('');
+                        setAVCCAQ4('');
+                        setAVCCAQ5('');
+                        setAVCCAQ6('');
+                        setAVCCAQ7('');
+                        setAVCCAQ8('');
+                        setAVCCAQ9('');
+                        setAVCCAQ10('');
+                        setAVCCAQ11('');
+                        setAVCCAQ12('');
+                        setAVCCAQ13('');
+                        setAVCCAQ14('');
+
+                        setAVCDPQ1('');
+                        setAVCDPQ2('');
+                        setAVCDPQ3('');
+                        setAVCDPQ4('');
+                        setAVCDPQ5('');
+                        setAVCDPQ6('');
+                        setAVCDPQ7('');
+                        setAVCDPQ8('');
+                        setAVCDPQ9('');
+                        setAVCDPQ10('');
+                        setAVCDPQ11('');
+                        
 
     
                         setOperationName(data?.chantiers?.operationName)
@@ -680,6 +737,622 @@ const [ICQQ24,setICQQ24] = useState('')
     
       
       
+    </tbody>
+  </table>
+</div>
+
+{/*Controle du contenu de audit*/}
+
+
+<div className='text-center items-center text-white font-bold border border-solid bg-orange-700' >
+    <h4>Contrôle du contenu de l'audit</h4>
+</div>
+<div className="overflow-x-auto">
+  <table className="table-auto w-full border-collapse border border-gray-300 text-sm text-gray-600">
+    <thead>
+      <tr>
+        <th className="border border-gray-300 px-4 py-2">Question</th>
+        <th className="border border-gray-300 px-4 py-2">OUI</th>
+        <th className="border border-gray-300 px-4 py-2">NON</th>
+      </tr>
+    </thead>
+    <tbody>
+
+    <tr>
+        <td className="border border-gray-300 px-4 py-2">Date de l'étude énergétique:</td>
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="AVCCAQ1"
+            value={AVCCAQ1}
+            onChange={(e)=>setAVCCAQ1(e.target.value)}
+            id="AVCCAQ1"
+            placeholder='...'
+          /></div>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">Référence de l'audit énergétique:</td>
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="AVCCAQ2"
+            value={AVCCAQ2}
+            onChange={(e)=>setAVCCAQ2(e.target.value)}
+            id="AVCCAQ2"
+            placeholder='...'
+          /></div>
+      </tr>
+
+    <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        L’audit énergétique à été réalisé à l’aide d’un logiciel répondant aux exigences de la
+fiche d’opération standardisée BAR-TH-164
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            id="AVCCAQ3oui"
+            type="radio"
+            name="AVCCAQ3"
+            value="Oui"
+            checked={AVCCAQ3 === "Oui"}
+            onChange={(e) => setAVCCAQ3(e.target.value)}
+          />
+          <label for="AVCCAQ3oui">Oui</label>
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            id='AVCCAQ3non'
+            type="radio"
+            name="AVCCAQ3"
+            value="NON"
+            checked={AVCCAQ3 === "NON"}
+            onChange={(e) => setAVCCAQ3(e.target.value)}
+          />
+          <label for="AVCCAQ3non">Non</label>
+          </td>
+      </tr>
+
+      
+
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">Logiciel énergétique :</td>
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="AVCCAQ4"
+            value={AVCCAQ4}
+            onChange={(e)=>setAVCCAQ4(e.target.value)}
+            id="AVCCAQ4"
+            placeholder='...'
+          /></div>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">Version et date :</td>
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="AVCCAQ5"
+            value={AVCCAQ5}
+            onChange={(e)=>setAVCCAQ5(e.target.value)}
+            id="AVCCAQ5"
+            placeholder='...'
+          /></div>
+      </tr>
+
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        L’audit énergétique ne mentionne pas les valeurs des consommations
+conventionnelles en énergie primaire et en énergie finale avant et après l’opération
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            id="AVCCAQ6oui"
+            type="radio"
+            name="AVCCAQ6"
+            value="Oui"
+            checked={AVCCAQ6 === "Oui"}
+            onChange={(e) => setAVCCAQ6(e.target.value)}
+          />
+          <label for="AVCCAQ6oui">Oui</label>
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            id='AVCCAQ6non'
+            type="radio"
+            name="AVCCAQ6"
+            value="NON"
+            checked={AVCCAQ6 === "NON"}
+            onChange={(e) => setAVCCAQ6(e.target.value)}
+          />
+          <label for="AVCCAQ6non">Non</label>
+          </td>
+      </tr>
+
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">Surface habitable déclaré :</td>
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="AVCCAQ7"
+            value={AVCCAQ7}
+            onChange={(e)=>setAVCCAQ7(e.target.value)}
+            id="AVCCAQ7"
+            placeholder='...'
+          /></div>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">Surface habitable
+        Mesurée :</td>
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="AVCCAQ8"
+            value={AVCCAQ8}
+            onChange={(e)=>setAVCCAQ8(e.target.value)}
+            id="AVCCAQ8"
+            placeholder='...'
+          /></div>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">Ecart (en %):</td>
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="AVCCAQ9"
+            value={AVCCAQ9}
+            onChange={(e)=>setAVCCAQ9(e.target.value)}
+            id="AVCCAQ9"
+            placeholder='...'
+          /></div>
+      </tr>
+     
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Il est constaté un écart de surface habitable de plus de 10 %
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            id="AVCCAQ10oui"
+            type="radio"
+            name="AVCCAQ10"
+            value="Oui"
+            checked={AVCCAQ10 === "Oui"}
+            onChange={(e) => setAVCCAQ10(e.target.value)}
+          />
+          <label for="AVCCAQ10oui">Oui</label>
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            id='AVCCAQ10non'
+            type="radio"
+            name="AVCCAQ10"
+            value="NON"
+            checked={AVCCAQ10 === "NON"}
+            onChange={(e) => setAVCCAQ10(e.target.value)}
+          />
+          <label for="AVCCAQ10non">Non</label>
+          </td>
+      </tr>
+
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        L’audit énergétique montre que le niveau de confort thermique de la situation après
+travaux est inférieur à celui de la situation initiale, y compris en période de rigueur
+hivernale, notamment au travers de la note de calcul de dimensionnement du
+nouveau générateur de chauffage le cas échéant.
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            id="AVCCAQ11oui"
+            type="radio"
+            name="AVCCAQ11"
+            value="Oui"
+            checked={AVCCAQ11 === "Oui"}
+            onChange={(e) => setAVCCAQ11(e.target.value)}
+          />
+          <label for="AVCCAQ11oui">Oui</label>
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            id='AVCCAQ11non'
+            type="radio"
+            name="AVCCAQ11"
+            value="NON"
+            checked={AVCCAQ11 === "NON"}
+            onChange={(e) => setAVCCAQ11(e.target.value)}
+          />
+          <label for="AVCCAQ11non">Non</label>
+          </td>
+      </tr>
+
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        L’audit énergétique retranche des consommations conventionnelles d’énergies
+        primaire ou finale la production d’électricité autoconsommée ou exportée
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            id="AVCCAQ12oui"
+            type="radio"
+            name="AVCCAQ12"
+            value="Oui"
+            checked={AVCCAQ12 === "Oui"}
+            onChange={(e) => setAVCCAQ12(e.target.value)}
+          />
+          <label for="AVCCAQ12oui">Oui</label>
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            id='AVCCAQ12non'
+            type="radio"
+            name="AVCCAQ12"
+            value="NON"
+            checked={AVCCAQ12 === "NON"}
+            onChange={(e) => setAVCCAQ12(e.target.value)}
+          />
+          <label for="AVCCAQ12non">Non</label>
+          </td>
+      </tr>
+
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        L’audit énergétique prend en compte des installations de chauffage qui ne sont pas
+        fixes.
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            id="AVCCAQ13oui"
+            type="radio"
+            name="AVCCAQ13"
+            value="Oui"
+            checked={AVCCAQ13 === "Oui"}
+            onChange={(e) => setAVCCAQ13(e.target.value)}
+          />
+          <label for="AVCCAQ13oui">Oui</label>
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            id='AVCCAQ13non'
+            type="radio"
+            name="AVCCAQ13"
+            value="NON"
+            checked={AVCCAQ13 === "NON"}
+            onChange={(e) => setAVCCAQ13(e.target.value)}
+          />
+          <label for="AVCCAQ13non">Non</label>
+          </td>
+      </tr>
+
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Batiment résidentiel collectif existant depuis plus de 2 ans la date d'engagement de
+        l'opération
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            id="AVCCAQ14oui"
+            type="radio"
+            name="AVCCAQ14"
+            value="Oui"
+            checked={AVCCAQ14 === "Oui"}
+            onChange={(e) => setAVCCAQ14(e.target.value)}
+          />
+          <label for="AVCCAQ14oui">Oui</label>
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            id='AVCCAQ14non'
+            type="radio"
+            name="AVCCAQ14"
+            value="NON"
+            checked={AVCCAQ14 === "NON"}
+            onChange={(e) => setAVCCAQ14(e.target.value)}
+          />
+          <label for="AVCCAQ14non">Non</label>
+          </td>
+      </tr>
+  
+    </tbody>
+  </table>
+</div>
+
+
+{/* COUP DE POUCE  */}
+
+<div className='text-center items-center text-white font-bold border border-solid bg-orange-700' >
+    <h4>COUP DE POUCE " Rénovaon performante d'un bament résidenel collectif"</h4>
+</div>
+<div className="overflow-x-auto">
+  <table className="table-auto w-full border-collapse border border-gray-300 text-sm text-gray-600">
+    <thead>
+      <tr>
+        <th className="border border-gray-300 px-4 py-2">Question</th>
+        <th className="border border-gray-300 px-4 py-2">OUI</th>
+        <th className="border border-gray-300 px-4 py-2">NON</th>
+      </tr>
+    </thead>
+    <tbody>
+
+    <tr>
+        <td className="border border-gray-300 px-4 py-2">Scénarios de travaux répondant aux
+        critères du coup de pouce  Scénario 1:</td>
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="AVCDPQ1"
+            value={AVCDPQ1}
+            onChange={(e)=>setAVCDPQ1(e.target.value)}
+            id="AVCDPQ1"
+            placeholder='...'
+          /></div>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">Scénario 2:</td>
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="AVCDPQ2"
+            value={AVCDPQ2}
+            onChange={(e)=>setAVCDPQ2(e.target.value)}
+            id="AVCDPQ2"
+            placeholder='...'
+          /></div>
+      </tr>
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">Scénario 3:</td>
+        <div ><input
+        className='items-center justify-center text-center'
+            type="text"
+            name="AVCDPQ3"
+            value={AVCDPQ3}
+            onChange={(e)=>setAVCDPQ3(e.target.value)}
+            id="AVCDPQ3"
+            placeholder='...'
+          /></div>
+      </tr>
+
+    <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        La consommation conventionnelle annuelle en énergie primaire après travaux, rapportée à la
+surface habitable du bâtiment, est inférieure à 331 kWh/(m2 .an).
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            id="AVCDPQ4oui"
+            type="radio"
+            name="AVCDPQ4"
+            value="Oui"
+            checked={AVCDPQ4 === "Oui"}
+            onChange={(e) => setAVCDPQ4(e.target.value)}
+          />
+          <label for="AVCDPQ4oui">Oui</label>
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            id='AVCDPQ4non'
+            type="radio"
+            name="AVCDPQ4"
+            value="NON"
+            checked={AVCDPQ4 === "NON"}
+            onChange={(e) => setAVCDPQ4(e.target.value)}
+          />
+          <label for="AVCDPQ4non">Non</label>
+          </td>
+      </tr>
+
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Baisse de consommation conventionnelle annuelle en énergie primaire d'au moins 35 % (sans
+déduction de la production d'électricité autoconsommée ou exportée) sur les usages chauffage,
+refroidissement et production d'eau chaude sanitaire
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            id="AVCDPQ5oui"
+            type="radio"
+            name="AVCDPQ5"
+            value="Oui"
+            checked={AVCDPQ5 === "Oui"}
+            onChange={(e) => setAVCDPQ5(e.target.value)}
+          />
+          <label for="AVCDPQ5oui">Oui</label>
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            id='AVCDPQ5non'
+            type="radio"
+            name="AVCDPQ5"
+            value="NON"
+            checked={AVCDPQ5 === "NON"}
+            onChange={(e) => setAVCDPQ5(e.target.value)}
+          />
+          <label for="AVCDPQ5non">Non</label>
+          </td>
+      </tr>
+
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Les émissions annuelles de gaz à effet de serre après rénovation, rapportées à la surface
+habitable du bâtiment, sont inférieures ou égales à la valeur initiale de ces émissions avant
+travaux
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            id="AVCDPQ6oui"
+            type="radio"
+            name="AVCDPQ6"
+            value="Oui"
+            checked={AVCDPQ6 === "Oui"}
+            onChange={(e) => setAVCDPQ6(e.target.value)}
+          />
+          <label for="AVCDPQ6oui">Oui</label>
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            id='AVCDPQ6non'
+            type="radio"
+            name="AVCDPQ6"
+            value="NON"
+            checked={AVCDPQ6 === "NON"}
+            onChange={(e) => setAVCDPQ6(e.target.value)}
+          />
+          <label for="AVCDPQ6non">Non</label>
+          </td>
+      </tr>
+
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Les changements d’équipements de chauffage ou de production d’eau chaude sanitaire le cas
+échéant préconisés, hors raccordement à un réseau de chaleur, ne conduisent :
+a. Ni à l’installation d’équipements de chauffage ou de production d’eau chaude sanitaire
+consommant majoritairement du charbon, du fioul ou du gaz
+b. Ni à une hausse des émissions de gaz à effet de serre
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            id="AVCDPQ7oui"
+            type="radio"
+            name="AVCDPQ7"
+            value="Oui"
+            checked={AVCDPQ7 === "Oui"}
+            onChange={(e) => setAVCDPQ7(e.target.value)}
+          />
+          <label for="AVCDPQ7oui">Oui</label>
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            id='AVCDPQ7non'
+            type="radio"
+            name="AVCDPQ7"
+            value="NON"
+            checked={AVCDPQ7 === "NON"}
+            onChange={(e) => setAVCDPQ7(e.target.value)}
+          />
+          <label for="AVCDPQ7non">Non</label>
+          </td>
+      </tr>
+
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Les travaux de rénovation préconisés comportent au moins un des gestes d’isolation listés cidessous:
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            id="AVCDPQ8oui"
+            type="radio"
+            name="AVCDPQ8"
+            value="Oui"
+            checked={AVCDPQ8 === "Oui"}
+            onChange={(e) => setAVCDPQ8(e.target.value)}
+          />
+          <label for="AVCDPQ8oui">Oui</label>
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            id='AVCDPQ8non'
+            type="radio"
+            name="AVCDPQ8"
+            value="NON"
+            checked={AVCDPQ8 === "NON"}
+            onChange={(e) => setAVCDPQ8(e.target.value)}
+          />
+          <label for="AVCDPQ8non">Non</label>
+          </td>
+      </tr>
+
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Travaux d'isolation thermique des murs couvrant au moins 75 % de la surface totale des murs
+donnant sur l'extérieur et mettant en œuvre un procédé d'isolation par l'intérieur ou par
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            id="AVCDPQ9oui"
+            type="radio"
+            name="AVCDPQ9"
+            value="Oui"
+            checked={AVCDPQ9 === "Oui"}
+            onChange={(e) => setAVCDPQ9(e.target.value)}
+          />
+          <label for="AVCDPQ9oui">Oui</label>
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            id='AVCDPQ9non'
+            type="radio"
+            name="AVCDPQ9"
+            value="NON"
+            checked={AVCDPQ9 === "NON"}
+            onChange={(e) => setAVCDPQ9(e.target.value)}
+          />
+          <label for="AVCDPQ9non">Non</label>
+          </td>
+      </tr>
+
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Travaux d'isolation thermique des toitures mettant en œuvre un procédé d'isolation
+comportant un ou des matériaux d'isolation thermique en toiture-terrasse ou en rampant de
+toiture et couvrant au moins 75 % de la surface totale des toitures
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            id="AVCDPQ10oui"
+            type="radio"
+            name="AVCDPQ10"
+            value="Oui"
+            checked={AVCDPQ10 === "Oui"}
+            onChange={(e) => setAVCDPQ10(e.target.value)}
+          />
+          <label for="AVCDPQ10oui">Oui</label>
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            id='AVCDPQ10non'
+            type="radio"
+            name="AVCDPQ10"
+            value="NON"
+            checked={AVCDPQ10 === "NON"}
+            onChange={(e) => setAVCDPQ10(e.target.value)}
+          />
+          <label for="AVCDPQ10non">Non</label>
+          </td>
+      </tr>
+
+      <tr>
+        <td className="border border-gray-300 px-4 py-2">
+        Travaux d'isolation thermique des planchers des combles perdus et des planchers bas et
+couvrant au moins 75 % de la surface totale des planchers des combles perdus et des planchers
+bas situés entre un volume chauffé et un sous-sol non chauffé, un vide sanitaire ou un passage
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            id="AVCDPQ11oui"
+            type="radio"
+            name="AVCDPQ11"
+            value="Oui"
+            checked={AVCDPQ11 === "Oui"}
+            onChange={(e) => setAVCDPQ11(e.target.value)}
+          />
+          <label for="AVCDPQ11oui">Oui</label>
+        </td>
+        <td className="border border-gray-300 px-4 py-2 text-center">
+          <input
+            id='AVCDPQ11non'
+            type="radio"
+            name="AVCDPQ11"
+            value="NON"
+            checked={AVCDPQ11 === "NON"}
+            onChange={(e) => setAVCDPQ11(e.target.value)}
+          />
+          <label for="AVCDPQ11non">Non</label>
+          </td>
+      </tr>
+
+      
+
+      
+  
     </tbody>
   </table>
 </div>

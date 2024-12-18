@@ -1,5 +1,5 @@
 
-module.exports = ({PGAVQ1, PGAVQ2, PGAVQ3, PGAVQ4, benefNom, benefPreNom, chantierNomDO, chantierSirenDO, chantierAdresseDO, chantierAdresse, createdAt, imagesMO, imagesAA, imagesAE})=> {
+module.exports = ({AVCDPQ1,AVCDPQ2,AVCDPQ3,AVCDPQ4,AVCDPQ5,AVCDPQ6,AVCDPQ7,AVCDPQ8,AVCDPQ9,AVCDPQ10,AVCDPQ11, AVCCAQ1, AVCCAQ2, AVCCAQ3, AVCCAQ4, AVCCAQ5, AVCCAQ6, AVCCAQ7,AVCCAQ8,AVCCAQ9,AVCCAQ10,AVCCAQ11,AVCCAQ12, AVCCAQ13,AVCCAQ14 , PGAVQ1, PGAVQ2, PGAVQ3, PGAVQ4, benefNom, benefPreNom, chantierNomDO, chantierSirenDO, chantierAdresseDO, chantierAdresse, createdAt, imagesMO, imagesAA, imagesAE})=> {
     const today = new Date();
     return `
 <!DOCTYPE  html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -471,12 +471,12 @@ module.exports = ({PGAVQ1, PGAVQ2, PGAVQ3, PGAVQ4, benefNom, benefPreNom, chanti
                 <td style="width:110pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Date de l'étude énergétique: </p></td>
                 <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCCAQ1}</p>
                 </td>
                 <td style="width:110pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Référence de l'audit énergétique: </p></td>
                 <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCCAQ2}</p>
                 </td>
                 </tr>
                 </table>
@@ -487,7 +487,7 @@ module.exports = ({PGAVQ1, PGAVQ2, PGAVQ3, PGAVQ4, benefNom, benefPreNom, chanti
                 <td style="width:360pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">L’audit énergétique à été réalisé à l’aide d’un logiciel répondant aux exigences de la fiche d’opération standardisée BAR-TH-164</p></td>
                 <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCCAQ3}</p>
                 </td>
                 </tr>
                 </table>
@@ -498,12 +498,12 @@ module.exports = ({PGAVQ1, PGAVQ2, PGAVQ3, PGAVQ4, benefNom, benefPreNom, chanti
                 <td style="width:110pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Logiciel énergétique : </p></td>
                 <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCCAQ4}</p>
                 </td>
                 <td style="width:110pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Version et date : </p></td>
                 <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCCAQ5}</p>
                 </td>
                 </tr>
                 </table>
@@ -514,7 +514,7 @@ module.exports = ({PGAVQ1, PGAVQ2, PGAVQ3, PGAVQ4, benefNom, benefPreNom, chanti
                 <td style="width:360pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">L’audit énergétique ne mentionne pas les valeurs des consommations conventionnelles en énergie primaire et en énergie finale avant et après l’opération</p></td>
                 <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCCAQ6}</p>
                 </td>
                 </tr>
                 </table>
@@ -526,12 +526,12 @@ module.exports = ({PGAVQ1, PGAVQ2, PGAVQ3, PGAVQ4, benefNom, benefPreNom, chanti
                 <td style="width:110pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Surface habitable déclaré : </p></td>
                 <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCCAQ7}</p>
                 </td>
                 <td style="width:110pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Surface habitable Mesurée :</p></td>
                 <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCCAQ8}</p>
                 </td>
                 </tr>
                 </table>
@@ -542,7 +542,7 @@ module.exports = ({PGAVQ1, PGAVQ2, PGAVQ3, PGAVQ4, benefNom, benefPreNom, chanti
                 <td style="width:110pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Ecart (en %):  </p></td>
                 <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCCAQ9}</p>
                 </td>
                 </tr>
                 </table>
@@ -553,7 +553,7 @@ module.exports = ({PGAVQ1, PGAVQ2, PGAVQ3, PGAVQ4, benefNom, benefPreNom, chanti
                 <td style="width:360pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Il est constaté un écart de surface habitable de plus de 10 %</p></td>
                 <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCCAQ10}</p>
                 </td>
                 </tr>
                 </table>
@@ -568,7 +568,7 @@ travaux est inférieur à celui de la situation initiale, y compris en période 
 hivernale, notamment au travers de la note de calcul de dimensionnement du
 nouveau générateur de chauffage le cas échéant</p></td>
                 <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCCAQ11}</p>
                 </td>
                 </tr>
                 </table>
@@ -581,7 +581,7 @@ nouveau générateur de chauffage le cas échéant</p></td>
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">L’audit énergétique retranche des consommations conventionnelles d’énergies
 primaire ou finale la production d’électricité autoconsommée ou exportée</p></td>
                 <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCCAQ12}</p>
                 </td>
                 </tr>
                 </table>
@@ -594,7 +594,7 @@ primaire ou finale la production d’électricité autoconsommée ou exportée</
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">L’audit énergétique prend en compte des installations de chauffage qui ne sont pas
 fixes.</p></td>
                 <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCCAQ13}</p>
                 </td>
                 </tr>
                 </table>
@@ -607,7 +607,7 @@ fixes.</p></td>
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Batiment résidentiel collectif existant depuis plus de 2 ans la date d'engagement de
 l'opration</p></td>
                 <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCCAQ14}</p>
                 </td>
                 </tr>
                 </table>
@@ -684,12 +684,12 @@ l'opration</p></td>
                 <td style="width:110pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Scénarios de travaux répondant aux critères du coup de pouce</p></td>
                 <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-left-style:solid;border-left-width:1pt; border-bottom-style:solid;border-bottom-width:1pt">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;"></p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDPQ1}</p>
                 </td>
                 <td style="width:110pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
-                <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;"></p></td>
+                <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDPQ2}</p></td>
                 <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-left-style:solid;border-left-width:1pt; border-bottom-style:solid;border-bottom-width:1pt">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;"></p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDPQ3}</p>
                 </td>
                 </tr>
                 </table>
@@ -702,7 +702,7 @@ l'opration</p></td>
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">La consommation conventionnelle annuelle en énergie primaire après travaux, rapportée à la
 surface habitable du bâtiment, est inférieure à 331 kWh/(m2 .an).</p></td>
                 <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDPQ4}</p>
                 </td>
                 </tr>
                 </table>
@@ -715,7 +715,7 @@ surface habitable du bâtiment, est inférieure à 331 kWh/(m2 .an).</p></td>
 déduction de la production d'électricité autoconsommée ou exportée) sur les usages chauffage,
 refroidissement et production d'eau chaude sanitaire</p></td>
                 <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDPQ5}</p>
                 </td>
                 </tr>
                 </table>
@@ -728,7 +728,7 @@ refroidissement et production d'eau chaude sanitaire</p></td>
 habitable du bâtiment, sont inférieures ou égales à la valeur initiale de ces émissions avant
 travaux</p></td>
                 <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDPQ6}</p>
                 </td>
                 </tr>
                 </table>
@@ -743,7 +743,7 @@ a. Ni à l’installation d’équipements de chauffage ou de production d’eau
 consommant majoritairement du charbon, du fioul ou du gaz
 b. Ni à une hausse des émissions de gaz à effet de serre</p></td>
                 <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDPQ7}</p>
                 </td>
                 </tr>
                 </table>
@@ -754,7 +754,7 @@ b. Ni à une hausse des émissions de gaz à effet de serre</p></td>
                 <td style="width:360pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Les travaux de rénovation préconisés comportent au moins un des gestes d’isolation listés cidessous:</p></td>
                 <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDPQ8}</p>
                 </td>
                 </tr>
                 </table>
@@ -766,7 +766,7 @@ b. Ni à une hausse des émissions de gaz à effet de serre</p></td>
                 <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Travaux d'isolation thermique des murs couvrant au moins 75 % de la surface totale des murs
 donnant sur l'extérieur et mettant en œuvre un procédé d'isolation par l'intérieur ou par</p></td>
                 <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDPQ9}</p>
                 </td>
                 </tr>
                 </table>
@@ -779,7 +779,7 @@ donnant sur l'extérieur et mettant en œuvre un procédé d'isolation par l'int
 comportant un ou des matériaux d'isolation thermique en toiture-terrasse ou en rampant de
 toiture et couvrant au moins 75 % de la surface totale des toitures</p></td>
                 <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDPQ10}</p>
                 </td>
                 </tr>
                 </table>
@@ -792,7 +792,7 @@ toiture et couvrant au moins 75 % de la surface totale des toitures</p></td>
 couvrant au moins 75 % de la surface totale des planchers des combles perdus et des planchers
 bas situés entre un volume chauffé et un sous-sol non chauffé, un vide sanitaire ou un passage </p></td>
                 <td style="width:140pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt; border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#B4C5E7">
-                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">21/06/2023</p>
+                <p style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">${AVCDPQ11}</p>
                 </td>
                 </tr>
                 </table>
