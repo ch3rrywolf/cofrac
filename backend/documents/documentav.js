@@ -54,11 +54,11 @@ module.exports = ({AVCDAQ1,AVCDAQ2,AVCDAQ3,AVCDAQ4,AVCDAQ5,AVCDAQ6,AVCDAQ7,AVCDA
     </div>
 
     <!-- Right Section -->
-    <div id="right-section">
-        <table border="1" style="border-collapse: collapse;">
+    <div id="center-section" style="display:flex;justify-content:center;align-items:center;min-height:47.3pt;width:550.8pt;text-align: center;flex-direction: column;">
+        <table  style="margin: 10px auto; margin-right:auto; margin-left: 100pt; border-collapse: collapse;">
             <tr>
                 <td>
-                   <h2 style="padding-top: 3pt;padding-left: 208pt;text-indent: -68pt;line-height: 107%;text-align: center;">RAPPORT D’INSPECTION SUR LE LIEU DE L’OPERATION <br/>AVANT TRAVAUX</h2>
+                   <h2 style=" color: #000; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 11pt;">RAPPORT D’INSPECTION SUR LE LIEU DE L’OPERATION <br/>AVANT TRAVAUX</h2>
                 </td>
             </tr>
         </table>
@@ -96,14 +96,14 @@ module.exports = ({AVCDAQ1,AVCDAQ2,AVCDAQ3,AVCDAQ4,AVCDAQ5,AVCDAQ6,AVCDAQ7,AVCDA
                 <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#CE4627">
                 <p class="s1" style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: left;">Numéro de dossier :</p></td>
                 <td style="width:111pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="text-indent: 0pt;text-align: left;">${PGAVQ2}</p>
+                <p style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: left;">${PGAVQ2}</p>
                 </td>
                 </tr>
                 <tr style="height:11pt">
                 <td style="width:120pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt" bgcolor="#CE4627">
                 <p class="s1" style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: left;">Référence demandeur:</p></td>
                 <td style="width:111pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="text-indent: 0pt;text-align: left;">${PGAVQ3}</p>
+                <p style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: left;">${PGAVQ3}</p>
                 </td>
                 </tr>
                 </table>
@@ -125,26 +125,26 @@ module.exports = ({AVCDAQ1,AVCDAQ2,AVCDAQ3,AVCDAQ4,AVCDAQ5,AVCDAQ6,AVCDAQ7,AVCDA
                 <p style="padding-left: 1pt;text-indent: 0pt;line-height: 11pt;text-align: center;">
                 <span style=" color: #FFF; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 11pt;">PHOTO BÂTIMENT</span></p></div>
                 <p style="padding-left: 5pt;text-indent: 0pt;text-align: center;"/>
-                <p style="padding-top: 10pt;text-indent: 0pt;text-align: center;">${imagesMO}</p><br/>
+                <p style="padding-top: 10pt;text-indent: 0pt;text-align: center; border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt; border-left-style:solid;border-left-width:1pt"">${imagesMO}</p><br/>
                 
                 <table style="border-collapse:collapse;margin-left: 120pt" cellspacing="0">
                 <tr style="height:16pt">
                 <p style="text-indent: 0pt;text-align: left;"/>
-                <h1 style="padding-left: 7pt;text-indent: 0pt;text-align: left;">Adresse des travaux :</h1>
+                <h1 style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: left;">Adresse des travaux :</h1>
                 <td style="width:100pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
-                <p class="s4" style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Nom :</p></td>
+                <p class="s4" style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: left;">Nom :</p></td>
                 <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="text-indent: 0pt;text-align: center;">${benefNom}${' '}${benefPreNom}</p></td></tr>
+                <p style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: center;">${benefNom}${' '}${benefPreNom}</p></td></tr>
                 <tr style="height:25pt">
                 <td style="width:100pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
-                <p class="s4" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Adresse :</p></td>
+                <p class="s4" style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: left;">Adresse :</p></td>
                 <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="text-indent: 0pt;text-align: center;">${chantierAdresse}</p>
+                <p style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: center;">${chantierAdresse}</p>
                 </td>
                 </tr>
                 <tr style="height:25pt">
                 <td style="width:100pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
-                <p class="s4" style="padding-top: 7pt;padding-left: 1pt;text-indent: 0pt;text-align: center;">Type de Logement :</p></td>
+                <p class="s4" style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: left;">Type de Logement :</p></td>
                 <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
                 <p style="text-indent: 0pt;text-align: center;">${PGAVQ1}</p>
                 </td>
@@ -157,7 +157,7 @@ module.exports = ({AVCDAQ1,AVCDAQ2,AVCDAQ3,AVCDAQ4,AVCDAQ5,AVCDAQ6,AVCDAQ7,AVCDA
                 <td style="width:220pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt" rowspan="2">
                 <p class="s4" style="padding-top: 9pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Accompagnateur :</p></td>
                 <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="text-indent: 0pt;text-align: center;">${benefNom}</p>
+                <p style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: center;">${benefNom}</p>
                 </td>
                 </tr>
                 <tr style="height:15pt">
@@ -172,7 +172,7 @@ module.exports = ({AVCDAQ1,AVCDAQ2,AVCDAQ3,AVCDAQ4,AVCDAQ5,AVCDAQ6,AVCDAQ7,AVCDA
                 <td style="width:220pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt">
                 <p class="s4" style="padding-top: 9pt;padding-left: 1pt;text-indent: 0pt;text-align: left;">Conclusion du constat de l'audit :</p></td>
                 <td style="width:287pt;border-top-style:solid;border-top-width:1pt;border-right-style:solid;border-right-width:1pt" bgcolor="#B4C5E7">
-                <p style="text-indent: 0pt;text-align: center;">${benefNom}</p>
+                <p style="text-indent: 0pt;text-align: center;">${AVCDAQ9}</p>
                 </td>
                 </tr>
                 </table>
@@ -1213,7 +1213,7 @@ chaude sanitaire, de la génération à l’émission :
                                 <br/>
 
                                 <div>
-                                <p style="padding-top: 10pt;text-indent: 0pt;text-align: center; border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt">${imagesAA}</p>
+                                <p style="padding-top: 10pt;text-indent: 0pt;text-align: center; border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt; border-left-style:solid;border-left-width:1pt">${imagesAA}</p>
                                 </div>
 
                  <br/>
@@ -1299,7 +1299,7 @@ modification</p>
                                 <br/>
 
                                 <div>
-                                <p style="padding-top: 10pt;text-indent: 0pt;text-align: center; border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt">${imagesAE}</p>
+                                <p style="padding-top: 10pt;text-indent: 0pt;text-align: center; border-top-style:solid;border-top-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt; border-left-style:solid;border-left-width:1pt">${imagesAE}</p>
                                 </div>
 
                  <br/>

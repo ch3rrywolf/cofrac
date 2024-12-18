@@ -62,20 +62,14 @@ const AddChantier = () => {
         <form onSubmit={submit}>
           <div className='grid grid-cols-2 gap-x-8 mb-3'>
           <div className='flex flex-col gap-y-2'>
-            <label className='text-md font-medium text-gray-600' htmlFor='clientName'>Client*</label>
-              <select onChange={inputHandler} value={state.clientName}  name="clientName" id='clientName' className='px-3 py-2 rounded-md outline-0 border border-gray-300 focus:border-green-500 h-10'>
-                <option value="">--select Client--</option>
-                <option value="mootez">mootez</option>
-                <option value="wolf">wolf</option>
-              </select>    
+              <label className='text-md font-medium text-gray-600' htmlFor='clientName'>client Name*</label>
+              <input onChange={inputHandler} value={state.clientName} required type='text' placeholder='client Name' name='clientName' id='clientName' className='px-3 py-2 rounded-md outline-0 border border-gray-300 focus:border-green-500 h-10' />
             </div>
+            
+
             <div className='flex flex-col gap-y-2'>
-            <label className='text-md font-medium text-gray-600' htmlFor='operationName'>Opération*</label>
-              <select onChange={inputHandler} value={state.operationName}  name="operationName" id='operationName' className='px-3 py-2 rounded-md outline-0 border border-gray-300 focus:border-green-500 h-10'>
-                <option value="">--select Opération--</option>
-                <option value="PAC AIR/EAU">PAC AIR/EAU</option>
-                <option value="BALON THERMODYNAMIQUE">BALON THERMODYNAMIQUE</option>
-              </select>    
+              <label className='text-md font-medium text-gray-600' htmlFor='operationName'>Opération*</label>
+              <input onChange={inputHandler} value={state.operationName} required type='text' placeholder='Opération' name='operationName' id='operationName' className='px-3 py-2 rounded-md outline-0 border border-gray-300 focus:border-green-500 h-10' />
             </div>
           </div>
           

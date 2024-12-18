@@ -1847,7 +1847,7 @@ chaude sanitaire, de la génération à l’émission :
 
 {/* Mise/Oeuv */}
 
-<div className='text-center items-center text-white font-bold border border-solid bg-orange-700' >
+{/* <div className='text-center items-center text-white font-bold border border-solid bg-orange-700' >
     <h4>Mise en œuvre conforme aux exigences du scénario retenu</h4>
 </div>
 <div className="overflow-x-auto">
@@ -2245,11 +2245,11 @@ conforme auxindications du fournisseur ;        </td>
       </tr>
     </tbody>
   </table>
-</div>
+</div> */}
 
 {/* AIR/AIR */}
 
-<div>
+{/* <div>
     <h4 className='text-center items-center text-white font-bold border border-solid bg-orange-700'>Pompe à chaleur - AIR/AIR </h4>
 </div>
 <div className="overflow-x-auto">
@@ -2581,9 +2581,9 @@ conforme auxindications du fournisseur ;        </td>
       </tr>  
     </tbody>
   </table>
-</div>
+</div> */}
 
-<div className="overflow-x-auto">
+{/* <div className="overflow-x-auto">
   <table className="table-auto w-full border-collapse border border-gray-300 text-sm text-gray-600">
     <thead>
       <tr>
@@ -2719,7 +2719,10 @@ conforme auxindications du fournisseur ;        </td>
     </tbody>
   </table>
 
-  <label
+</div> */}
+
+
+<label
         htmlFor="imgAA"
         className="w-full h-[180px] flex rounded text-[#404040] gap-2 justify-center items-center cursor-pointer border-2 border-dashed"
       >
@@ -2752,15 +2755,13 @@ conforme auxindications du fournisseur ;        </td>
           ))}
         </div>
       )}
-</div>
-
 
 
 {/* AIR/EAU */}
 
 
 
-<div>
+{/* <div>
     <h4 className='text-center items-center text-white font-bold border border-solid bg-orange-700'>Pompe à chaleur - AIR/EAU </h4>
 </div>
 <div className="overflow-x-auto">
@@ -3042,8 +3043,8 @@ conforme auxindications du fournisseur ;        </td>
       </tr>  
     </tbody>
   </table>
-</div>
-<div className="overflow-x-auto">
+</div> */}
+{/* <div className="overflow-x-auto">
   <table className="table-auto w-full border-collapse border border-gray-300 text-sm text-gray-600">
     <thead>
       <tr>
@@ -3179,7 +3180,10 @@ conforme auxindications du fournisseur ;        </td>
     </tbody>
   </table>
 
-  <label
+
+</div> */}
+
+<label
         htmlFor="imgAE"
         className="w-full h-[180px] flex rounded text-[#404040] gap-2 justify-center items-center cursor-pointer border-2 border-dashed"
       >
@@ -3212,13 +3216,12 @@ conforme auxindications du fournisseur ;        </td>
           ))}
         </div>
       )}
-</div>
 
 
 {/* Chauffe-Eau Thermodynamique */}
 
 
-<div className='text-center items-center text-white font-bold border border-solid bg-orange-700' >
+{/* <div className='text-center items-center text-white font-bold border border-solid bg-orange-700' >
     <h4>Chauffe-Eau Thermodynamique</h4>
 </div>
 <div className="overflow-x-auto">
@@ -3370,9 +3373,9 @@ conforme auxindications du fournisseur ;        </td>
       </tr>      
     </tbody>
   </table>
-</div>
+</div> */}
 <br></br>
-<div>
+{/* <div>
 <label
         htmlFor="img"
         className="w-full h-[180px] flex rounded text-[#404040] gap-2 justify-center items-center cursor-pointer border-2 border-dashed"
@@ -3390,10 +3393,10 @@ conforme auxindications du fournisseur ;        </td>
         className="hidden"
         onChange={handleImageUpload}
         multiple
-      />
+      /> */}
 
       {/* Display image previews */}
-      {imagesBase64CET.length > 0 && (
+      {/* {imagesBase64CET.length > 0 && (
         <div className="mt-4 flex gap-2 flex-wrap">
           {imagesBase64CET.map((imgBase64CET, index) => (
             <div className="image-container" key={index}>
@@ -3406,10 +3409,10 @@ conforme auxindications du fournisseur ;        </td>
           ))}
         </div>
       )}
-</div>
+</div> */}
 
 {/* Isolation du comble*/}
-        <div className='text-center items-center text-white font-bold border border-solid bg-orange-700' >
+        {/* <div className='text-center items-center text-white font-bold border border-solid bg-orange-700' >
     <h4>Isolation du comble</h4>
 </div>
 <div className="overflow-x-auto">
@@ -3841,9 +3844,9 @@ conforme auxindications du fournisseur ;        </td>
       </tr>
       
     </tbody>
-  </table>
+  </table> */}
 
-  <label
+  {/* <label
   htmlFor="imgIC"
   className="w-full h-[180px] flex rounded text-[#404040] gap-2 justify-center items-center cursor-pointer border-2 border-dashed"
 >
@@ -3861,10 +3864,10 @@ conforme auxindications du fournisseur ;        </td>
   className="hidden"
   onChange={handleImageUploadIC}
   multiple
-/>
+/> */}
 
 {/* Display image previews */}
-{imagesBase64IC.length > 0 && (
+{/* {imagesBase64IC.length > 0 && (
   <div className="mt-4 flex justify-center items-center flex-wrap gap-4">
     {imagesBase64IC.map((imgBase64IC, index) => (
       <div className="image-container" key={index}>
@@ -3878,7 +3881,7 @@ conforme auxindications du fournisseur ;        </td>
     ))}
   </div>
 )}
-</div>
+</div> */}
           
 
           <div className='grid grid-cols-2 gap-x-8 mb-3'>
